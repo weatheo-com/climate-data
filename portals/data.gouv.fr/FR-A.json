@@ -27,7 +27,7 @@
   "resources": [
     {
       "title": "fr_climate_normals_1991_2020.csv",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/fr_climate_normals_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_climate_normals_1991_2020.csv",
       "format": "csv",
       "mime": "text/csv",
       "type": "main",
@@ -35,14 +35,14 @@
     },
     {
       "title": "fr_climate_normals_1991_2020.parquet",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/fr_climate_normals_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_climate_normals_1991_2020.parquet",
       "format": "parquet",
       "type": "main",
       "description": "Même table au format Parquet."
     },
     {
       "title": "fr_datapackage.json",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/fr_datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_datapackage.json",
       "format": "json",
       "mime": "application/json",
       "type": "documentation",

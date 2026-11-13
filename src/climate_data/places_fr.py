@@ -31,6 +31,11 @@ def _coord(df: pd.DataFrame, axis: str) -> pd.Series:
     return out
 
 
+# Wrong names in communes-france-2026.csv: 93066 is named after the commune it absorbed on
+# 1 January 2025 (Pierrefitte-sur-Seine); the merged commune is Saint-Denis.
+NAME_FIXES = {"93066": "Saint-Denis"}
+
+
 def load(path: str | Path) -> pd.DataFrame:
     df = pd.read_csv(path, dtype=str, keep_default_na=False, na_values=[""])
     out = pd.DataFrame({
@@ -44,6 +49,8 @@ def load(path: str | Path) -> pd.DataFrame:
         "latitude": _coord(df, "latitude"),
         "longitude": _coord(df, "longitude"),
     })
+    for code, name in NAME_FIXES.items():
+        out.loc[out["code"] == code, "name"] = name
     bad = (out["code"] == "") | out["latitude"].isna() | out["longitude"].isna()
     if bad.any():
         log.warning("places_fr: dropped %d rows with missing code or coordinates", int(bad.sum()))
