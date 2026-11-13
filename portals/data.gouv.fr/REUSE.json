@@ -13,7 +13,7 @@
   "description": "Weatheo (by CODELIO) est un site de prévisions météo avec des pages de prévisions pour plus de 30 000 communes de France. Les pages de prévisions s'appuient sur le jeu de données « Liste des communes de France » (data.gouv.fr, Licence Ouverte 2.0) pour les communes et leurs codes INSEE.\n\nWeatheo publie aussi en données ouvertes, sous licence CC BY 4.0, les normales climatiques mensuelles 1991-2020 et l'écart 1961-1990 / 1991-2020 par commune, calculés à partir des réanalyses Copernicus ERA5-Land : voir les jeux « Normales climatiques mensuelles 1991-2020 par commune (France) » et « Évolution du climat par commune : 1961-1990 contre 1991-2020 (France) » sur data.gouv.fr, et la page https://weatheo.com/fr/open-data.",
   "datasets": [
     "liste-des-communes-de-france-code-insee-codes-postaux-epci-population-superficie-62-indicateurs",
-    "normales-climatiques-1991-2020-par-commune-france-weatheo",
-    "evolution-climatique-1961-1990-1991-2020-par-commune-france-weatheo"
+    "normales-climatiques-mensuelles-1991-2020-par-commune-france",
+    "evolution-du-climat-par-commune-1961-1990-contre-1991-2020-france"
   ]
 }

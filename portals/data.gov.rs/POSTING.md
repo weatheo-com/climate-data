@@ -13,3 +13,5 @@
    - Spatial coverage: sent by the script from "spatial" in RS-A.json / RS-B.json (granularity "Општина" sr:municipality, zone "Србија" country:rs); set it by hand in the form only if the page does not show it.
    - Licence: "sodl" (Српска лиценца за отворене податке, owner choice 2026-11-13; it allows commercial reuse with attribution). The description says the same data are CC BY 4.0 in the repository and gives the RZS source, download date and the changes, as SODL requires.
 9. Check the two dataset pages (Cyrillic text, 3 resources each, links work).
+
+Firewall notes (2026-11-13): data.gov.rs answers 403 (HTML page) to descriptions with markdown links `[text](url)` (write `text: url`) and to the capitalised Cyrillic "То су"; and to a third resource on these datasets whatever its title, URL or format. RS-A and RS-B are published with the CSV and Parquet resources only; the datapackage is linked from the description (GitHub repository).
