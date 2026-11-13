@@ -1,0 +1,49 @@
+{
+  "title": "Daily weather history by city, 1950-2025 (UK, Germany, France, Portugal, Luxembourg, Serbia)",
+  "tags": [
+    "weather",
+    "climate",
+    "ERA5",
+    "ERA5-Land",
+    "Copernicus",
+    "temperature",
+    "precipitation",
+    "degree days",
+    "cities",
+    "United Kingdom",
+    "Germany",
+    "France",
+    "Portugal",
+    "Luxembourg",
+    "Serbia"
+  ],
+  "description": "<p>Daily weather values (mean, minimum and maximum temperature, precipitation, wind, solar radiation) for 1950-2025 for the largest cities, from the ERA5-Land reanalysis.</p><p><b>Columns.</b> country, city_id, name, date, tmean_c (°C), tmin_c (°C), tmax_c (°C), precip_mm (mm), wind_mean_kmh (km/h), wind_max_kmh (km/h), solar_kwh_m2 (kWh/m²).</p><p><b>Method.</b> Copernicus ERA5-Land hourly reanalysis, 0.1° grid, nearest cell to the city point, local civil days (IANA time zone, complete days only). Temperatures are adjusted for altitude at 6.5 °C per km; precipitation is not adjusted.</p><p><b>Limits.</b> Grid-cell reanalysis values, not station measurements. Hot days in city centres are undercounted. Degree days differ from figures published by national services.</p><p><b>Places.</b> Cities from GeoNames (cities5000), CC BY 4.0, ranked by population: 100 each for the UK, Germany and France, 20 each for Portugal and Serbia, 5 for Luxembourg; <code>city_id</code> is the GeoNames id. Files are named <code>&lt;cc&gt;_...</code> per country (gb, de, fr, pt, lu, rs).</p><p><b>Attribution.</b> Weatheo (by CODELIO), CC BY 4.0. Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.</p><p>Published by <a href=\"https://weatheo.com/en/open-data/daily-weather-history-cities\">Weatheo</a>. Code (MIT) and build scripts: <a href=\"https://github.com/weatheo-com/climate-data\">GitHub repository</a>.</p>",
+  "version": "1.0.0",
+  "zenodo": {
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/weatheo-com/climate-data",
+        "relation": "isSupplementTo",
+        "scheme": "url",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "https://weatheo.com/en/open-data/daily-weather-history-cities",
+        "relation": "isDocumentedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.geonames.org/",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-timeseries",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      }
+    ],
+    "language": "eng",
+    "communities": []
+  }
+}

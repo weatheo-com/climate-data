@@ -1,4 +1,4 @@
-"""Municipality loaders for PT, LU and RS (one small adapter per country).
+"""Municipality loaders for PT, LU, RS, DE and GB (one small adapter per country).
 
 load(country, path_or_dir) -> places DataFrame with the contract columns:
 country, code, name, admin1_code, admin1_name, admin2_code, admin2_name,
@@ -42,6 +42,8 @@ BBOX = {
     "PT": (32.0, 42.2, -31.4, -6.1),  # Continente + Madeira + Azores
     "LU": (49.4, 50.2, 5.7, 6.6),
     "RS": (41.8, 46.2, 18.8, 23.1),
+    "DE": (47.2, 55.1, 5.8, 15.1),
+    "GB": (49.8, 60.9, -8.7, 1.8),
 }
 
 GEONAMES_COLS = [
@@ -403,9 +405,69 @@ def load_rs(path_or_dir, strict: bool = True) -> pd.DataFrame:
     return _finish(df, "RS", unmatched, strict)
 
 
+# --------------------------------------------------------------------------- DE
+# BKG VG250-EW Gemeinden (dl-de/by-2-0), merged by a scout into
+# de_gemeinden_vg250ew.csv: ags,ars,name,bez,land,lat,lon,pop,area_km2.
+
+DE_LAENDER = {
+    "01": "Schleswig-Holstein", "02": "Hamburg", "03": "Niedersachsen",
+    "04": "Bremen", "05": "Nordrhein-Westfalen", "06": "Hessen",
+    "07": "Rheinland-Pfalz", "08": "Baden-Württemberg", "09": "Bayern",
+    "10": "Saarland", "11": "Berlin", "12": "Brandenburg",
+    "13": "Mecklenburg-Vorpommern", "14": "Sachsen", "15": "Sachsen-Anhalt",
+    "16": "Thüringen",
+}
+
+
+def load_de(path_or_dir, strict: bool = True) -> pd.DataFrame:
+    p = _resolve(path_or_dir, "de_gemeinden_vg250ew.csv")
+    raw = pd.read_csv(p, dtype=str, keep_default_na=False)
+    ags = raw["ags"].str.strip().str.zfill(8)
+    df = pd.DataFrame({
+        "code": ags,
+        "name": raw["name"].map(_clean),
+        "admin1_code": ags.str[:2],
+        "admin1_name": ags.str[:2].map(DE_LAENDER).fillna(raw["land"]),
+        "admin2_code": ags.str[:5],
+        "latitude": pd.to_numeric(raw["lat"], errors="coerce"),
+        "longitude": pd.to_numeric(raw["lon"], errors="coerce"),
+    })
+    unmatched = df.loc[df["latitude"].isna() | df["longitude"].isna(), "code"].tolist()
+    return _finish(df, "DE", unmatched, strict)
+
+
+# --------------------------------------------------------------------------- GB
+# ONS Built-up areas 2022 (OGL v3), bua2022.csv: BUA22CD,BUA22NM,LONG,LAT.
+# K08 codes are BUAs that straddle the England-Wales border.
+
+GB_NATIONS = {
+    "E": ("E92000001", "England"),
+    "W": ("W92000004", "Wales"),
+    "S": ("S92000003", "Scotland"),
+    "K": ("K04000001", "England and Wales"),
+}
+
+
+def load_gb(path_or_dir, strict: bool = True) -> pd.DataFrame:
+    p = _resolve(path_or_dir, "bua2022.csv")
+    raw = pd.read_csv(p, dtype=str, keep_default_na=False)
+    code = raw["BUA22CD"].str.strip()
+    nation = code.str[:1].map(lambda c: GB_NATIONS.get(c, ("", "")))
+    df = pd.DataFrame({
+        "code": code,
+        "name": raw["BUA22NM"].map(_clean),
+        "admin1_code": nation.str[0],
+        "admin1_name": nation.str[1],
+        "latitude": pd.to_numeric(raw["LAT"], errors="coerce"),
+        "longitude": pd.to_numeric(raw["LONG"], errors="coerce"),
+    })
+    unmatched = df.loc[df["latitude"].isna() | df["longitude"].isna(), "code"].tolist()
+    return _finish(df, "GB", unmatched, strict)
+
+
 # --------------------------------------------------------------------------- entry point
 
-LOADERS = {"PT": load_pt, "LU": load_lu, "RS": load_rs}
+LOADERS = {"PT": load_pt, "LU": load_lu, "RS": load_rs, "DE": load_de, "GB": load_gb}
 
 
 def load(country: str, path_or_dir, strict: bool = True) -> pd.DataFrame:

@@ -38,6 +38,8 @@ Climate normals for every municipality of four countries, published by Weatheo (
 | Portugal (PT) | 308 municípios (mainland, Madeira, Azores) | DICO |
 | Luxembourg (LU) | 100 communes | LAU |
 | Serbia (RS) | 169 municipalities and cities (opštine i gradovi) | RZS |
+| Germany (DE) | 10,949 Gemeinden (AGS; BKG VG250-EW, dl-de/by-2-0) | AGS |
+| United Kingdom (GB) | 8,545 built-up areas (BUA22CD; ONS, OGL v3; no Northern Ireland) | BUA22CD |
 
 Two datasets per country:
 
@@ -83,6 +85,44 @@ python -m climate_data.validate data/FR/datapackage.json
 ```
 
 The build downloads ERA5-Land and ERA5 from the Copernicus Climate Data Store (needs a CDS account and `cdsapi` key) and caches them in `cache/`.
+
+## City climate: daily, monthly and annual (GB, DE, FR, PT, LU, RS)
+
+Daily weather history, monthly climate and annual indicators for the largest cities of six countries, 1950-2025, published by Weatheo (by CODELIO). Cities are taken from GeoNames (cities5000) and ranked by population: 100 each for GB, DE and FR, 20 each for PT and RS, 5 for LU. Files are attached to the GitHub release v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<file>`). Pages: [daily](https://weatheo.com/en/open-data/daily-weather-history-cities), [monthly](https://weatheo.com/en/open-data/monthly-climate-degree-days-cities), [annual](https://weatheo.com/en/open-data/annual-climate-indicators-cities).
+
+| Dataset | Files per country (`<cc>` = gb, de, fr, pt, lu, rs) |
+|---|---|
+| Daily, 1950-2025 | `<cc>_city_daily_weather_1950_2025.parquet`, `<cc>_city_daily_weather_1950_2025_csv.zip` (one CSV per city), `<cc>_cities.csv`, `<cc>_cities_datapackage.json` |
+| Monthly, 1950-2025 | `<cc>_city_monthly_climate_1950_2025.csv` and `.parquet`, `<cc>_city_climate_normals_1991_2020.csv` |
+| Annual, 1951-2025 | `<cc>_city_annual_climate_indicators_1951_2025.csv`, trend columns in `<cc>_cities.csv` |
+
+Columns:
+
+- **Daily**: `country`, `city_id` (GeoNames id), `name`, `date`, `tmean_c`, `tmin_c`, `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh`, `wind_max_kmh` (km/h, hourly means, not gusts), `solar_kwh_m2` (kWh/m²). 27,759 rows per city.
+- **Monthly**: one row per city, year and month (complete months): `tmean_c`, `tmin_mean_c`, `tmax_mean_c`, `tmin_abs_c`, `tmax_abs_c` (°C), `precip_mm`, `wet_days` (>= 1 mm), `frost_days`, `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `gtz_20_15` (degree days), `solar_kwh_m2`, `wind_mean_kmh`. The normals file has 12 rows per city: `tmean_c`, `tmin_c`, `tmax_c`, `precip_mm`, `wet_days`, `frost_days`, `summer_days`, `hot_days`, `solar_kwh_m2_day`, `wind_mean_kmh`, `hdd_15_5`, `hdd_18`, `cdd_18`.
+- **Annual** (full years only): `year`, `tmean_c`, `tmean_anomaly_c` (vs 1991-2020), `precip_mm`, `precip_anomaly_pct`, `wet_days`, `heavy_rain_days` (>= 20 mm), `max_1day_precip_mm`, `frost_days` (tmin < 0), `ice_days` (tmax < 0), `summer_days` (tmax >= 25), `hot_days` (tmax >= 30), `tropical_nights` (tmin >= 20), `tmax_abs_c`, `tmin_abs_c`, `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `rank_warmest`. Trend columns in `<cc>_cities.csv`: `tmean_annual_c`, `precip_annual_mm`, `trend_c_per_decade_1951_2025`, `trend_c_per_decade_1981_2025`, `warmest_year`, `coldest_year`, `wettest_year`, `driest_year`.
+
+### Method
+
+Copernicus ERA5-Land hourly reanalysis (`reanalysis-era5-land-timeseries`, 0.1° grid), nearest cell to the city point, one request per city. Days are local civil days (IANA time zone), only complete days. Temperatures are adjusted for altitude at 6.5 °C per km; precipitation is not adjusted. Monthly and annual files are derived from the daily file.
+
+### Limits
+
+Values are grid-cell reanalysis values, not station measurements. Hot days in city centres are undercounted. Degree days differ from figures published by national services.
+
+### Place source
+
+GeoNames cities5000, CC BY 4.0. Data licence CC BY 4.0, code MIT. Notice to carry:
+
+> Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
+
+### Rebuild
+
+```sh
+python -m climate_data.cities          # pick the cities from GeoNames
+python -m climate_data.fetch_timeseries --country FR    # ERA5-Land time series (CDS key needed), or GB, DE, PT, LU, RS
+python -m climate_data.build_cities --country FR
+```
 
 ## Licence and how to cite
 

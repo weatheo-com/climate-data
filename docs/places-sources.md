@@ -1,6 +1,6 @@
 # Municipality sources
 
-The municipal climate datasets (FR, PT, LU, RS) take their list of municipalities, codes and reference points from the sources below. All files were retrieved on 2026-11-13 and are stored under `places/raw/<cc>/`; `scripts/fetch_places.sh` downloads them again.
+The municipal climate datasets (FR, PT, LU, RS, DE, GB) take their list of municipalities, codes and reference points from the sources below. All files were retrieved on 2026-11-13 and are stored under `places/raw/<cc>/`; `scripts/fetch_places.sh` downloads them again.
 
 ## France (FR): 34,734 communes, INSEE code
 
@@ -36,6 +36,27 @@ The municipal climate datasets (FR, PT, LU, RS) take their list of municipalitie
 - Licence: Serbian Open Data Licence (SODL), https://data.gov.rs/sr/terms/: reuse for commercial and non-commercial purposes, free of charge, if each reuse names the publishing body (RZS), the download date (2026-11-13), the address and the changes made (here: coordinates from GeoNames and climate values added)
 - Files used: `opshtine_sifops.csv` (<https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/SIFOPS/1/csv>)
 - Coordinates: GeoNames, <https://download.geonames.org/export/dump/>, licence CC BY 4.0; file `RS.zip` (`RS.txt`, ADM3 features)
+- Retrieved: 2026-11-13
+
+## Germany (DE): 10,949 Gemeinden, AGS code
+
+- Source: Bundesamt für Kartographie und Geodäsie (BKG), Verwaltungsgebiete 1:250 000 mit Einwohnerzahlen (VG250-EW), Gemeinden with their reference points and population
+- URL: <https://gdz.bkg.bund.de/> (product VG250-EW)
+- Licence: Datenlizenz Deutschland Namensnennung 2.0 (dl-de/by-2-0), <https://www.govdata.de/dl-de/by-2-0>
+- Attribution: (c) GeoBasis-DE / BKG (2026) dl-de/by-2-0, Daten veraendert
+- Files used: `de_gemeinden_vg250ew.csv` (columns ags, ars, name, bez, land, lat, lon, pop, area_km2), merged from the VG250-EW Gemeinden layer and its points
+- Codes: `code` = 8-digit AGS (leading zeros kept), `admin1_code` = Land (first 2 digits), `admin2_code` = Kreis (first 5 digits)
+- Retrieved: 2026-11-13
+
+## United Kingdom (GB): 8,545 built-up areas, BUA22CD code
+
+- Source: Office for National Statistics (ONS), Built-up areas (December 2022), names, codes and centroids, from the ONS Open Geography Portal
+- URL: <https://geoportal.statistics.gov.uk/>
+- Licence: Open Government Licence v3.0, <https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/>
+- Attribution: Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data (c) Crown copyright and database right 2022
+- Files used: `bua2022.csv` (BUA22CD, BUA22NM, LONG, LAT, BNG_E, BNG_N)
+- Codes: `admin1` from the code prefix: E = England (E92000001), W = Wales (W92000004), S = Scotland (S92000003), K = cross-border England and Wales (K04000001); no `admin2`
+- Scope: England, Wales and Scotland; Northern Ireland is not covered by ONS built-up areas
 - Retrieved: 2026-11-13
 
 ## Climate data

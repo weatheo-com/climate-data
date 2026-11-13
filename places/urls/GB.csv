@@ -1,0 +1,912 @@
+country,code,name,admin1_name,latitude,longitude,path
+GB,,Aberdeen,Aberdeen City,57.15,-2.11,/gb/aberdeen-city/aberdeen
+GB,,Peterhead,Aberdeenshire,57.5091,-1.7832,/gb/aberdeenshire/peterhead
+GB,,Arbroath,Angus,56.561,-2.586,/gb/angus/arbroath
+GB,,Antrim,Antrim and Newtownabbey,54.7176,-6.1997,/gb/antrim-and-newtownabbey/antrim
+GB,,Bangor,Ards and North Down,54.66,-5.67,/gb/ards-and-north-down/bangor
+GB,,Newtownards,Ards and North Down,54.591,-5.68,/gb/ards-and-north-down/newtownards
+GB,,Armagh,"Armagh City, Banbridge and Craigavon",54.3499,-6.6546,/gb/armagh-city-banbridge-and-craigavon/armagh
+GB,,Banbridge,"Armagh City, Banbridge and Craigavon",54.349,-6.27,/gb/armagh-city-banbridge-and-craigavon/banbridge
+GB,,Barking,Barking and Dagenham,51.54,0.08,/gb/barking-and-dagenham/barking
+GB,,Barking and Dagenham,Barking and Dagenham,51.5433,0.1294,/gb/barking-and-dagenham/barking-and-dagenham
+GB,,Dagenham,Barking and Dagenham,51.5397,0.1422,/gb/barking-and-dagenham/dagenham
+GB,,Barnet,Barnet,51.6444,-0.1997,/gb/barnet/barnet
+GB,,East Barnet,Barnet,51.643,-0.163,/gb/barnet/east-barnet
+GB,,East Finchley,Barnet,51.5902,-0.1753,/gb/barnet/east-finchley
+GB,,Edgware,Barnet,51.6185,-0.2729,/gb/barnet/edgware
+GB,,Finchley,Barnet,51.599,-0.187,/gb/barnet/finchley
+GB,,Friern Barnet,Barnet,51.6126,-0.1584,/gb/barnet/friern-barnet
+GB,,Hendon,Barnet,51.5837,-0.2252,/gb/barnet/hendon
+GB,,Mill Hill,Barnet,51.62,-0.23,/gb/barnet/mill-hill
+GB,,Totteridge,Barnet,51.6354,-0.2,/gb/barnet/totteridge
+GB,,Barnsley,Barnsley,53.5547,-1.4791,/gb/barnsley/barnsley
+GB,,Darton,Barnsley,53.585,-1.5325,/gb/barnsley/darton
+GB,,Wombwell,Barnsley,53.516,-1.4,/gb/barnsley/wombwell
+GB,,Bath,Bath and North East Somerset,51.3814,-2.3597,/gb/bath-and-north-east-somerset/bath
+GB,,Keynsham,Bath and North East Somerset,51.4135,-2.4968,/gb/bath-and-north-east-somerset/keynsham
+GB,,Bedford,Bedford,52.135,-0.47,/gb/bedford/bedford
+GB,,Kempston,Bedford,52.114,-0.497,/gb/bedford/kempston
+GB,,Belfast,Belfast,54.5967,-5.93,/gb/belfast/belfast
+GB,,Bexley,Bexley,51.441,0.149,/gb/bexley/bexley
+GB,,Bexleyheath,Bexley,51.459,0.138,/gb/bexley/bexleyheath
+GB,,Erith,Bexley,51.48,0.1778,/gb/bexley/erith
+GB,,Sidcup,Bexley,51.4263,0.1024,/gb/bexley/sidcup
+GB,,Welling,Bexley,51.4594,0.1097,/gb/bexley/welling
+GB,,Birmingham,Birmingham,52.48,-1.9025,/gb/birmingham/birmingham
+GB,,Bournville,Birmingham,52.4299,-1.9355,/gb/birmingham/bournville
+GB,,Erdington,Birmingham,52.5236,-1.8378,/gb/birmingham/erdington
+GB,,Harborne,Birmingham,52.46,-1.95,/gb/birmingham/harborne
+GB,,Kings Norton,Birmingham,52.4072,-1.9272,/gb/birmingham/kings-norton
+GB,,Longbridge,Birmingham,52.395,-1.979,/gb/birmingham/longbridge
+GB,,Perry Barr,Birmingham,52.5249,-1.9042,/gb/birmingham/perry-barr
+GB,,Small Heath,Birmingham,52.4629,-1.8542,/gb/birmingham/small-heath
+GB,,Sutton Coldfield,Birmingham,52.563,-1.822,/gb/birmingham/sutton-coldfield
+GB,,Blackburn,Blackburn with Darwen,53.748,-2.482,/gb/blackburn-with-darwen/blackburn
+GB,,Darwen,Blackburn with Darwen,53.698,-2.461,/gb/blackburn-with-darwen/darwen
+GB,,Bispham,Blackpool,53.852,-3.041,/gb/blackpool/bispham
+GB,,Blackpool,Blackpool,53.8142,-3.0503,/gb/blackpool/blackpool
+GB,,Ebbw Vale,Blaenau Gwent,51.78,-3.21,/gb/blaenau-gwent/ebbw-vale
+GB,,Tredegar,Blaenau Gwent,51.7776,-3.2407,/gb/blaenau-gwent/tredegar
+GB,,Bolton,Bolton,53.5783,-2.43,/gb/bolton/bolton
+GB,,Farnworth,Bolton,53.5452,-2.3999,/gb/bolton/farnworth
+GB,,Horwich,Bolton,53.592,-2.54,/gb/bolton/horwich
+GB,,Westhoughton,Bolton,53.549,-2.529,/gb/bolton/westhoughton
+GB,,Boscombe,"Bournemouth, Christchurch and Poole",50.725,-1.84,/gb/bournemouth-christchurch-and-poole/boscombe
+GB,,Bournemouth,"Bournemouth, Christchurch and Poole",50.72,-1.88,/gb/bournemouth-christchurch-and-poole/bournemouth
+GB,,Poole,"Bournemouth, Christchurch and Poole",50.7167,-1.9833,/gb/bournemouth-christchurch-and-poole/poole
+GB,,Southbourne,"Bournemouth, Christchurch and Poole",50.722,-1.798,/gb/bournemouth-christchurch-and-poole/southbourne
+GB,,Bracknell,Bracknell Forest,51.416,-0.749,/gb/bracknell-forest/bracknell
+GB,,Winkfield,Bracknell Forest,51.4318,-0.7096,/gb/bracknell-forest/winkfield
+GB,,Baildon,Bradford,53.851,-1.763,/gb/bradford/baildon
+GB,,Bingley,Bradford,53.846,-1.836,/gb/bradford/bingley
+GB,,Bradford,Bradford,53.8,-1.75,/gb/bradford/bradford
+GB,,Ilkley,Bradford,53.925,-1.822,/gb/bradford/ilkley
+GB,,Keighley,Bradford,53.867,-1.911,/gb/bradford/keighley
+GB,,Shipley,Bradford,53.833,-1.777,/gb/bradford/shipley
+GB,,Thornton,Bradford,53.7898,-1.8504,/gb/bradford/thornton
+GB,,Wibsey,Bradford,53.7672,-1.7728,/gb/bradford/wibsey
+GB,,Wyke,Bradford,53.7333,-1.7667,/gb/bradford/wyke
+GB,,Brent,Brent,51.5583,-0.2668,/gb/brent/brent
+GB,,Dollis Hill,Brent,51.5641,-0.2341,/gb/brent/dollis-hill
+GB,,Kenton,Brent,51.5878,-0.3086,/gb/brent/kenton
+GB,,Wembley,Brent,51.5528,-0.2979,/gb/brent/wembley
+GB,,Maesteg,Bridgend,51.61,-3.65,/gb/bridgend/maesteg
+GB,,Pen-y-Bont ar Ogwr,Bridgend,51.507,-3.578,/gb/bridgend/pen-y-bont-ar-ogwr
+GB,,Porthcawl,Bridgend,51.48,-3.69,/gb/bridgend/porthcawl
+GB,,Brighton,Brighton and Hove,50.8208,-0.1375,/gb/brighton-and-hove/brighton
+GB,,Hove,Brighton and Hove,50.8352,-0.1758,/gb/brighton-and-hove/hove
+GB,,Patcham,Brighton and Hove,50.864,-0.15,/gb/brighton-and-hove/patcham
+GB,,Peacehaven,Brighton and Hove,50.8,0,/gb/brighton-and-hove/peacehaven
+GB,,Bristol,"Bristol, City of",51.4536,-2.5975,/gb/bristol-city-of/bristol
+GB,,Beckenham,Bromley,51.408,-0.022,/gb/bromley/beckenham
+GB,,Bromley,Bromley,51.407,0.021,/gb/bromley/bromley
+GB,,Chelsfield,Bromley,51.3582,0.1278,/gb/bromley/chelsfield
+GB,,Chislehurst,Bromley,51.412,0.075,/gb/bromley/chislehurst
+GB,,Farnborough,Bromley,51.3591,0.0741,/gb/bromley/farnborough
+GB,,Hayes,Bromley,51.378,0.0192,/gb/bromley/hayes
+GB,,Orpington,Bromley,51.3741,0.0986,/gb/bromley/orpington
+GB,,West Wickham,Bromley,51.3765,-0.0193,/gb/bromley/west-wickham
+GB,,Amersham,Buckinghamshire,51.677,-0.603,/gb/buckinghamshire/amersham
+GB,,Aylesbury,Buckinghamshire,51.8168,-0.8124,/gb/buckinghamshire/aylesbury
+GB,,Buckingham,Buckinghamshire,51.995,-0.986,/gb/buckinghamshire/buckingham
+GB,,Chesham,Buckinghamshire,51.712,-0.612,/gb/buckinghamshire/chesham
+GB,,Hazlemere,Buckinghamshire,51.6512,-0.7112,/gb/buckinghamshire/hazlemere
+GB,,High Wycombe,Buckinghamshire,51.6287,-0.7482,/gb/buckinghamshire/high-wycombe
+GB,,Marlow,Buckinghamshire,51.57,-0.78,/gb/buckinghamshire/marlow
+GB,,Bury,Bury,53.593,-2.298,/gb/bury/bury
+GB,,Prestwich,Bury,53.5333,-2.2833,/gb/bury/prestwich
+GB,,Radcliffe,Bury,53.5615,-2.3268,/gb/bury/radcliffe
+GB,,Ramsbottom,Bury,53.6483,-2.3167,/gb/bury/ramsbottom
+GB,,Whitefield,Bury,53.5521,-2.2992,/gb/bury/whitefield
+GB,,Caerphilly,Caerphilly,51.578,-3.218,/gb/caerphilly/caerphilly
+GB,,Gelligaer,Caerphilly,51.6667,-3.25,/gb/caerphilly/gelligaer
+GB,,Ystrad Mynach,Caerphilly,51.6419,-3.2405,/gb/caerphilly/ystrad-mynach
+GB,,Brighouse,Calderdale,53.707,-1.794,/gb/calderdale/brighouse
+GB,,Halifax,Calderdale,53.725,-1.863,/gb/calderdale/halifax
+GB,,Queensbury,Calderdale,53.7683,-1.8453,/gb/calderdale/queensbury
+GB,,Todmorden,Calderdale,53.713,-2.096,/gb/calderdale/todmorden
+GB,,Cambridge,Cambridgeshire,52.205,0.1225,/gb/cambridgeshire/cambridge
+GB,,Ely,Cambridgeshire,52.3981,0.2622,/gb/cambridgeshire/ely
+GB,,Huntingdon,Cambridgeshire,52.3364,-0.1717,/gb/cambridgeshire/huntingdon
+GB,,March,Cambridgeshire,52.551,0.088,/gb/cambridgeshire/march
+GB,,Saint Ives,Cambridgeshire,52.3344,-0.0761,/gb/cambridgeshire/saint-ives
+GB,,Saint Neots,Cambridgeshire,52.228,-0.27,/gb/cambridgeshire/saint-neots
+GB,,Whittlesey,Cambridgeshire,52.558,-0.13,/gb/cambridgeshire/whittlesey
+GB,,Wisbech,Cambridgeshire,52.664,0.16,/gb/cambridgeshire/wisbech
+GB,,Camden,Camden,51.5434,-0.1552,/gb/camden/camden
+GB,,Hampstead,Camden,51.5541,-0.1744,/gb/camden/hampstead
+GB,,Caerdydd,Cardiff,51.4817,-3.1792,/gb/cardiff/caerdydd
+GB,,Llanelli,Carmarthenshire,51.684,-4.163,/gb/carmarthenshire/llanelli
+GB,,Coleraine,Causeway Coast and Glens,55.1349,-6.6687,/gb/causeway-coast-and-glens/coleraine
+GB,,Biggleswade,Central Bedfordshire,52.0855,-0.2557,/gb/central-bedfordshire/biggleswade
+GB,,Dunstable,Central Bedfordshire,51.886,-0.521,/gb/central-bedfordshire/dunstable
+GB,,Houghton Regis,Central Bedfordshire,51.9039,-0.5247,/gb/central-bedfordshire/houghton-regis
+GB,,Leighton Buzzard,Central Bedfordshire,51.9165,-0.6617,/gb/central-bedfordshire/leighton-buzzard
+GB,,Congleton,Cheshire East,53.162,-2.217,/gb/cheshire-east/congleton
+GB,,Crewe,Cheshire East,53.099,-2.44,/gb/cheshire-east/crewe
+GB,,Macclesfield,Cheshire East,53.25,-2.13,/gb/cheshire-east/macclesfield
+GB,,Middlewich,Cheshire East,53.192,-2.443,/gb/cheshire-east/middlewich
+GB,,Poynton,Cheshire East,53.35,-2.1167,/gb/cheshire-east/poynton
+GB,,Sandbach,Cheshire East,53.146,-2.367,/gb/cheshire-east/sandbach
+GB,,Wilmslow,Cheshire East,53.325,-2.239,/gb/cheshire-east/wilmslow
+GB,,Chester,Cheshire West and Chester,53.1914,-2.8903,/gb/cheshire-west-and-chester/chester
+GB,,Ellesmere Port,Cheshire West and Chester,53.279,-2.897,/gb/cheshire-west-and-chester/ellesmere-port
+GB,,Neston,Cheshire West and Chester,53.289,-3.074,/gb/cheshire-west-and-chester/neston
+GB,,Northwich,Cheshire West and Chester,53.259,-2.518,/gb/cheshire-west-and-chester/northwich
+GB,,Winsford,Cheshire West and Chester,53.194,-2.52,/gb/cheshire-west-and-chester/winsford
+GB,,Alloa,Clackmannanshire,56.116,-3.793,/gb/clackmannanshire/alloa
+GB,,Conwy,Conwy,53.28,-3.83,/gb/conwy/conwy
+GB,,Llandudno,Conwy,53.3225,-3.825,/gb/conwy/llandudno
+GB,,Bodmin,Cornwall,50.466,-4.718,/gb/cornwall/bodmin
+GB,,Camborne,Cornwall,50.213,-5.3,/gb/cornwall/camborne
+GB,,Falmouth,Cornwall,50.15,-5.07,/gb/cornwall/falmouth
+GB,,Newquay,Cornwall,50.412,-5.0757,/gb/cornwall/newquay
+GB,,Penzance,Cornwall,50.119,-5.537,/gb/cornwall/penzance
+GB,,Redruth,Cornwall,50.2328,-5.2264,/gb/cornwall/redruth
+GB,,Saint Austell,Cornwall,50.34,-4.79,/gb/cornwall/saint-austell
+GB,,Saltash,Cornwall,50.408,-4.212,/gb/cornwall/saltash
+GB,,Truro,Cornwall,50.26,-5.051,/gb/cornwall/truro
+GB,,Coventry,Coventry,52.4081,-1.5106,/gb/coventry/coventry
+GB,,Foleshill,Coventry,52.4255,-1.502,/gb/coventry/foleshill
+GB,,Coulsdon,Croydon,51.3211,-0.1386,/gb/croydon/coulsdon
+GB,,Croydon,Croydon,51.3727,-0.1099,/gb/croydon/croydon
+GB,,Kenley,Croydon,51.3242,-0.0969,/gb/croydon/kenley
+GB,,Shirley,Croydon,51.3813,-0.0543,/gb/croydon/shirley
+GB,,Thornton Heath,Croydon,51.4002,-0.1086,/gb/croydon/thornton-heath
+GB,,Barrow in Furness,Cumbria,54.1108,-3.2261,/gb/cumbria/barrow-in-furness
+GB,,Carlisle,Cumbria,54.8947,-2.9364,/gb/cumbria/carlisle
+GB,,Kendal,Cumbria,54.326,-2.745,/gb/cumbria/kendal
+GB,,Penrith,Cumbria,54.6648,-2.7548,/gb/cumbria/penrith
+GB,,Whitehaven,Cumbria,54.548,-3.5855,/gb/cumbria/whitehaven
+GB,,Workington,Cumbria,54.6365,-3.5549,/gb/cumbria/workington
+GB,,Darlington,Darlington,54.527,-1.5526,/gb/darlington/darlington
+GB,,Prestatyn,Denbighshire,53.331,-3.405,/gb/denbighshire/prestatyn
+GB,,Rhyl,Denbighshire,53.321,-3.48,/gb/denbighshire/rhyl
+GB,,Derby,Derby,52.9247,-1.478,/gb/derby/derby
+GB,,Littleover,Derby,52.906,-1.505,/gb/derby/littleover
+GB,,Mickleover,Derby,52.901,-1.552,/gb/derby/mickleover
+GB,,Belper,Derbyshire,53.029,-1.475,/gb/derbyshire/belper
+GB,,Buxton,Derbyshire,53.259,-1.911,/gb/derbyshire/buxton
+GB,,Chellaston,Derbyshire,52.8671,-1.4384,/gb/derbyshire/chellaston
+GB,,Dronfield,Derbyshire,53.3024,-1.4664,/gb/derbyshire/dronfield
+GB,,Glossop,Derbyshire,53.443,-1.949,/gb/derbyshire/glossop
+GB,,Heanor,Derbyshire,53.014,-1.354,/gb/derbyshire/heanor
+GB,,Ilkeston,Derbyshire,52.9711,-1.3092,/gb/derbyshire/ilkeston
+GB,,Long Eaton,Derbyshire,52.898,-1.271,/gb/derbyshire/long-eaton
+GB,,Matlock,Derbyshire,53.14,-1.55,/gb/derbyshire/matlock
+GB,,Ripley,Derbyshire,53.05,-1.407,/gb/derbyshire/ripley
+GB,,Staveley,Derbyshire,53.2694,-1.3484,/gb/derbyshire/staveley
+GB,,Swadlincote,Derbyshire,52.774,-1.557,/gb/derbyshire/swadlincote
+GB,,Derry,Derry and Strabane,54.9975,-7.32,/gb/derry-and-strabane/derry
+GB,,Barnstaple,Devon,51.08,-4.06,/gb/devon/barnstaple
+GB,,Bideford,Devon,51.016,-4.209,/gb/devon/bideford
+GB,,Brixham,Devon,50.394,-3.516,/gb/devon/brixham
+GB,,Dawlish,Devon,50.581,-3.466,/gb/devon/dawlish
+GB,,Exeter,Devon,50.7256,-3.5269,/gb/devon/exeter
+GB,,Exmouth,Devon,50.62,-3.413,/gb/devon/exmouth
+GB,,Newton Abbot,Devon,50.529,-3.61,/gb/devon/newton-abbot
+GB,,Paignton,Devon,50.4353,-3.5625,/gb/devon/paignton
+GB,,Teignmouth,Devon,50.5515,-3.4886,/gb/devon/teignmouth
+GB,,Tiverton,Devon,50.903,-3.488,/gb/devon/tiverton
+GB,,Adwick le Street,Doncaster,53.5677,-1.1931,/gb/doncaster/adwick-le-street
+GB,,Conisbrough,Doncaster,53.479,-1.227,/gb/doncaster/conisbrough
+GB,,Doncaster,Doncaster,53.5228,-1.1325,/gb/doncaster/doncaster
+GB,,Hatfield,Doncaster,53.58,-1,/gb/doncaster/hatfield
+GB,,Mexborough,Doncaster,53.4992,-1.283,/gb/doncaster/mexborough
+GB,,Thorne,Doncaster,53.6083,-0.9583,/gb/doncaster/thorne
+GB,,Christchurch,Dorset,50.73,-1.78,/gb/dorset/christchurch
+GB,,Dorchester,Dorset,50.7154,-2.4367,/gb/dorset/dorchester
+GB,,Fern Down,Dorset,50.81,-1.9,/gb/dorset/fern-down
+GB,,Verwood,Dorset,50.8815,-1.8785,/gb/dorset/verwood
+GB,,Weymouth,Dorset,50.6097,-2.4547,/gb/dorset/weymouth
+GB,,Cradley,Dudley,52.46,-2.086,/gb/dudley/cradley
+GB,,Dudley,Dudley,52.508,-2.089,/gb/dudley/dudley
+GB,,Halesowen,Dudley,52.4502,-2.0509,/gb/dudley/halesowen
+GB,,Netherton,Dudley,52.4908,-2.0835,/gb/dudley/netherton
+GB,,Stourbridge,Dudley,52.4575,-2.1479,/gb/dudley/stourbridge
+GB,,Tipton,Dudley,52.5259,-2.0751,/gb/dudley/tipton
+GB,,Dumfries,Dumfries and Galloway,55.07,-3.603,/gb/dumfries-and-galloway/dumfries
+GB,,Broughty Ferry,Dundee City,56.4672,-2.8699,/gb/dundee-city/broughty-ferry
+GB,,Dundee,Dundee City,56.4606,-2.97,/gb/dundee-city/dundee
+GB,,Bishop Auckland,Durham,54.663,-1.676,/gb/durham/bishop-auckland
+GB,,Chester-le-Street,Durham,54.8594,-1.5699,/gb/durham/chester-le-street
+GB,,Consett,Durham,54.85,-1.83,/gb/durham/consett
+GB,,Durham,Durham,54.7761,-1.5733,/gb/durham/durham
+GB,,Newton Aycliffe,Durham,54.62,-1.58,/gb/durham/newton-aycliffe
+GB,,Peterlee,Durham,54.76,-1.33,/gb/durham/peterlee
+GB,,Seaham,Durham,54.84,-1.34,/gb/durham/seaham
+GB,,Shotley Bridge,Durham,54.87,-1.86,/gb/durham/shotley-bridge
+GB,,Spennymoor,Durham,54.7,-1.59,/gb/durham/spennymoor
+GB,,Acton,Ealing,51.5135,-0.2707,/gb/ealing/acton
+GB,,Ealing,Ealing,51.5175,-0.2988,/gb/ealing/ealing
+GB,,Greenford,Ealing,51.5299,-0.3488,/gb/ealing/greenford
+GB,,Hanwell,Ealing,51.509,-0.338,/gb/ealing/hanwell
+GB,,Northolt,Ealing,51.5467,-0.37,/gb/ealing/northolt
+GB,,Perivale,Ealing,51.5383,-0.3192,/gb/ealing/perivale
+GB,,Southall,Ealing,51.5111,-0.3756,/gb/ealing/southall
+GB,,Sudbury,Ealing,51.5537,-0.3199,/gb/ealing/sudbury
+GB,,Kilmarnock,East Ayrshire,55.6111,-4.4957,/gb/east-ayrshire/kilmarnock
+GB,,Bearsden,East Dunbartonshire,55.9195,-4.3337,/gb/east-dunbartonshire/bearsden
+GB,,Bishopbriggs,East Dunbartonshire,55.9046,-4.225,/gb/east-dunbartonshire/bishopbriggs
+GB,,Kirkintilloch,East Dunbartonshire,55.938,-4.155,/gb/east-dunbartonshire/kirkintilloch
+GB,,Musselburgh,East Lothian,55.942,-3.054,/gb/east-lothian/musselburgh
+GB,,Barrhead,East Renfrewshire,55.801,-4.389,/gb/east-renfrewshire/barrhead
+GB,,Newton Mearns,East Renfrewshire,55.7716,-4.3347,/gb/east-renfrewshire/newton-mearns
+GB,,Pollokshaws,East Renfrewshire,55.8252,-4.2947,/gb/east-renfrewshire/pollokshaws
+GB,,Beverley,East Riding of Yorkshire,53.845,-0.427,/gb/east-riding-of-yorkshire/beverley
+GB,,Bridlington,East Riding of Yorkshire,54.0819,-0.1923,/gb/east-riding-of-yorkshire/bridlington
+GB,,Goole,East Riding of Yorkshire,53.6992,-0.8692,/gb/east-riding-of-yorkshire/goole
+GB,,Hessle,East Riding of Yorkshire,53.7239,-0.4319,/gb/east-riding-of-yorkshire/hessle
+GB,,Bexhill-on-Sea,East Sussex,50.85,0.47,/gb/east-sussex/bexhill-on-sea
+GB,,Crowborough,East Sussex,51.06,0.16,/gb/east-sussex/crowborough
+GB,,Eastbourne,East Sussex,50.77,0.28,/gb/east-sussex/eastbourne
+GB,,Hailsham,East Sussex,50.8647,0.2577,/gb/east-sussex/hailsham
+GB,,Hastings,East Sussex,50.85,0.57,/gb/east-sussex/hastings
+GB,,Lewes,East Sussex,50.8747,0.0117,/gb/east-sussex/lewes
+GB,,Seaford,East Sussex,50.77,0.1,/gb/east-sussex/seaford
+GB,,Uckfield,East Sussex,50.97,0.1,/gb/east-sussex/uckfield
+GB,,Edinburgh,"Edinburgh, City of",55.95,-3.1833,/gb/edinburgh-city-of/edinburgh
+GB,,Leith,"Edinburgh, City of",55.98,-3.17,/gb/edinburgh-city-of/leith
+GB,,Edmonton,Enfield,51.6154,-0.0708,/gb/enfield/edmonton
+GB,,Enfield,Enfield,51.6522,-0.0808,/gb/enfield/enfield
+GB,,Enfield Lock,Enfield,51.6686,-0.026,/gb/enfield/enfield-lock
+GB,,Palmers Green,Enfield,51.6178,-0.1092,/gb/enfield/palmers-green
+GB,,Ponders End,Enfield,51.646,-0.046,/gb/enfield/ponders-end
+GB,,Southgate,Enfield,51.6316,-0.1265,/gb/enfield/southgate
+GB,,Basildon,Essex,51.58,0.49,/gb/essex/basildon
+GB,,Billericay,Essex,51.628,0.4184,/gb/essex/billericay
+GB,,Braintree,Essex,51.878,0.55,/gb/essex/braintree
+GB,,Brentwood,Essex,51.62,0.305,/gb/essex/brentwood
+GB,,Broxbourne,Essex,51.7495,-0.0216,/gb/essex/broxbourne
+GB,,Canvey Island,Essex,51.525,0.5725,/gb/essex/canvey-island
+GB,,Chelmsford,Essex,51.73,0.48,/gb/essex/chelmsford
+GB,,Chigwell,Essex,51.6225,0.0723,/gb/essex/chigwell
+GB,,Clacton-on-Sea,Essex,51.7918,1.1457,/gb/essex/clacton-on-sea
+GB,,Colchester,Essex,51.8917,0.903,/gb/essex/colchester
+GB,,Great Baddow,Essex,51.719,0.507,/gb/essex/great-baddow
+GB,,Hadleigh,Essex,51.5535,0.6095,/gb/essex/hadleigh
+GB,,Harlow,Essex,51.779,0.128,/gb/essex/harlow
+GB,,Harwich,Essex,51.934,1.266,/gb/essex/harwich
+GB,,Laindon,Essex,51.574,0.4181,/gb/essex/laindon
+GB,,Loughton,Essex,51.6494,0.0735,/gb/essex/loughton
+GB,,Pitsea,Essex,51.569,0.504,/gb/essex/pitsea
+GB,,Rayleigh,Essex,51.5864,0.6049,/gb/essex/rayleigh
+GB,,Saffron Walden,Essex,52.022,0.243,/gb/essex/saffron-walden
+GB,,South Woodham Ferrers,Essex,51.651,0.6124,/gb/essex/south-woodham-ferrers
+GB,,Thundersley,Essex,51.57,0.59,/gb/essex/thundersley
+GB,,Waltham Abbey,Essex,51.6846,0.0004,/gb/essex/waltham-abbey
+GB,,Wickford,Essex,51.6114,0.5207,/gb/essex/wickford
+GB,,Witham,Essex,51.7978,0.6373,/gb/essex/witham
+GB,,Bo’ness,Falkirk,56.0168,-3.6089,/gb/falkirk/boness
+GB,,Falkirk,Falkirk,56.0011,-3.7835,/gb/falkirk/falkirk
+GB,,Grangemouth,Falkirk,56.012,-3.717,/gb/falkirk/grangemouth
+GB,,Omagh,Fermanagh and Omagh,54.598,-7.309,/gb/fermanagh-and-omagh/omagh
+GB,,Dunfermline,Fife,56.0719,-3.4393,/gb/fife/dunfermline
+GB,,Glenrothes,Fife,56.198,-3.178,/gb/fife/glenrothes
+GB,,Kirkcaldy,Fife,56.1107,-3.1674,/gb/fife/kirkcaldy
+GB,,Saint Andrews,Fife,56.3404,-2.7955,/gb/fife/saint-andrews
+GB,,Buckley,Flintshire,53.172,-3.086,/gb/flintshire/buckley
+GB,,Connahs Quay,Flintshire,53.218,-3.057,/gb/flintshire/connahs-quay
+GB,,Blaydon,Gateshead,54.963,-1.719,/gb/gateshead/blaydon
+GB,,Gateshead,Gateshead,54.9556,-1.6,/gb/gateshead/gateshead
+GB,,Whickham,Gateshead,54.946,-1.6761,/gb/gateshead/whickham
+GB,,Bailleston,Glasgow City,55.8474,-4.1147,/gb/glasgow-city/bailleston
+GB,,Glasgow,Glasgow City,55.8611,-4.25,/gb/glasgow-city/glasgow
+GB,,Rutherglen,Glasgow City,55.828,-4.214,/gb/glasgow-city/rutherglen
+GB,,Cheltenham,Gloucestershire,51.9,-2.0667,/gb/gloucestershire/cheltenham
+GB,,Cirencester,Gloucestershire,51.7167,-1.9667,/gb/gloucestershire/cirencester
+GB,,Gloucester,Gloucestershire,51.8653,-2.2458,/gb/gloucestershire/gloucester
+GB,,Quedgeley,Gloucestershire,51.825,-2.28,/gb/gloucestershire/quedgeley
+GB,,Eltham,Greenwich,51.451,0.052,/gb/greenwich/eltham
+GB,,Greenwich,Greenwich,51.4728,0.053,/gb/greenwich/greenwich
+GB,,Kidbrooke,Greenwich,51.4621,0.0273,/gb/greenwich/kidbrooke
+GB,,Plumstead,Greenwich,51.49,0.09,/gb/greenwich/plumstead
+GB,,Woolwich,Greenwich,51.488,0.063,/gb/greenwich/woolwich
+GB,,Runcorn,Halton,53.3417,-2.7313,/gb/halton/runcorn
+GB,,Weston,Halton,53.413,-2.798,/gb/halton/weston
+GB,,Widnes,Halton,53.362,-2.734,/gb/halton/widnes
+GB,,Fulham,Hammersmith and Fulham,51.4828,-0.195,/gb/hammersmith-and-fulham/fulham
+GB,,Hammersmith,Hammersmith and Fulham,51.4928,-0.2229,/gb/hammersmith-and-fulham/hammersmith
+GB,,Hammersmith and Fulham,Hammersmith and Fulham,51.4936,-0.2197,/gb/hammersmith-and-fulham/hammersmith-and-fulham
+GB,,Aldershot,Hampshire,51.2483,-0.7614,/gb/hampshire/aldershot
+GB,,Alton,Hampshire,51.1498,-0.9769,/gb/hampshire/alton
+GB,,Andover,Hampshire,51.208,-1.48,/gb/hampshire/andover
+GB,,Basingstoke,Hampshire,51.2667,-1.0876,/gb/hampshire/basingstoke
+GB,,Chandlers Ford,Hampshire,50.984,-1.3792,/gb/hampshire/chandlers-ford
+GB,,Eastleigh,Hampshire,50.9667,-1.35,/gb/hampshire/eastleigh
+GB,,Fareham,Hampshire,50.85,-1.18,/gb/hampshire/fareham
+GB,,Farnborough,Hampshire,51.29,-0.75,/gb/hampshire/farnborough
+GB,,Fleet,Hampshire,51.2834,-0.8456,/gb/hampshire/fleet
+GB,,Gosport,Hampshire,50.79,-1.12,/gb/hampshire/gosport
+GB,,Havant,Hampshire,50.8517,-0.9842,/gb/hampshire/havant
+GB,,Hedge End,Hampshire,50.9135,-1.3041,/gb/hampshire/hedge-end
+GB,,Hythe,Hampshire,50.869,-1.399,/gb/hampshire/hythe
+GB,,Locks Heath,Hampshire,50.862,-1.269,/gb/hampshire/locks-heath
+GB,,Lymington,Hampshire,50.75,-1.55,/gb/hampshire/lymington
+GB,,New Milton,Hampshire,50.76,-1.65,/gb/hampshire/new-milton
+GB,,Petersfield,Hampshire,51.0038,-0.9374,/gb/hampshire/petersfield
+GB,,Portchester,Hampshire,50.842,-1.12,/gb/hampshire/portchester
+GB,,Ringwood,Hampshire,50.8829,-1.7314,/gb/hampshire/ringwood
+GB,,Romsey,Hampshire,50.989,-1.4966,/gb/hampshire/romsey
+GB,,Sandhurst,Hampshire,51.349,-0.8,/gb/hampshire/sandhurst
+GB,,South Hayling,Hampshire,50.78,-0.97,/gb/hampshire/south-hayling
+GB,,Totton,Hampshire,50.9188,-1.4904,/gb/hampshire/totton
+GB,,Waterlooville,Hampshire,50.88,-1.03,/gb/hampshire/waterlooville
+GB,,Winchester,Hampshire,51.0632,-1.308,/gb/hampshire/winchester
+GB,,Yateley,Hampshire,51.341,-0.833,/gb/hampshire/yateley
+GB,,Haringey,Haringey,51.5901,-0.1074,/gb/haringey/haringey
+GB,,Harringay,Haringey,51.5819,-0.0994,/gb/haringey/harringay
+GB,,Tottenham,Haringey,51.5975,-0.0681,/gb/haringey/tottenham
+GB,,Wood Green,Haringey,51.5981,-0.1149,/gb/haringey/wood-green
+GB,,Harrow,Harrow,51.5836,-0.3464,/gb/harrow/harrow
+GB,,Pinner,Harrow,51.5932,-0.3894,/gb/harrow/pinner
+GB,,Stanmore,Harrow,51.618,-0.314,/gb/harrow/stanmore
+GB,,Hartlepool,Hartlepool,54.69,-1.21,/gb/hartlepool/hartlepool
+GB,,Havering,Havering,51.5686,0.207,/gb/havering/havering
+GB,,Hornchurch,Havering,51.5565,0.2128,/gb/havering/hornchurch
+GB,,Romford,Havering,51.5768,0.1801,/gb/havering/romford
+GB,,Upminster,Havering,51.5557,0.2512,/gb/havering/upminster
+GB,,Hereford,Herefordshire,52.056,-2.716,/gb/herefordshire/hereford
+GB,,Abbots Langley,Hertfordshire,51.701,-0.416,/gb/hertfordshire/abbots-langley
+GB,,Berkhampstead,Hertfordshire,51.76,-0.56,/gb/hertfordshire/berkhampstead
+GB,,Bishops Stortford,Hertfordshire,51.872,0.1725,/gb/hertfordshire/bishops-stortford
+GB,,Borehamwood,Hertfordshire,51.6578,-0.2722,/gb/hertfordshire/borehamwood
+GB,,Bushey,Hertfordshire,51.6429,-0.3604,/gb/hertfordshire/bushey
+GB,,Cheshunt,Hertfordshire,51.702,-0.035,/gb/hertfordshire/cheshunt
+GB,,Garston,Hertfordshire,51.6889,-0.3845,/gb/hertfordshire/garston
+GB,,Harpenden,Hertfordshire,51.8175,-0.3524,/gb/hertfordshire/harpenden
+GB,,Hatfield,Hertfordshire,51.7636,-0.2258,/gb/hertfordshire/hatfield
+GB,,Hemel Hempstead,Hertfordshire,51.7526,-0.4692,/gb/hertfordshire/hemel-hempstead
+GB,,Hertford,Hertfordshire,51.7966,-0.0774,/gb/hertfordshire/hertford
+GB,,Hitchin,Hertfordshire,51.947,-0.283,/gb/hertfordshire/hitchin
+GB,,Hoddesdon,Hertfordshire,51.759,-0.015,/gb/hertfordshire/hoddesdon
+GB,,Letchworth,Hertfordshire,51.978,-0.23,/gb/hertfordshire/letchworth
+GB,,Potters Bar,Hertfordshire,51.698,-0.183,/gb/hertfordshire/potters-bar
+GB,,Rickmansworth,Hertfordshire,51.6383,-0.4659,/gb/hertfordshire/rickmansworth
+GB,,Royston,Hertfordshire,52.0471,-0.0202,/gb/hertfordshire/royston
+GB,,Saint Albans,Hertfordshire,51.755,-0.336,/gb/hertfordshire/saint-albans
+GB,,Stevenage,Hertfordshire,51.9017,-0.2019,/gb/hertfordshire/stevenage
+GB,,Ware,Hertfordshire,51.8108,-0.0314,/gb/hertfordshire/ware
+GB,,Watford,Hertfordshire,51.655,-0.3957,/gb/hertfordshire/watford
+GB,,Welwyn Garden City,Hertfordshire,51.8062,-0.1932,/gb/hertfordshire/welwyn-garden-city
+GB,,Inverness,Highland,57.4778,-4.2247,/gb/highland/inverness
+GB,,Hayes,Hillingdon,51.5127,-0.4211,/gb/hillingdon/hayes
+GB,,Hillingdon,Hillingdon,51.5329,-0.455,/gb/hillingdon/hillingdon
+GB,,Northwood,Hillingdon,51.601,-0.4176,/gb/hillingdon/northwood
+GB,,Ruislip,Hillingdon,51.576,-0.433,/gb/hillingdon/ruislip
+GB,,Uxbridge,Hillingdon,51.5404,-0.4778,/gb/hillingdon/uxbridge
+GB,,West Drayton,Hillingdon,51.5043,-0.4646,/gb/hillingdon/west-drayton
+GB,,Brentford,Hounslow,51.486,-0.31,/gb/hounslow/brentford
+GB,,Feltham,Hounslow,51.4496,-0.4089,/gb/hounslow/feltham
+GB,,Hounslow,Hounslow,51.4668,-0.375,/gb/hounslow/hounslow
+GB,,Greenock,Inverclyde,55.95,-4.765,/gb/inverclyde/greenock
+GB,,Port Glasgow,Inverclyde,55.934,-4.6906,/gb/inverclyde/port-glasgow
+GB,,Bangor,Isle of Anglesey,53.228,-4.128,/gb/isle-of-anglesey/bangor
+GB,,Newport,Isle of Wight,50.701,-1.2883,/gb/isle-of-wight/newport
+GB,,Ryde,Isle of Wight,50.7271,-1.1618,/gb/isle-of-wight/ryde
+GB,,Highbury,Islington,51.552,-0.097,/gb/islington/highbury
+GB,,Islington,Islington,51.544,-0.1027,/gb/islington/islington
+GB,,Kensington,Kensington and Chelsea,51.5,-0.19,/gb/kensington-and-chelsea/kensington
+GB,,Kensington and Chelsea,Kensington and Chelsea,51.5011,-0.1923,/gb/kensington-and-chelsea/kensington-and-chelsea
+GB,,Ashford,Kent,51.1465,0.8676,/gb/kent/ashford
+GB,,Broadstairs,Kent,51.3589,1.4394,/gb/kent/broadstairs
+GB,,Canterbury,Kent,51.28,1.08,/gb/kent/canterbury
+GB,,Dartford,Kent,51.4444,0.2172,/gb/kent/dartford
+GB,,Deal,Kent,51.2226,1.4006,/gb/kent/deal
+GB,,Dover,Kent,51.1295,1.3089,/gb/kent/dover
+GB,,Faversham,Kent,51.3177,0.8928,/gb/kent/faversham
+GB,,Folkestone,Kent,51.0792,1.1794,/gb/kent/folkestone
+GB,,Gravesend,Kent,51.4415,0.3685,/gb/kent/gravesend
+GB,,Herne Bay,Kent,51.37,1.13,/gb/kent/herne-bay
+GB,,Larkfield,Kent,51.2995,0.4429,/gb/kent/larkfield
+GB,,Maidstone,Kent,51.272,0.529,/gb/kent/maidstone
+GB,,Margate,Kent,51.385,1.3838,/gb/kent/margate
+GB,,Minster,Kent,51.421,0.809,/gb/kent/minster
+GB,,Northfleet,Kent,51.44,0.34,/gb/kent/northfleet
+GB,,Ramsgate,Kent,51.336,1.416,/gb/kent/ramsgate
+GB,,Royal Tunbridge Wells,Kent,51.132,0.263,/gb/kent/royal-tunbridge-wells
+GB,,Sevenoaks,Kent,51.2781,0.1874,/gb/kent/sevenoaks
+GB,,Sittingbourne,Kent,51.34,0.74,/gb/kent/sittingbourne
+GB,,Swanley,Kent,51.395,0.175,/gb/kent/swanley
+GB,,Tonbridge,Kent,51.1987,0.2764,/gb/kent/tonbridge
+GB,,Whitstable,Kent,51.361,1.026,/gb/kent/whitstable
+GB,,Cottingham,"Kingston upon Hull, City of",53.7822,-0.4136,/gb/kingston-upon-hull-city-of/cottingham
+GB,,Kingston upon Hull,"Kingston upon Hull, City of",53.7444,-0.3325,/gb/kingston-upon-hull-city-of/kingston-upon-hull
+GB,,Kingston upon Thames,Kingston upon Thames,51.4103,-0.2995,/gb/kingston-upon-thames/kingston-upon-thames
+GB,,Surbiton,Kingston upon Thames,51.394,-0.307,/gb/kingston-upon-thames/surbiton
+GB,,Almondbury,Kirklees,53.6344,-1.7489,/gb/kirklees/almondbury
+GB,,Batley,Kirklees,53.7167,-1.6356,/gb/kirklees/batley
+GB,,Birstall,Kirklees,53.732,-1.66,/gb/kirklees/birstall
+GB,,Cleckheaton,Kirklees,53.725,-1.719,/gb/kirklees/cleckheaton
+GB,,Denby Dale,Kirklees,53.572,-1.655,/gb/kirklees/denby-dale
+GB,,Dewsbury,Kirklees,53.691,-1.633,/gb/kirklees/dewsbury
+GB,,Heckmondwike,Kirklees,53.708,-1.67,/gb/kirklees/heckmondwike
+GB,,Huddersfield,Kirklees,53.645,-1.7798,/gb/kirklees/huddersfield
+GB,,Kirkburton,Kirklees,53.61,-1.703,/gb/kirklees/kirkburton
+GB,,Liversedge,Kirklees,53.7067,-1.69,/gb/kirklees/liversedge
+GB,,Mirfield,Kirklees,53.6807,-1.6888,/gb/kirklees/mirfield
+GB,,Halewood,Knowsley,53.3599,-2.84,/gb/knowsley/halewood
+GB,,Huyton,Knowsley,53.4111,-2.8403,/gb/knowsley/huyton
+GB,,Kirkby,Knowsley,53.48,-2.89,/gb/knowsley/kirkby
+GB,,Brixton,Lambeth,51.4575,-0.1175,/gb/lambeth/brixton
+GB,,Streatham,Lambeth,51.4279,-0.1235,/gb/lambeth/streatham
+GB,,Accrington,Lancashire,53.7534,-2.3638,/gb/lancashire/accrington
+GB,,Appley Bridge,Lancashire,53.579,-2.721,/gb/lancashire/appley-bridge
+GB,,Burnley,Lancashire,53.789,-2.248,/gb/lancashire/burnley
+GB,,Chorley,Lancashire,53.653,-2.632,/gb/lancashire/chorley
+GB,,Clitheroe,Lancashire,53.8711,-2.3916,/gb/lancashire/clitheroe
+GB,,Colne,Lancashire,53.8554,-2.1756,/gb/lancashire/colne
+GB,,Fleetwood,Lancashire,53.922,-3.012,/gb/lancashire/fleetwood
+GB,,Fulwood,Lancashire,53.7794,-2.6936,/gb/lancashire/fulwood
+GB,,Haslingden,Lancashire,53.705,-2.328,/gb/lancashire/haslingden
+GB,,Heysham,Lancashire,54.046,-2.894,/gb/lancashire/heysham
+GB,,Lancaster,Lancashire,54.0489,-2.8014,/gb/lancashire/lancaster
+GB,,Leyland,Lancashire,53.6903,-2.6992,/gb/lancashire/leyland
+GB,,Morecambe,Lancashire,54.073,-2.87,/gb/lancashire/morecambe
+GB,,Nelson,Lancashire,53.8346,-2.218,/gb/lancashire/nelson
+GB,,Ormskirk,Lancashire,53.5665,-2.8869,/gb/lancashire/ormskirk
+GB,,Penwortham,Lancashire,53.74,-2.72,/gb/lancashire/penwortham
+GB,,Poulton le Fylde,Lancashire,53.847,-2.995,/gb/lancashire/poulton-le-fylde
+GB,,Preston,Lancashire,53.83,-2.735,/gb/lancashire/preston
+GB,,Rawtenstall,Lancashire,53.699,-2.291,/gb/lancashire/rawtenstall
+GB,,Saint Annes on the Sea,Lancashire,53.7513,-3.032,/gb/lancashire/saint-annes-on-the-sea
+GB,,Skelmersdale,Lancashire,53.55,-2.776,/gb/lancashire/skelmersdale
+GB,,Thornton,Lancashire,53.871,-3.004,/gb/lancashire/thornton
+GB,,Adel,Leeds,53.8489,-1.5849,/gb/leeds/adel
+GB,,Farnley,Leeds,53.7876,-1.6159,/gb/leeds/farnley
+GB,,Farsley,Leeds,53.8116,-1.6718,/gb/leeds/farsley
+GB,,Garforth,Leeds,53.792,-1.388,/gb/leeds/garforth
+GB,,Guiseley,Leeds,53.875,-1.706,/gb/leeds/guiseley
+GB,,Horsforth,Leeds,53.837,-1.643,/gb/leeds/horsforth
+GB,,Kirkstall,Leeds,53.816,-1.602,/gb/leeds/kirkstall
+GB,,Leeds,Leeds,53.7975,-1.5436,/gb/leeds/leeds
+GB,,Morley,Leeds,53.7492,-1.6023,/gb/leeds/morley
+GB,,Otley,Leeds,53.905,-1.687,/gb/leeds/otley
+GB,,Pudsey,Leeds,53.797,-1.663,/gb/leeds/pudsey
+GB,,Rothwell,Leeds,53.7485,-1.478,/gb/leeds/rothwell
+GB,,Woodlesford,Leeds,53.7567,-1.453,/gb/leeds/woodlesford
+GB,,Yeadon,Leeds,53.869,-1.688,/gb/leeds/yeadon
+GB,,Leicester,Leicester,52.6361,-1.1331,/gb/leicester/leicester
+GB,,Ashby de la Zouch,Leicestershire,52.746,-1.476,/gb/leicestershire/ashby-de-la-zouch
+GB,,Braunstone,Leicestershire,52.616,-1.175,/gb/leicestershire/braunstone
+GB,,Burbage,Leicestershire,52.5272,-1.3483,/gb/leicestershire/burbage
+GB,,Coalville,Leicestershire,52.724,-1.369,/gb/leicestershire/coalville
+GB,,Hinckley,Leicestershire,52.5413,-1.3725,/gb/leicestershire/hinckley
+GB,,Loughborough,Leicestershire,52.7725,-1.2078,/gb/leicestershire/loughborough
+GB,,Market Harborough,Leicestershire,52.4775,-0.9206,/gb/leicestershire/market-harborough
+GB,,Melton Mowbray,Leicestershire,52.7661,-0.8884,/gb/leicestershire/melton-mowbray
+GB,,Oadby,Leicestershire,52.5987,-1.0763,/gb/leicestershire/oadby
+GB,,Shepshed,Leicestershire,52.7711,-1.2951,/gb/leicestershire/shepshed
+GB,,Wigston Magna,Leicestershire,52.5812,-1.093,/gb/leicestershire/wigston-magna
+GB,,Catford,Lewisham,51.4452,-0.0207,/gb/lewisham/catford
+GB,,Lewisham,Lewisham,51.461,-0.005,/gb/lewisham/lewisham
+GB,,Boston,Lincolnshire,52.974,-0.0214,/gb/lincolnshire/boston
+GB,,Bourne,Lincolnshire,52.7684,-0.3775,/gb/lincolnshire/bourne
+GB,,Gainsborough,Lincolnshire,53.4016,-0.7732,/gb/lincolnshire/gainsborough
+GB,,Grantham,Lincolnshire,52.918,-0.638,/gb/lincolnshire/grantham
+GB,,Lincoln,Lincolnshire,53.2283,-0.5389,/gb/lincolnshire/lincoln
+GB,,Louth,Lincolnshire,53.3669,-0.0061,/gb/lincolnshire/louth
+GB,,North Hykeham,Lincolnshire,53.1833,-0.5875,/gb/lincolnshire/north-hykeham
+GB,,Skegness,Lincolnshire,53.1436,0.3428,/gb/lincolnshire/skegness
+GB,,Sleaford,Lincolnshire,52.996,-0.413,/gb/lincolnshire/sleaford
+GB,,Spalding,Lincolnshire,52.7858,-0.1529,/gb/lincolnshire/spalding
+GB,,Stamford,Lincolnshire,52.656,-0.484,/gb/lincolnshire/stamford
+GB,,Lisburn,Lisburn and Castlereagh,54.512,-6.031,/gb/lisburn-and-castlereagh/lisburn
+GB,,Deysbrook,Liverpool,53.429,-2.934,/gb/liverpool/deysbrook
+GB,,Fazakerley,Liverpool,53.4676,-2.9408,/gb/liverpool/fazakerley
+GB,,Liverpool,Liverpool,53.4072,-2.9917,/gb/liverpool/liverpool
+GB,,West Derby,Liverpool,53.4338,-2.907,/gb/liverpool/west-derby
+GB,,London,"London, City of",51.5072,-0.1275,/gb/london-city-of/london
+GB,,Luton,Luton,51.8783,-0.4147,/gb/luton/luton
+GB,,Baguley,Manchester,53.399,-2.276,/gb/manchester/baguley
+GB,,Manchester,Manchester,53.479,-2.2452,/gb/manchester/manchester
+GB,,Moston,Manchester,53.5156,-2.1848,/gb/manchester/moston
+GB,,Northenden,Manchester,53.4075,-2.2583,/gb/manchester/northenden
+GB,,Old Trafford,Manchester,53.4631,-2.2914,/gb/manchester/old-trafford
+GB,,Wythenshawe,Manchester,53.392,-2.264,/gb/manchester/wythenshawe
+GB,,Chatham,Medway,51.37,0.52,/gb/medway/chatham
+GB,,Gillingham,Medway,51.385,0.55,/gb/medway/gillingham
+GB,,Rainham,Medway,51.36,0.61,/gb/medway/rainham
+GB,,Rochester,Medway,51.375,0.5,/gb/medway/rochester
+GB,,Strood,Medway,51.393,0.478,/gb/medway/strood
+GB,,Merthyr Tudful,Merthyr Tydfil,51.743,-3.378,/gb/merthyr-tydfil/merthyr-tudful
+GB,,Merton,Merton,51.4096,-0.1953,/gb/merton/merton
+GB,,Mitcham,Merton,51.4009,-0.1517,/gb/merton/mitcham
+GB,,Morden,Merton,51.4015,-0.1949,/gb/merton/morden
+GB,,Wimbledon,Merton,51.422,-0.208,/gb/merton/wimbledon
+GB,,Ballymena,Mid and East Antrim,54.86,-6.28,/gb/mid-and-east-antrim/ballymena
+GB,,Carrickfergus,Mid and East Antrim,54.7136,-5.8075,/gb/mid-and-east-antrim/carrickfergus
+GB,,Larne,Mid and East Antrim,54.8517,-5.8133,/gb/mid-and-east-antrim/larne
+GB,,Dungannon,Mid-Ulster,54.5,-6.77,/gb/mid-ulster/dungannon
+GB,,Bonnyrigg,Midlothian,55.8747,-3.1031,/gb/midlothian/bonnyrigg
+GB,,Mayfield,Midlothian,55.8713,-3.0362,/gb/midlothian/mayfield
+GB,,Penicuik,Midlothian,55.826,-3.22,/gb/midlothian/penicuik
+GB,,Bletchley,Milton Keynes,51.994,-0.732,/gb/milton-keynes/bletchley
+GB,,Great Linford,Milton Keynes,52.068,-0.7637,/gb/milton-keynes/great-linford
+GB,,Milton Keynes,Milton Keynes,52.04,-0.76,/gb/milton-keynes/milton-keynes
+GB,,Newport Pagnell,Milton Keynes,52.087,-0.722,/gb/milton-keynes/newport-pagnell
+GB,,Shenley Brook End,Milton Keynes,52.009,-0.789,/gb/milton-keynes/shenley-brook-end
+GB,,Elgin,Moray,57.6486,-3.3153,/gb/moray/elgin
+GB,,Neath,Neath Port Talbot,51.66,-3.81,/gb/neath-port-talbot/neath
+GB,,Port Talbot,Neath Port Talbot,51.5906,-3.7986,/gb/neath-port-talbot/port-talbot
+GB,,Gosforth,Newcastle upon Tyne,55.007,-1.623,/gb/newcastle-upon-tyne/gosforth
+GB,,Newcastle,Newcastle upon Tyne,54.978,-1.6102,/gb/newcastle-upon-tyne/newcastle
+GB,,East Ham,Newham,51.5323,0.0554,/gb/newham/east-ham
+GB,,Newham,Newham,51.5275,0.0361,/gb/newham/newham
+GB,,Stratford,Newham,51.5423,-0.0026,/gb/newham/stratford
+GB,,West Ham,Newham,51.534,0.008,/gb/newham/west-ham
+GB,,Newport,Newport,51.5886,-2.9978,/gb/newport/newport
+GB,,Newry,"Newry, Mourne and Down",54.176,-6.349,/gb/newry-mourne-and-down/newry
+GB,,Costessey,Norfolk,52.6602,1.2161,/gb/norfolk/costessey
+GB,,East Dereham,Norfolk,52.681,0.94,/gb/norfolk/east-dereham
+GB,,Gorleston-on-Sea,Norfolk,52.5757,1.7235,/gb/norfolk/gorleston-on-sea
+GB,,Great Yarmouth,Norfolk,52.6078,1.7331,/gb/norfolk/great-yarmouth
+GB,,King’s Lynn,Norfolk,52.754,0.398,/gb/norfolk/kings-lynn
+GB,,Norwich,Norfolk,52.6286,1.2928,/gb/norfolk/norwich
+GB,,Thetford,Norfolk,52.41,0.74,/gb/norfolk/thetford
+GB,,Thorpe Saint Andrew,Norfolk,52.6354,1.3431,/gb/norfolk/thorpe-saint-andrew
+GB,,Wymondham,Norfolk,52.57,1.116,/gb/norfolk/wymondham
+GB,,Irvine,North Ayrshire,55.6201,-4.6614,/gb/north-ayrshire/irvine
+GB,,Kilwinning,North Ayrshire,55.655,-4.703,/gb/north-ayrshire/kilwinning
+GB,,Cleethorpes,North East Lincolnshire,53.5533,-0.0215,/gb/north-east-lincolnshire/cleethorpes
+GB,,Grimsby,North East Lincolnshire,53.5675,-0.08,/gb/north-east-lincolnshire/grimsby
+GB,,Airdrie,North Lanarkshire,55.86,-3.98,/gb/north-lanarkshire/airdrie
+GB,,Bellshill,North Lanarkshire,55.816,-4.026,/gb/north-lanarkshire/bellshill
+GB,,Coatbridge,North Lanarkshire,55.8625,-4.0266,/gb/north-lanarkshire/coatbridge
+GB,,Cumbernauld,North Lanarkshire,55.945,-3.994,/gb/north-lanarkshire/cumbernauld
+GB,,Motherwell,North Lanarkshire,55.7839,-3.9852,/gb/north-lanarkshire/motherwell
+GB,,Viewpark,North Lanarkshire,55.8311,-4.0542,/gb/north-lanarkshire/viewpark
+GB,,Wishaw,North Lanarkshire,55.7742,-3.9183,/gb/north-lanarkshire/wishaw
+GB,,Scunthorpe,North Lincolnshire,53.5809,-0.6502,/gb/north-lincolnshire/scunthorpe
+GB,,Clevedon,North Somerset,51.438,-2.854,/gb/north-somerset/clevedon
+GB,,Nailsea,North Somerset,51.43,-2.76,/gb/north-somerset/nailsea
+GB,,Portishead,North Somerset,51.484,-2.7626,/gb/north-somerset/portishead
+GB,,Weston-super-Mare,North Somerset,51.346,-2.977,/gb/north-somerset/weston-super-mare
+GB,,Killingworth,North Tyneside,55.0318,-1.5557,/gb/north-tyneside/killingworth
+GB,,Monkseaton,North Tyneside,55.043,-1.459,/gb/north-tyneside/monkseaton
+GB,,North Shields,North Tyneside,55.0097,-1.4448,/gb/north-tyneside/north-shields
+GB,,Tynemouth,North Tyneside,55.017,-1.423,/gb/north-tyneside/tynemouth
+GB,,Wallsend,North Tyneside,54.991,-1.534,/gb/north-tyneside/wallsend
+GB,,Whitley Bay,North Tyneside,55.0456,-1.4443,/gb/north-tyneside/whitley-bay
+GB,,Harrogate,North Yorkshire,53.9919,-1.5378,/gb/north-yorkshire/harrogate
+GB,,Knaresborough,North Yorkshire,54.0084,-1.467,/gb/north-yorkshire/knaresborough
+GB,,Ripon,North Yorkshire,54.1361,-1.5236,/gb/north-yorkshire/ripon
+GB,,Scarborough,North Yorkshire,54.2825,-0.4,/gb/north-yorkshire/scarborough
+GB,,Selby,North Yorkshire,53.7836,-1.0678,/gb/north-yorkshire/selby
+GB,,Skipton,North Yorkshire,53.9625,-2.0163,/gb/north-yorkshire/skipton
+GB,,Corby,Northamptonshire,52.4877,-0.7013,/gb/northamptonshire/corby
+GB,,Daventry,Northamptonshire,52.2578,-1.1628,/gb/northamptonshire/daventry
+GB,,Kettering,Northamptonshire,52.3931,-0.7229,/gb/northamptonshire/kettering
+GB,,Northampton,Northamptonshire,52.2304,-0.8938,/gb/northamptonshire/northampton
+GB,,Rushden,Northamptonshire,52.288,-0.601,/gb/northamptonshire/rushden
+GB,,Wellingborough,Northamptonshire,52.3028,-0.6944,/gb/northamptonshire/wellingborough
+GB,,Ashington,Northumberland,55.181,-1.568,/gb/northumberland/ashington
+GB,,Bedlington,Northumberland,55.133,-1.583,/gb/northumberland/bedlington
+GB,,Blyth,Northumberland,55.126,-1.514,/gb/northumberland/blyth
+GB,,Cramlington,Northumberland,55.082,-1.585,/gb/northumberland/cramlington
+GB,,Morpeth,Northumberland,55.1675,-1.6908,/gb/northumberland/morpeth
+GB,,Basford,Nottingham,52.978,-1.169,/gb/nottingham/basford
+GB,,Bulwell,Nottingham,53.001,-1.197,/gb/nottingham/bulwell
+GB,,Clifton,Nottingham,52.904,-1.177,/gb/nottingham/clifton
+GB,,Nottingham,Nottingham,52.9561,-1.1512,/gb/nottingham/nottingham
+GB,,Arnold,Nottinghamshire,53.005,-1.127,/gb/nottinghamshire/arnold
+GB,,Beeston,Nottinghamshire,52.927,-1.215,/gb/nottinghamshire/beeston
+GB,,East Retford,Nottinghamshire,53.3228,-0.9431,/gb/nottinghamshire/east-retford
+GB,,Eastwood,Nottinghamshire,53.018,-1.304,/gb/nottinghamshire/eastwood
+GB,,Forest Town,Nottinghamshire,53.1526,-1.1569,/gb/nottinghamshire/forest-town
+GB,,Hucknall,Nottinghamshire,53.038,-1.203,/gb/nottinghamshire/hucknall
+GB,,Kirkby in Ashfield,Nottinghamshire,53.099,-1.245,/gb/nottinghamshire/kirkby-in-ashfield
+GB,,Mansfield,Nottinghamshire,53.1444,-1.1964,/gb/nottinghamshire/mansfield
+GB,,Mansfield Woodhouse,Nottinghamshire,53.16,-1.19,/gb/nottinghamshire/mansfield-woodhouse
+GB,,Newark upon Trent,Nottinghamshire,53.0772,-0.8089,/gb/nottinghamshire/newark-upon-trent
+GB,,Retford,Nottinghamshire,53.3228,-0.9431,/gb/nottinghamshire/retford
+GB,,Stapleford,Nottinghamshire,52.929,-1.274,/gb/nottinghamshire/stapleford
+GB,,Sutton in Ashfield,Nottinghamshire,53.125,-1.261,/gb/nottinghamshire/sutton-in-ashfield
+GB,,West Bridgford,Nottinghamshire,52.932,-1.127,/gb/nottinghamshire/west-bridgford
+GB,,Worksop,Nottinghamshire,53.3042,-1.1244,/gb/nottinghamshire/worksop
+GB,,Chadderton,Oldham,53.5462,-2.1426,/gb/oldham/chadderton
+GB,,Failsworth,Oldham,53.5102,-2.1575,/gb/oldham/failsworth
+GB,,Oldham,Oldham,53.5444,-2.1169,/gb/oldham/oldham
+GB,,Royton,Oldham,53.566,-2.121,/gb/oldham/royton
+GB,,Shaw,Oldham,53.5783,-2.0951,/gb/oldham/shaw
+GB,,Abingdon,Oxfordshire,51.6717,-1.2783,/gb/oxfordshire/abingdon
+GB,,Banbury,Oxfordshire,52.061,-1.336,/gb/oxfordshire/banbury
+GB,,Bicester,Oxfordshire,51.9,-1.15,/gb/oxfordshire/bicester
+GB,,Carterton,Oxfordshire,51.76,-1.59,/gb/oxfordshire/carterton
+GB,,Cowley,Oxfordshire,51.733,-1.215,/gb/oxfordshire/cowley
+GB,,Didcot,Oxfordshire,51.606,-1.241,/gb/oxfordshire/didcot
+GB,,Oxford,Oxfordshire,51.7519,-1.2578,/gb/oxfordshire/oxford
+GB,,Witney,Oxfordshire,51.78,-1.49,/gb/oxfordshire/witney
+GB,,Perth,Perth and Kinross,56.3958,-3.4333,/gb/perth-and-kinross/perth
+GB,,Peterborough,Peterborough,52.5661,-0.2364,/gb/peterborough/peterborough
+GB,,Plymouth,Plymouth,50.3714,-4.1422,/gb/plymouth/plymouth
+GB,,Plympton,Plymouth,50.386,-4.051,/gb/plymouth/plympton
+GB,,Plymstock,Plymouth,50.3569,-4.09,/gb/plymouth/plymstock
+GB,,Portsmouth,Portsmouth,50.8058,-1.0872,/gb/portsmouth/portsmouth
+GB,,Caversham,Reading,51.467,-0.973,/gb/reading/caversham
+GB,,Reading,Reading,51.4542,-0.9731,/gb/reading/reading
+GB,,Ilford,Redbridge,51.5575,0.0858,/gb/redbridge/ilford
+GB,,Redbridge,Redbridge,51.5827,0.0701,/gb/redbridge/redbridge
+GB,,Guisborough,Redcar and Cleveland,54.535,-1.0563,/gb/redcar-and-cleveland/guisborough
+GB,,Middlesbrough,Redcar and Cleveland,54.5767,-1.2355,/gb/redcar-and-cleveland/middlesbrough
+GB,,Redcar,Redcar and Cleveland,54.618,-1.069,/gb/redcar-and-cleveland/redcar
+GB,,Johnstone,Renfrewshire,55.8346,-4.5027,/gb/renfrewshire/johnstone
+GB,,Paisley,Renfrewshire,55.8456,-4.4239,/gb/renfrewshire/paisley
+GB,,Renfrew,Renfrewshire,55.878,-4.389,/gb/renfrewshire/renfrew
+GB,,Aberdare,Rhondda Cynon Taff,51.713,-3.445,/gb/rhondda-cynon-taff/aberdare
+GB,,Church Village,"Rhondda, Cynon, Taff",51.5699,-3.3216,/gb/rhondda-cynon-taff/church-village
+GB,,Llantwit Fardre,Rhondda Cynon Taff,51.5578,-3.3341,/gb/rhondda-cynon-taff/llantwit-fardre
+GB,,Pontypridd,Rhondda Cynon Taff,51.602,-3.342,/gb/rhondda-cynon-taff/pontypridd
+GB,,Rhondda,Rhondda Cynon Taff,51.6159,-3.4175,/gb/rhondda-cynon-taff/rhondda
+GB,,Hampton,Richmond upon Thames,51.422,-0.367,/gb/richmond-upon-thames/hampton
+GB,,Kew Green,Richmond upon Thames,51.5308,-0.2248,/gb/richmond-upon-thames/kew-green
+GB,,Richmond,Richmond upon Thames,51.456,-0.301,/gb/richmond-upon-thames/richmond
+GB,,Richmond upon Thames,Richmond upon Thames,51.446,-0.324,/gb/richmond-upon-thames/richmond-upon-thames
+GB,,Twickenham,Richmond upon Thames,51.449,-0.337,/gb/richmond-upon-thames/twickenham
+GB,,Heywood,Rochdale,53.59,-2.219,/gb/rochdale/heywood
+GB,,Middleton,Rochdale,53.555,-2.187,/gb/rochdale/middleton
+GB,,Rochdale,Rochdale,53.61,-2.16,/gb/rochdale/rochdale
+GB,,Maltby,Rotherham,53.426,-1.21,/gb/rotherham/maltby
+GB,,Rawmarsh,Rotherham,53.4636,-1.3439,/gb/rotherham/rawmarsh
+GB,,Rotherham,Rotherham,53.43,-1.357,/gb/rotherham/rotherham
+GB,,Swallownest,Rotherham,53.3623,-1.3251,/gb/rotherham/swallownest
+GB,,Swinton,Rotherham,53.4877,-1.3149,/gb/rotherham/swinton
+GB,,Wath upon Dearne,Rotherham,53.5022,-1.3402,/gb/rotherham/wath-upon-dearne
+GB,,Eccles,Salford,53.4824,-2.339,/gb/salford/eccles
+GB,,Irlam,Salford,53.445,-2.422,/gb/salford/irlam
+GB,,Salford,Salford,53.483,-2.2931,/gb/salford/salford
+GB,,Swinton,Salford,53.5122,-2.3412,/gb/salford/swinton
+GB,,Walkden,Salford,53.5239,-2.3991,/gb/salford/walkden
+GB,,Oldbury,Sandwell,52.505,-2.0159,/gb/sandwell/oldbury
+GB,,Rowley Regis,Sandwell,52.488,-2.05,/gb/sandwell/rowley-regis
+GB,,Smethwick,Sandwell,52.4931,-1.9686,/gb/sandwell/smethwick
+GB,,Wednesbury,Sandwell,52.552,-2.019,/gb/sandwell/wednesbury
+GB,,West Bromwich,Sandwell,52.519,-1.995,/gb/sandwell/west-bromwich
+GB,,Bootle,Sefton,53.4457,-2.9891,/gb/sefton/bootle
+GB,,Crosby,Sefton,53.487,-3.034,/gb/sefton/crosby
+GB,,Formby,Sefton,53.5586,-3.0666,/gb/sefton/formby
+GB,,Litherland,Sefton,53.4727,-2.999,/gb/sefton/litherland
+GB,,Maghull,Sefton,53.5174,-2.9449,/gb/sefton/maghull
+GB,,Southport,Sefton,53.6475,-3.0053,/gb/sefton/southport
+GB,,Ecclesall,Sheffield,53.362,-1.498,/gb/sheffield/ecclesall
+GB,,Ecclesfield,Sheffield,53.4429,-1.4698,/gb/sheffield/ecclesfield
+GB,,Fulwood,Sheffield,53.365,-1.544,/gb/sheffield/fulwood
+GB,,Mosbrough,Sheffield,53.325,-1.362,/gb/sheffield/mosbrough
+GB,,Sheffield,Sheffield,53.3808,-1.4703,/gb/sheffield/sheffield
+GB,,Stannington,Sheffield,53.396,-1.536,/gb/sheffield/stannington
+GB,,Woodhouse,Sheffield,53.358,-1.373,/gb/sheffield/woodhouse
+GB,,Oswestry,Shropshire,52.8598,-3.0538,/gb/shropshire/oswestry
+GB,,Shrewsbury,Shropshire,52.708,-2.754,/gb/shropshire/shrewsbury
+GB,,Slough,Slough,51.5084,-0.5881,/gb/slough/slough
+GB,,Sheldon,Solihull,52.45,-1.7666,/gb/solihull/sheldon
+GB,,Solihull,Solihull,52.413,-1.778,/gb/solihull/solihull
+GB,,Bridgwater,Somerset,51.128,-2.993,/gb/somerset/bridgwater
+GB,,Burnham-on-Sea,Somerset,51.2378,-2.9989,/gb/somerset/burnham-on-sea
+GB,,Chard,Somerset,50.8728,-2.9587,/gb/somerset/chard
+GB,,Frome,Somerset,51.2279,-2.3215,/gb/somerset/frome
+GB,,Taunton,Somerset,51.019,-3.1,/gb/somerset/taunton
+GB,,Wellington,Somerset,50.9755,-3.2243,/gb/somerset/wellington
+GB,,Yeovil,Somerset,50.9452,-2.637,/gb/somerset/yeovil
+GB,,Ayr,South Ayrshire,55.458,-4.629,/gb/south-ayrshire/ayr
+GB,,Prestwick,South Ayrshire,55.4956,-4.6142,/gb/south-ayrshire/prestwick
+GB,,Troon,South Ayrshire,55.54,-4.66,/gb/south-ayrshire/troon
+GB,,Bradley Stoke,South Gloucestershire,51.5293,-2.5456,/gb/south-gloucestershire/bradley-stoke
+GB,,Kingswood,South Gloucestershire,51.46,-2.505,/gb/south-gloucestershire/kingswood
+GB,,Morton,South Gloucestershire,51.6094,-2.5249,/gb/south-gloucestershire/morton
+GB,,Patchway,South Gloucestershire,51.5314,-2.5879,/gb/south-gloucestershire/patchway
+GB,,Stoke Gifford,South Gloucestershire,51.517,-2.548,/gb/south-gloucestershire/stoke-gifford
+GB,,Thornbury,South Gloucestershire,51.6094,-2.5249,/gb/south-gloucestershire/thornbury
+GB,,Yate,South Gloucestershire,51.5402,-2.411,/gb/south-gloucestershire/yate
+GB,,Cambuslang,South Lanarkshire,55.819,-4.1671,/gb/south-lanarkshire/cambuslang
+GB,,East Kilbride,South Lanarkshire,55.7644,-4.1769,/gb/south-lanarkshire/east-kilbride
+GB,,Hamilton,South Lanarkshire,55.777,-4.039,/gb/south-lanarkshire/hamilton
+GB,,High Blantyre,South Lanarkshire,55.7936,-4.0919,/gb/south-lanarkshire/high-blantyre
+GB,,Larkhall,South Lanarkshire,55.737,-3.972,/gb/south-lanarkshire/larkhall
+GB,,Hebburn,South Tyneside,54.972,-1.513,/gb/south-tyneside/hebburn
+GB,,Jarrow,South Tyneside,54.9814,-1.49,/gb/south-tyneside/jarrow
+GB,,South Shields,South Tyneside,54.995,-1.43,/gb/south-tyneside/south-shields
+GB,,Southampton,Southampton,50.9025,-1.4042,/gb/southampton/southampton
+GB,,Leigh-on-Sea,Southend-on-Sea,51.5425,0.6535,/gb/southend-on-sea/leigh-on-sea
+GB,,Shoeburyness,Southend-on-Sea,51.5316,0.7978,/gb/southend-on-sea/shoeburyness
+GB,,Southend,Southend-on-Sea,51.55,0.71,/gb/southend-on-sea/southend
+GB,,Southwark,Southwark,51.4988,-0.0901,/gb/southwark/southwark
+GB,,Newton in Makerfield,St. Helens,53.45,-2.633,/gb/st-helens/newton-in-makerfield
+GB,,Newton-le-Willows,St. Helens,53.45,-2.6,/gb/st-helens/newton-le-willows
+GB,,Saint Helens,St. Helens,53.4542,-2.7361,/gb/st-helens/saint-helens
+GB,,Biddulph,Staffordshire,53.12,-2.17,/gb/staffordshire/biddulph
+GB,,Burntwood,Staffordshire,52.6831,-1.92,/gb/staffordshire/burntwood
+GB,,Burton upon Trent,Staffordshire,52.8019,-1.6367,/gb/staffordshire/burton-upon-trent
+GB,,Cannock,Staffordshire,52.691,-2.027,/gb/staffordshire/cannock
+GB,,Hednesford,Staffordshire,52.7115,-2.0006,/gb/staffordshire/hednesford
+GB,,Kidsgrove,Staffordshire,53.0874,-2.2478,/gb/staffordshire/kidsgrove
+GB,,Kingswinford,Staffordshire,52.498,-2.166,/gb/staffordshire/kingswinford
+GB,,Leek,Staffordshire,53.108,-2.0234,/gb/staffordshire/leek
+GB,,Lichfield,Staffordshire,52.682,-1.829,/gb/staffordshire/lichfield
+GB,,Newcastle under Lyme,Staffordshire,53.0109,-2.2278,/gb/staffordshire/newcastle-under-lyme
+GB,,Rugeley,Staffordshire,52.7599,-1.9388,/gb/staffordshire/rugeley
+GB,,Stafford,Staffordshire,52.807,-2.117,/gb/staffordshire/stafford
+GB,,Stone,Staffordshire,52.9,-2.15,/gb/staffordshire/stone
+GB,,Tamworth,Staffordshire,52.633,-1.695,/gb/staffordshire/tamworth
+GB,,Stirling,Stirling,56.1166,-3.9369,/gb/stirling/stirling
+GB,,Bramhall,Stockport,53.357,-2.164,/gb/stockport/bramhall
+GB,,Bredbury,Stockport,53.42,-2.113,/gb/stockport/bredbury
+GB,,Cheadle Hulme,Stockport,53.3761,-2.1897,/gb/stockport/cheadle-hulme
+GB,,Hazel Grove,Stockport,53.375,-2.111,/gb/stockport/hazel-grove
+GB,,Reddish,Stockport,53.4383,-2.1613,/gb/stockport/reddish
+GB,,Stockport,Stockport,53.4083,-2.1494,/gb/stockport/stockport
+GB,,Billingham,Stockton-on-Tees,54.61,-1.27,/gb/stockton-on-tees/billingham
+GB,,Norton,Stockton-on-Tees,54.589,-1.3157,/gb/stockton-on-tees/norton
+GB,,Stockton-on-Tees,Stockton-on-Tees,54.57,-1.32,/gb/stockton-on-tees/stockton-on-tees
+GB,,Thornaby on Tees,Stockton-on-Tees,54.5585,-1.3025,/gb/stockton-on-tees/thornaby-on-tees
+GB,,Longton,Stoke-on-Trent,52.9877,-2.1327,/gb/stoke-on-trent/longton
+GB,,Milton,Stoke-on-Trent,53.05,-2.142,/gb/stoke-on-trent/milton
+GB,,Stoke-on-Trent,Stoke-on-Trent,53.0255,-2.1761,/gb/stoke-on-trent/stoke-on-trent
+GB,,Bury Saint Edmunds,Suffolk,52.2474,0.7183,/gb/suffolk/bury-saint-edmunds
+GB,,Felixstowe,Suffolk,51.9639,1.3514,/gb/suffolk/felixstowe
+GB,,Haverhill,Suffolk,52.08,0.44,/gb/suffolk/haverhill
+GB,,Ipswich,Suffolk,52.0594,1.1556,/gb/suffolk/ipswich
+GB,,Kesgrave,Suffolk,52.0629,1.2379,/gb/suffolk/kesgrave
+GB,,Lowestoft,Suffolk,52.48,1.75,/gb/suffolk/lowestoft
+GB,,Newmarket,Suffolk,52.2459,0.4105,/gb/suffolk/newmarket
+GB,,Stowmarket,Suffolk,52.19,1,/gb/suffolk/stowmarket
+GB,,Sudbury,Suffolk,52.0417,0.7282,/gb/suffolk/sudbury
+GB,,Hetton le Hole,Sunderland,54.821,-1.449,/gb/sunderland/hetton-le-hole
+GB,,Houghton le Spring,Sunderland,54.841,-1.468,/gb/sunderland/houghton-le-spring
+GB,,Sunderland,Sunderland,54.906,-1.381,/gb/sunderland/sunderland
+GB,,Washington,Sunderland,54.9,-1.52,/gb/sunderland/washington
+GB,,Addlestone,Surrey,51.3695,-0.4901,/gb/surrey/addlestone
+GB,,Ashford,Surrey,51.434,-0.464,/gb/surrey/ashford
+GB,,Banstead,Surrey,51.322,-0.204,/gb/surrey/banstead
+GB,,Camberley,Surrey,51.335,-0.742,/gb/surrey/camberley
+GB,,Caterham,Surrey,51.2803,-0.0816,/gb/surrey/caterham
+GB,,Chertsey,Surrey,51.3902,-0.5074,/gb/surrey/chertsey
+GB,,Epsom,Surrey,51.3331,-0.2686,/gb/surrey/epsom
+GB,,Esher,Surrey,51.3691,-0.365,/gb/surrey/esher
+GB,,Ewell,Surrey,51.35,-0.249,/gb/surrey/ewell
+GB,,Farnham,Surrey,51.215,-0.799,/gb/surrey/farnham
+GB,,Frimley,Surrey,51.3143,-0.7387,/gb/surrey/frimley
+GB,,Godalming,Surrey,51.1855,-0.6155,/gb/surrey/godalming
+GB,,Guildford,Surrey,51.2365,-0.5703,/gb/surrey/guildford
+GB,,Haslemere,Surrey,51.09,-0.712,/gb/surrey/haslemere
+GB,,Horley,Surrey,51.174,-0.172,/gb/surrey/horley
+GB,,Molesey,Surrey,51.401,-0.363,/gb/surrey/molesey
+GB,,Redhill,Surrey,51.2393,-0.1726,/gb/surrey/redhill
+GB,,Reigate,Surrey,51.237,-0.206,/gb/surrey/reigate
+GB,,Staines-upon-Thames,Surrey,51.434,-0.511,/gb/surrey/staines-upon-thames
+GB,,Sunbury,Surrey,51.423,-0.424,/gb/surrey/sunbury
+GB,,Walton upon Thames,Surrey,51.3868,-0.4133,/gb/surrey/walton-upon-thames
+GB,,West Molesey,Surrey,51.4,-0.3667,/gb/surrey/west-molesey
+GB,,Weybridge,Surrey,51.362,-0.453,/gb/surrey/weybridge
+GB,,Windlesham,Surrey,51.36,-0.66,/gb/surrey/windlesham
+GB,,Woking,Surrey,51.305,-0.539,/gb/surrey/woking
+GB,,Carshalton,Sutton,51.3652,-0.1676,/gb/sutton/carshalton
+GB,,Sutton,Sutton,51.3656,-0.1963,/gb/sutton/sutton
+GB,,Wallington,Sutton,51.3647,-0.1403,/gb/sutton/wallington
+GB,,Worcester Park,Sutton,51.3752,-0.239,/gb/sutton/worcester-park
+GB,,Abertawe,Swansea,51.6167,-3.95,/gb/swansea/abertawe
+GB,,Morriston,Swansea,51.6647,-3.9389,/gb/swansea/morriston
+GB,,The Mumbles,Swansea,51.573,-3.9992,/gb/swansea/the-mumbles
+GB,,Stratton Saint Margaret,Swindon,51.586,-1.762,/gb/swindon/stratton-saint-margaret
+GB,,Swindon,Swindon,51.56,-1.78,/gb/swindon/swindon
+GB,,Ashton,Tameside,53.4897,-2.0952,/gb/tameside/ashton
+GB,,Denton,Tameside,53.4554,-2.1122,/gb/tameside/denton
+GB,,Droylsden,Tameside,53.4828,-2.1582,/gb/tameside/droylsden
+GB,,Dukinfield,Tameside,53.4739,-2.0828,/gb/tameside/dukinfield
+GB,,Hyde,Tameside,53.4474,-2.082,/gb/tameside/hyde
+GB,,Stalybridge,Tameside,53.4834,-2.04,/gb/tameside/stalybridge
+GB,,Madeley,Telford and Wrekin,52.637,-2.448,/gb/telford-and-wrekin/madeley
+GB,,Telford,Telford and Wrekin,52.6766,-2.4469,/gb/telford-and-wrekin/telford
+GB,,Wellington,Telford and Wrekin,52.7001,-2.5157,/gb/telford-and-wrekin/wellington
+GB,,Grays,Thurrock,51.475,0.33,/gb/thurrock/grays
+GB,,South Ockendon,Thurrock,51.5207,0.2956,/gb/thurrock/south-ockendon
+GB,,Stanford le Hope,Thurrock,51.514,0.4244,/gb/thurrock/stanford-le-hope
+GB,,Torquay,Torbay,50.47,-3.53,/gb/torbay/torquay
+GB,,Cwmbran,Torfaen,51.653,-3.021,/gb/torfaen/cwmbran
+GB,,Pont-y-pŵl,Torfaen,51.703,-3.041,/gb/torfaen/pont-y-pwl
+GB,,Stepney,Tower Hamlets,51.5152,-0.0462,/gb/tower-hamlets/stepney
+GB,,Tower Hamlets,Tower Hamlets,51.5163,-0.0362,/gb/tower-hamlets/tower-hamlets
+GB,,Altrincham,Trafford,53.3838,-2.3547,/gb/trafford/altrincham
+GB,,Davyhulme,Trafford,53.4559,-2.3683,/gb/trafford/davyhulme
+GB,,Hale,Trafford,53.377,-2.347,/gb/trafford/hale
+GB,,Sale,Trafford,53.424,-2.322,/gb/trafford/sale
+GB,,Stretford,Trafford,53.4466,-2.3086,/gb/trafford/stretford
+GB,,Urmston,Trafford,53.4487,-2.3747,/gb/trafford/urmston
+GB,,Barri,"Vale of Glamorgan, The",51.405,-3.27,/gb/vale-of-glamorgan-the/barri
+GB,,Penarth,"Vale of Glamorgan, The",51.43,-3.17,/gb/vale-of-glamorgan-the/penarth
+GB,,Castleford,Wakefield,53.716,-1.356,/gb/wakefield/castleford
+GB,,Featherstone,Wakefield,53.7,-1.37,/gb/wakefield/featherstone
+GB,,Normanton,Wakefield,53.697,-1.416,/gb/wakefield/normanton
+GB,,Ossett,Wakefield,53.68,-1.58,/gb/wakefield/ossett
+GB,,Pontefract,Wakefield,53.691,-1.312,/gb/wakefield/pontefract
+GB,,Stanley,Wakefield,53.7145,-1.476,/gb/wakefield/stanley
+GB,,Wakefield,Wakefield,53.6825,-1.4975,/gb/wakefield/wakefield
+GB,,Aldridge,Walsall,52.606,-1.9179,/gb/walsall/aldridge
+GB,,Bloxwich,Walsall,52.614,-2.004,/gb/walsall/bloxwich
+GB,,Brownhills,Walsall,52.647,-1.933,/gb/walsall/brownhills
+GB,,Darlaston,Walsall,52.5708,-2.0457,/gb/walsall/darlaston
+GB,,Walsall,Walsall,52.58,-1.98,/gb/walsall/walsall
+GB,,Willenhall,Walsall,52.5798,-2.0605,/gb/walsall/willenhall
+GB,,Chingford,Waltham Forest,51.623,0.009,/gb/waltham-forest/chingford
+GB,,Waltham Forest,Waltham Forest,51.5928,-0.0113,/gb/waltham-forest/waltham-forest
+GB,,Walthamstow,Waltham Forest,51.584,-0.021,/gb/waltham-forest/walthamstow
+GB,,Balham,Wandsworth,51.4434,-0.1525,/gb/wandsworth/balham
+GB,,Wandsworth,Wandsworth,51.455,-0.192,/gb/wandsworth/wandsworth
+GB,,Great Sankey,Warrington,53.3918,-2.6383,/gb/warrington/great-sankey
+GB,,Warrington,Warrington,53.39,-2.59,/gb/warrington/warrington
+GB,,Bedworth,Warwickshire,52.4791,-1.4712,/gb/warwickshire/bedworth
+GB,,Kenilworth,Warwickshire,52.341,-1.566,/gb/warwickshire/kenilworth
+GB,,Nuneaton,Warwickshire,52.523,-1.468,/gb/warwickshire/nuneaton
+GB,,Royal Leamington Spa,Warwickshire,52.2919,-1.5358,/gb/warwickshire/royal-leamington-spa
+GB,,Rugby,Warwickshire,52.37,-1.26,/gb/warwickshire/rugby
+GB,,Stratford-upon-Avon,Warwickshire,52.1928,-1.7064,/gb/warwickshire/stratford-upon-avon
+GB,,Warwick,Warwickshire,52.28,-1.59,/gb/warwickshire/warwick
+GB,,Newbury,West Berkshire,51.401,-1.323,/gb/west-berkshire/newbury
+GB,,Thatcham,West Berkshire,51.405,-1.264,/gb/west-berkshire/thatcham
+GB,,Clydebank,West Dunbartonshire,55.8997,-4.4006,/gb/west-dunbartonshire/clydebank
+GB,,Dumbarton,West Dunbartonshire,55.95,-4.5667,/gb/west-dunbartonshire/dumbarton
+GB,,Bathgate,West Lothian,55.9024,-3.6431,/gb/west-lothian/bathgate
+GB,,Broxburn,West Lothian,55.934,-3.471,/gb/west-lothian/broxburn
+GB,,Livingston,West Lothian,55.8834,-3.5157,/gb/west-lothian/livingston
+GB,,Bognor Regis,West Sussex,50.7824,-0.6764,/gb/west-sussex/bognor-regis
+GB,,Burgess Hill,West Sussex,50.9535,-0.1262,/gb/west-sussex/burgess-hill
+GB,,Chichester,West Sussex,50.8365,-0.7792,/gb/west-sussex/chichester
+GB,,Crawley,West Sussex,51.1092,-0.1872,/gb/west-sussex/crawley
+GB,,East Grinstead,West Sussex,51.1286,-0.0144,/gb/west-sussex/east-grinstead
+GB,,Haywards Heath,West Sussex,51.0048,-0.0979,/gb/west-sussex/haywards-heath
+GB,,Horsham,West Sussex,51.062,-0.325,/gb/west-sussex/horsham
+GB,,Hurstpierpoint,West Sussex,50.9333,-0.1853,/gb/west-sussex/hurstpierpoint
+GB,,Lancing,West Sussex,50.832,-0.319,/gb/west-sussex/lancing
+GB,,Littlehampton,West Sussex,50.8094,-0.5409,/gb/west-sussex/littlehampton
+GB,,Rustington,West Sussex,50.8102,-0.5052,/gb/west-sussex/rustington
+GB,,Shoreham-by-Sea,West Sussex,50.834,-0.273,/gb/west-sussex/shoreham-by-sea
+GB,,Worthing,West Sussex,50.8147,-0.3714,/gb/west-sussex/worthing
+GB,,Westminster,Westminster,51.4947,-0.1353,/gb/westminster/westminster
+GB,,Ashton in Makerfield,Wigan,53.487,-2.641,/gb/wigan/ashton-in-makerfield
+GB,,Atherton,Wigan,53.523,-2.495,/gb/wigan/atherton
+GB,,Golborne,Wigan,53.4758,-2.5943,/gb/wigan/golborne
+GB,,Hindley,Wigan,53.5355,-2.5658,/gb/wigan/hindley
+GB,,Ince-in-Makerfield,Wigan,53.5402,-2.599,/gb/wigan/ince-in-makerfield
+GB,,Leigh,Wigan,53.4975,-2.515,/gb/wigan/leigh
+GB,,Lowton,Wigan,53.471,-2.569,/gb/wigan/lowton
+GB,,Orrell,Wigan,53.5319,-2.7082,/gb/wigan/orrell
+GB,,Tyldesley,Wigan,53.5166,-2.4667,/gb/wigan/tyldesley
+GB,,Wigan,Wigan,53.5448,-2.6318,/gb/wigan/wigan
+GB,,Calne,Wiltshire,51.438,-2.005,/gb/wiltshire/calne
+GB,,Chippenham,Wiltshire,51.459,-2.116,/gb/wiltshire/chippenham
+GB,,Devizes,Wiltshire,51.3528,-1.9958,/gb/wiltshire/devizes
+GB,,Melksham,Wiltshire,51.371,-2.138,/gb/wiltshire/melksham
+GB,,Salisbury,Wiltshire,51.0697,-1.795,/gb/wiltshire/salisbury
+GB,,Trowbridge,Wiltshire,51.32,-2.208,/gb/wiltshire/trowbridge
+GB,,Warminster,Wiltshire,51.205,-2.181,/gb/wiltshire/warminster
+GB,,Westbury,Wiltshire,51.26,-2.191,/gb/wiltshire/westbury
+GB,,Maidenhead,Windsor and Maidenhead,51.523,-0.722,/gb/windsor-and-maidenhead/maidenhead
+GB,,Windsor,Windsor and Maidenhead,51.4791,-0.6095,/gb/windsor-and-maidenhead/windsor
+GB,,Bebington,Wirral,53.35,-3.003,/gb/wirral/bebington
+GB,,Bidston,Wirral,53.402,-3.078,/gb/wirral/bidston
+GB,,Birkenhead,Wirral,53.393,-3.014,/gb/wirral/birkenhead
+GB,,Bromborough,Wirral,53.336,-2.978,/gb/wirral/bromborough
+GB,,Heswall,Wirral,53.328,-3.099,/gb/wirral/heswall
+GB,,Moreton,Wirral,53.401,-3.111,/gb/wirral/moreton
+GB,,New Brighton,Wirral,53.432,-3.049,/gb/wirral/new-brighton
+GB,,Rock Ferry,Wirral,53.373,-3.008,/gb/wirral/rock-ferry
+GB,,Seacombe,Wirral,53.409,-3.029,/gb/wirral/seacombe
+GB,,Upton,Wirral,53.385,-3.099,/gb/wirral/upton
+GB,,Wallasey,Wirral,53.4239,-3.0531,/gb/wirral/wallasey
+GB,,Earley,Wokingham,51.433,-0.933,/gb/wokingham/earley
+GB,,Shinfield,Wokingham,51.408,-0.947,/gb/wokingham/shinfield
+GB,,Wokingham,Wokingham,51.4102,-0.8432,/gb/wokingham/wokingham
+GB,,Woodley,Wokingham,51.453,-0.902,/gb/wokingham/woodley
+GB,,Bilston,Wolverhampton,52.566,-2.073,/gb/wolverhampton/bilston
+GB,,Wednesfield,Wolverhampton,52.5998,-2.0827,/gb/wolverhampton/wednesfield
+GB,,Wolverhampton,Wolverhampton,52.5833,-2.1333,/gb/wolverhampton/wolverhampton
+GB,,Bromsgrove,Worcestershire,52.3353,-2.0592,/gb/worcestershire/bromsgrove
+GB,,Droitwich,Worcestershire,52.267,-2.153,/gb/worcestershire/droitwich
+GB,,Evesham,Worcestershire,52.092,-1.947,/gb/worcestershire/evesham
+GB,,Great Malvern,Worcestershire,52.1114,-2.329,/gb/worcestershire/great-malvern
+GB,,Kidderminster,Worcestershire,52.3885,-2.249,/gb/worcestershire/kidderminster
+GB,,Redditch,Worcestershire,52.3,-1.9333,/gb/worcestershire/redditch
+GB,,Stourport-on-Severn,Worcestershire,52.3418,-2.2762,/gb/worcestershire/stourport-on-severn
+GB,,Worcester,Worcestershire,52.1911,-2.2206,/gb/worcestershire/worcester
+GB,,Wrecsam,Wrexham,53.0467,-2.9936,/gb/wrexham/wrecsam
+GB,,Acomb,York,53.96,-1.1308,/gb/york/acomb
+GB,,York,York,53.96,-1.08,/gb/york/york

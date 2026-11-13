@@ -1,0 +1,1024 @@
+country,code,name,admin1_name,latitude,longitude,path
+DE,,Aalen,Baden-Württemberg,48.8372,10.0936,/de/baden-wurttemberg/aalen
+DE,,Achern,Baden-Württemberg,48.6314,8.0739,/de/baden-wurttemberg/achern
+DE,,Albstadt,Baden-Württemberg,48.2119,9.0239,/de/baden-wurttemberg/albstadt
+DE,,Backnang,Baden-Württemberg,48.9464,9.4306,/de/baden-wurttemberg/backnang
+DE,,Bad Krozingen,Baden-Württemberg,47.9181,7.7025,/de/baden-wurttemberg/bad-krozingen
+DE,,Bad Mergentheim,Baden-Württemberg,49.4908,9.7731,/de/baden-wurttemberg/bad-mergentheim
+DE,,Bad Rappenau,Baden-Württemberg,49.2389,9.1028,/de/baden-wurttemberg/bad-rappenau
+DE,,Bad Säckingen,Baden-Württemberg,47.5533,7.9472,/de/baden-wurttemberg/bad-sackingen
+DE,,Bad Waldsee,Baden-Württemberg,47.9211,9.7519,/de/baden-wurttemberg/bad-waldsee
+DE,,Bad Wurzach,Baden-Württemberg,47.9094,9.8994,/de/baden-wurttemberg/bad-wurzach
+DE,,Baden-Baden,Baden-Württemberg,48.7619,8.2408,/de/baden-wurttemberg/baden-baden
+DE,,Baiersbronn,Baden-Württemberg,48.5058,8.3711,/de/baden-wurttemberg/baiersbronn
+DE,,Balingen,Baden-Württemberg,48.2731,8.8506,/de/baden-wurttemberg/balingen
+DE,,Biberach,Baden-Württemberg,48.0981,9.7886,/de/baden-wurttemberg/biberach
+DE,,Bietigheim-Bissingen,Baden-Württemberg,48.9494,9.1361,/de/baden-wurttemberg/bietigheim-bissingen
+DE,,Böblingen,Baden-Württemberg,48.6833,9,/de/baden-wurttemberg/boblingen
+DE,,Brackenheim,Baden-Württemberg,49.0833,9.0667,/de/baden-wurttemberg/brackenheim
+DE,,Breisach am Rhein,Baden-Württemberg,48.0289,7.58,/de/baden-wurttemberg/breisach-am-rhein
+DE,,Bretten,Baden-Württemberg,49.0364,8.7061,/de/baden-wurttemberg/bretten
+DE,,Bruchsal,Baden-Württemberg,49.1333,8.6,/de/baden-wurttemberg/bruchsal
+DE,,Buchen in Odenwald,Baden-Württemberg,49.5217,9.3233,/de/baden-wurttemberg/buchen-in-odenwald
+DE,,Bühl,Baden-Württemberg,48.6953,8.135,/de/baden-wurttemberg/buhl
+DE,,Calw,Baden-Württemberg,48.7144,8.7375,/de/baden-wurttemberg/calw
+DE,,Crailsheim,Baden-Württemberg,49.1347,10.0706,/de/baden-wurttemberg/crailsheim
+DE,,Ditzingen,Baden-Württemberg,48.8264,9.0667,/de/baden-wurttemberg/ditzingen
+DE,,Donaueschingen,Baden-Württemberg,47.9531,8.5033,/de/baden-wurttemberg/donaueschingen
+DE,,Eberbach,Baden-Württemberg,49.4667,8.9833,/de/baden-wurttemberg/eberbach
+DE,,Ebersbach an der Fils,Baden-Württemberg,48.7147,9.5236,/de/baden-wurttemberg/ebersbach-an-der-fils
+DE,,Eggenstein-Leopoldshafen,Baden-Württemberg,49.0778,8.3925,/de/baden-wurttemberg/eggenstein-leopoldshafen
+DE,,Ehingen an der Donau,Baden-Württemberg,48.2833,9.7236,/de/baden-wurttemberg/ehingen-an-der-donau
+DE,,Eislingen,Baden-Württemberg,48.6933,9.7067,/de/baden-wurttemberg/eislingen
+DE,,Ellwangen,Baden-Württemberg,48.9611,10.1306,/de/baden-wurttemberg/ellwangen
+DE,,Emmendingen,Baden-Württemberg,48.1214,7.8492,/de/baden-wurttemberg/emmendingen
+DE,,Eppelheim,Baden-Württemberg,49.4011,8.6297,/de/baden-wurttemberg/eppelheim
+DE,,Eppingen,Baden-Württemberg,49.1333,8.9167,/de/baden-wurttemberg/eppingen
+DE,,Esslingen,Baden-Württemberg,48.7406,9.3108,/de/baden-wurttemberg/esslingen
+DE,,Ettlingen,Baden-Württemberg,48.9333,8.4,/de/baden-wurttemberg/ettlingen
+DE,,Fellbach,Baden-Württemberg,48.8086,9.2758,/de/baden-wurttemberg/fellbach
+DE,,Filderstadt,Baden-Württemberg,48.6667,9.2167,/de/baden-wurttemberg/filderstadt
+DE,,Freiberg am Neckar,Baden-Württemberg,48.9347,9.1917,/de/baden-wurttemberg/freiberg-am-neckar
+DE,,Freiburg im Breisgau,Baden-Württemberg,47.995,7.85,/de/baden-wurttemberg/freiburg-im-breisgau
+DE,,Freudenstadt,Baden-Württemberg,48.4633,8.4111,/de/baden-wurttemberg/freudenstadt
+DE,,Friedrichshafen,Baden-Württemberg,47.6542,9.4792,/de/baden-wurttemberg/friedrichshafen
+DE,,Gaggenau,Baden-Württemberg,48.8039,8.3194,/de/baden-wurttemberg/gaggenau
+DE,,Geislingen an der Steige,Baden-Württemberg,48.6244,9.8306,/de/baden-wurttemberg/geislingen-an-der-steige
+DE,,Gerlingen,Baden-Württemberg,48.8,9.0653,/de/baden-wurttemberg/gerlingen
+DE,,Gernsbach,Baden-Württemberg,48.7633,8.3342,/de/baden-wurttemberg/gernsbach
+DE,,Giengen an der Brenz,Baden-Württemberg,48.6217,10.245,/de/baden-wurttemberg/giengen-an-der-brenz
+DE,,Göppingen,Baden-Württemberg,48.7025,9.6528,/de/baden-wurttemberg/goppingen
+DE,,Grenzach-Wyhlen,Baden-Württemberg,47.5517,7.6592,/de/baden-wurttemberg/grenzach-wyhlen
+DE,,Hechingen,Baden-Württemberg,48.3517,8.9633,/de/baden-wurttemberg/hechingen
+DE,,Heidelberg,Baden-Württemberg,49.4122,8.71,/de/baden-wurttemberg/heidelberg
+DE,,Heidenheim,Baden-Württemberg,48.6761,10.1544,/de/baden-wurttemberg/heidenheim
+DE,,Heilbronn,Baden-Württemberg,49.1404,9.218,/de/baden-wurttemberg/heilbronn
+DE,,Herrenberg,Baden-Württemberg,48.5967,8.8708,/de/baden-wurttemberg/herrenberg
+DE,,Hockenheim,Baden-Württemberg,49.3181,8.5472,/de/baden-wurttemberg/hockenheim
+DE,,Horb am Neckar,Baden-Württemberg,48.445,8.6911,/de/baden-wurttemberg/horb-am-neckar
+DE,,Isny im Allgäu,Baden-Württemberg,47.6919,10.0394,/de/baden-wurttemberg/isny-im-allgau
+DE,,Karlsruhe,Baden-Württemberg,49.0167,8.4,/de/baden-wurttemberg/karlsruhe
+DE,,Kehl,Baden-Württemberg,48.5711,7.8089,/de/baden-wurttemberg/kehl
+DE,,Kirchheim unter Teck,Baden-Württemberg,48.6483,9.4511,/de/baden-wurttemberg/kirchheim-unter-teck
+DE,,Kleinsachsenheim,Baden-Württemberg,48.96,9.0647,/de/baden-wurttemberg/kleinsachsenheim
+DE,,Konstanz,Baden-Württemberg,47.6633,9.1753,/de/baden-wurttemberg/konstanz
+DE,,Korntal-Münchingen,Baden-Württemberg,48.8306,9.1214,/de/baden-wurttemberg/korntal-munchingen
+DE,,Kornwestheim,Baden-Württemberg,48.8597,9.185,/de/baden-wurttemberg/kornwestheim
+DE,,Künzelsau,Baden-Württemberg,49.2804,9.6902,/de/baden-wurttemberg/kunzelsau
+DE,,Lahr,Baden-Württemberg,48.3392,7.8722,/de/baden-wurttemberg/lahr
+DE,,Langenau,Baden-Württemberg,48.4994,10.1211,/de/baden-wurttemberg/langenau
+DE,,,,,,/de/baden-wurttemberg/lauda-konigshofen
+DE,,Laupheim,Baden-Württemberg,48.2289,9.8797,/de/baden-wurttemberg/laupheim
+DE,,Leimen,Baden-Württemberg,49.3481,8.6911,/de/baden-wurttemberg/leimen
+DE,,Leinfelden-Echterdingen,Baden-Württemberg,48.6928,9.1428,/de/baden-wurttemberg/leinfelden-echterdingen
+DE,,Leonberg,Baden-Württemberg,48.8014,9.0131,/de/baden-wurttemberg/leonberg
+DE,,Leutkirch im Allgäu,Baden-Württemberg,47.8256,10.0222,/de/baden-wurttemberg/leutkirch-im-allgau
+DE,,Lörrach,Baden-Württemberg,47.6156,7.6614,/de/baden-wurttemberg/lorrach
+DE,,Ludwigsburg,Baden-Württemberg,48.8975,9.1919,/de/baden-wurttemberg/ludwigsburg
+DE,,Malsch,Baden-Württemberg,48.8808,8.3342,/de/baden-wurttemberg/malsch
+DE,,Mannheim,Baden-Württemberg,49.4878,8.4661,/de/baden-wurttemberg/mannheim
+DE,,Marbach am Neckar,Baden-Württemberg,48.9406,9.2575,/de/baden-wurttemberg/marbach-am-neckar
+DE,,Markdorf,Baden-Württemberg,47.7208,9.3917,/de/baden-wurttemberg/markdorf
+DE,,Markgröningen,Baden-Württemberg,48.9047,9.0808,/de/baden-wurttemberg/markgroningen
+DE,,Metzingen,Baden-Württemberg,48.5367,9.2858,/de/baden-wurttemberg/metzingen
+DE,,Mosbach,Baden-Württemberg,49.35,9.1333,/de/baden-wurttemberg/mosbach
+DE,,Mössingen,Baden-Württemberg,48.4064,9.0575,/de/baden-wurttemberg/mossingen
+DE,,Mühlacker,Baden-Württemberg,48.95,8.8392,/de/baden-wurttemberg/muhlacker
+DE,,Müllheim,Baden-Württemberg,47.8083,7.6308,/de/baden-wurttemberg/mullheim
+DE,,Münsingen,Baden-Württemberg,48.4128,9.4953,/de/baden-wurttemberg/munsingen
+DE,,Murrhardt,Baden-Württemberg,48.9794,9.5783,/de/baden-wurttemberg/murrhardt
+DE,,Nagold,Baden-Württemberg,48.5519,8.7256,/de/baden-wurttemberg/nagold
+DE,,Neckarsulm,Baden-Württemberg,49.1917,9.2244,/de/baden-wurttemberg/neckarsulm
+DE,,Neu-Ulm,Baden-Württemberg,48.3833,10,/de/baden-wurttemberg/neu-ulm
+DE,,Neustadt,Baden-Württemberg,48.8111,9.3656,/de/baden-wurttemberg/neustadt
+DE,,Nürtingen,Baden-Württemberg,48.6267,9.3353,/de/baden-wurttemberg/nurtingen
+DE,,Oberkirch,Baden-Württemberg,48.5322,8.0786,/de/baden-wurttemberg/oberkirch
+DE,,Offenburg,Baden-Württemberg,48.4708,7.9408,/de/baden-wurttemberg/offenburg
+DE,,Öhringen,Baden-Württemberg,49.2,9.5,/de/baden-wurttemberg/ohringen
+DE,,Ostfildern,Baden-Württemberg,48.7228,9.2631,/de/baden-wurttemberg/ostfildern
+DE,,Pforzheim,Baden-Württemberg,48.8909,8.703,/de/baden-wurttemberg/pforzheim
+DE,,Pfullingen,Baden-Württemberg,48.4656,9.2261,/de/baden-wurttemberg/pfullingen
+DE,,Plochingen,Baden-Württemberg,48.7117,9.4164,/de/baden-wurttemberg/plochingen
+DE,,Radolfzell am Bodensee,Baden-Württemberg,47.7369,8.9697,/de/baden-wurttemberg/radolfzell-am-bodensee
+DE,,Rastatt,Baden-Württemberg,48.8572,8.2031,/de/baden-wurttemberg/rastatt
+DE,,Ravensburg,Baden-Württemberg,47.7831,9.6114,/de/baden-wurttemberg/ravensburg
+DE,,Renningen,Baden-Württemberg,48.7661,8.9347,/de/baden-wurttemberg/renningen
+DE,,Reutlingen,Baden-Württemberg,48.4833,9.2167,/de/baden-wurttemberg/reutlingen
+DE,,Rheinfelden (Baden),Baden-Württemberg,47.5611,7.7917,/de/baden-wurttemberg/rheinfelden-baden
+DE,,Rottweil,Baden-Württemberg,48.1681,8.6247,/de/baden-wurttemberg/rottweil
+DE,,Sandhausen,Baden-Württemberg,49.3439,8.6581,/de/baden-wurttemberg/sandhausen
+DE,,Saulgau,Baden-Württemberg,48.0158,9.501,/de/baden-wurttemberg/saulgau
+DE,,Schopfheim,Baden-Württemberg,47.6494,7.8247,/de/baden-wurttemberg/schopfheim
+DE,,Schorndorf,Baden-Württemberg,48.8,9.5333,/de/baden-wurttemberg/schorndorf
+DE,,Schramberg,Baden-Württemberg,48.2269,8.3842,/de/baden-wurttemberg/schramberg
+DE,,Schriesheim,Baden-Württemberg,49.4736,8.6592,/de/baden-wurttemberg/schriesheim
+DE,,Schwäbisch Gmünd,Baden-Württemberg,48.8,9.8,/de/baden-wurttemberg/schwabisch-gmund
+DE,,Schwäbisch Hall,Baden-Württemberg,49.1122,9.7375,/de/baden-wurttemberg/schwabisch-hall
+DE,,Schwetzingen,Baden-Württemberg,49.3833,8.5667,/de/baden-wurttemberg/schwetzingen
+DE,,Sigmaringen,Baden-Württemberg,48.0869,9.2167,/de/baden-wurttemberg/sigmaringen
+DE,,Sindelfingen,Baden-Württemberg,48.7133,9.0028,/de/baden-wurttemberg/sindelfingen
+DE,,Singen,Baden-Württemberg,47.7628,8.84,/de/baden-wurttemberg/singen
+DE,,Sinsheim,Baden-Württemberg,49.25,8.8833,/de/baden-wurttemberg/sinsheim
+DE,,Stockach,Baden-Württemberg,47.8514,9.0114,/de/baden-wurttemberg/stockach
+DE,,Stuttgart,Baden-Württemberg,48.7775,9.18,/de/baden-wurttemberg/stuttgart
+DE,,Tettnang,Baden-Württemberg,47.6708,9.5875,/de/baden-wurttemberg/tettnang
+DE,,Trossingen,Baden-Württemberg,48.075,8.6385,/de/baden-wurttemberg/trossingen
+DE,,Tübingen,Baden-Württemberg,48.52,9.0556,/de/baden-wurttemberg/tubingen
+DE,,Tuttlingen,Baden-Württemberg,47.985,8.8233,/de/baden-wurttemberg/tuttlingen
+DE,,Überlingen,Baden-Württemberg,47.7667,9.165,/de/baden-wurttemberg/uberlingen
+DE,,Uhingen,Baden-Württemberg,48.7058,9.5919,/de/baden-wurttemberg/uhingen
+DE,,Ulm,Baden-Württemberg,48.3984,9.9916,/de/baden-wurttemberg/ulm
+DE,,Vaihingen an der Enz,Baden-Württemberg,48.9328,8.9564,/de/baden-wurttemberg/vaihingen-an-der-enz
+DE,,Villingen-Schwenningen,Baden-Württemberg,48.0632,8.493,/de/baden-wurttemberg/villingen-schwenningen
+DE,,Waghäusel,Baden-Württemberg,49.25,8.5169,/de/baden-wurttemberg/waghausel
+DE,,Waiblingen,Baden-Württemberg,48.8303,9.3169,/de/baden-wurttemberg/waiblingen
+DE,,Waldkirch,Baden-Württemberg,48.0939,7.9608,/de/baden-wurttemberg/waldkirch
+DE,,Waldshut-Tiengen,Baden-Württemberg,47.6231,8.2144,/de/baden-wurttemberg/waldshut-tiengen
+DE,,Walldorf,Baden-Württemberg,49.3,8.65,/de/baden-wurttemberg/walldorf
+DE,,Wangen im Allgäu,Baden-Württemberg,47.6858,9.8342,/de/baden-wurttemberg/wangen-im-allgau
+DE,,Weil am Rhein,Baden-Württemberg,47.5947,7.6108,/de/baden-wurttemberg/weil-am-rhein
+DE,,Weil der Stadt,Baden-Württemberg,48.7508,8.8706,/de/baden-wurttemberg/weil-der-stadt
+DE,,Weingarten,Baden-Württemberg,47.8078,9.6417,/de/baden-wurttemberg/weingarten
+DE,,Weinheim,Baden-Württemberg,49.5561,8.6697,/de/baden-wurttemberg/weinheim
+DE,,Wendlingen am Neckar,Baden-Württemberg,48.6747,9.3817,/de/baden-wurttemberg/wendlingen-am-neckar
+DE,,Wertheim,Baden-Württemberg,49.75,9.5167,/de/baden-wurttemberg/wertheim
+DE,,Wiesloch,Baden-Württemberg,49.2942,8.6983,/de/baden-wurttemberg/wiesloch
+DE,,Winnenden,Baden-Württemberg,48.8764,9.3978,/de/baden-wurttemberg/winnenden
+DE,,Abensberg,Bavaria,48.8168,11.8498,/de/bavaria/abensberg
+DE,,Aichach,Bavaria,48.45,11.1333,/de/bavaria/aichach
+DE,,Alzenau in Unterfranken,Bavaria,50.0835,9.0669,/de/bavaria/alzenau-in-unterfranken
+DE,,Amberg,Bavaria,49.4444,11.8483,/de/bavaria/amberg
+DE,,Ansbach,Bavaria,49.3,10.5833,/de/bavaria/ansbach
+DE,,Aschaffenburg,Bavaria,49.9741,9.1494,/de/bavaria/aschaffenburg
+DE,,Augsburg,Bavaria,48.3689,10.8978,/de/bavaria/augsburg
+DE,,Bad Aibling,Bavaria,47.8639,12.01,/de/bavaria/bad-aibling
+DE,,Bad Kissingen,Bavaria,50.2,10.0667,/de/bavaria/bad-kissingen
+DE,,Bad Neustadt,Bavaria,50.3219,10.2161,/de/bavaria/bad-neustadt
+DE,,Bad Reichenhall,Bavaria,47.7247,12.8769,/de/bavaria/bad-reichenhall
+DE,,Bad Tölz,Bavaria,47.7603,11.5567,/de/bavaria/bad-tolz
+DE,,Bad Wörishofen,Bavaria,48.0058,10.5969,/de/bavaria/bad-worishofen
+DE,,Bamberg,Bavaria,49.8917,10.8917,/de/bavaria/bamberg
+DE,,Bayreuth,Bavaria,49.9481,11.5783,/de/bavaria/bayreuth
+DE,,Bobingen,Bavaria,48.2667,10.8167,/de/bavaria/bobingen
+DE,,Bruckmühl,Bavaria,47.8833,11.9167,/de/bavaria/bruckmuhl
+DE,,Burghausen,Bavaria,48.1667,12.8333,/de/bavaria/burghausen
+DE,,Burglengenfeld,Bavaria,49.2061,12.0409,/de/bavaria/burglengenfeld
+DE,,Cham,Bavaria,49.2183,12.6658,/de/bavaria/cham
+DE,,Coburg,Bavaria,50.2585,10.9579,/de/bavaria/coburg
+DE,,Dachau,Bavaria,48.2603,11.4342,/de/bavaria/dachau
+DE,,Deggendorf,Bavaria,48.8353,12.9644,/de/bavaria/deggendorf
+DE,,Dillingen,Bavaria,48.5769,10.4939,/de/bavaria/dillingen
+DE,,Dingolfing,Bavaria,48.6333,12.5,/de/bavaria/dingolfing
+DE,,Donauwörth,Bavaria,48.7184,10.777,/de/bavaria/donauworth
+DE,,Dorfen,Bavaria,48.2667,12.15,/de/bavaria/dorfen
+DE,,Eching,Bavaria,48.3,11.6167,/de/bavaria/eching
+DE,,Eggenfelden,Bavaria,48.4039,12.7642,/de/bavaria/eggenfelden
+DE,,Erding,Bavaria,48.3001,11.9082,/de/bavaria/erding
+DE,,Erlangen,Bavaria,49.5925,11.005,/de/bavaria/erlangen
+DE,,Forchheim,Bavaria,49.7197,11.0581,/de/bavaria/forchheim
+DE,,Freilassing,Bavaria,47.8333,12.9667,/de/bavaria/freilassing
+DE,,Freising,Bavaria,48.4028,11.7489,/de/bavaria/freising
+DE,,Friedberg,Bavaria,48.35,10.9833,/de/bavaria/friedberg
+DE,,Fürstenfeldbruck,Bavaria,48.1778,11.2556,/de/bavaria/furstenfeldbruck
+DE,,Fürth,Bavaria,49.4783,10.9903,/de/bavaria/furth
+DE,,Füssen,Bavaria,47.5667,10.7,/de/bavaria/fussen
+DE,,Garching bei München,Bavaria,48.25,11.65,/de/bavaria/garching-bei-munchen
+DE,,Garmisch-Partenkirchen,Bavaria,47.4921,11.0958,/de/bavaria/garmisch-partenkirchen
+DE,,Gauting,Bavaria,48.0678,11.3739,/de/bavaria/gauting
+DE,,Geretsried,Bavaria,47.8667,11.4667,/de/bavaria/geretsried
+DE,,Germering,Bavaria,48.1333,11.3667,/de/bavaria/germering
+DE,,Gersthofen,Bavaria,48.4167,10.8667,/de/bavaria/gersthofen
+DE,,Gilching,Bavaria,48.1103,11.3011,/de/bavaria/gilching
+DE,,Grafing bei München,Bavaria,48.05,11.9667,/de/bavaria/grafing-bei-munchen
+DE,,Gröbenzell,Bavaria,48.1927,11.3719,/de/bavaria/grobenzell
+DE,,Großostheim,Bavaria,49.9167,9.0833,/de/bavaria/grossostheim
+DE,,Günzburg,Bavaria,48.4525,10.2711,/de/bavaria/gunzburg
+DE,,Gunzenhausen,Bavaria,49.1147,10.7542,/de/bavaria/gunzenhausen
+DE,,Haar,Bavaria,48.1114,11.7311,/de/bavaria/haar
+DE,,Herzogenaurach,Bavaria,49.57,10.8819,/de/bavaria/herzogenaurach
+DE,,Hof,Bavaria,50.3167,11.9167,/de/bavaria/hof
+DE,,Holzkirchen,Bavaria,47.8833,11.7,/de/bavaria/holzkirchen
+DE,,Illertissen,Bavaria,48.2228,10.1053,/de/bavaria/illertissen
+DE,,Immenstadt im Allgäu,Bavaria,47.5667,10.2167,/de/bavaria/immenstadt-im-allgau
+DE,,Ingolstadt,Bavaria,48.7631,11.425,/de/bavaria/ingolstadt
+DE,,Ismaning,Bavaria,48.2264,11.6725,/de/bavaria/ismaning
+DE,,Karlsfeld,Bavaria,48.227,11.467,/de/bavaria/karlsfeld
+DE,,Kaufbeuren,Bavaria,47.88,10.6225,/de/bavaria/kaufbeuren
+DE,,Kelheim,Bavaria,48.9218,11.8455,/de/bavaria/kelheim
+DE,,Kempten,Bavaria,47.7333,10.3167,/de/bavaria/kempten
+DE,,Kitzingen,Bavaria,49.7333,10.1667,/de/bavaria/kitzingen
+DE,,Kolbermoor,Bavaria,47.85,12.0667,/de/bavaria/kolbermoor
+DE,,Königsbrunn,Bavaria,48.2689,10.8908,/de/bavaria/konigsbrunn
+DE,,Kronach,Bavaria,50.2411,11.3281,/de/bavaria/kronach
+DE,,Kulmbach,Bavaria,50.1081,11.4556,/de/bavaria/kulmbach
+DE,,Landau an der Isar,Bavaria,48.6749,12.6913,/de/bavaria/landau-an-der-isar
+DE,,Landsberg,Bavaria,48.0528,10.8689,/de/bavaria/landsberg
+DE,,Landshut,Bavaria,48.5397,12.1508,/de/bavaria/landshut
+DE,,Lauf,Bavaria,49.5103,11.2772,/de/bavaria/lauf
+DE,,Lichtenfels,Bavaria,50.1469,11.0683,/de/bavaria/lichtenfels
+DE,,Lindau,Bavaria,47.5458,9.6839,/de/bavaria/lindau
+DE,,Mainburg,Bavaria,48.65,11.7833,/de/bavaria/mainburg
+DE,,Maisach,Bavaria,48.2167,11.2667,/de/bavaria/maisach
+DE,,Marktoberdorf,Bavaria,47.7667,10.6167,/de/bavaria/marktoberdorf
+DE,,Marktredwitz,Bavaria,50.0011,12.0863,/de/bavaria/marktredwitz
+DE,,Memmingen,Bavaria,47.9878,10.1811,/de/bavaria/memmingen
+DE,,Mering,Bavaria,48.2625,10.9844,/de/bavaria/mering
+DE,,Mindelheim,Bavaria,48.0531,10.4915,/de/bavaria/mindelheim
+DE,,Moosburg,Bavaria,48.4667,11.9333,/de/bavaria/moosburg
+DE,,Mühldorf,Bavaria,48.2456,12.5228,/de/bavaria/muhldorf
+DE,,Munich,Bavaria,48.1375,11.575,/de/bavaria/munich
+DE,,Neubiberg,Bavaria,48.0747,11.6769,/de/bavaria/neubiberg
+DE,,Neuburg,Bavaria,48.7333,11.1833,/de/bavaria/neuburg
+DE,,Neufahrn bei Freising,Bavaria,48.3159,11.6632,/de/bavaria/neufahrn-bei-freising
+DE,,Neumarkt,Bavaria,49.2833,11.4667,/de/bavaria/neumarkt
+DE,,Neusäß,Bavaria,48.4,10.8333,/de/bavaria/neusass
+DE,,Neustadt an der Donau,Bavaria,48.8071,11.7695,/de/bavaria/neustadt-an-der-donau
+DE,,Neustadt bei Coburg,Bavaria,50.3289,11.1211,/de/bavaria/neustadt-bei-coburg
+DE,,Neutraubling,Bavaria,48.9878,12.1964,/de/bavaria/neutraubling
+DE,,Nördlingen,Bavaria,48.85,10.5,/de/bavaria/nordlingen
+DE,,Nuremberg,Bavaria,49.4539,11.0775,/de/bavaria/nuremberg
+DE,,Oberasbach,Bavaria,49.4219,10.9583,/de/bavaria/oberasbach
+DE,,Ottobrunn,Bavaria,48.0667,11.6667,/de/bavaria/ottobrunn
+DE,,Passau,Bavaria,48.5748,13.461,/de/bavaria/passau
+DE,,Penzberg,Bavaria,47.75,11.3667,/de/bavaria/penzberg
+DE,,Pfaffenhofen,Bavaria,48.5298,11.5038,/de/bavaria/pfaffenhofen
+DE,,Pocking,Bavaria,48.3997,13.3167,/de/bavaria/pocking
+DE,,Poing,Bavaria,48.1667,11.8167,/de/bavaria/poing
+DE,,Puchheim,Bavaria,48.15,11.35,/de/bavaria/puchheim
+DE,,Regensburg,Bavaria,49.0167,12.0833,/de/bavaria/regensburg
+DE,,Regenstauf,Bavaria,49.1236,12.1283,/de/bavaria/regenstauf
+DE,,Rosenheim,Bavaria,47.8561,12.1289,/de/bavaria/rosenheim
+DE,,Roth,Bavaria,49.2461,11.0911,/de/bavaria/roth
+DE,,Schrobenhausen,Bavaria,48.5669,11.2583,/de/bavaria/schrobenhausen
+DE,,Schwabach,Bavaria,49.3292,11.0208,/de/bavaria/schwabach
+DE,,Schwabmünchen,Bavaria,48.1789,10.755,/de/bavaria/schwabmunchen
+DE,,Schwandorf,Bavaria,49.3236,12.0993,/de/bavaria/schwandorf
+DE,,Schweinfurt,Bavaria,50.05,10.2333,/de/bavaria/schweinfurt
+DE,,Selb,Bavaria,50.1667,12.1333,/de/bavaria/selb
+DE,,Senden,Bavaria,48.3236,10.0442,/de/bavaria/senden
+DE,,Sonthofen,Bavaria,47.5142,10.2817,/de/bavaria/sonthofen
+DE,,Starnberg,Bavaria,47.9972,11.3406,/de/bavaria/starnberg
+DE,,Stein bei Nürnberg,Bavaria,49.4167,11.0167,/de/bavaria/stein-bei-nurnberg
+DE,,Straubing,Bavaria,48.8772,12.5758,/de/bavaria/straubing
+DE,,Sulzbach-Rosenberg,Bavaria,49.5,11.75,/de/bavaria/sulzbach-rosenberg
+DE,,Taufkirchen,Bavaria,48.05,11.6167,/de/bavaria/taufkirchen
+DE,,Traunreut,Bavaria,47.9667,12.5833,/de/bavaria/traunreut
+DE,,Traunstein,Bavaria,47.8683,12.6433,/de/bavaria/traunstein
+DE,,Unterhaching,Bavaria,48.0658,11.61,/de/bavaria/unterhaching
+DE,,Unterschleißheim,Bavaria,48.2833,11.5667,/de/bavaria/unterschleissheim
+DE,,Vaterstetten,Bavaria,48.105,11.7706,/de/bavaria/vaterstetten
+DE,,Waldkraiburg,Bavaria,48.2167,12.4,/de/bavaria/waldkraiburg
+DE,,Weilheim,Bavaria,47.8333,11.1333,/de/bavaria/weilheim
+DE,,Weißenburg,Bavaria,49.0306,10.9719,/de/bavaria/weissenburg
+DE,,Wendelstein,Bavaria,49.3536,11.1483,/de/bavaria/wendelstein
+DE,,Wolfratshausen,Bavaria,47.9133,11.4278,/de/bavaria/wolfratshausen
+DE,,Würzburg,Bavaria,49.7944,9.9294,/de/bavaria/wurzburg
+DE,,Zirndorf,Bavaria,49.45,10.95,/de/bavaria/zirndorf
+DE,,Berlin,Berlin,52.5167,13.3833,/de/berlin/berlin
+DE,,Blankenfelde,Brandenburg,52.35,13.4,/de/brandenburg/blankenfelde
+DE,,Brandenburg,Brandenburg,52.4141,12.5541,/de/brandenburg/brandenburg
+DE,,Cottbus,Brandenburg,51.7608,14.3319,/de/brandenburg/cottbus
+DE,,Eberswalde,Brandenburg,52.8331,13.8331,/de/brandenburg/eberswalde
+DE,,Eisenhüttenstadt,Brandenburg,52.1465,14.63,/de/brandenburg/eisenhuttenstadt
+DE,,Falkensee,Brandenburg,52.5583,13.0917,/de/brandenburg/falkensee
+DE,,Finsterwalde,Brandenburg,51.6282,13.7102,/de/brandenburg/finsterwalde
+DE,,Forst (Lausitz),Brandenburg,51.7453,14.6478,/de/brandenburg/forst-lausitz
+DE,,Frankfurt (Oder),Brandenburg,52.3421,14.5517,/de/brandenburg/frankfurt-oder
+DE,,Fürstenwalde,Brandenburg,52.3667,14.0667,/de/brandenburg/furstenwalde
+DE,,Guben,Brandenburg,51.9504,14.7143,/de/brandenburg/guben
+DE,,Hennigsdorf,Brandenburg,52.6378,13.2036,/de/brandenburg/hennigsdorf
+DE,,Hohen Neuendorf,Brandenburg,52.6667,13.2831,/de/brandenburg/hohen-neuendorf
+DE,,Hoppegarten,Brandenburg,52.5156,13.6678,/de/brandenburg/hoppegarten
+DE,,Königs Wusterhausen,Brandenburg,52.2917,13.625,/de/brandenburg/konigs-wusterhausen
+DE,,Lübbenau/Spreewald,Brandenburg,51.8679,13.9688,/de/brandenburg/lubbenau-spreewald
+DE,,Luckenwalde,Brandenburg,52.0831,13.1667,/de/brandenburg/luckenwalde
+DE,,Ludwigsfelde,Brandenburg,52.2997,13.2667,/de/brandenburg/ludwigsfelde
+DE,,Nauen,Brandenburg,52.6,12.8831,/de/brandenburg/nauen
+DE,,Neuruppin,Brandenburg,52.9222,12.8,/de/brandenburg/neuruppin
+DE,,Oranienburg,Brandenburg,52.7544,13.2369,/de/brandenburg/oranienburg
+DE,,Potsdam,Brandenburg,52.4,13.0667,/de/brandenburg/potsdam
+DE,,Prenzlau,Brandenburg,53.3098,13.8627,/de/brandenburg/prenzlau
+DE,,Rathenow,Brandenburg,52.6,12.3333,/de/brandenburg/rathenow
+DE,,Schönefeld,Brandenburg,52.3917,13.5004,/de/brandenburg/schonefeld
+DE,,Schwedt (Oder),Brandenburg,53.0631,14.2831,/de/brandenburg/schwedt-oder
+DE,,Senftenberg,Brandenburg,51.5167,14.0167,/de/brandenburg/senftenberg
+DE,,Spremberg,Brandenburg,51.5717,14.3794,/de/brandenburg/spremberg
+DE,,Stahnsdorf,Brandenburg,52.3813,13.2122,/de/brandenburg/stahnsdorf
+DE,,Strausberg,Brandenburg,52.5775,13.8817,/de/brandenburg/strausberg
+DE,,Teltow,Brandenburg,52.4022,13.2706,/de/brandenburg/teltow
+DE,,Templin,Brandenburg,53.1217,13.5083,/de/brandenburg/templin
+DE,,,,,,/de/brandenburg/wandlitz
+DE,,Werder,Brandenburg,52.3781,12.935,/de/brandenburg/werder
+DE,,Wittenberge,Brandenburg,52.9977,11.7504,/de/brandenburg/wittenberge
+DE,,Zossen,Brandenburg,52.2167,13.4497,/de/brandenburg/zossen
+DE,,Bremen,Bremen,53.0758,8.8072,/de/bremen/bremen
+DE,,Bremerhaven,Bremen,53.55,8.5833,/de/bremen/bremerhaven
+DE,,Ritterhude,Bremen,53.1861,8.758,/de/bremen/ritterhude
+DE,,Hamburg,Hamburg,53.55,10,/de/hamburg/hamburg
+DE,,Alsfeld,Hesse,50.7511,9.2711,/de/hesse/alsfeld
+DE,,Arolsen,Hesse,51.3778,9.0167,/de/hesse/arolsen
+DE,,Babenhausen,Hesse,49.9624,8.9533,/de/hesse/babenhausen
+DE,,Bad Hersfeld,Hesse,50.8683,9.7067,/de/hesse/bad-hersfeld
+DE,,Bad Homburg,Hesse,50.2292,8.6105,/de/hesse/bad-homburg
+DE,,Bad Nauheim,Hesse,50.3667,8.75,/de/hesse/bad-nauheim
+DE,,Bad Soden am Taunus,Hesse,50.1424,8.4997,/de/hesse/bad-soden-am-taunus
+DE,,Bad Vilbel,Hesse,50.1781,8.7361,/de/hesse/bad-vilbel
+DE,,Bad Wildungen,Hesse,51.1167,9.1167,/de/hesse/bad-wildungen
+DE,,Baunatal,Hesse,51.2589,9.4183,/de/hesse/baunatal
+DE,,Bensheim,Hesse,49.6811,8.6228,/de/hesse/bensheim
+DE,,Bruchköbel,Hesse,50.1833,8.9167,/de/hesse/bruchkobel
+DE,,Büdingen,Hesse,50.2908,9.1125,/de/hesse/budingen
+DE,,Bürstadt,Hesse,49.6414,8.4546,/de/hesse/burstadt
+DE,,Büttelborn,Hesse,49.9022,8.5137,/de/hesse/buttelborn
+DE,,Butzbach,Hesse,50.4367,8.6622,/de/hesse/butzbach
+DE,,Darmstadt,Hesse,49.8667,8.65,/de/hesse/darmstadt
+DE,,Dieburg,Hesse,49.8985,8.8385,/de/hesse/dieburg
+DE,,Dietzenbach,Hesse,50.0086,8.7756,/de/hesse/dietzenbach
+DE,,Dillenburg,Hesse,50.7333,8.2833,/de/hesse/dillenburg
+DE,,Dreieich,Hesse,50.0189,8.6961,/de/hesse/dreieich
+DE,,Erlensee,Hesse,50.1635,8.9808,/de/hesse/erlensee
+DE,,Eschborn,Hesse,50.1437,8.569,/de/hesse/eschborn
+DE,,Eschwege,Hesse,51.1881,10.0528,/de/hesse/eschwege
+DE,,Flörsheim,Hesse,50.0117,8.4281,/de/hesse/florsheim
+DE,,Frankenberg,Hesse,51.0589,8.7967,/de/hesse/frankenberg
+DE,,Frankfurt,Hesse,50.1106,8.6822,/de/hesse/frankfurt
+DE,,Friedberg,Hesse,50.3353,8.755,/de/hesse/friedberg
+DE,,Friedrichsdorf,Hesse,50.2569,8.6418,/de/hesse/friedrichsdorf
+DE,,Fritzlar,Hesse,51.1333,9.2667,/de/hesse/fritzlar
+DE,,Fulda,Hesse,50.5528,9.6775,/de/hesse/fulda
+DE,,Gelnhausen,Hesse,50.2027,9.1905,/de/hesse/gelnhausen
+DE,,Gießen,Hesse,50.5833,8.6667,/de/hesse/giessen
+DE,,Ginsheim-Gustavsburg,Hesse,49.9646,8.3464,/de/hesse/ginsheim-gustavsburg
+DE,,Griesheim,Hesse,49.8594,8.5525,/de/hesse/griesheim
+DE,,Groß-Gerau,Hesse,49.9214,8.4818,/de/hesse/gross-gerau
+DE,,Groß-Umstadt,Hesse,49.8648,8.9567,/de/hesse/gross-umstadt
+DE,,Groß-Zimmern,Hesse,49.8726,8.8343,/de/hesse/gross-zimmern
+DE,,Haiger,Hesse,50.7422,8.2039,/de/hesse/haiger
+DE,,Hanau,Hesse,50.1328,8.9169,/de/hesse/hanau
+DE,,Hattersheim,Hesse,50.0722,8.4864,/de/hesse/hattersheim
+DE,,Heppenheim,Hesse,49.6415,8.645,/de/hesse/heppenheim
+DE,,Herborn,Hesse,50.6825,8.3061,/de/hesse/herborn
+DE,,Heusenstamm,Hesse,50.0596,8.8068,/de/hesse/heusenstamm
+DE,,Hochelheim,Hesse,50.525,8.7333,/de/hesse/hochelheim
+DE,,Hochheim am Main,Hesse,50.0108,8.3508,/de/hesse/hochheim-am-main
+DE,,Hofgeismar,Hesse,51.496,9.3872,/de/hesse/hofgeismar
+DE,,Hofheim,Hesse,50.0876,8.4447,/de/hesse/hofheim
+DE,,Homberg,Hesse,51.0339,9.4056,/de/hesse/homberg
+DE,,Hünfeld,Hesse,50.6667,9.7667,/de/hesse/hunfeld
+DE,,Idstein,Hesse,50.2206,8.2692,/de/hesse/idstein
+DE,,Karben,Hesse,50.2322,8.7681,/de/hesse/karben
+DE,,Kassel,Hesse,51.3158,9.4979,/de/hesse/kassel
+DE,,Kelkheim (Taunus),Hesse,50.138,8.4525,/de/hesse/kelkheim-taunus
+DE,,Kelsterbach,Hesse,50.0688,8.5301,/de/hesse/kelsterbach
+DE,,Kirchhain,Hesse,50.8167,8.9167,/de/hesse/kirchhain
+DE,,Königstein im Taunus,Hesse,50.1831,8.4635,/de/hesse/konigstein-im-taunus
+DE,,Korbach,Hesse,51.2719,8.8731,/de/hesse/korbach
+DE,,Kronberg,Hesse,50.1797,8.5085,/de/hesse/kronberg
+DE,,Künzell,Hesse,50.5394,9.7083,/de/hesse/kunzell
+DE,,Lampertheim,Hesse,49.5942,8.4671,/de/hesse/lampertheim
+DE,,Langen,Hesse,49.9893,8.6803,/de/hesse/langen
+DE,,Langenselbold,Hesse,50.1833,9.0333,/de/hesse/langenselbold
+DE,,Lich,Hesse,50.5217,8.8208,/de/hesse/lich
+DE,,Limburg,Hesse,50.3833,8.0667,/de/hesse/limburg
+DE,,Lohfelden,Hesse,51.2716,9.5487,/de/hesse/lohfelden
+DE,,Maintal,Hesse,50.15,8.8333,/de/hesse/maintal
+DE,,Marburg,Hesse,50.8167,8.7667,/de/hesse/marburg
+DE,,Michelstadt,Hesse,49.6786,9.0042,/de/hesse/michelstadt
+DE,,Mörfelden-Walldorf,Hesse,49.9896,8.5661,/de/hesse/morfelden-walldorf
+DE,,Münster,Hesse,49.9253,8.8592,/de/hesse/munster
+DE,,Neu-Anspach,Hesse,50.3003,8.5072,/de/hesse/neu-anspach
+DE,,Neu Isenburg,Hesse,50.0558,8.6971,/de/hesse/neu-isenburg
+DE,,Nidda,Hesse,50.4128,9.0092,/de/hesse/nidda
+DE,,Nidderau,Hesse,50.25,8.9,/de/hesse/nidderau
+DE,,Niedernhausen,Hesse,50.1617,8.3176,/de/hesse/niedernhausen
+DE,,Ober-Ramstadt,Hesse,49.8333,8.75,/de/hesse/ober-ramstadt
+DE,,Obertshausen,Hesse,50.0715,8.8482,/de/hesse/obertshausen
+DE,,Petersberg,Hesse,50.5667,9.7167,/de/hesse/petersberg
+DE,,Pfungstadt,Hesse,49.8056,8.6044,/de/hesse/pfungstadt
+DE,,Raunheim,Hesse,50.0097,8.45,/de/hesse/raunheim
+DE,,Reinheim,Hesse,49.8261,8.8348,/de/hesse/reinheim
+DE,,Rodgau,Hesse,50.0256,8.8841,/de/hesse/rodgau
+DE,,Rüsselsheim,Hesse,49.995,8.4119,/de/hesse/russelsheim
+DE,,Schlüchtern,Hesse,50.35,9.5167,/de/hesse/schluchtern
+DE,,Schwalmstadt,Hesse,50.9128,9.1889,/de/hesse/schwalmstadt
+DE,,Seeheim-Jugenheim,Hesse,49.7667,8.65,/de/hesse/seeheim-jugenheim
+DE,,Seligenstadt,Hesse,50.0441,8.9753,/de/hesse/seligenstadt
+DE,,Stadtallendorf,Hesse,50.8333,9.0167,/de/hesse/stadtallendorf
+DE,,Steinheim am Main,Hesse,50.1257,8.83,/de/hesse/steinheim-am-main
+DE,,Taunusstein,Hesse,50.1435,8.1606,/de/hesse/taunusstein
+DE,,Usingen,Hesse,50.334,8.5372,/de/hesse/usingen
+DE,,Vellmar,Hesse,51.3588,9.4677,/de/hesse/vellmar
+DE,,Viernheim,Hesse,49.538,8.5792,/de/hesse/viernheim
+DE,,Weiterstadt,Hesse,49.9,8.6,/de/hesse/weiterstadt
+DE,,Wetzlar,Hesse,50.5667,8.5,/de/hesse/wetzlar
+DE,,Wiesbaden,Hesse,50.0825,8.24,/de/hesse/wiesbaden
+DE,,Witzenhausen,Hesse,51.3417,9.8569,/de/hesse/witzenhausen
+DE,,Achim,Lower Saxony,53.013,9.033,/de/lower-saxony/achim
+DE,,Alfeld,Lower Saxony,51.9886,9.8269,/de/lower-saxony/alfeld
+DE,,Aurich,Lower Saxony,53.4714,7.4836,/de/lower-saxony/aurich
+DE,,Bad Bentheim,Lower Saxony,52.3031,7.1597,/de/lower-saxony/bad-bentheim
+DE,,Bad Essen,Lower Saxony,52.3214,8.34,/de/lower-saxony/bad-essen
+DE,,Bad Harzburg,Lower Saxony,51.8828,10.5617,/de/lower-saxony/bad-harzburg
+DE,,Bad Münder am Deister,Lower Saxony,52.1992,9.4653,/de/lower-saxony/bad-munder-am-deister
+DE,,Bad Pyrmont,Lower Saxony,51.9867,9.2636,/de/lower-saxony/bad-pyrmont
+DE,,Bad Zwischenahn,Lower Saxony,53.1836,8.0097,/de/lower-saxony/bad-zwischenahn
+DE,,Barsinghausen,Lower Saxony,52.3031,9.4606,/de/lower-saxony/barsinghausen
+DE,,Bassum,Lower Saxony,52.8494,8.7267,/de/lower-saxony/bassum
+DE,,Belm,Lower Saxony,52.3,8.1333,/de/lower-saxony/belm
+DE,,Bissendorf,Lower Saxony,52.2333,8.1667,/de/lower-saxony/bissendorf
+DE,,Brake,Lower Saxony,53.3333,8.4833,/de/lower-saxony/brake
+DE,,Bramsche,Lower Saxony,52.4089,7.9728,/de/lower-saxony/bramsche
+DE,,Braunschweig,Lower Saxony,52.2692,10.5211,/de/lower-saxony/braunschweig
+DE,,Bremervörde,Lower Saxony,53.4833,9.1333,/de/lower-saxony/bremervorde
+DE,,Buchholz in der Nordheide,Lower Saxony,53.3285,9.8621,/de/lower-saxony/buchholz-in-der-nordheide
+DE,,Bückeburg,Lower Saxony,52.2608,9.0492,/de/lower-saxony/buckeburg
+DE,,Burgdorf,Lower Saxony,52.4438,10.0078,/de/lower-saxony/burgdorf
+DE,,Buxtehude,Lower Saxony,53.4769,9.7011,/de/lower-saxony/buxtehude
+DE,,Celle,Lower Saxony,52.6256,10.0825,/de/lower-saxony/celle
+DE,,Clausthal-Zellerfeld,Lower Saxony,51.805,10.3356,/de/lower-saxony/clausthal-zellerfeld
+DE,,Cloppenburg,Lower Saxony,52.8478,8.0439,/de/lower-saxony/cloppenburg
+DE,,Cuxhaven,Lower Saxony,53.8667,8.7,/de/lower-saxony/cuxhaven
+DE,,Damme,Lower Saxony,52.5222,8.1956,/de/lower-saxony/damme
+DE,,Delmenhorst,Lower Saxony,53.0506,8.6317,/de/lower-saxony/delmenhorst
+DE,,Diepholz,Lower Saxony,52.6072,8.3711,/de/lower-saxony/diepholz
+DE,,Duderstadt,Lower Saxony,51.5125,10.2597,/de/lower-saxony/duderstadt
+DE,,Edewecht,Lower Saxony,53.1258,7.9825,/de/lower-saxony/edewecht
+DE,,Einbeck,Lower Saxony,51.8167,9.8667,/de/lower-saxony/einbeck
+DE,,Emden,Lower Saxony,53.3669,7.2061,/de/lower-saxony/emden
+DE,,,,,,/de/lower-saxony/friedland
+DE,,Friesoythe,Lower Saxony,53.0206,7.8586,/de/lower-saxony/friesoythe
+DE,,Ganderkesee,Lower Saxony,53.0358,8.5483,/de/lower-saxony/ganderkesee
+DE,,Garbsen,Lower Saxony,52.4183,9.5981,/de/lower-saxony/garbsen
+DE,,Garrel,Lower Saxony,52.9581,8.0253,/de/lower-saxony/garrel
+DE,,Gehrden,Lower Saxony,52.3135,9.6008,/de/lower-saxony/gehrden
+DE,,Georgsmarienhütte,Lower Saxony,52.2031,8.0447,/de/lower-saxony/georgsmarienhutte
+DE,,Gifhorn,Lower Saxony,52.4886,10.5464,/de/lower-saxony/gifhorn
+DE,,Goslar,Lower Saxony,51.906,10.4292,/de/lower-saxony/goslar
+DE,,Göttingen,Lower Saxony,51.5339,9.9356,/de/lower-saxony/gottingen
+DE,,Großenkneten,Lower Saxony,52.95,8.2667,/de/lower-saxony/grossenkneten
+DE,,Hameln,Lower Saxony,52.1031,9.36,/de/lower-saxony/hameln
+DE,,Hannover,Lower Saxony,52.3744,9.7386,/de/lower-saxony/hannover
+DE,,Hannoversch Münden,Lower Saxony,51.4167,9.65,/de/lower-saxony/hannoversch-munden
+DE,,Haren,Lower Saxony,52.7917,7.2381,/de/lower-saxony/haren
+DE,,Harsefeld,Lower Saxony,53.45,9.5,/de/lower-saxony/harsefeld
+DE,,Hatten,Lower Saxony,53.0184,8.35,/de/lower-saxony/hatten
+DE,,Helmstedt,Lower Saxony,52.2281,11.0106,/de/lower-saxony/helmstedt
+DE,,Hemmingen,Lower Saxony,52.3236,9.7256,/de/lower-saxony/hemmingen
+DE,,Hessisch Oldendorf,Lower Saxony,52.1667,9.25,/de/lower-saxony/hessisch-oldendorf
+DE,,Hildesheim,Lower Saxony,52.15,9.95,/de/lower-saxony/hildesheim
+DE,,Hude,Lower Saxony,53.1111,8.4625,/de/lower-saxony/hude
+DE,,Ilsede,Lower Saxony,52.2675,10.2236,/de/lower-saxony/ilsede
+DE,,Isernhagen-Süd,Lower Saxony,52.4342,9.8572,/de/lower-saxony/isernhagen-sud
+DE,,Jever,Lower Saxony,53.5744,7.9008,/de/lower-saxony/jever
+DE,,Kirchhatten,Lower Saxony,53.02,8.355,/de/lower-saxony/kirchhatten
+DE,,Königslutter am Elm,Lower Saxony,52.25,10.8167,/de/lower-saxony/konigslutter-am-elm
+DE,,Laatzen,Lower Saxony,52.3077,9.8133,/de/lower-saxony/laatzen
+DE,,Langelsheim,Lower Saxony,51.9381,10.335,/de/lower-saxony/langelsheim
+DE,,Langen,Lower Saxony,53.6116,8.6032,/de/lower-saxony/langen
+DE,,Langenhagen,Lower Saxony,52.4394,9.74,/de/lower-saxony/langenhagen
+DE,,Langwedel,Lower Saxony,52.9999,9.1732,/de/lower-saxony/langwedel
+DE,,Leer,Lower Saxony,53.2308,7.4528,/de/lower-saxony/leer
+DE,,Lehrte,Lower Saxony,52.3725,9.9769,/de/lower-saxony/lehrte
+DE,,Lengede,Lower Saxony,52.2049,10.3078,/de/lower-saxony/lengede
+DE,,Lingen,Lower Saxony,52.5233,7.3172,/de/lower-saxony/lingen
+DE,,Lohne,Lower Saxony,52.6667,8.2386,/de/lower-saxony/lohne
+DE,,Loxstedt,Lower Saxony,53.4699,8.6479,/de/lower-saxony/loxstedt
+DE,,Lüneburg,Lower Saxony,53.2525,10.4144,/de/lower-saxony/luneburg
+DE,,Melle,Lower Saxony,52.2031,8.3361,/de/lower-saxony/melle
+DE,,Meppen,Lower Saxony,52.6906,7.291,/de/lower-saxony/meppen
+DE,,Munster,Lower Saxony,52.9886,10.0911,/de/lower-saxony/munster
+DE,,Neustadt am Rübenberge,Lower Saxony,52.5055,9.4636,/de/lower-saxony/neustadt-am-rubenberge
+DE,,Norden,Lower Saxony,53.5967,7.2056,/de/lower-saxony/norden
+DE,,Nordenham,Lower Saxony,53.5,8.4667,/de/lower-saxony/nordenham
+DE,,Nordhorn,Lower Saxony,52.4333,7.0667,/de/lower-saxony/nordhorn
+DE,,Northeim,Lower Saxony,51.7067,10.0011,/de/lower-saxony/northeim
+DE,,Oldenburg,Lower Saxony,53.1439,8.2139,/de/lower-saxony/oldenburg
+DE,,Osnabrück,Lower Saxony,52.2789,8.0431,/de/lower-saxony/osnabruck
+DE,,Osterholz-Scharmbeck,Lower Saxony,53.2269,8.7947,/de/lower-saxony/osterholz-scharmbeck
+DE,,Osterode,Lower Saxony,51.7286,10.2522,/de/lower-saxony/osterode
+DE,,Oyten,Lower Saxony,53.0611,9.0178,/de/lower-saxony/oyten
+DE,,Papenburg,Lower Saxony,53.0667,7.4,/de/lower-saxony/papenburg
+DE,,Pattensen,Lower Saxony,52.2645,9.7644,/de/lower-saxony/pattensen
+DE,,Peine,Lower Saxony,52.3203,10.2336,/de/lower-saxony/peine
+DE,,Rastede,Lower Saxony,53.25,8.2,/de/lower-saxony/rastede
+DE,,,,,,/de/lower-saxony/rhaude
+DE,,Rinteln,Lower Saxony,52.186,9.0792,/de/lower-saxony/rinteln
+DE,,Ronnenberg,Lower Saxony,52.3194,9.6556,/de/lower-saxony/ronnenberg
+DE,,Salzgitter,Lower Saxony,52.1503,10.3593,/de/lower-saxony/salzgitter
+DE,,Sarstedt,Lower Saxony,52.2394,9.8606,/de/lower-saxony/sarstedt
+DE,,Schiffdorf,Lower Saxony,53.5355,8.6622,/de/lower-saxony/schiffdorf
+DE,,Schneverdingen,Lower Saxony,53.1167,9.8,/de/lower-saxony/schneverdingen
+DE,,Schortens,Lower Saxony,53.5333,7.95,/de/lower-saxony/schortens
+DE,,Schwanewede,Lower Saxony,53.2337,8.5957,/de/lower-saxony/schwanewede
+DE,,Seelze,Lower Saxony,52.3961,9.5981,/de/lower-saxony/seelze
+DE,,Seesen,Lower Saxony,51.8931,10.1783,/de/lower-saxony/seesen
+DE,,Sehnde,Lower Saxony,52.3161,9.9642,/de/lower-saxony/sehnde
+DE,,Soltau,Lower Saxony,52.9833,9.8333,/de/lower-saxony/soltau
+DE,,Springe,Lower Saxony,52.2167,9.55,/de/lower-saxony/springe
+DE,,Stade,Lower Saxony,53.6008,9.4764,/de/lower-saxony/stade
+DE,,Stadthagen,Lower Saxony,52.3247,9.2069,/de/lower-saxony/stadthagen
+DE,,Stuhr,Lower Saxony,53.0167,8.75,/de/lower-saxony/stuhr
+DE,,Syke,Lower Saxony,52.9161,8.8186,/de/lower-saxony/syke
+DE,,Tostedt,Lower Saxony,53.2833,9.7167,/de/lower-saxony/tostedt
+DE,,Uelzen,Lower Saxony,52.9647,10.5658,/de/lower-saxony/uelzen
+DE,,Uetze,Lower Saxony,52.4661,10.2039,/de/lower-saxony/uetze
+DE,,Varel,Lower Saxony,53.3969,8.1361,/de/lower-saxony/varel
+DE,,Vechelde,Lower Saxony,52.2608,10.3719,/de/lower-saxony/vechelde
+DE,,Vechta,Lower Saxony,52.7306,8.2886,/de/lower-saxony/vechta
+DE,,Verden,Lower Saxony,52.9211,9.2306,/de/lower-saxony/verden
+DE,,Wallenhorst,Lower Saxony,52.35,8.0167,/de/lower-saxony/wallenhorst
+DE,,Walsrode,Lower Saxony,52.8592,9.5853,/de/lower-saxony/walsrode
+DE,,Wardenburg,Lower Saxony,53.0617,8.1967,/de/lower-saxony/wardenburg
+DE,,Weener,Lower Saxony,53.1692,7.3564,/de/lower-saxony/weener
+DE,,Westerstede,Lower Saxony,53.25,7.9167,/de/lower-saxony/westerstede
+DE,,Wiefelstede,Lower Saxony,53.2581,8.1172,/de/lower-saxony/wiefelstede
+DE,,Wildeshausen,Lower Saxony,52.8931,8.4314,/de/lower-saxony/wildeshausen
+DE,,Wilhelmshaven,Lower Saxony,53.5286,8.1056,/de/lower-saxony/wilhelmshaven
+DE,,Winsen,Lower Saxony,53.3667,10.2167,/de/lower-saxony/winsen
+DE,,Wittmund,Lower Saxony,53.5747,7.7808,/de/lower-saxony/wittmund
+DE,,Wolfenbüttel,Lower Saxony,52.1622,10.5369,/de/lower-saxony/wolfenbuttel
+DE,,Wolfsburg,Lower Saxony,52.4231,10.7872,/de/lower-saxony/wolfsburg
+DE,,Wunstorf,Lower Saxony,52.4238,9.4359,/de/lower-saxony/wunstorf
+DE,,Zeven,Lower Saxony,53.2969,9.2789,/de/lower-saxony/zeven
+DE,,Greifswald,Mecklenburg-Western Pomerania,54.0833,13.3833,/de/mecklenburg-western-pomerania/greifswald
+DE,,Güstrow,Mecklenburg-Western Pomerania,53.7939,12.1764,/de/mecklenburg-western-pomerania/gustrow
+DE,,Neubrandenburg,Mecklenburg-Western Pomerania,53.5569,13.2608,/de/mecklenburg-western-pomerania/neubrandenburg
+DE,,Neustrelitz,Mecklenburg-Western Pomerania,53.3647,13.0636,/de/mecklenburg-western-pomerania/neustrelitz
+DE,,Parchim,Mecklenburg-Western Pomerania,53.4277,11.8482,/de/mecklenburg-western-pomerania/parchim
+DE,,Rostock,Mecklenburg-Western Pomerania,54.0833,12.1333,/de/mecklenburg-western-pomerania/rostock
+DE,,Schwerin,Mecklenburg-Western Pomerania,53.6289,11.415,/de/mecklenburg-western-pomerania/schwerin
+DE,,Stralsund,Mecklenburg-Western Pomerania,54.3092,13.0819,/de/mecklenburg-western-pomerania/stralsund
+DE,,Waren,Mecklenburg-Western Pomerania,53.5167,12.6833,/de/mecklenburg-western-pomerania/waren
+DE,,Wismar,Mecklenburg-Western Pomerania,53.8925,11.465,/de/mecklenburg-western-pomerania/wismar
+DE,,Aachen,North Rhine-Westphalia,50.7762,6.0838,/de/north-rhine-westphalia/aachen
+DE,,Ahaus,North Rhine-Westphalia,52.0794,7.0134,/de/north-rhine-westphalia/ahaus
+DE,,Ahlen,North Rhine-Westphalia,51.7633,7.8911,/de/north-rhine-westphalia/ahlen
+DE,,Alfter,North Rhine-Westphalia,50.7356,7.0092,/de/north-rhine-westphalia/alfter
+DE,,Alsdorf,North Rhine-Westphalia,50.8744,6.1615,/de/north-rhine-westphalia/alsdorf
+DE,,Altena,North Rhine-Westphalia,51.3,7.6667,/de/north-rhine-westphalia/altena
+DE,,Arnsberg,North Rhine-Westphalia,51.3967,8.0644,/de/north-rhine-westphalia/arnsberg
+DE,,Ascheberg,North Rhine-Westphalia,51.7889,7.62,/de/north-rhine-westphalia/ascheberg
+DE,,Attendorn,North Rhine-Westphalia,51.1264,7.9033,/de/north-rhine-westphalia/attendorn
+DE,,Bad Berleburg,North Rhine-Westphalia,51.0497,8.4,/de/north-rhine-westphalia/bad-berleburg
+DE,,Bad Driburg,North Rhine-Westphalia,51.7333,9.0167,/de/north-rhine-westphalia/bad-driburg
+DE,,Bad Honnef am Rhein,North Rhine-Westphalia,50.645,7.2269,/de/north-rhine-westphalia/bad-honnef-am-rhein
+DE,,Bad Lippspringe,North Rhine-Westphalia,51.7833,8.8167,/de/north-rhine-westphalia/bad-lippspringe
+DE,,Bad Münstereifel,North Rhine-Westphalia,50.5531,6.7661,/de/north-rhine-westphalia/bad-munstereifel
+DE,,Bad Oeynhausen,North Rhine-Westphalia,52.2,8.8,/de/north-rhine-westphalia/bad-oeynhausen
+DE,,Bad Salzuflen,North Rhine-Westphalia,52.0833,8.7467,/de/north-rhine-westphalia/bad-salzuflen
+DE,,Baesweiler,North Rhine-Westphalia,50.9061,6.1874,/de/north-rhine-westphalia/baesweiler
+DE,,Beckum,North Rhine-Westphalia,51.7558,8.0408,/de/north-rhine-westphalia/beckum
+DE,,Bedburg,North Rhine-Westphalia,51,6.5625,/de/north-rhine-westphalia/bedburg
+DE,,Bergheim,North Rhine-Westphalia,50.9541,6.6412,/de/north-rhine-westphalia/bergheim
+DE,,Bergisch Gladbach,North Rhine-Westphalia,50.9917,7.1367,/de/north-rhine-westphalia/bergisch-gladbach
+DE,,Bergkamen,North Rhine-Westphalia,51.6167,7.6333,/de/north-rhine-westphalia/bergkamen
+DE,,Bergneustadt,North Rhine-Westphalia,51.0208,7.6481,/de/north-rhine-westphalia/bergneustadt
+DE,,Bielefeld,North Rhine-Westphalia,52.0167,8.5333,/de/north-rhine-westphalia/bielefeld
+DE,,Blomberg,North Rhine-Westphalia,51.9331,9.0831,/de/north-rhine-westphalia/blomberg
+DE,,Bocholt,North Rhine-Westphalia,51.8333,6.6167,/de/north-rhine-westphalia/bocholt
+DE,,Bochum,North Rhine-Westphalia,51.4833,7.2167,/de/north-rhine-westphalia/bochum
+DE,,Bockum,North Rhine-Westphalia,51.35,6.6167,/de/north-rhine-westphalia/bockum
+DE,,Bönen,North Rhine-Westphalia,51.5986,7.7592,/de/north-rhine-westphalia/bonen
+DE,,Bonn,North Rhine-Westphalia,50.7353,7.1022,/de/north-rhine-westphalia/bonn
+DE,,Borken,North Rhine-Westphalia,51.8439,6.8583,/de/north-rhine-westphalia/borken
+DE,,Bornheim,North Rhine-Westphalia,50.7592,7.005,/de/north-rhine-westphalia/bornheim
+DE,,Bottrop,North Rhine-Westphalia,51.5232,6.9253,/de/north-rhine-westphalia/bottrop
+DE,,Brakel,North Rhine-Westphalia,51.7167,9.1833,/de/north-rhine-westphalia/brakel
+DE,,Brand,North Rhine-Westphalia,50.7489,6.165,/de/north-rhine-westphalia/brand
+DE,,Brilon,North Rhine-Westphalia,51.3956,8.5678,/de/north-rhine-westphalia/brilon
+DE,,Brüggen,North Rhine-Westphalia,51.2417,6.1822,/de/north-rhine-westphalia/bruggen
+DE,,Brühl,North Rhine-Westphalia,50.8333,6.9,/de/north-rhine-westphalia/bruhl
+DE,,Bünde,North Rhine-Westphalia,52.2,8.6,/de/north-rhine-westphalia/bunde
+DE,,,,,,/de/north-rhine-westphalia/burbach
+DE,,Burscheid,North Rhine-Westphalia,51.0856,7.1136,/de/north-rhine-westphalia/burscheid
+DE,,Castrop-Rauxel,North Rhine-Westphalia,51.55,7.3167,/de/north-rhine-westphalia/castrop-rauxel
+DE,,Coesfeld,North Rhine-Westphalia,51.9458,7.1675,/de/north-rhine-westphalia/coesfeld
+DE,,Cologne,North Rhine-Westphalia,50.9422,6.9578,/de/north-rhine-westphalia/cologne
+DE,,Datteln,North Rhine-Westphalia,51.6539,7.3417,/de/north-rhine-westphalia/datteln
+DE,,Delbrück,North Rhine-Westphalia,51.7667,8.5667,/de/north-rhine-westphalia/delbruck
+DE,,Detmold,North Rhine-Westphalia,51.9378,8.8833,/de/north-rhine-westphalia/detmold
+DE,,Dinslaken,North Rhine-Westphalia,51.5667,6.7333,/de/north-rhine-westphalia/dinslaken
+DE,,Dormagen,North Rhine-Westphalia,51.0964,6.84,/de/north-rhine-westphalia/dormagen
+DE,,Dorsten,North Rhine-Westphalia,51.66,6.9642,/de/north-rhine-westphalia/dorsten
+DE,,Dortmund,North Rhine-Westphalia,51.5139,7.4653,/de/north-rhine-westphalia/dortmund
+DE,,Drensteinfurt,North Rhine-Westphalia,51.7944,7.7392,/de/north-rhine-westphalia/drensteinfurt
+DE,,Duisburg,North Rhine-Westphalia,51.4322,6.7611,/de/north-rhine-westphalia/duisburg
+DE,,Dülken,North Rhine-Westphalia,51.2522,6.3353,/de/north-rhine-westphalia/dulken
+DE,,Dülmen,North Rhine-Westphalia,51.8308,7.2783,/de/north-rhine-westphalia/dulmen
+DE,,Düren,North Rhine-Westphalia,50.8032,6.4821,/de/north-rhine-westphalia/duren
+DE,,Düsseldorf,North Rhine-Westphalia,51.2256,6.7767,/de/north-rhine-westphalia/dusseldorf
+DE,,Eilendorf,North Rhine-Westphalia,50.7796,6.1534,/de/north-rhine-westphalia/eilendorf
+DE,,Eitorf,North Rhine-Westphalia,50.7697,7.4517,/de/north-rhine-westphalia/eitorf
+DE,,Elsdorf,North Rhine-Westphalia,50.9333,6.5667,/de/north-rhine-westphalia/elsdorf
+DE,,Elsen,North Rhine-Westphalia,51.7333,8.6833,/de/north-rhine-westphalia/elsen
+DE,,Emsdetten,North Rhine-Westphalia,52.1728,7.5344,/de/north-rhine-westphalia/emsdetten
+DE,,Engelskirchen,North Rhine-Westphalia,50.9833,7.4167,/de/north-rhine-westphalia/engelskirchen
+DE,,Enger,North Rhine-Westphalia,52.1333,8.5667,/de/north-rhine-westphalia/enger
+DE,,Ennepetal,North Rhine-Westphalia,51.3021,7.3425,/de/north-rhine-westphalia/ennepetal
+DE,,Ennigerloh,North Rhine-Westphalia,51.8367,8.0256,/de/north-rhine-westphalia/ennigerloh
+DE,,Epe,North Rhine-Westphalia,52.2,7.0167,/de/north-rhine-westphalia/epe
+DE,,Erftstadt,North Rhine-Westphalia,50.8167,6.7667,/de/north-rhine-westphalia/erftstadt
+DE,,Erkelenz,North Rhine-Westphalia,51.08,6.3156,/de/north-rhine-westphalia/erkelenz
+DE,,Erkrath,North Rhine-Westphalia,51.2239,6.9147,/de/north-rhine-westphalia/erkrath
+DE,,Erwitte,North Rhine-Westphalia,51.6167,8.3497,/de/north-rhine-westphalia/erwitte
+DE,,Eschweiler,North Rhine-Westphalia,50.8167,6.2833,/de/north-rhine-westphalia/eschweiler
+DE,,Espelkamp,North Rhine-Westphalia,52.3772,8.6328,/de/north-rhine-westphalia/espelkamp
+DE,,Essen,North Rhine-Westphalia,51.4508,7.0131,/de/north-rhine-westphalia/essen
+DE,,Euskirchen,North Rhine-Westphalia,50.6613,6.7873,/de/north-rhine-westphalia/euskirchen
+DE,,Finnentrop,North Rhine-Westphalia,51.1731,7.9725,/de/north-rhine-westphalia/finnentrop
+DE,,Frechen,North Rhine-Westphalia,50.9167,6.8167,/de/north-rhine-westphalia/frechen
+DE,,Freudenberg,North Rhine-Westphalia,50.8975,7.8742,/de/north-rhine-westphalia/freudenberg
+DE,,Fröndenberg,North Rhine-Westphalia,51.4719,7.7658,/de/north-rhine-westphalia/frondenberg
+DE,,Geilenkirchen,North Rhine-Westphalia,50.9653,6.1194,/de/north-rhine-westphalia/geilenkirchen
+DE,,Geldern,North Rhine-Westphalia,51.5197,6.3325,/de/north-rhine-westphalia/geldern
+DE,,Gelsenkirchen,North Rhine-Westphalia,51.5103,7.0942,/de/north-rhine-westphalia/gelsenkirchen
+DE,,Gescher,North Rhine-Westphalia,51.9569,7.0056,/de/north-rhine-westphalia/gescher
+DE,,Geseke,North Rhine-Westphalia,51.6397,8.5086,/de/north-rhine-westphalia/geseke
+DE,,Gevelsberg,North Rhine-Westphalia,51.3265,7.3559,/de/north-rhine-westphalia/gevelsberg
+DE,,Gladbeck,North Rhine-Westphalia,51.5713,6.9827,/de/north-rhine-westphalia/gladbeck
+DE,,Goch,North Rhine-Westphalia,51.6839,6.1619,/de/north-rhine-westphalia/goch
+DE,,Grefrath,North Rhine-Westphalia,51.3363,6.3408,/de/north-rhine-westphalia/grefrath
+DE,,Greven,North Rhine-Westphalia,52.0917,7.6083,/de/north-rhine-westphalia/greven
+DE,,Grevenbroich,North Rhine-Westphalia,51.0883,6.5875,/de/north-rhine-westphalia/grevenbroich
+DE,,Gronau,North Rhine-Westphalia,52.2125,7.0417,/de/north-rhine-westphalia/gronau
+DE,,Gummersbach,North Rhine-Westphalia,51.0333,7.5667,/de/north-rhine-westphalia/gummersbach
+DE,,Gütersloh,North Rhine-Westphalia,51.9,8.3833,/de/north-rhine-westphalia/gutersloh
+DE,,Haan,North Rhine-Westphalia,51.2078,7.0169,/de/north-rhine-westphalia/haan
+DE,,Hagen,North Rhine-Westphalia,51.3594,7.475,/de/north-rhine-westphalia/hagen
+DE,,Halver,North Rhine-Westphalia,51.1834,7.5027,/de/north-rhine-westphalia/halver
+DE,,Hamm,North Rhine-Westphalia,51.6814,7.8192,/de/north-rhine-westphalia/hamm
+DE,,Hamminkeln,North Rhine-Westphalia,51.7319,6.5908,/de/north-rhine-westphalia/hamminkeln
+DE,,Harsewinkel,North Rhine-Westphalia,51.9667,8.2331,/de/north-rhine-westphalia/harsewinkel
+DE,,Hattingen,North Rhine-Westphalia,51.3992,7.1858,/de/north-rhine-westphalia/hattingen
+DE,,Heiligenhaus,North Rhine-Westphalia,51.3265,6.971,/de/north-rhine-westphalia/heiligenhaus
+DE,,Heinsberg,North Rhine-Westphalia,51.0631,6.0964,/de/north-rhine-westphalia/heinsberg
+DE,,Hemer,North Rhine-Westphalia,51.3833,7.7667,/de/north-rhine-westphalia/hemer
+DE,,Hennef,North Rhine-Westphalia,50.7833,7.2833,/de/north-rhine-westphalia/hennef
+DE,,Herdecke,North Rhine-Westphalia,51.4,7.4333,/de/north-rhine-westphalia/herdecke
+DE,,Herford,North Rhine-Westphalia,52.1146,8.6734,/de/north-rhine-westphalia/herford
+DE,,Herne,North Rhine-Westphalia,51.5426,7.219,/de/north-rhine-westphalia/herne
+DE,,Herten,North Rhine-Westphalia,51.6,7.1333,/de/north-rhine-westphalia/herten
+DE,,Herzogenrath,North Rhine-Westphalia,50.8667,6.1,/de/north-rhine-westphalia/herzogenrath
+DE,,Hiddenhausen,North Rhine-Westphalia,52.1667,8.6167,/de/north-rhine-westphalia/hiddenhausen
+DE,,Hilchenbach,North Rhine-Westphalia,50.9983,8.1094,/de/north-rhine-westphalia/hilchenbach
+DE,,Hilden,North Rhine-Westphalia,51.1714,6.9394,/de/north-rhine-westphalia/hilden
+DE,,,,,,/de/north-rhine-westphalia/hille
+DE,,Holzminden,North Rhine-Westphalia,51.8297,9.4483,/de/north-rhine-westphalia/holzminden
+DE,,Holzwickede,North Rhine-Westphalia,51.5,7.6167,/de/north-rhine-westphalia/holzwickede
+DE,,,,,,/de/north-rhine-westphalia/horn-bad-meinberg
+DE,,Hörstel,North Rhine-Westphalia,52.2972,7.5861,/de/north-rhine-westphalia/horstel
+DE,,Hövelhof,North Rhine-Westphalia,51.8167,8.65,/de/north-rhine-westphalia/hovelhof
+DE,,Höxter,North Rhine-Westphalia,51.7667,9.3667,/de/north-rhine-westphalia/hoxter
+DE,,Hückelhoven,North Rhine-Westphalia,51.0608,6.2197,/de/north-rhine-westphalia/huckelhoven
+DE,,Hückeswagen,North Rhine-Westphalia,51.145,7.3417,/de/north-rhine-westphalia/huckeswagen
+DE,,Hürth,North Rhine-Westphalia,50.8775,6.8761,/de/north-rhine-westphalia/hurth
+DE,,Ibbenbüren,North Rhine-Westphalia,52.2778,7.7167,/de/north-rhine-westphalia/ibbenburen
+DE,,Iserlohn,North Rhine-Westphalia,51.3833,7.6667,/de/north-rhine-westphalia/iserlohn
+DE,,Jüchen,North Rhine-Westphalia,51.1011,6.5017,/de/north-rhine-westphalia/juchen
+DE,,Jülich,North Rhine-Westphalia,50.9222,6.3583,/de/north-rhine-westphalia/julich
+DE,,Kaarst,North Rhine-Westphalia,51.2278,6.6273,/de/north-rhine-westphalia/kaarst
+DE,,Kamen,North Rhine-Westphalia,51.5917,7.6653,/de/north-rhine-westphalia/kamen
+DE,,Kamp-Lintfort,North Rhine-Westphalia,51.5,6.5333,/de/north-rhine-westphalia/kamp-lintfort
+DE,,Kempen,North Rhine-Westphalia,51.3658,6.4194,/de/north-rhine-westphalia/kempen
+DE,,Kerpen,North Rhine-Westphalia,50.8719,6.6961,/de/north-rhine-westphalia/kerpen
+DE,,Kevelaer,North Rhine-Westphalia,51.5833,6.25,/de/north-rhine-westphalia/kevelaer
+DE,,Kierspe,North Rhine-Westphalia,51.1333,7.5667,/de/north-rhine-westphalia/kierspe
+DE,,Kirchlengern,North Rhine-Westphalia,52.2,8.6331,/de/north-rhine-westphalia/kirchlengern
+DE,,Kleve,North Rhine-Westphalia,51.79,6.14,/de/north-rhine-westphalia/kleve
+DE,,Königswinter,North Rhine-Westphalia,50.6833,7.1833,/de/north-rhine-westphalia/konigswinter
+DE,,Korschenbroich,North Rhine-Westphalia,51.1833,6.5167,/de/north-rhine-westphalia/korschenbroich
+DE,,Krefeld,North Rhine-Westphalia,51.3333,6.5667,/de/north-rhine-westphalia/krefeld
+DE,,Kreuzau,North Rhine-Westphalia,50.747,6.4907,/de/north-rhine-westphalia/kreuzau
+DE,,Kreuztal,North Rhine-Westphalia,50.9617,7.9881,/de/north-rhine-westphalia/kreuztal
+DE,,Kürten,North Rhine-Westphalia,51.05,7.2667,/de/north-rhine-westphalia/kurten
+DE,,Lage,North Rhine-Westphalia,51.9833,8.8,/de/north-rhine-westphalia/lage
+DE,,Langenberg,North Rhine-Westphalia,51.3519,7.1217,/de/north-rhine-westphalia/langenberg
+DE,,Langenfeld,North Rhine-Westphalia,51.1167,6.95,/de/north-rhine-westphalia/langenfeld
+DE,,Langerwehe,North Rhine-Westphalia,50.8147,6.3617,/de/north-rhine-westphalia/langerwehe
+DE,,Leichlingen,North Rhine-Westphalia,51.1167,7.0167,/de/north-rhine-westphalia/leichlingen
+DE,,Lemgo,North Rhine-Westphalia,52.0277,8.9043,/de/north-rhine-westphalia/lemgo
+DE,,Lengerich,North Rhine-Westphalia,52.1897,7.8525,/de/north-rhine-westphalia/lengerich
+DE,,Lennestadt,North Rhine-Westphalia,51.1236,8.0681,/de/north-rhine-westphalia/lennestadt
+DE,,Leopoldshöhe,North Rhine-Westphalia,52.0167,8.7,/de/north-rhine-westphalia/leopoldshohe
+DE,,Leverkusen,North Rhine-Westphalia,51.0333,6.9833,/de/north-rhine-westphalia/leverkusen
+DE,,Lindlar,North Rhine-Westphalia,51.0167,7.3833,/de/north-rhine-westphalia/lindlar
+DE,,Lippstadt,North Rhine-Westphalia,51.6667,8.35,/de/north-rhine-westphalia/lippstadt
+DE,,Lohmar,North Rhine-Westphalia,50.8415,7.2166,/de/north-rhine-westphalia/lohmar
+DE,,Löhne,North Rhine-Westphalia,52.2,8.7,/de/north-rhine-westphalia/lohne
+DE,,Lotte,North Rhine-Westphalia,52.2764,7.9167,/de/north-rhine-westphalia/lotte
+DE,,Lübbecke,North Rhine-Westphalia,52.3081,8.6231,/de/north-rhine-westphalia/lubbecke
+DE,,Lüdenscheid,North Rhine-Westphalia,51.2198,7.6273,/de/north-rhine-westphalia/ludenscheid
+DE,,Lüdinghausen,North Rhine-Westphalia,51.7681,7.4444,/de/north-rhine-westphalia/ludinghausen
+DE,,Lünen,North Rhine-Westphalia,51.6167,7.5167,/de/north-rhine-westphalia/lunen
+DE,,Marl,North Rhine-Westphalia,51.6667,7.1167,/de/north-rhine-westphalia/marl
+DE,,Marsberg,North Rhine-Westphalia,51.46,8.8556,/de/north-rhine-westphalia/marsberg
+DE,,Mechernich,North Rhine-Westphalia,50.6,6.65,/de/north-rhine-westphalia/mechernich
+DE,,Meckenheim,North Rhine-Westphalia,50.6333,7.0167,/de/north-rhine-westphalia/meckenheim
+DE,,Meerbusch,North Rhine-Westphalia,51.2667,6.6667,/de/north-rhine-westphalia/meerbusch
+DE,,Meinerzhagen,North Rhine-Westphalia,51.1061,7.6403,/de/north-rhine-westphalia/meinerzhagen
+DE,,Meschede,North Rhine-Westphalia,51.3503,8.2836,/de/north-rhine-westphalia/meschede
+DE,,Mettmann,North Rhine-Westphalia,51.25,6.9667,/de/north-rhine-westphalia/mettmann
+DE,,Minden,North Rhine-Westphalia,52.2883,8.9167,/de/north-rhine-westphalia/minden
+DE,,Moers,North Rhine-Westphalia,51.4592,6.6197,/de/north-rhine-westphalia/moers
+DE,,Mönchengladbach,North Rhine-Westphalia,51.2,6.4333,/de/north-rhine-westphalia/monchengladbach
+DE,,,,,,/de/north-rhine-westphalia/much
+DE,,Mülheim,North Rhine-Westphalia,51.4275,6.8825,/de/north-rhine-westphalia/mulheim
+DE,,Münster,North Rhine-Westphalia,51.9625,7.6256,/de/north-rhine-westphalia/munster
+DE,,Netphen,North Rhine-Westphalia,50.9147,8.1,/de/north-rhine-westphalia/netphen
+DE,,Nettetal,North Rhine-Westphalia,51.3167,6.2833,/de/north-rhine-westphalia/nettetal
+DE,,Neuss,North Rhine-Westphalia,51.2003,6.6939,/de/north-rhine-westphalia/neuss
+DE,,Neviges,North Rhine-Westphalia,51.3128,7.0869,/de/north-rhine-westphalia/neviges
+DE,,Niederkassel,North Rhine-Westphalia,50.8167,7.0333,/de/north-rhine-westphalia/niederkassel
+DE,,Niederkrüchten,North Rhine-Westphalia,51.1989,6.2194,/de/north-rhine-westphalia/niederkruchten
+DE,,Niederzier,North Rhine-Westphalia,50.8831,6.4667,/de/north-rhine-westphalia/niederzier
+DE,,Nottuln,North Rhine-Westphalia,51.9278,7.3542,/de/north-rhine-westphalia/nottuln
+DE,,Nümbrecht,North Rhine-Westphalia,50.9053,7.5422,/de/north-rhine-westphalia/numbrecht
+DE,,Oberhausen,North Rhine-Westphalia,51.4699,6.8514,/de/north-rhine-westphalia/oberhausen
+DE,,Ochtrup,North Rhine-Westphalia,52.2056,7.1903,/de/north-rhine-westphalia/ochtrup
+DE,,Odenthal,North Rhine-Westphalia,51.0333,7.1167,/de/north-rhine-westphalia/odenthal
+DE,,Oelde,North Rhine-Westphalia,51.8258,8.1436,/de/north-rhine-westphalia/oelde
+DE,,Oer-Erkenschwick,North Rhine-Westphalia,51.6422,7.2508,/de/north-rhine-westphalia/oer-erkenschwick
+DE,,Oerlinghausen,North Rhine-Westphalia,51.9667,8.6667,/de/north-rhine-westphalia/oerlinghausen
+DE,,Olpe,North Rhine-Westphalia,51.0294,7.8439,/de/north-rhine-westphalia/olpe
+DE,,,,,,/de/north-rhine-westphalia/olsberg
+DE,,Overath,North Rhine-Westphalia,50.9328,7.2839,/de/north-rhine-westphalia/overath
+DE,,Paderborn,North Rhine-Westphalia,51.7167,8.7667,/de/north-rhine-westphalia/paderborn
+DE,,Petershagen,North Rhine-Westphalia,52.3833,8.9667,/de/north-rhine-westphalia/petershagen
+DE,,Plettenberg,North Rhine-Westphalia,51.2128,7.8715,/de/north-rhine-westphalia/plettenberg
+DE,,Porta Westfalica,North Rhine-Westphalia,52.2401,8.9214,/de/north-rhine-westphalia/porta-westfalica
+DE,,Pulheim,North Rhine-Westphalia,51,6.8,/de/north-rhine-westphalia/pulheim
+DE,,Radevormwald,North Rhine-Westphalia,51.2,7.35,/de/north-rhine-westphalia/radevormwald
+DE,,Rahden,North Rhine-Westphalia,52.4328,8.6133,/de/north-rhine-westphalia/rahden
+DE,,Ratingen,North Rhine-Westphalia,51.3,6.85,/de/north-rhine-westphalia/ratingen
+DE,,Recklinghausen,North Rhine-Westphalia,51.6167,7.2,/de/north-rhine-westphalia/recklinghausen
+DE,,Rees,North Rhine-Westphalia,51.7625,6.3978,/de/north-rhine-westphalia/rees
+DE,,Remscheid,North Rhine-Westphalia,51.1799,7.1944,/de/north-rhine-westphalia/remscheid
+DE,,Rheda-Wiedenbrück,North Rhine-Westphalia,51.8417,8.3,/de/north-rhine-westphalia/rheda-wiedenbruck
+DE,,Rhede,North Rhine-Westphalia,51.8333,6.7006,/de/north-rhine-westphalia/rhede
+DE,,Rheinbach,North Rhine-Westphalia,50.6256,6.9491,/de/north-rhine-westphalia/rheinbach
+DE,,Rheinberg,North Rhine-Westphalia,51.5467,6.6006,/de/north-rhine-westphalia/rheinberg
+DE,,Rheine,North Rhine-Westphalia,52.2833,7.4333,/de/north-rhine-westphalia/rheine
+DE,,Rheydt,North Rhine-Westphalia,51.1667,6.45,/de/north-rhine-westphalia/rheydt
+DE,,Rhynern,North Rhine-Westphalia,51.6303,7.8558,/de/north-rhine-westphalia/rhynern
+DE,,Rietberg,North Rhine-Westphalia,51.8,8.4333,/de/north-rhine-westphalia/rietberg
+DE,,Rösrath,North Rhine-Westphalia,50.9,7.1833,/de/north-rhine-westphalia/rosrath
+DE,,Salzkotten,North Rhine-Westphalia,51.6708,8.6047,/de/north-rhine-westphalia/salzkotten
+DE,,Sankt Augustin,North Rhine-Westphalia,50.77,7.1867,/de/north-rhine-westphalia/sankt-augustin
+DE,,,,,,/de/north-rhine-westphalia/sassenberg
+DE,,Schloß Holte-Stukenbrock,North Rhine-Westphalia,51.8833,8.6167,/de/north-rhine-westphalia/schloss-holte-stukenbrock
+DE,,Schmallenberg,North Rhine-Westphalia,51.1536,8.2853,/de/north-rhine-westphalia/schmallenberg
+DE,,Schwalmtal,North Rhine-Westphalia,51.2225,6.2625,/de/north-rhine-westphalia/schwalmtal
+DE,,Schwelm,North Rhine-Westphalia,51.2904,7.2972,/de/north-rhine-westphalia/schwelm
+DE,,Schwerte,North Rhine-Westphalia,51.4458,7.5653,/de/north-rhine-westphalia/schwerte
+DE,,Selm,North Rhine-Westphalia,51.6833,7.4833,/de/north-rhine-westphalia/selm
+DE,,Senden,North Rhine-Westphalia,51.8572,7.4828,/de/north-rhine-westphalia/senden
+DE,,Siegburg,North Rhine-Westphalia,50.8014,7.2044,/de/north-rhine-westphalia/siegburg
+DE,,Siegen,North Rhine-Westphalia,50.8756,8.0167,/de/north-rhine-westphalia/siegen
+DE,,Simmerath,North Rhine-Westphalia,50.6,6.2997,/de/north-rhine-westphalia/simmerath
+DE,,Soest,North Rhine-Westphalia,51.5711,8.1092,/de/north-rhine-westphalia/soest
+DE,,Solingen,North Rhine-Westphalia,51.1719,7.0847,/de/north-rhine-westphalia/solingen
+DE,,Spenge,North Rhine-Westphalia,52.1331,8.4831,/de/north-rhine-westphalia/spenge
+DE,,Sprockhövel,North Rhine-Westphalia,51.3614,7.244,/de/north-rhine-westphalia/sprockhovel
+DE,,Stadtlohn,North Rhine-Westphalia,51.9925,6.915,/de/north-rhine-westphalia/stadtlohn
+DE,,Steinfurt,North Rhine-Westphalia,52.1504,7.3366,/de/north-rhine-westphalia/steinfurt
+DE,,Steinhagen,North Rhine-Westphalia,52.005,8.4147,/de/north-rhine-westphalia/steinhagen
+DE,,Stolberg,North Rhine-Westphalia,50.7667,6.2333,/de/north-rhine-westphalia/stolberg
+DE,,Straelen,North Rhine-Westphalia,51.45,6.2667,/de/north-rhine-westphalia/straelen
+DE,,Süchteln,North Rhine-Westphalia,51.2833,6.3833,/de/north-rhine-westphalia/suchteln
+DE,,Sundern,North Rhine-Westphalia,51.3167,8,/de/north-rhine-westphalia/sundern
+DE,,Telgte,North Rhine-Westphalia,51.9819,7.7856,/de/north-rhine-westphalia/telgte
+DE,,Tönisvorst,North Rhine-Westphalia,51.3208,6.4931,/de/north-rhine-westphalia/tonisvorst
+DE,,Troisdorf,North Rhine-Westphalia,50.8161,7.1556,/de/north-rhine-westphalia/troisdorf
+DE,,Übach-Palenberg,North Rhine-Westphalia,50.9197,6.1194,/de/north-rhine-westphalia/ubach-palenberg
+DE,,Unna,North Rhine-Westphalia,51.5347,7.6889,/de/north-rhine-westphalia/unna
+DE,,Velbert,North Rhine-Westphalia,51.34,7.0416,/de/north-rhine-westphalia/velbert
+DE,,Verl,North Rhine-Westphalia,51.8831,8.5167,/de/north-rhine-westphalia/verl
+DE,,Versmold,North Rhine-Westphalia,52.0436,8.15,/de/north-rhine-westphalia/versmold
+DE,,Viersen,North Rhine-Westphalia,51.2556,6.3917,/de/north-rhine-westphalia/viersen
+DE,,Vlotho,North Rhine-Westphalia,52.1667,8.8497,/de/north-rhine-westphalia/vlotho
+DE,,Voerde,North Rhine-Westphalia,51.6,6.6833,/de/north-rhine-westphalia/voerde
+DE,,Vreden,North Rhine-Westphalia,52.0331,6.8331,/de/north-rhine-westphalia/vreden
+DE,,Wachtberg,North Rhine-Westphalia,50.6242,7.1322,/de/north-rhine-westphalia/wachtberg
+DE,,Waldbröl,North Rhine-Westphalia,50.8789,7.615,/de/north-rhine-westphalia/waldbrol
+DE,,Waltrop,North Rhine-Westphalia,51.6236,7.3972,/de/north-rhine-westphalia/waltrop
+DE,,Warburg,North Rhine-Westphalia,51.4881,9.14,/de/north-rhine-westphalia/warburg
+DE,,Warendorf,North Rhine-Westphalia,51.9539,7.9933,/de/north-rhine-westphalia/warendorf
+DE,,Warstein,North Rhine-Westphalia,51.45,8.3667,/de/north-rhine-westphalia/warstein
+DE,,Wassenberg,North Rhine-Westphalia,51.1,6.15,/de/north-rhine-westphalia/wassenberg
+DE,,Wegberg,North Rhine-Westphalia,51.1333,6.2667,/de/north-rhine-westphalia/wegberg
+DE,,Weilerswist,North Rhine-Westphalia,50.7525,6.8378,/de/north-rhine-westphalia/weilerswist
+DE,,Wenden,North Rhine-Westphalia,50.9667,7.8667,/de/north-rhine-westphalia/wenden
+DE,,Werdohl,North Rhine-Westphalia,51.2563,7.7562,/de/north-rhine-westphalia/werdohl
+DE,,Werl,North Rhine-Westphalia,51.5528,7.9139,/de/north-rhine-westphalia/werl
+DE,,Wermelskirchen,North Rhine-Westphalia,51.1392,7.2051,/de/north-rhine-westphalia/wermelskirchen
+DE,,Werve,North Rhine-Westphalia,51.6627,7.6355,/de/north-rhine-westphalia/werve
+DE,,Wesel,North Rhine-Westphalia,51.6586,6.6178,/de/north-rhine-westphalia/wesel
+DE,,Wesseling,North Rhine-Westphalia,50.8207,6.9786,/de/north-rhine-westphalia/wesseling
+DE,,Wetter (Ruhr),North Rhine-Westphalia,51.3837,7.3907,/de/north-rhine-westphalia/wetter-ruhr
+DE,,Wiehl,North Rhine-Westphalia,50.95,7.5333,/de/north-rhine-westphalia/wiehl
+DE,,Willich,North Rhine-Westphalia,51.2631,6.5492,/de/north-rhine-westphalia/willich
+DE,,Wilnsdorf,North Rhine-Westphalia,50.8167,8.1,/de/north-rhine-westphalia/wilnsdorf
+DE,,Wipperfürth,North Rhine-Westphalia,51.1167,7.4,/de/north-rhine-westphalia/wipperfurth
+DE,,Witten,North Rhine-Westphalia,51.4333,7.3333,/de/north-rhine-westphalia/witten
+DE,,Wülfrath,North Rhine-Westphalia,51.2833,7.0333,/de/north-rhine-westphalia/wulfrath
+DE,,Wuppertal,North Rhine-Westphalia,51.2667,7.1833,/de/north-rhine-westphalia/wuppertal
+DE,,Würselen,North Rhine-Westphalia,50.8247,6.1275,/de/north-rhine-westphalia/wurselen
+DE,,Xanten,North Rhine-Westphalia,51.6622,6.4539,/de/north-rhine-westphalia/xanten
+DE,,Zülpich,North Rhine-Westphalia,50.7,6.65,/de/north-rhine-westphalia/zulpich
+DE,,Alzey,Rhineland-Palatinate,49.7517,8.1161,/de/rhineland-palatinate/alzey
+DE,,Andernach,Rhineland-Palatinate,50.4397,7.4017,/de/rhineland-palatinate/andernach
+DE,,Bad Dürkheim,Rhineland-Palatinate,49.4618,8.1724,/de/rhineland-palatinate/bad-durkheim
+DE,,Bad Kreuznach,Rhineland-Palatinate,49.8469,7.8669,/de/rhineland-palatinate/bad-kreuznach
+DE,,Bad Neuenahr-Ahrweiler,Rhineland-Palatinate,50.5447,7.1133,/de/rhineland-palatinate/bad-neuenahr-ahrweiler
+DE,,Bendorf,Rhineland-Palatinate,50.4297,7.5703,/de/rhineland-palatinate/bendorf
+DE,,Bingen am Rhein,Rhineland-Palatinate,49.9669,7.895,/de/rhineland-palatinate/bingen-am-rhein
+DE,,Bitburg,Rhineland-Palatinate,49.9747,6.5256,/de/rhineland-palatinate/bitburg
+DE,,Boppard,Rhineland-Palatinate,50.2314,7.5908,/de/rhineland-palatinate/boppard
+DE,,Frankenthal,Rhineland-Palatinate,49.5333,8.35,/de/rhineland-palatinate/frankenthal
+DE,,Germersheim,Rhineland-Palatinate,49.2167,8.3667,/de/rhineland-palatinate/germersheim
+DE,,Haßloch,Rhineland-Palatinate,49.3633,8.2558,/de/rhineland-palatinate/hassloch
+DE,,Ingelheim,Rhineland-Palatinate,49.9747,8.0564,/de/rhineland-palatinate/ingelheim
+DE,,Kaiserslautern,Rhineland-Palatinate,49.4447,7.7689,/de/rhineland-palatinate/kaiserslautern
+DE,,Koblenz,Rhineland-Palatinate,50.3597,7.5978,/de/rhineland-palatinate/koblenz
+DE,,Konz,Rhineland-Palatinate,49.7028,6.5794,/de/rhineland-palatinate/konz
+DE,,Lahnstein,Rhineland-Palatinate,50.3011,7.6056,/de/rhineland-palatinate/lahnstein
+DE,,Landau,Rhineland-Palatinate,49.1994,8.1231,/de/rhineland-palatinate/landau
+DE,,Ludwigshafen,Rhineland-Palatinate,49.4811,8.4353,/de/rhineland-palatinate/ludwigshafen
+DE,,Mainz,Rhineland-Palatinate,49.9994,8.2736,/de/rhineland-palatinate/mainz
+DE,,Mayen,Rhineland-Palatinate,50.3333,7.2167,/de/rhineland-palatinate/mayen
+DE,,Montabaur,Rhineland-Palatinate,50.4375,7.8258,/de/rhineland-palatinate/montabaur
+DE,,Neustadt,Rhineland-Palatinate,49.3536,8.1361,/de/rhineland-palatinate/neustadt
+DE,,Neuwied,Rhineland-Palatinate,50.4286,7.4614,/de/rhineland-palatinate/neuwied
+DE,,Pirmasens,Rhineland-Palatinate,49.2,7.6,/de/rhineland-palatinate/pirmasens
+DE,,Remagen,Rhineland-Palatinate,50.5786,7.2306,/de/rhineland-palatinate/remagen
+DE,,Schifferstadt,Rhineland-Palatinate,49.3861,8.3761,/de/rhineland-palatinate/schifferstadt
+DE,,Sinzig,Rhineland-Palatinate,50.5453,7.2519,/de/rhineland-palatinate/sinzig
+DE,,Speyer,Rhineland-Palatinate,49.3166,8.4336,/de/rhineland-palatinate/speyer
+DE,,Trier,Rhineland-Palatinate,49.7557,6.6394,/de/rhineland-palatinate/trier
+DE,,Wittlich,Rhineland-Palatinate,49.9869,6.8897,/de/rhineland-palatinate/wittlich
+DE,,Worms,Rhineland-Palatinate,49.6303,8.3621,/de/rhineland-palatinate/worms
+DE,,Wörth am Rhein,Rhineland-Palatinate,49.0517,8.2603,/de/rhineland-palatinate/worth-am-rhein
+DE,,Zweibrücken,Rhineland-Palatinate,49.2494,7.3608,/de/rhineland-palatinate/zweibrucken
+DE,,Beckingen,Saarland,49.3928,6.7008,/de/saarland/beckingen
+DE,,Bexbach,Saarland,49.3494,7.2594,/de/saarland/bexbach
+DE,,Blieskastel,Saarland,49.2373,7.2529,/de/saarland/blieskastel
+DE,,Dillingen,Saarland,49.3574,6.7196,/de/saarland/dillingen
+DE,,Eppelborn,Saarland,49.4022,6.9706,/de/saarland/eppelborn
+DE,,Heusweiler,Saarland,49.3375,6.9301,/de/saarland/heusweiler
+DE,,Homburg,Saarland,49.3167,7.3333,/de/saarland/homburg
+DE,,Illingen,Saarland,49.3764,7.0525,/de/saarland/illingen
+DE,,Lebach,Saarland,49.41,6.91,/de/saarland/lebach
+DE,,Merzig,Saarland,49.4422,6.6375,/de/saarland/merzig
+DE,,Neunkirchen,Saarland,49.3448,7.1799,/de/saarland/neunkirchen
+DE,,Ottweiler,Saarland,49.4014,7.1634,/de/saarland/ottweiler
+DE,,Püttlingen,Saarland,49.2833,6.8833,/de/saarland/puttlingen
+DE,,Rehlingen-Siersburg,Saarland,49.3686,6.6786,/de/saarland/rehlingen-siersburg
+DE,,Riegelsberg,Saarland,49.3058,6.9433,/de/saarland/riegelsberg
+DE,,Saarbrücken,Saarland,49.2333,7,/de/saarland/saarbrucken
+DE,,Saarlouis,Saarland,49.3167,6.75,/de/saarland/saarlouis
+DE,,Sankt Ingbert,Saarland,49.2789,7.115,/de/saarland/sankt-ingbert
+DE,,Sankt Wendel,Saarland,49.4667,7.1667,/de/saarland/sankt-wendel
+DE,,Schiffweiler,Saarland,49.3708,7.1289,/de/saarland/schiffweiler
+DE,,Schmelz,Saarland,49.4407,6.8579,/de/saarland/schmelz
+DE,,Schwalbach,Saarland,49.3067,6.8231,/de/saarland/schwalbach
+DE,,Sulzbach,Saarland,49.2833,7.0667,/de/saarland/sulzbach
+DE,,Völklingen,Saarland,49.253,6.8567,/de/saarland/volklingen
+DE,,Wadern,Saarland,49.5394,6.89,/de/saarland/wadern
+DE,,Wadgassen,Saarland,49.2667,6.7833,/de/saarland/wadgassen
+DE,,Aschersleben,Saxony-Anhalt,51.75,11.4667,/de/saxony-anhalt/aschersleben
+DE,,,,,,/de/saxony-anhalt/asleben
+DE,,Bernburg,Saxony-Anhalt,51.8,11.7333,/de/saxony-anhalt/bernburg
+DE,,Bitterfeld,Saxony-Anhalt,51.6425,12.3076,/de/saxony-anhalt/bitterfeld
+DE,,Blankenburg,Saxony-Anhalt,51.7953,10.9622,/de/saxony-anhalt/blankenburg
+DE,,Burg,Saxony-Anhalt,52.2725,11.855,/de/saxony-anhalt/burg
+DE,,Dessau-Rosslau,Saxony-Anhalt,51.8333,12.2333,/de/saxony-anhalt/dessau-rosslau
+DE,,Gardelegen,Saxony-Anhalt,52.5264,11.3925,/de/saxony-anhalt/gardelegen
+DE,,Halberstadt,Saxony-Anhalt,51.8958,11.0467,/de/saxony-anhalt/halberstadt
+DE,,Haldensleben,Saxony-Anhalt,52.2833,11.4167,/de/saxony-anhalt/haldensleben
+DE,,Halle,Saxony-Anhalt,51.4828,11.9697,/de/saxony-anhalt/halle
+DE,,Halle-Neustadt,Saxony-Anhalt,51.4789,11.9214,/de/saxony-anhalt/halle-neustadt
+DE,,,,,,/de/saxony-anhalt/kienberge
+DE,,Landsberg,Saxony-Anhalt,51.5246,12.1596,/de/saxony-anhalt/landsberg
+DE,,Magdeburg,Saxony-Anhalt,52.1316,11.64,/de/saxony-anhalt/magdeburg
+DE,,Merseburg,Saxony-Anhalt,51.3544,11.9928,/de/saxony-anhalt/merseburg
+DE,,Mosigkau,Saxony-Anhalt,51.8333,12.2333,/de/saxony-anhalt/mosigkau
+DE,,Naumburg,Saxony-Anhalt,51.1521,11.8098,/de/saxony-anhalt/naumburg
+DE,,Oschersleben,Saxony-Anhalt,52.0167,11.25,/de/saxony-anhalt/oschersleben
+DE,,Quedlinburg,Saxony-Anhalt,51.7917,11.1472,/de/saxony-anhalt/quedlinburg
+DE,,Salzwedel,Saxony-Anhalt,52.85,11.15,/de/saxony-anhalt/salzwedel
+DE,,Sangerhausen,Saxony-Anhalt,51.4667,11.3,/de/saxony-anhalt/sangerhausen
+DE,,Schönebeck,Saxony-Anhalt,52.0167,11.75,/de/saxony-anhalt/schonebeck
+DE,,Staßfurt,Saxony-Anhalt,51.8515,11.5889,/de/saxony-anhalt/stassfurt
+DE,,Stendal,Saxony-Anhalt,52.6,11.85,/de/saxony-anhalt/stendal
+DE,,Thale,Saxony-Anhalt,51.7511,11.0428,/de/saxony-anhalt/thale
+DE,,Weißenfels,Saxony-Anhalt,51.2,11.9667,/de/saxony-anhalt/weissenfels
+DE,,Wernigerode,Saxony-Anhalt,51.835,10.7853,/de/saxony-anhalt/wernigerode
+DE,,Wolfen,Saxony-Anhalt,51.65,12.2667,/de/saxony-anhalt/wolfen
+DE,,Zeitz,Saxony-Anhalt,51.0492,12.135,/de/saxony-anhalt/zeitz
+DE,,,,,,/de/saxony-anhalt/zerbst
+DE,,Annaberg-Buchholz,Saxony,50.58,13.0022,/de/saxony/annaberg-buchholz
+DE,,Aue,Saxony,50.5853,12.7008,/de/saxony/aue
+DE,,Auerbach,Saxony,50.5094,12.4,/de/saxony/auerbach
+DE,,Bautzen,Saxony,51.1814,14.4239,/de/saxony/bautzen
+DE,,Borna,Saxony,51.1167,12.5,/de/saxony/borna
+DE,,Chemnitz,Saxony,50.8333,12.9167,/de/saxony/chemnitz
+DE,,Coswig,Saxony,51.1333,13.5833,/de/saxony/coswig
+DE,,Crimmitschau,Saxony,50.8181,12.3875,/de/saxony/crimmitschau
+DE,,Delitzsch,Saxony,51.5264,12.3425,/de/saxony/delitzsch
+DE,,Döbeln,Saxony,51.1194,13.1128,/de/saxony/dobeln
+DE,,Dresden,Saxony,51.0493,13.7381,/de/saxony/dresden
+DE,,Eilenburg,Saxony,51.4608,12.6358,/de/saxony/eilenburg
+DE,,Freiberg,Saxony,50.9119,13.3428,/de/saxony/freiberg
+DE,,Freital,Saxony,51.0167,13.65,/de/saxony/freital
+DE,,Glauchau,Saxony,50.8233,12.5444,/de/saxony/glauchau
+DE,,Görlitz,Saxony,51.1528,14.9872,/de/saxony/gorlitz
+DE,,Grimma,Saxony,51.2383,12.7288,/de/saxony/grimma
+DE,,Großenhain,Saxony,51.2919,13.5342,/de/saxony/grossenhain
+DE,,Heidenau,Saxony,50.9833,13.8667,/de/saxony/heidenau
+DE,,Hoyerswerda,Saxony,51.4331,14.25,/de/saxony/hoyerswerda
+DE,,Kamenz,Saxony,51.27,14.0953,/de/saxony/kamenz
+DE,,Leipzig,Saxony,51.3394,12.3711,/de/saxony/leipzig
+DE,,Limbach-Oberfrohna,Saxony,50.8667,12.75,/de/saxony/limbach-oberfrohna
+DE,,Löbau,Saxony,51.0944,14.6667,/de/saxony/lobau
+DE,,Marienberg,Saxony,50.6508,13.1647,/de/saxony/marienberg
+DE,,Markkleeberg,Saxony,51.2756,12.3692,/de/saxony/markkleeberg
+DE,,Markranstädt,Saxony,51.3017,12.2211,/de/saxony/markranstadt
+DE,,Meißen,Saxony,51.1636,13.4775,/de/saxony/meissen
+DE,,Pirna,Saxony,50.9622,13.9403,/de/saxony/pirna
+DE,,Plauen,Saxony,50.495,12.1383,/de/saxony/plauen
+DE,,Radeberg,Saxony,51.1167,13.9167,/de/saxony/radeberg
+DE,,Radebeul,Saxony,51.1033,13.67,/de/saxony/radebeul
+DE,,Reichenbach/Vogtland,Saxony,50.6167,12.3,/de/saxony/reichenbach-vogtland
+DE,,Riesa,Saxony,51.3081,13.2939,/de/saxony/riesa
+DE,,Schkeuditz,Saxony,51.4,12.2167,/de/saxony/schkeuditz
+DE,,Schwarzenberg,Saxony,50.5453,12.7792,/de/saxony/schwarzenberg
+DE,,Taucha,Saxony,51.38,12.4936,/de/saxony/taucha
+DE,,Torgau,Saxony,51.5603,13.0056,/de/saxony/torgau
+DE,,Weißwasser/Oberlausitz,Saxony,51.5,14.6331,/de/saxony/weisswasser-oberlausitz
+DE,,Werdau,Saxony,50.7333,12.3833,/de/saxony/werdau
+DE,,Wilsdruff,Saxony,51.0522,13.5383,/de/saxony/wilsdruff
+DE,,Wurzen,Saxony,51.3667,12.7333,/de/saxony/wurzen
+DE,,Zittau,Saxony,50.8961,14.8072,/de/saxony/zittau
+DE,,Zwickau,Saxony,50.7189,12.4961,/de/saxony/zwickau
+DE,,Ahrensburg,Schleswig-Holstein,53.6747,10.2411,/de/schleswig-holstein/ahrensburg
+DE,,Bad Bramstedt,Schleswig-Holstein,53.9186,9.8844,/de/schleswig-holstein/bad-bramstedt
+DE,,Bad Oldesloe,Schleswig-Holstein,53.8117,10.3742,/de/schleswig-holstein/bad-oldesloe
+DE,,Bad Schwartau,Schleswig-Holstein,53.9194,10.6975,/de/schleswig-holstein/bad-schwartau
+DE,,Bad Segeberg,Schleswig-Holstein,53.9361,10.3097,/de/schleswig-holstein/bad-segeberg
+DE,,Bargteheide,Schleswig-Holstein,53.7286,10.2608,/de/schleswig-holstein/bargteheide
+DE,,Elmshorn,Schleswig-Holstein,53.7547,9.6536,/de/schleswig-holstein/elmshorn
+DE,,Eutin,Schleswig-Holstein,54.1378,10.6181,/de/schleswig-holstein/eutin
+DE,,Flensburg,Schleswig-Holstein,54.7819,9.4367,/de/schleswig-holstein/flensburg
+DE,,Geesthacht,Schleswig-Holstein,53.4375,10.3675,/de/schleswig-holstein/geesthacht
+DE,,Glinde,Schleswig-Holstein,53.5406,10.2111,/de/schleswig-holstein/glinde
+DE,,Halstenbek,Schleswig-Holstein,53.6334,9.8372,/de/schleswig-holstein/halstenbek
+DE,,Heide,Schleswig-Holstein,54.1961,9.0933,/de/schleswig-holstein/heide
+DE,,Husum,Schleswig-Holstein,54.4769,9.0511,/de/schleswig-holstein/husum
+DE,,Itzehoe,Schleswig-Holstein,53.925,9.5164,/de/schleswig-holstein/itzehoe
+DE,,Kaltenkirchen,Schleswig-Holstein,53.8397,9.9603,/de/schleswig-holstein/kaltenkirchen
+DE,,Kiel,Schleswig-Holstein,54.3233,10.1394,/de/schleswig-holstein/kiel
+DE,,Lübeck,Schleswig-Holstein,53.8697,10.6864,/de/schleswig-holstein/lubeck
+DE,,Mölln,Schleswig-Holstein,53.6269,10.6847,/de/schleswig-holstein/molln
+DE,,Neumünster,Schleswig-Holstein,54.0714,9.99,/de/schleswig-holstein/neumunster
+DE,,Neustadt in Holstein,Schleswig-Holstein,54.1072,10.8158,/de/schleswig-holstein/neustadt-in-holstein
+DE,,Norderstedt,Schleswig-Holstein,53.7064,10.0103,/de/schleswig-holstein/norderstedt
+DE,,Pinneberg,Schleswig-Holstein,53.6591,9.8009,/de/schleswig-holstein/pinneberg
+DE,,Preetz,Schleswig-Holstein,54.2367,10.2822,/de/schleswig-holstein/preetz
+DE,,Quickborn,Schleswig-Holstein,53.7333,9.8972,/de/schleswig-holstein/quickborn
+DE,,Ratekau,Schleswig-Holstein,53.95,10.7333,/de/schleswig-holstein/ratekau
+DE,,Ratzeburg,Schleswig-Holstein,53.7017,10.7567,/de/schleswig-holstein/ratzeburg
+DE,,Reinbek,Schleswig-Holstein,53.5089,10.2483,/de/schleswig-holstein/reinbek
+DE,,Rellingen,Schleswig-Holstein,53.6532,9.8295,/de/schleswig-holstein/rellingen
+DE,,Rendsburg,Schleswig-Holstein,54.3044,9.6644,/de/schleswig-holstein/rendsburg
+DE,,Schenefeld,Schleswig-Holstein,53.6028,9.8233,/de/schleswig-holstein/schenefeld
+DE,,Schleswig,Schleswig-Holstein,54.5153,9.5697,/de/schleswig-holstein/schleswig
+DE,,Schwarzenbek,Schleswig-Holstein,53.5042,10.4792,/de/schleswig-holstein/schwarzenbek
+DE,,Stockelsdorf,Schleswig-Holstein,53.8833,10.65,/de/schleswig-holstein/stockelsdorf
+DE,,Tornesch,Schleswig-Holstein,53.7,9.7167,/de/schleswig-holstein/tornesch
+DE,,Uetersen,Schleswig-Holstein,53.6872,9.6692,/de/schleswig-holstein/uetersen
+DE,,Wedel,Schleswig-Holstein,53.5833,9.7,/de/schleswig-holstein/wedel
+DE,,Altenburg,Thuringia,50.985,12.4333,/de/thuringia/altenburg
+DE,,Apolda,Thuringia,51.0247,11.5139,/de/thuringia/apolda
+DE,,Arnstadt,Thuringia,50.8342,10.9464,/de/thuringia/arnstadt
+DE,,Bad Langensalza,Thuringia,51.1081,10.6467,/de/thuringia/bad-langensalza
+DE,,Bad Salzungen,Thuringia,50.8117,10.2333,/de/thuringia/bad-salzungen
+DE,,Eisenach,Thuringia,50.9747,10.3244,/de/thuringia/eisenach
+DE,,Gera,Thuringia,50.8782,12.0824,/de/thuringia/gera
+DE,,Gotha,Thuringia,50.9489,10.7183,/de/thuringia/gotha
+DE,,Greiz,Thuringia,50.6547,12.1997,/de/thuringia/greiz
+DE,,Heilbad Heiligenstadt,Thuringia,51.3775,10.1344,/de/thuringia/heilbad-heiligenstadt
+DE,,Ilmenau,Thuringia,50.6872,10.9142,/de/thuringia/ilmenau
+DE,,Jena,Thuringia,50.9272,11.5864,/de/thuringia/jena
+DE,,Leinefelde,Thuringia,51.3833,10.3333,/de/thuringia/leinefelde
+DE,,Meiningen,Thuringia,50.55,10.4167,/de/thuringia/meiningen
+DE,,Mühlhausen,Thuringia,51.2167,10.45,/de/thuringia/muhlhausen
+DE,,Nordhausen,Thuringia,51.505,10.7911,/de/thuringia/nordhausen
+DE,,Rudolstadt,Thuringia,50.7169,11.3275,/de/thuringia/rudolstadt
+DE,,Saalfeld,Thuringia,50.6506,11.3542,/de/thuringia/saalfeld
+DE,,Schmalkalden,Thuringia,50.7167,10.45,/de/thuringia/schmalkalden
+DE,,Sömmerda,Thuringia,51.1617,11.1169,/de/thuringia/sommerda
+DE,,Sondershausen,Thuringia,51.3667,10.8667,/de/thuringia/sondershausen
+DE,,Sonneberg,Thuringia,50.35,11.1667,/de/thuringia/sonneberg
+DE,,Suhl,Thuringia,50.6106,10.6931,/de/thuringia/suhl
+DE,,Weimar,Thuringia,50.9811,11.3294,/de/thuringia/weimar
+DE,,Zeulenroda,Thuringia,50.6486,11.9806,/de/thuringia/zeulenroda

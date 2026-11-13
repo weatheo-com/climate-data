@@ -1,0 +1,104 @@
+{
+  "slug": "klima-po-gradovima-srbije-1950-2025",
+  "title": "Klima po gradovima Srbije 1950-2025: dnevne i mesečne vrednosti, normale 1991-2020, godišnji pokazatelji / Climate by city, Serbia 1950-2025",
+  "description": "Istorijska klima gradova Srbije (20 gradova) u tri serije: dnevne vrednosti, mesečna klima sa normalama i stepen-danima, godišnji pokazatelji sa trendom.\n\nHistorical climate of Serbian cities (20 cities) in three series: daily values, monthly climate with normals and degree days, annual indicators with trend.\n\n### C\n\nDnevne vremenske vrednosti (srednja, minimalna i maksimalna temperatura, padavine, vetar, sunčevo zračenje) od 1950. do 2025. za najveće gradove, iz reanalize ERA5-Land.\n\n**Kolone.** `country`, `city_id`, `name`, `date`, `tmean_c` (°C), `tmin_c` (°C), `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh` (km/h), `wind_max_kmh` (km/h), `solar_kwh_m2` (kWh/m²).\n\nDaily weather values (mean, minimum and maximum temperature, precipitation, wind, solar radiation) for 1950-2025 for the largest cities, from the ERA5-Land reanalysis.\n\n**Columns.** `country`, `city_id`, `name`, `date`, `tmean_c` (°C), `tmin_c` (°C), `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh` (km/h), `wind_max_kmh` (km/h), `solar_kwh_m2` (kWh/m²).\n\n### D\n\nMesečna klima od 1950. do 2025. za najveće gradove, sa normalama 1991-2020 i stepen-danima, izračunata iz dnevnih vrednosti ERA5-Land.\n\n**Kolone.** `tmean_c` (°C), `tmin_mean_c` (°C), `tmax_mean_c` (°C), `tmin_abs_c` (°C), `tmax_abs_c` (°C), `precip_mm` (mm), `wet_days` (days), `frost_days` (days), `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `gtz_20_15` (degree days, °C·day), `solar_kwh_m2` (kWh/m²), `wind_mean_kmh` (km/h). Fajl normala 1991-2020 (12 redova po gradu): `tmean_c`, `tmin_c`, `tmax_c`, `precip_mm`, `wet_days`, `frost_days`, `summer_days`, `hot_days`, `solar_kwh_m2_day`, `wind_mean_kmh`, `hdd_15_5`, `hdd_18`, `cdd_18`.\n\nMonthly climate for 1950-2025 for the largest cities, with 1991-2020 normals and degree days, computed from the daily ERA5-Land values.\n\n**Columns.** `tmean_c` (°C), `tmin_mean_c` (°C), `tmax_mean_c` (°C), `tmin_abs_c` (°C), `tmax_abs_c` (°C), `precip_mm` (mm), `wet_days` (days), `frost_days` (days), `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `gtz_20_15` (degree days, °C·day), `solar_kwh_m2` (kWh/m²), `wind_mean_kmh` (km/h). Normals file 1991-2020 (12 rows per city): `tmean_c`, `tmin_c`, `tmax_c`, `precip_mm`, `wet_days`, `frost_days`, `summer_days`, `hot_days`, `solar_kwh_m2_day`, `wind_mean_kmh`, `hdd_15_5`, `hdd_18`, `cdd_18`.\n\n### E\n\nGodišnji klimatski pokazatelji od 1951. do 2025. za najveće gradove (mrazni dani, vrući dani, tropske noći, odstupanje temperature, rang najtoplijih godina) i trend zagrevanja, izračunati iz dnevnih vrednosti ERA5-Land.\n\n**Kolone.** `tmean_c` (°C), `tmean_anomaly_c` (°C), `precip_mm` (mm), `precip_anomaly_pct` (%), `wet_days`, `heavy_rain_days`, `max_1day_precip_mm` (mm), `frost_days`, `ice_days`, `summer_days`, `hot_days`, `tropical_nights` (days), `tmax_abs_c` (°C), `tmin_abs_c` (°C), degree days `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22` (°C·day), `rank_warmest`. Kolone trenda u fajlu gradova: `tmean_annual_c`, `precip_annual_mm`, `trend_c_per_decade_1951_2025`, `trend_c_per_decade_1981_2025`, `warmest_year`, `coldest_year`, `wettest_year`, `driest_year`.\n\nAnnual climate indicators for 1951-2025 for the largest cities (frost days, hot days, tropical nights, temperature anomaly, warmest-year rank) and the warming trend, computed from the daily ERA5-Land values.\n\n**Columns.** `tmean_c` (°C), `tmean_anomaly_c` (°C), `precip_mm` (mm), `precip_anomaly_pct` (%), `wet_days`, `heavy_rain_days`, `max_1day_precip_mm` (mm), `frost_days`, `ice_days`, `summer_days`, `hot_days`, `tropical_nights` (days), `tmax_abs_c` (°C), `tmin_abs_c` (°C), degree days `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22` (°C·day), `rank_warmest`. Trend columns in the cities file: `tmean_annual_c`, `precip_annual_mm`, `trend_c_per_decade_1951_2025`, `trend_c_per_decade_1981_2025`, `warmest_year`, `coldest_year`, `wettest_year`, `driest_year`.\n\n**Metod.** Satna reanaliza Copernicus ERA5-Land, mreža od 0,1°, ćelija najbliža tački grada, lokalni građanski dani (IANA vremenska zona, samo potpuni dani). Temperature su korigovane za nadmorsku visinu sa 6,5 °C po km; padavine nisu korigovane.\n\n**Ograničenja.** Vrednosti reanalize po ćeliji mreže, ne merenja stanica. Vrući dani u centrima gradova su potcenjeni. Stepen-dani se razlikuju od vrednosti koje objavljuju nacionalne službe.\n\n**Mesta.** Gradovi iz GeoNames (cities5000), CC BY 4.0, poređani po broju stanovnika; `city_id` je GeoNames id.\n\n**Licenca.** Podaci SODL (srpska licenca otvorenih podataka, uz navođenje izvora), kod MIT; GeoNames CC BY 4.0.\n\n**Obavezna atribucija.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nObjavio Weatheo (by CODELIO). Stranica skupa: https://weatheo.com/en/open-data/daily-weather-history-cities | https://weatheo.com/en/open-data/monthly-climate-degree-days-cities | https://weatheo.com/en/open-data/annual-climate-indicators-cities. Kod i skripte: https://github.com/weatheo-com/climate-data.\n\n**Method.** Copernicus ERA5-Land hourly reanalysis, 0.1° grid, nearest cell to the city point, local civil days (IANA time zone, complete days only). Temperatures are adjusted for altitude at 6.5 °C per km; precipitation is not adjusted.\n\n**Limits.** Grid-cell reanalysis values, not station measurements. Hot days in city centres are undercounted. Degree days differ from figures published by national services.\n\n**Places.** Cities from GeoNames (cities5000), CC BY 4.0, ranked by population; `city_id` is the GeoNames id.\n\n**Licence.** Data under SODL (Serbian Open Data Licence, source must be stated), code MIT; GeoNames CC BY 4.0.\n\n**Required attribution.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublished by Weatheo (by CODELIO). Dataset page: https://weatheo.com/en/open-data/daily-weather-history-cities | https://weatheo.com/en/open-data/monthly-climate-degree-days-cities | https://weatheo.com/en/open-data/annual-climate-indicators-cities. Code and scripts: https://github.com/weatheo-com/climate-data.",
+  "tags": [
+    "vreme",
+    "klima",
+    "era5",
+    "temperatura",
+    "padavine",
+    "stepen-dani",
+    "gradovi",
+    "copernicus",
+    "weather",
+    "climate",
+    "temperature",
+    "precipitation",
+    "cities"
+  ],
+  "license": "sodl",
+  "frequency": "irregular",
+  "temporal_coverage": {
+    "start": "1950-01-01",
+    "end": "2025-12-31"
+  },
+  "spatial": {
+    "granularity": "sr:city",
+    "zones": [
+      "country:rs"
+    ]
+  },
+  "resources": [
+    {
+      "title": "rs_city_daily_weather_1950_2025.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_city_daily_weather_1950_2025.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Dnevna tabela u formatu Parquet (svi gradovi)."
+    },
+    {
+      "title": "rs_city_daily_weather_1950_2025_csv.zip",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_city_daily_weather_1950_2025_csv.zip",
+      "format": "zip",
+      "mime": "application/zip",
+      "type": "main",
+      "description": "Jedan CSV po gradu, u zip arhivi."
+    },
+    {
+      "title": "rs_cities.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_cities.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Jedan red po gradu: id, naziv, koordinate, nadmorska visina, ćelija ERA5-Land."
+    },
+    {
+      "title": "rs_cities_datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_cities_datapackage.json",
+      "format": "json",
+      "mime": "application/json",
+      "type": "documentation",
+      "description": "Frictionless metapodaci (šema kolona, izvori, licenca)."
+    },
+    {
+      "title": "rs_city_monthly_climate_1950_2025.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_city_monthly_climate_1950_2025.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Jedan red po gradu, godini i mesecu (potpuni meseci)."
+    },
+    {
+      "title": "rs_city_monthly_climate_1950_2025.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_city_monthly_climate_1950_2025.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Ista tabela u formatu Parquet."
+    },
+    {
+      "title": "rs_city_climate_normals_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_city_climate_normals_1991_2020.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Normale 1991-2020: 12 redova po gradu."
+    },
+    {
+      "title": "rs_city_annual_climate_indicators_1951_2025.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_city_annual_climate_indicators_1951_2025.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Jedan red po gradu i godini (potpune godine)."
+    },
+    {
+      "title": "rs_cities.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/rs_cities.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Jedan red po gradu, sa trendom zagrevanja po deceniji i ekstremnim godinama."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank
+PT,2267057,Lisbon,Lisbon,14,Lisbon,38.72509,-9.1498,517802,Europe/Lisbon,1
+PT,2735943,Porto,Porto,17,Porto,41.1485,-8.61097,252687,Europe/Lisbon,2
+PT,2742032,Braga,Braga,04,Braga,41.5514,-8.42311,193324,Europe/Lisbon,3
+PT,2271772,Amadora,Amadora,14,Lisbon,38.75382,-9.23083,178858,Europe/Lisbon,4
+PT,2740637,Coimbra,Coimbra,07,Coimbra,40.20686,-8.41996,140796,Europe/Lisbon,5
+PT,2267095,Leiria,Leiria,13,Leiria,39.74362,-8.80705,128640,Europe/Lisbon,6
+PT,2262963,Setúbal,Setubal,19,Setúbal,38.5244,-8.8882,118166,Europe/Lisbon,7
+PT,2267827,Funchal,Funchal,10,Madeira,32.66568,-16.92547,105795,Atlantic/Madeira,8
+PT,2732265,Viseu,Viseu,22,Viseu,40.66165,-7.90905,103502,Europe/Lisbon,9
+PT,2264268,Queluz,Queluz,14,Lisbon,38.75657,-9.25451,103399,Europe/Lisbon,10
+PT,2270503,Cacém,Cacem,14,Lisbon,38.76698,-9.29793,93982,Europe/Lisbon,11
+PT,2742611,Aveiro,Aveiro,02,Aveiro,40.64575,-8.64643,80880,Europe/Lisbon,12
+PT,2732544,Vila Nova de Gaia,Vila Nova de Gaia,17,Porto,41.12401,-8.61241,70811,Europe/Lisbon,13
+PT,2268339,Faro,Faro,09,Faro,37.01869,-7.92716,70347,Europe/Lisbon,14
+PT,2271977,Algueirão,Algueirao,14,Lisbon,38.79764,-9.3437,66250,Europe/Lisbon,15
+PT,2266977,Loures,Loures,14,Lisbon,38.83091,-9.16845,66231,Europe/Lisbon,16
+PT,2739693,Felgueiras,Felgueiras,17,Porto,41.36806,-8.19396,58065,Europe/Lisbon,17
+PT,2263827,Rio de Mouro,Rio de Mouro,14,Lisbon,38.76613,-9.32804,54695,Europe/Lisbon,18
+PT,2265467,Odivelas,Odivelas,14,Lisbon,38.79269,-9.1838,54624,Europe/Lisbon,19
+PT,2268406,Évora,Evora,08,Évora,38.56587,-7.90405,53591,Europe/Lisbon,20

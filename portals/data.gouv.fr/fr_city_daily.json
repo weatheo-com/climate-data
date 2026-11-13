@@ -1,0 +1,60 @@
+{
+  "slug": "donnees-meteo-historiques-par-ville-1950-2025-france",
+  "title": "Données météo historiques par ville 1950-2025 : valeurs quotidiennes (ERA5-Land)",
+  "description": "Valeurs météo quotidiennes (température moyenne, minimale et maximale, précipitations, vent, rayonnement solaire) de 1950 à 2025 pour les plus grandes villes, issues de la réanalyse ERA5-Land.\n\n**Colonnes.** `country`, `city_id`, `name`, `date`, `tmean_c` (°C), `tmin_c` (°C), `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh` (km/h), `wind_max_kmh` (km/h), `solar_kwh_m2` (kWh/m²).\n\n**Méthode.** Réanalyse horaire Copernicus ERA5-Land, grille de 0,1°, maille la plus proche du point de la ville, jours civils locaux (fuseau IANA, jours complets seulement). Les températures sont corrigées de l'altitude à 6,5 °C par km ; les précipitations ne sont pas corrigées.\n\n**Limites.** Valeurs de réanalyse par maille, pas des mesures de stations. Les jours de chaleur sont sous-estimés dans les centres-villes. Les degrés-jours diffèrent des chiffres publiés par les services nationaux.\n\n**Lieux.** Villes de GeoNames (cities5000), CC BY 4.0, classées par population ; l'identifiant `city_id` est celui de GeoNames.\n\n**Licence.** Données CC BY 4.0, code MIT.\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO). Page du jeu de données: https://weatheo.com/fr/open-data/daily-weather-history-cities. Code et scripts: https://github.com/weatheo-com/climate-data.",
+  "tags": [
+    "meteo",
+    "climat",
+    "era5",
+    "temperature",
+    "precipitations",
+    "degres-jours",
+    "villes",
+    "copernicus"
+  ],
+  "license": "cc-by",
+  "frequency": "irregular",
+  "temporal_coverage": {
+    "start": "1950-01-01",
+    "end": "2025-12-31"
+  },
+  "spatial": {
+    "granularity": "fr:commune",
+    "zones": [
+      "country:fr"
+    ]
+  },
+  "resources": [
+    {
+      "title": "fr_city_daily_weather_1950_2025.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_city_daily_weather_1950_2025.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Table quotidienne au format Parquet (toutes les villes)."
+    },
+    {
+      "title": "fr_city_daily_weather_1950_2025_csv.zip",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_city_daily_weather_1950_2025_csv.zip",
+      "format": "zip",
+      "mime": "application/zip",
+      "type": "main",
+      "description": "Un CSV par ville, dans une archive zip."
+    },
+    {
+      "title": "fr_cities.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_cities.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Une ligne par ville : identifiant, nom, coordonnées, altitude, maille ERA5-Land."
+    },
+    {
+      "title": "fr_cities_datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_cities_datapackage.json",
+      "format": "json",
+      "mime": "application/json",
+      "type": "documentation",
+      "description": "Métadonnées Frictionless (schéma des colonnes, sources, licence)."
+    }
+  ]
+}

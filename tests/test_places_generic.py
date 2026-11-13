@@ -76,7 +76,8 @@ def test_unknown_country():
 
 
 @pytest.mark.skipif(not RAW.exists(), reason="raw places files not downloaded")
-@pytest.mark.parametrize("cc,lo,hi", [("PT", 308, 308), ("LU", 100, 100), ("RS", 145, 175)])
+@pytest.mark.parametrize("cc,lo,hi", [("PT", 308, 308), ("LU", 100, 100), ("RS", 145, 175),
+                                    ("DE", 10949, 10949), ("GB", 8545, 8545)])
 def test_real_files(cc, lo, hi):
     df = pg.load(cc, RAW / cc.lower())
     print(f"{cc}: {len(df)} places")
@@ -107,3 +108,44 @@ def test_pt_seats_prefers_seat_then_same_name():
     assert out.loc["3103", "latitude"] == 32.65
     assert out.loc["4301", "latitude"] == 38.65
     assert "0101" not in out.index
+
+
+def test_de_synthetic(tmp_path):
+    (tmp_path / "de_gemeinden_vg250ew.csv").write_text(
+        "ags,ars,name,bez,land,lat,lon,pop,area_km2\n"
+        "01001000,010010000000,Flensburg,Stadt,SH,54.78252,9.43751,95568,56.73\n"
+        "09162000,091620000000,München,Stadt,BY,48.137,11.575,1500000,310.7\n",
+        encoding="utf-8")
+    df = pg.load("DE", tmp_path)
+    _check(df, "DE")
+    assert len(df) == 2
+    r = df.iloc[0]
+    assert r["code"] == "01001000"
+    assert (r["admin1_code"], r["admin1_name"], r["admin2_code"]) == ("01", "Schleswig-Holstein", "01001")
+    assert df.iloc[1]["admin1_name"] == "Bayern"
+    assert df[["latitude", "longitude"]].notna().all().all()
+
+
+def test_de_missing_coords_raises(tmp_path):
+    (tmp_path / "de_gemeinden_vg250ew.csv").write_text(
+        "ags,ars,name,bez,land,lat,lon,pop,area_km2\n01001000,0,Flensburg,Stadt,SH,,,1,1\n")
+    with pytest.raises(pg.UnmatchedPlaces):
+        pg.load("DE", tmp_path)
+
+
+def test_gb_synthetic(tmp_path):
+    (tmp_path / "bua2022.csv").write_text(
+        "BUA22CD,BUA22NM,LONG,LAT,BNG_E,BNG_N\n"
+        "E63000001,Berwick-upon-Tweed,-2.0134,55.7634,399257,652237\n"
+        "W45000001,Cardiff,-3.18,51.48,0,0\n"
+        "S45000001,Edinburgh,-3.19,55.95,0,0\n"
+        "K08000001,Chester,-2.895,53.191,0,0\n")
+    df = pg.load("GB", tmp_path)
+    _check(df, "GB")
+    assert len(df) == 4
+    nat = dict(zip(df["code"], zip(df["admin1_code"], df["admin1_name"])))
+    assert nat["E63000001"] == ("E92000001", "England")
+    assert nat["W45000001"] == ("W92000004", "Wales")
+    assert nat["S45000001"] == ("S92000003", "Scotland")
+    assert nat["K08000001"][1] == "England and Wales"
+    assert (df["admin2_code"] == "").all()

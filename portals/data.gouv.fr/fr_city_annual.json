@@ -1,0 +1,45 @@
+{
+  "slug": "indicateurs-climatiques-annuels-par-ville-1951-2025-france",
+  "title": "Indicateurs climatiques annuels par ville 1951-2025 : jours de gel, jours de chaleur, tendance",
+  "description": "Indicateurs climatiques annuels de 1951 à 2025 pour les plus grandes villes (jours de gel, jours de chaleur, nuits tropicales, anomalie de température, classement des années) et tendance de réchauffement, calculés à partir des valeurs quotidiennes ERA5-Land.\n\n**Colonnes.** `tmean_c` (°C), `tmean_anomaly_c` (°C), `precip_mm` (mm), `precip_anomaly_pct` (%), `wet_days`, `heavy_rain_days`, `max_1day_precip_mm` (mm), `frost_days`, `ice_days`, `summer_days`, `hot_days`, `tropical_nights` (days), `tmax_abs_c` (°C), `tmin_abs_c` (°C), degree days `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22` (°C·day), `rank_warmest`. Colonnes de tendance dans le fichier des villes : `tmean_annual_c`, `precip_annual_mm`, `trend_c_per_decade_1951_2025`, `trend_c_per_decade_1981_2025`, `warmest_year`, `coldest_year`, `wettest_year`, `driest_year`.\n\n**Méthode.** Réanalyse horaire Copernicus ERA5-Land, grille de 0,1°, maille la plus proche du point de la ville, jours civils locaux (fuseau IANA, jours complets seulement). Les températures sont corrigées de l'altitude à 6,5 °C par km ; les précipitations ne sont pas corrigées.\n\n**Limites.** Valeurs de réanalyse par maille, pas des mesures de stations. Les jours de chaleur sont sous-estimés dans les centres-villes. Les degrés-jours diffèrent des chiffres publiés par les services nationaux.\n\n**Lieux.** Villes de GeoNames (cities5000), CC BY 4.0, classées par population ; l'identifiant `city_id` est celui de GeoNames.\n\n**Licence.** Données CC BY 4.0, code MIT.\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO). Page du jeu de données: https://weatheo.com/fr/open-data/annual-climate-indicators-cities. Code et scripts: https://github.com/weatheo-com/climate-data.",
+  "tags": [
+    "meteo",
+    "climat",
+    "era5",
+    "temperature",
+    "precipitations",
+    "degres-jours",
+    "villes",
+    "copernicus"
+  ],
+  "license": "cc-by",
+  "frequency": "irregular",
+  "temporal_coverage": {
+    "start": "1951-01-01",
+    "end": "2025-12-31"
+  },
+  "spatial": {
+    "granularity": "fr:commune",
+    "zones": [
+      "country:fr"
+    ]
+  },
+  "resources": [
+    {
+      "title": "fr_city_annual_climate_indicators_1951_2025.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_city_annual_climate_indicators_1951_2025.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Une ligne par ville et par année (années complètes)."
+    },
+    {
+      "title": "fr_cities.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/fr_cities.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Une ligne par ville, avec la tendance de réchauffement par décennie et les années extrêmes."
+    }
+  ]
+}

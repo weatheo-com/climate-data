@@ -1,0 +1,101 @@
+country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank
+DE,2950159,Berlin,Berlin,16,State of Berlin,52.52437,13.41053,3426354,Europe/Berlin,1
+DE,2911298,Hamburg,Hamburg,04,Hamburg,53.55073,9.99302,1973896,Europe/Berlin,2
+DE,2867714,Munich,Munich,02,Bavaria,48.13743,11.57549,1505005,Europe/Berlin,3
+DE,2886242,Köln,Koeln,07,North Rhine-Westphalia,50.93333,6.95,1024621,Europe/Berlin,4
+DE,2925533,Frankfurt am Main,Frankfurt am Main,05,Hesse,50.11552,8.68417,650000,Europe/Berlin,5
+DE,2934246,Düsseldorf,Duesseldorf,07,North Rhine-Westphalia,51.22319,6.77927,618685,Europe/Berlin,6
+DE,2825297,Stuttgart,Stuttgart,01,Baden-Wurttemberg,48.78232,9.17702,612663,Europe/Berlin,7
+DE,2928810,Essen,Essen,07,North Rhine-Westphalia,51.45657,7.01228,593085,Europe/Berlin,8
+DE,2935517,Dortmund,Dortmund,07,North Rhine-Westphalia,51.51494,7.466,588462,Europe/Berlin,9
+DE,2935022,Dresden,Dresden,13,Saxony,51.05089,13.73832,564904,Europe/Berlin,10
+DE,2944388,Bremen,Bremen,03,Bremen,53.07582,8.80717,546501,Europe/Berlin,11
+DE,2861650,Nuremberg,Nuremberg,02,Bavaria,49.45421,11.07752,515543,Europe/Berlin,12
+DE,2910831,Hannover,Hannover,06,Lower Saxony,52.37052,9.73322,515140,Europe/Berlin,13
+DE,2879139,Leipzig,Leipzig,13,Saxony,51.33962,12.37129,504971,Europe/Berlin,14
+DE,2934691,Duisburg,Duisburg,07,North Rhine-Westphalia,51.43247,6.76516,504358,Europe/Berlin,15
+DE,2947416,Bochum,Bochum,07,North Rhine-Westphalia,51.48165,7.21648,385729,Europe/Berlin,16
+DE,2805753,Wuppertal,Wuppertal,07,North Rhine-Westphalia,51.25627,7.14816,360797,Europe/Berlin,17
+DE,2949186,Bielefeld,Bielefeld,07,North Rhine-Westphalia,52.03333,8.53333,331906,Europe/Berlin,18
+DE,2946447,Bonn,Bonn,07,North Rhine-Westphalia,50.73438,7.09549,330579,Europe/Berlin,19
+DE,2867543,Münster,Muenster,07,North Rhine-Westphalia,51.96236,7.62571,308258,Europe/Berlin,20
+DE,2873891,Mannheim,Mannheim,01,Baden-Wurttemberg,49.4891,8.46694,307960,Europe/Berlin,21
+DE,2954172,Augsburg,Augsburg,02,Bavaria,48.37154,10.89851,301105,Europe/Berlin,22
+DE,2809346,Wiesbaden,Wiesbaden,05,Hesse,50.08601,8.24435,288850,Europe/Berlin,23
+DE,2892794,Karlsruhe,Karlsruhe,01,Baden-Wurttemberg,49.00937,8.40444,283799,Europe/Berlin,24
+DE,2921466,Gelsenkirchen,Gelsenkirchen,07,North Rhine-Westphalia,51.50508,7.09654,270028,Europe/Berlin,25
+DE,3247449,Aachen,Aachen,07,North Rhine-Westphalia,50.77664,6.08342,265208,Europe/Berlin,26
+DE,2869894,Mönchengladbach,Moenchengladbach,07,North Rhine-Westphalia,51.18539,6.44172,261742,Europe/Berlin,27
+DE,2891122,Kiel,Kiel,10,Schleswig-Holstein,54.32133,10.13489,252668,Europe/Berlin,28
+DE,2940132,Chemnitz,Chemnitz,13,Saxony,50.8357,12.92922,247220,Europe/Berlin,29
+DE,2945024,Braunschweig,Braunschweig,06,Lower Saxony,52.26594,10.52673,244715,Europe/Berlin,30
+DE,2874545,Magdeburg,Magdeburg,14,Saxony-Anhalt,52.13129,11.63189,244329,Europe/Berlin,31
+DE,2884509,Krefeld,Krefeld,07,North Rhine-Westphalia,51.33645,6.55381,237984,Europe/Berlin,32
+DE,2911522,Halle (Saale),Halle (Saale),14,Saxony-Anhalt,51.48158,11.97947,237865,Europe/Berlin,33
+DE,2925177,Freiburg,Freiburg,01,Baden-Wurttemberg,47.9959,7.85222,237460,Europe/Berlin,34
+DE,2874225,Mainz,Mainz,08,Rheinland-Pfalz,49.98185,8.28008,222889,Europe/Berlin,35
+DE,2860410,Oberhausen,Oberhausen,07,North Rhine-Westphalia,51.47805,6.8625,219176,Europe/Berlin,36
+DE,2929670,Erfurt,Erfurt,15,Thuringia,50.97734,11.03536,218793,Europe/Berlin,37
+DE,2875601,Lübeck,Luebeck,10,Schleswig-Holstein,53.86893,10.68729,212207,Europe/Berlin,38
+DE,2912621,Hagen,Hagen,07,North Rhine-Westphalia,51.36081,7.47168,198972,Europe/Berlin,39
+DE,2844588,Rostock,Rostock,12,Mecklenburg-Vorpommern,54.0887,12.14049,198293,Europe/Berlin,40
+DE,2892518,Kassel,Kassel,05,Hesse,51.31667,9.5,197230,Europe/Berlin,41
+DE,2852458,Potsdam,Potsdam,11,Brandenburg,52.39886,13.06566,184754,Europe/Berlin,42
+DE,2842647,Saarbrücken,Saarbruecken,09,Saarland,49.23262,7.00982,182971,Europe/Berlin,43
+DE,2911240,Hamm,Hamm,07,North Rhine-Westphalia,51.68033,7.82089,178967,Europe/Berlin,44
+DE,2867838,Mülheim,Muelheim,07,North Rhine-Westphalia,51.43218,6.87967,173050,Europe/Berlin,45
+DE,2905891,Herne,Herne,07,North Rhine-Westphalia,51.5388,7.22572,172108,Europe/Berlin,46
+DE,2938913,Darmstadt,Darmstadt,05,Hesse,49.87167,8.65027,167029,Europe/Berlin,47
+DE,2856883,Osnabrück,Osnabrueck,06,Lower Saxony,52.27411,8.05056,166462,Europe/Berlin,48
+DE,2831580,Solingen,Solingen,07,North Rhine-Westphalia,51.17343,7.0845,164359,Europe/Berlin,49
+DE,2875376,Ludwigshafen am Rhein,Ludwigshafen am Rhein,08,Rheinland-Pfalz,49.48121,8.44641,163196,Europe/Berlin,50
+DE,2878234,Leverkusen,Leverkusen,07,North Rhine-Westphalia,51.0303,6.98432,162738,Europe/Berlin,51
+DE,2857458,Oldenburg,Oldenburg,06,Lower Saxony,53.14039,8.21479,159218,Europe/Berlin,52
+DE,2864118,Neuss,Neuss,07,North Rhine-Westphalia,51.19807,6.68504,152457,Europe/Berlin,53
+DE,2849483,Regensburg,Regensburg,02,Bavaria,49.01513,12.10161,151389,Europe/Berlin,54
+DE,2907911,Heidelberg,Heidelberg,01,Baden-Wurttemberg,49.40768,8.69079,143345,Europe/Berlin,55
+DE,2855745,Paderborn,Paderborn,07,North Rhine-Westphalia,51.71905,8.75439,142161,Europe/Berlin,56
+DE,2805615,Würzburg,Wuerzburg,02,Bavaria,49.79391,9.95121,133731,Europe/Berlin,57
+DE,2923544,Fürth,Fuerth,02,Bavaria,49.47593,10.98856,132036,Europe/Berlin,58
+DE,2806654,Wolfsburg,Wolfsburg,06,Lower Saxony,52.4236,10.77597,123064,Europe/Berlin,59
+DE,2849647,Recklinghausen,Recklinghausen,07,North Rhine-Westphalia,51.61379,7.19738,122438,Europe/Berlin,60
+DE,2918632,Göttingen,Goettingen,06,Lower Saxony,51.53443,9.93228,122149,Europe/Berlin,61
+DE,2907669,Heilbronn,Heilbronn,01,Baden-Wurttemberg,49.13995,9.22054,120733,Europe/Berlin,62
+DE,2895992,Ingolstadt,Ingolstadt,02,Bavaria,48.76508,11.42372,120658,Europe/Berlin,63
+DE,2820256,Ulm,Ulm,01,Baden-Wurttemberg,48.39841,9.99155,120451,Europe/Berlin,64
+DE,2945756,Bottrop,Bottrop,07,North Rhine-Westphalia,51.52392,6.9285,119909,Europe/Berlin,65
+DE,2853969,Pforzheim,Pforzheim,01,Baden-Wurttemberg,48.88436,8.69892,119313,Europe/Berlin,66
+DE,2857807,Offenbach,Offenbach,05,Hesse,50.10061,8.76647,119192,Europe/Berlin,67
+DE,2944368,Bremerhaven,Bremerhaven,03,Bremen,53.55357,8.57553,118610,Europe/Berlin,68
+DE,2848273,Remscheid,Remscheid,07,North Rhine-Westphalia,51.17983,7.1925,117118,Europe/Berlin,69
+DE,2847736,Reutlingen,Reutlingen,01,Baden-Wurttemberg,48.49144,9.20427,112627,Europe/Berlin,70
+DE,2886946,Koblenz,Koblenz,08,Rheinland-Pfalz,50.35357,7.57883,107319,Europe/Berlin,71
+DE,2832495,Siegen,Siegen,07,North Rhine-Westphalia,50.87481,8.02431,107242,Europe/Berlin,72
+DE,2950349,Bergisch Gladbach,Bergisch Gladbach,07,North Rhine-Westphalia,50.9856,7.13298,106184,Europe/Berlin,73
+DE,2842150,Salzgitter,Salzgitter,06,Lower Saxony,52.15705,10.4154,104970,Europe/Berlin,74
+DE,2895044,Jena,Jena,15,Thuringia,50.92878,11.5899,104712,Europe/Berlin,75
+DE,2921232,Gera,Gera,15,Thuringia,50.88029,12.08187,104659,Europe/Berlin,76
+DE,2870221,Moers,Moers,07,North Rhine-Westphalia,51.45342,6.6326,103487,Europe/Berlin,77
+DE,2904789,Hildesheim,Hildesheim,06,Lower Saxony,52.15077,9.95112,103052,Europe/Berlin,78
+DE,2929567,Erlangen,Erlangen,02,Bavaria,49.59099,11.00783,102675,Europe/Berlin,79
+DE,2821164,Trier,Trier,08,Rheinland-Pfalz,49.75565,6.63935,100129,Europe/Berlin,80
+DE,2803560,Zwickau,Zwickau,13,Saxony,50.72724,12.48839,98796,Europe/Berlin,81
+DE,2894003,Kaiserslautern,Kaiserslautern,08,Rheinland-Pfalz,49.443,7.77161,98732,Europe/Berlin,82
+DE,2834282,Schwerin,Schwerin,12,Mecklenburg-Vorpommern,53.62937,11.41316,96641,Europe/Berlin,83
+DE,2913366,Gütersloh,Guetersloh,07,North Rhine-Westphalia,51.90693,8.37853,96180,Europe/Berlin,84
+DE,2934486,Düren,Dueren,07,North Rhine-Westphalia,50.80434,6.49299,93440,Europe/Berlin,85
+DE,2928751,Esslingen,Esslingen,01,Baden-Wurttemberg,48.73961,9.30473,92390,Europe/Berlin,86
+DE,2820860,Tübingen,Tuebingen,01,Baden-Wurttemberg,48.52266,9.05222,92322,Europe/Berlin,87
+DE,2895669,Iserlohn,Iserlohn,07,North Rhine-Westphalia,51.37547,7.70281,91811,Europe/Berlin,88
+DE,2807363,Witten,Witten,07,North Rhine-Westphalia,51.44362,7.35258,91808,Europe/Berlin,89
+DE,2850174,Ratingen,Ratingen,07,North Rhine-Westphalia,51.29724,6.84929,91606,Europe/Berlin,90
+DE,2873263,Marl,Marl,07,North Rhine-Westphalia,51.65671,7.09038,91398,Europe/Berlin,91
+DE,2875107,Lünen,Luenen,07,North Rhine-Westphalia,51.61634,7.52872,91009,Europe/Berlin,92
+DE,2920512,Gießen,Giessen,05,Hesse,50.58727,8.67554,89179,Europe/Berlin,93
+DE,2911007,Hanau am Main,Hanau am Main,05,Hesse,50.13423,8.91418,88648,Europe/Berlin,94
+DE,2817724,Velbert,Velbert,07,North Rhine-Westphalia,51.33537,7.04348,87669,Europe/Berlin,95
+DE,2875392,Ludwigsburg,Ludwigsburg,01,Baden-Wurttemberg,48.89731,9.19161,87603,Europe/Berlin,96
+DE,2926271,Flensburg,Flensburg,10,Schleswig-Holstein,54.78805,9.43722,85838,Europe/Berlin,97
+DE,2939811,Cottbus,Cottbus,11,Brandenburg,51.75769,14.32888,84754,Europe/Berlin,98
+DE,2808720,Wilhelmshaven,Wilhelmshaven,06,Lower Saxony,53.5476,8.10395,84393,Europe/Berlin,99
+DE,2871039,Minden,Minden,07,North Rhine-Westphalia,52.28953,8.91455,82879,Europe/Berlin,100

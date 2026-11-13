@@ -177,3 +177,145 @@ def write(out_dir: Path, package: dict) -> Path:
     p = Path(out_dir) / "datapackage.json"
     p.write_text(json.dumps(package, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return p
+
+
+# --- City datasets (daily weather, monthly climate, normals, annual indicators) ---
+
+TIMESERIES_SOURCES = [
+    {"title": "Copernicus C3S ERA5-Land hourly time series from 1950 to present (reanalysis-era5-land-timeseries)",
+     "path": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-timeseries"},
+    SOURCES[2],
+    SOURCES[3],
+    {"title": "GeoNames gazetteer cities5000 (city list, coordinates, population, time zone), licence CC BY 4.0",
+     "path": "https://download.geonames.org/export/dump/"},
+]
+CITY_METHOD = (
+    "Each city takes the ERA5-Land time series (0.1 deg) of the grid cell at its GeoNames point, or of a "
+    "neighbouring land cell when that cell is sea. Hourly values are grouped into local civil days (the "
+    "city's IANA time zone); only complete days are kept. Temperatures are adjusted from the cell "
+    "elevation to the city elevation with 6.5 degC per km. Wind is the mean of hourly 10 m wind speeds, "
+    "not gusts. Monthly and annual values use complete months and years only."
+)
+CITY_FIELD_DOC = {
+    "country": "ISO 3166-1 alpha-2 country code",
+    "city_id": "GeoNames id of the city",
+    "name": "city name (GeoNames)",
+    "ascii_name": "city name in ASCII (GeoNames)",
+    "admin1_code": "GeoNames first-level administrative division code",
+    "admin1_name": "first-level administrative division name",
+    "latitude": "city latitude, decimal degrees (WGS84, GeoNames)",
+    "longitude": "city longitude, decimal degrees (WGS84, GeoNames)",
+    "population": "population (GeoNames)",
+    "timezone": "IANA time zone used for local days",
+    "rank": "rank by population within the country (1 = largest)",
+    "grid_lat": "latitude of the ERA5-Land cell centre, decimal degrees",
+    "grid_lon": "longitude of the ERA5-Land cell centre, decimal degrees",
+    "elevation_m": "city elevation, m (Copernicus DEM GLO-90)",
+    "grid_elevation_m": "ERA5-Land model elevation of the cell, m",
+    "weatheo_url": "Weatheo forecast page of the city (empty when not matched)",
+    "tmean_annual_c": "mean annual temperature 1991-2020, degC",
+    "precip_annual_mm": "mean annual precipitation 1991-2020, mm",
+    "trend_c_per_decade_1951_2025": "linear trend of annual mean temperature 1951-2025, degC per decade",
+    "trend_c_per_decade_1981_2025": "linear trend of annual mean temperature 1981-2025, degC per decade",
+    "warmest_year": "warmest year 1951-2025 (annual mean temperature)",
+    "coldest_year": "coldest year 1951-2025 (annual mean temperature)",
+    "wettest_year": "wettest year 1951-2025 (annual precipitation)",
+    "driest_year": "driest year 1951-2025 (annual precipitation)",
+    "date": "local calendar date",
+    "year": "calendar year",
+    "month": "month (1-12)",
+    "tmean_c": "mean temperature, degC",
+    "tmin_c": "minimum temperature, degC",
+    "tmax_c": "maximum temperature, degC",
+    "precip_mm": "precipitation, mm",
+    "wind_mean_kmh": "mean 10 m wind speed, km/h",
+    "wind_max_kmh": "highest hourly 10 m wind speed (not gusts), km/h",
+    "solar_kwh_m2": "surface solar radiation downwards, kWh/m2",
+    "solar_kwh_m2_day": "surface solar radiation downwards per day, kWh/m2",
+    "tmin_mean_c": "mean daily minimum temperature, degC",
+    "tmax_mean_c": "mean daily maximum temperature, degC",
+    "tmin_abs_c": "lowest daily minimum temperature, degC",
+    "tmax_abs_c": "highest daily maximum temperature, degC",
+    "tmean_anomaly_c": "mean temperature minus the 1991-2020 mean, degC",
+    "precip_anomaly_pct": "precipitation relative to the 1991-2020 mean, percent",
+    "max_1day_precip_mm": "highest daily precipitation, mm",
+    "wet_days": "days with precipitation >= 1 mm",
+    "heavy_rain_days": "days with precipitation >= 20 mm",
+    "frost_days": "days with tmin < 0 degC",
+    "ice_days": "days with tmax < 0 degC",
+    "summer_days": "days with tmax >= 25 degC",
+    "hot_days": "days with tmax >= 30 degC",
+    "tropical_nights": "days with tmin >= 20 degC",
+    "hdd_15_5": "heating degree days, base 15.5 degC, degC day",
+    "hdd_18": "heating degree days, base 18 degC, degC day",
+    "cdd_18": "cooling degree days, base 18 degC, degC day",
+    "cdd_22": "cooling degree days, base 22 degC, degC day",
+    "gtz_20_15": "Gradtagzahl 20/15 (VDI 3807), degC day",
+    "rank_warmest": "rank of the year by annual mean temperature (1 = warmest)",
+}
+
+
+def city_schema(df: pd.DataFrame, daily: bool = False) -> dict:
+    fields = []
+    for c in df.columns:
+        t = "date" if c == "date" else _type(df[c])
+        if c in ("warmest_year", "coldest_year", "wettest_year", "driest_year", "year", "month"):
+            t = "integer"
+        f = {"name": c, "type": t}
+        d = CITY_FIELD_DOC.get(c, "")
+        if d and daily and c.startswith(("tmean", "tmin", "tmax", "precip", "solar", "wind")):
+            d = "daily " + d
+        if d:
+            f["description"] = d
+        fields.append(f)
+    return {"fields": fields, "missingValues": [""]}
+
+
+def build_city_package(cc: str, country_name: str, tables: dict[str, pd.DataFrame],
+                       names: dict[str, str], n_cities: int) -> dict:
+    """Datapackage for the city files. tables keys: cities, daily, daily_csv, monthly, normals, annual;
+    names: the file names from build_cities.file_names()."""
+    desc = (
+        f"Daily weather 1950-2025, monthly climate, climate normals 1991-2020 and annual climate indicators "
+        f"1951-2025 for the {n_cities} largest cities of {country_name}, from the Copernicus ERA5-Land "
+        f"hourly time series. " + CITY_METHOD + " " + LIMITS + " " + ATTRIBUTION
+    )
+    csv = {"format": "csv", "mediatype": "text/csv", "encoding": "utf-8", "profile": "tabular-data-resource",
+           "dialect": {"delimiter": ","}}
+    parquet = {"format": "parquet", "mediatype": "application/vnd.apache.parquet"}
+    specs = [
+        ("cities", names["cities"], csv, f"{country_name}: cities with grid cell, elevation and climate summary", "cities", False),
+        ("daily", names["daily_parquet"], parquet, f"{country_name}: daily weather 1950-2025 per city", "daily", True),
+        ("daily_csv", names["daily_zip"], {"format": "zip", "mediatype": "application/zip"},
+         f"{country_name}: daily weather 1950-2025, one CSV per city (<cc>_<city>_<city_id>_daily.csv)", "daily_csv", True),
+        ("monthly", names["monthly_csv"], csv, f"{country_name}: monthly climate 1950-2025 per city", "monthly", False),
+        ("monthly_parquet", names["monthly_parquet"], parquet, f"{country_name}: monthly climate 1950-2025 per city", "monthly", False),
+        ("normals", names["normals"], csv, f"{country_name}: monthly climate normals 1991-2020 per city", "normals", False),
+        ("annual", names["annual"], csv, f"{country_name}: annual climate indicators 1951-2025 per city", "annual", False),
+    ]
+    resources = []
+    for key, path, fmt, title, table, is_daily in specs:
+        resources.append({"name": f"{cc.lower()}_city_{key}", "path": path, **fmt, "title": title,
+                          "licenses": [LICENSE], "schema": city_schema(tables[table], daily=is_daily)})
+    return {
+        "profile": "tabular-data-package",
+        "name": f"weatheo-city-climate-{cc.lower()}",
+        "title": f"{country_name} city daily weather 1950-2025 and climate indicators (ERA5-Land)",
+        "description": desc,
+        "version": "1.1.0",
+        "licenses": [LICENSE],
+        "homepage": HOMEPAGE,
+        "sources": TIMESERIES_SOURCES,
+        "contributors": CONTRIBUTORS,
+        "keywords": ["climate", "weather history", "degree days", "climate normals", "ERA5-Land",
+                     "Copernicus", country_name],
+        "spatial": cc,
+        "temporal": {"start": "1950-01-01", "end": "2025-12-31"},
+        "resources": resources,
+    }
+
+
+def write_named(path: Path, package: dict) -> Path:
+    p = Path(path)
+    p.write_text(json.dumps(package, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return p

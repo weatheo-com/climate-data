@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 
 BASE = "https://weatheo.com"
-LANG = {"FR": "fr", "LU": "fr", "PT": "pt", "RS": "en"}
+LANG = {"FR": "fr", "LU": "fr", "PT": "pt", "RS": "en", "DE": "de", "GB": "en"}
 MAX_KM = 10.0
 URLS_DIR = Path(__file__).resolve().parents[2] / "places" / "urls"
 

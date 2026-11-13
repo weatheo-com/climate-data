@@ -88,6 +88,20 @@ COUNTRIES: dict[str, Country] = {
         excluded="Kosovo municipalities (codes 90xxx) are not included.",
         loader=_generic("RS"),
     ),
+    "DE": Country(
+        code="DE", name="Germany",
+        boxes=(Box("Germany", (55.1, 5.8, 47.2, 15.1)),),
+        lang="de", places_default=RAW / "de", code_label="AGS municipality code",
+        loader=_generic("DE"),
+    ),
+    "GB": Country(
+        code="GB", name="United Kingdom",
+        boxes=(Box("Great Britain", (60.9, -8.7, 49.8, 1.8)),),
+        lang="en", places_default=RAW / "gb", code_label="ONS built-up area code (BUA22CD)",
+        excluded="Northern Ireland is not included (ONS built-up areas 2022 cover "
+                 "England, Wales and Scotland only).",
+        loader=_generic("GB"),
+    ),
 }
 
 

@@ -1,0 +1,6 @@
+country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank
+LU,2960316,Luxembourg,Luxembourg,LU,Luxembourg,49.60982,6.13268,76684,Europe/Luxembourg,1
+LU,2960596,Esch-sur-Alzette,Esch-sur-Alzette,ES,Esch-sur-Alzette,49.49583,5.98056,36625,Europe/Luxembourg,2
+LU,2960634,Dudelange,Dudelange,ES,Esch-sur-Alzette,49.48056,6.0875,18013,Europe/Luxembourg,3
+LU,2960800,Belvaux,Belvaux,ES,Esch-sur-Alzette,49.51014,5.92414,8329,Europe/Luxembourg,4
+LU,2960102,Schifflange,Schifflange,ES,Esch-sur-Alzette,49.50639,6.01278,8155,Europe/Luxembourg,5
