@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "climate-data"
+version = "0.1.0"
+description = "Municipal climate normals (1991-2020) and their shift since 1961-1990, derived from Copernicus ERA5, by Weatheo"
+requires-python = ">=3.11"
+license = { text = "MIT (code, see LICENSE-CODE); CC BY 4.0 (data, see LICENSE)" }
+authors = [{ name = "Weatheo (by CODELIO)" }]
+dependencies = ["numpy", "pandas", "xarray", "netCDF4", "pyarrow", "cdsapi", "requests"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

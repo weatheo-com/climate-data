@@ -1,0 +1,9 @@
+.venv/
+cache/
+*.nc
+*.grib
+__pycache__/
+*.egg-info/
+.pytest_cache/
+places/raw/
+cache/
