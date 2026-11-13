@@ -4,7 +4,7 @@
 2. Create the organisation (profile > "Нова организација"): name, description and website from ORG.md, logo optional. The portal admins may need to approve it; wait for that before step 4.
 3. Profile > API key (https://data.gov.rs/sr/admin/ , "Профил" > "API кључ"): copy the key into the shell only: `export UDATA_API_KEY=...`. Check how publish_udata.py reads it (`grep -n environ scripts/publish_udata.py`). Do not commit it.
 4. Get the organisation id (page of the organisation > "API" link, or `curl -s https://data.gov.rs/api/1/organizations/?q=weatheo | python3 -m json.tool | grep '"id"'`).
-5. Make sure release v1.0.0 with the RS_*.csv / .parquet / datapackage.json files exists on GitHub (the resource URLs point there).
+5. Make sure release v1.0.0 with the rs_*.csv / .parquet / rs_datapackage.json files exists on GitHub (the resource URLs point there).
 6. Dry run (nothing is sent; --lookup adds read-only GETs):
    `cd climate-data && python3 scripts/publish_udata.py --base https://data.gov.rs --org <ORG_ID> --meta portals/data.gov.rs/RS-A.json --lookup`
    (same for RS-B.json)

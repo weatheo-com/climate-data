@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from climate_data import build, countries, fetch_cds
+from climate_data import build, countries, elevation, fetch_cds
 
 K = 273.15
 
@@ -68,11 +68,48 @@ def tmin_c(year: int, month: int) -> float:
     return 6.0 if new else 5.0
 
 
-def make(cache: Path, cc: str = "LU", daily: bool = False) -> list[Path]:
+def write_orography(cache: Path, country, cell_m: float, dem_m: float) -> list[Path]:
+    """Flat model orography (cell_m) for both grids and flat DEM tiles (dem_m) over the boxes."""
+    import rasterio
+    from rasterio.transform import from_origin
+
+    written = []
+    n = max(b.bbox[0] for b in country.boxes)
+    w = min(b.bbox[1] for b in country.boxes)
+    s_ = min(b.bbox[2] for b in country.boxes)
+    e = max(b.bbox[3] for b in country.boxes)
+    lats, lons = _grid((n, w, s_, e), 0.1)
+    z = np.full((1, len(lats), len(lons)), cell_m * elevation.G)
+    p = cache / elevation.LAND_GEO_FILE
+    p.parent.mkdir(parents=True, exist_ok=True)
+    xr.Dataset({"z": (("time", "latitude", "longitude"), z)},
+               coords={"time": [pd.Timestamp("2013-08-09T12:00")], "latitude": lats, "longitude": lons}).to_netcdf(p)
+    written.append(p)
+    for box in country.boxes:
+        la, lo = _grid(box.bbox, 0.25)
+        for path in build.cached_files(build.ERA5_MONTHLY, elevation.ERA5_OROGRAPHY_REQUEST, box.bbox,
+                                       elevation.ERA5_OROGRAPHY_YEARS, cache, 1):
+            _write(path, pd.DatetimeIndex([pd.Timestamp(2020, 1, 1)]), la, lo,
+                   {"z": np.full((1, len(la), len(lo)), cell_m * elevation.G)})
+            written.append(path)
+    for la in range(int(np.floor(s_)), int(np.floor(n)) + 1):
+        for lo in range(int(np.floor(w)), int(np.floor(e)) + 1):
+            name = elevation.dem_tile_name(la, lo)
+            p = cache / elevation.DEM_DIR / f"{name}.tif"
+            p.parent.mkdir(parents=True, exist_ok=True)
+            with rasterio.open(p, "w", driver="GTiff", width=120, height=120, count=1, dtype="float32",
+                               crs="EPSG:4326", transform=from_origin(lo, la + 1, 1 / 120, 1 / 120)) as r:
+                r.write(np.full((1, 120, 120), dem_m, dtype="float32"))
+            written.append(p)
+    return written
+
+
+def make(cache: Path, cc: str = "LU", daily: bool = False, dem_m: float = 0.0, cell_m: float = 0.0) -> list[Path]:
+    """Synthetic CDS files plus flat orography: with dem_m == cell_m no altitude adjustment."""
     cache = Path(cache)
     country = countries.get(cc)
     req = build.monthly_request()
-    written = []
+    written = write_orography(cache, country, cell_m, dem_m)
     for box in country.boxes:
         for dataset, step, t2m, tp in (
             (build.LAND_MONTHLY, 0.1, land_t2m_c, lambda y: land_tp(y)),

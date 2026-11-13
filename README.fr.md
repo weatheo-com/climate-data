@@ -30,36 +30,36 @@ Les mailles de la réanalyse ne sont pas des observations de stations : les vale
 
 ## Normales climatiques par commune (FR, PT, LU, RS)
 
-Normales climatiques pour chaque commune de quatre pays, publiées par Weatheo (by CODELIO). Page de présentation : [Weatheo](https://weatheo.com/fr/open-data). Chaque pays a ses fichiers dans `data/<CC>/` en CSV, parquet et `datapackage.json` ; ils sont aussi joints à la release GitHub v1.0.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/<fichier>`).
+Normales climatiques pour chaque commune de quatre pays, publiées par Weatheo (by CODELIO). Page de présentation : [Weatheo](https://weatheo.com/fr/open-data). Chaque pays a ses fichiers dans `data/<CC>/` en CSV, parquet et `datapackage.json` ; ils sont aussi joints à la release GitHub v1.0.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/<fichier>`). Les deux CSV de la France (60 à 70 Mo chacun) ne sont que sur la release, trop lourds pour git ; les fichiers parquet de la France sont dans le dépôt.
 
 | Pays | Communes | Code |
 |---|---|---|
-| France (FR) | 34 863 communes (France métropolitaine et Corse ; départements d'outre-mer non inclus) | INSEE |
+| France (FR) | 34 734 communes (France métropolitaine et Corse ; départements d'outre-mer non inclus) | INSEE |
 | Portugal (PT) | 308 municípios (continent, Madère, Açores) | DICO |
 | Luxembourg (LU) | 100 communes | LAU |
 | Serbie (RS) | 169 municipalités et villes (opštine i gradovi) | RZS |
 
 Deux jeux de données par pays :
 
-- **`<cc>_climate_normals_1991_2020`** : normales mensuelles 1991-2020 par commune. Colonnes : `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `month` (1-12), `tmean_c` (température moyenne de l'air à 2 m, °C), `precip_mm` (précipitations mensuelles moyennes, mm), `period`, `weatheo_url`.
+- **`<cc>_climate_normals_1991_2020`** : normales mensuelles 1991-2020 par commune. Colonnes : `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `elevation_m` (m), `grid_elevation_m` (m), `month` (1-12), `tmean_c` (température moyenne de l'air à 2 m, °C), `precip_mm` (précipitations mensuelles moyennes, mm), `period`, `weatheo_url`.
 - **`<cc>_climate_shift_1961_1990_vs_1991_2020`** : par commune et par mois (1-12 et année), la valeur 1961-1990, la valeur 1991-2020 et l'écart, pour la température (°C) et les précipitations (%).
 
-`weatheo_url` renvoie vers la page de prévisions Weatheo de la commune quand elle existe (FR 30 631 sur 34 863 ; PT 129 sur 308 ; LU 4 sur 100 ; RS 86 sur 169), sinon elle est vide.
+`weatheo_url` renvoie vers la page de prévisions Weatheo de la commune quand elle existe (FR 30 631 sur 34 734 ; PT 139 sur 308 ; LU 4 sur 100 ; RS 86 sur 169), sinon elle est vide.
 
 ### Méthode
 
-Moyennes mensuelles Copernicus ERA5-Land (0,1°, environ 9 km), avec les moyennes mensuelles ERA5 (0,25°) en secours là où la maille ERA5-Land n'a pas de valeur (côtes). Chaque commune prend la maille la plus proche de son point central (`grid_lat`, `grid_lon`, `grid_source`). Les normales sont des moyennes sur 30 ans des valeurs mensuelles. Les fichiers sont produits par les scripts ouverts de `src/climate_data/` et contrôlés par un script de validation. Ni OpenWeather, ni les données de stations Météo-France, ni Open-Meteo ne sont utilisés pour ces jeux de données.
+Moyennes mensuelles Copernicus ERA5-Land (0,1°, environ 9 km), avec les moyennes mensuelles ERA5 (0,25°) en secours là où la maille ERA5-Land n'a pas de valeur (côtes). Chaque commune prend la maille la plus proche de son point de référence (la mairie pour la France, le siège municipal pour le Portugal) (`grid_lat`, `grid_lon`, `grid_source`). Les températures sont corrigées de l'altitude : chaque valeur est ramenée de l'altitude du modèle de la maille (`grid_elevation_m`, orographie ERA5-Land d'ECMWF) à l'altitude du point de référence de la commune (`elevation_m`, issue du Copernicus DEM GLO-90) avec un gradient fixe de 6,5 °C par km : `t = t_cell + 0,0065 × (grid_elevation_m − elevation_m)`. Les précipitations ne sont pas corrigées. L'écart de température entre les deux périodes ne dépend pas de cette correction. Les normales sont des moyennes sur 30 ans des valeurs mensuelles. Les fichiers sont produits par les scripts ouverts de `src/climate_data/` et contrôlés par un script de validation. Ni OpenWeather, ni les données de stations Météo-France, ni Open-Meteo ne sont utilisés pour ces jeux de données.
 
 ### Limites
 
-Ce sont des valeurs de mailles de réanalyse, pas des observations de stations : elles peuvent différer des normales officielles des stations, en particulier en altitude, sur les côtes et en ville.
+Ce sont des valeurs de mailles de réanalyse, pas des observations de stations : elles peuvent différer des normales officielles des stations, surtout près des côtes, en ville et en relief accidenté.
 
 ### Sources des communes
 
 | Pays | Source | Licence |
 |---|---|---|
 | FR | « Liste des communes de France », data.gouv.fr | Licence Ouverte 2.0 |
-| PT | CAOP 2025, Direção-Geral do Território | CC BY |
+| PT | CAOP 2025, Direção-Geral do Território ; points des sièges municipaux GeoNames | CC BY ; CC BY 4.0 |
 | LU | Codes LAU du STATEC, data.public.lu ; coordonnées GeoNames | CC0 ; GeoNames CC BY 4.0 |
 | RS | RZS « Opštine i gradovi », data.gov.rs ; coordonnées GeoNames | « sodl » (réutilisation commerciale à vérifier) ; GeoNames CC BY 4.0 |
 
@@ -70,6 +70,8 @@ URL, fichiers et dates de récupération : [docs/places-sources.md](docs/places-
 Licence des données CC BY 4.0 ; code MIT. Toute utilisation de ces données doit reprendre cette mention :
 
 > Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
+>
+> Copernicus DEM GLO-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA.
 
 ### Reconstruire
 

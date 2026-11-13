@@ -162,7 +162,33 @@ def read_xlsx_sheet(path: Path, sheet: str, max_empty: int = 50) -> list[list[st
 
 # --------------------------------------------------------------------------- PT
 
+PT_SEAT_CODES = ("PPLC", "PPLA", "PPLA2")  # capital, district/region seat, municipality seat
+
+
+def pt_seats(geonames: pd.DataFrame, codes: pd.Series, names: pd.Series) -> pd.DataFrame:
+    """Municipal seat point per DICO code from GeoNames (admin2 = DICO).
+
+    First a seat feature (PPLC/PPLA/PPLA2) in the municipality; else the most populous
+    populated place in it whose name is the municipality's name. Rows: code, latitude, longitude.
+    """
+    g = geonames[geonames["feature_class"] == "P"].copy()
+    g["rank"] = g["feature_code"].map({c: i for i, c in enumerate(PT_SEAT_CODES)}).fillna(9)
+    g["pop"] = pd.to_numeric(g["population"], errors="coerce").fillna(0)
+    g["key"] = g["name"].map(norm)
+    want = pd.DataFrame({"code": codes.values, "key": names.map(norm).values})
+    seats = g[g["rank"] < 9].sort_values(["admin2", "rank", "pop"], ascending=[True, True, False])
+    seats = seats.drop_duplicates("admin2")[["admin2", "latitude", "longitude"]]
+    named = g.merge(want, left_on=["admin2", "key"], right_on=["code", "key"])
+    named = named.sort_values(["admin2", "pop"], ascending=[True, False]).drop_duplicates("admin2")
+    named = named[["admin2", "latitude", "longitude"]]
+    out = pd.concat([seats, named[~named["admin2"].isin(seats["admin2"])]], ignore_index=True)
+    return out.rename(columns={"admin2": "code"})
+
+
 def load_pt(path_or_dir, strict: bool = True) -> pd.DataFrame:
+    """CAOP 2025 municipalities. Point: the municipal seat from GeoNames PT.txt when that file
+    sits next to the CAOP file (a polygon's interior point can be far up a mountain, e.g. on
+    Madeira); otherwise, or for municipalities without a seat match, the CAOP interior point."""
     path = _resolve(path_or_dir, "municipios_caop2025_pointonsurface.csv")
     raw = pd.read_csv(path, dtype=str, keep_default_na=False)
     df = pd.DataFrame({
@@ -174,7 +200,17 @@ def load_pt(path_or_dir, strict: bool = True) -> pd.DataFrame:
         "latitude": pd.to_numeric(raw["Y"]),
         "longitude": pd.to_numeric(raw["X"]),
     })
-    return _finish(df, "PT", [], strict)
+    gn = Path(path).parent / "PT.txt"
+    n_seat = 0
+    if gn.exists():
+        seats = pt_seats(read_geonames(gn), df["code"], df["name"]).set_index("code")
+        hit = df["code"].isin(seats.index)
+        df.loc[hit, "latitude"] = df.loc[hit, "code"].map(seats["latitude"]).to_numpy()
+        df.loc[hit, "longitude"] = df.loc[hit, "code"].map(seats["longitude"]).to_numpy()
+        n_seat = int(hit.sum())
+    out = _finish(df, "PT", [], strict)
+    out.attrs["seat_points"] = n_seat
+    return out
 
 
 # --------------------------------------------------------------------------- LU

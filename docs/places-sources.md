@@ -2,7 +2,7 @@
 
 The municipal climate datasets (FR, PT, LU, RS) take their list of municipalities, codes and reference points from the sources below. All files were retrieved on 2026-11-13 and are stored under `places/raw/<cc>/`; `scripts/fetch_places.sh` downloads them again.
 
-## France (FR): 34,863 communes, INSEE code
+## France (FR): 34,734 communes, INSEE code
 
 - Source: "Liste des communes de France : code INSEE, codes postaux, EPCI, population, superficie" on data.gouv.fr
 - URL: <https://www.data.gouv.fr/datasets/liste-des-communes-de-france-code-insee-codes-postaux-epci-population-superficie-62-indicateurs>
@@ -17,6 +17,7 @@ The municipal climate datasets (FR, PT, LU, RS) take their list of municipalitie
 - URL: <https://www.dgterritorio.gov.pt/cartografia/cartografia-tematica/caop>
 - Licence: CC BY
 - Files used: `CAOP_Continente_2025-gpkg.zip`, `CAOP_RAA_2025-gpkg.zip`, `CAOP_RAM_2025-gpkg.zip` (from <https://geo2.dgterritorio.gov.pt/caop/>), municipality layers of the GeoPackages (mainland, Azores, Madeira). `municipios_caop2025_pointonsurface.csv` is derived from them: one point inside each municipality polygon (ST_PointOnSurface), in WGS84.
+- Point used: the municipal seat from GeoNames `PT.txt` (<https://download.geonames.org/export/dump/PT.zip>, CC BY 4.0), put next to the CAOP file in `places/raw/pt/`: a seat feature (PPLC, PPLA, PPLA2) whose `admin2` is the DICO code, else the most populous populated place of that name in the municipality (304 of 308 matched); the CAOP interior point otherwise. Interior points can sit far up a mountain (Funchal: 667 m) while the town is near sea level.
 - Retrieved: 2026-11-13
 
 ## Luxembourg (LU): 100 communes, LAU code
@@ -42,3 +43,5 @@ The municipal climate datasets (FR, PT, LU, RS) take their list of municipalitie
 All climate values come from Copernicus ERA5-Land monthly means (0.1°), with ERA5 monthly means (0.25°) where ERA5-Land has no cell. Required attribution:
 
 > Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
+>
+> Copernicus DEM GLO-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA.

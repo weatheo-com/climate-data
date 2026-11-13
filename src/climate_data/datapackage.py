@@ -19,6 +19,11 @@ SOURCES = [
      "path": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means"},
     {"title": "Copernicus C3S ERA5 monthly averaged data on single levels from 1940 to present",
      "path": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"},
+    {"title": "ERA5-Land orography (geopotential, 0.1 deg), ECMWF",
+     "path": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation"},
+    {"title": "Copernicus DEM GLO-90 (place elevations), © DLR e.V. 2010-2014 and © Airbus Defence and "
+              "Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA",
+     "path": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"},
 ]
 DAILY_SOURCES = [
     {"title": "Copernicus C3S ERA5-Land post-processed daily statistics from 1950 to present",
@@ -32,7 +37,9 @@ PLACE_SOURCES = {
     "FR": [{"title": "Liste des communes de France (data.gouv.fr), licence Licence Ouverte 2.0",
             "path": "https://www.data.gouv.fr/datasets/liste-des-communes-de-france-code-insee-codes-postaux-epci-population-superficie-62-indicateurs"}],
     "PT": [{"title": "CAOP 2025, Direção-Geral do Território, licence CC BY",
-            "path": "https://www.dgterritorio.gov.pt/cartografia/cartografia-tematica/caop"}],
+            "path": "https://www.dgterritorio.gov.pt/cartografia/cartografia-tematica/caop"},
+           {"title": "GeoNames gazetteer (municipal seat coordinates), licence CC BY 4.0",
+            "path": "https://download.geonames.org/export/dump/"}],
     "LU": [{"title": "STATEC, Codes LAU des communes du Grand-Duché de Luxembourg (data.public.lu), licence CC0",
             "path": "https://data.public.lu/fr/datasets/codes-lau-des-communes-du-grand-duche-de-luxembourg/"},
            GEONAMES],
@@ -41,8 +48,15 @@ PLACE_SOURCES = {
            GEONAMES],
 }
 LIMITS = (
-    "Values are reanalysis grid-cell values, not station observations: they can differ from "
-    "official station normals, mostly because of altitude, coasts and cities."
+    "Values are reanalysis grid-cell values adjusted for altitude, not station observations: they "
+    "can differ from official station normals, mostly near coasts, in cities and in steep terrain."
+)
+METHOD = (
+    "Temperatures are moved from the grid cell's model elevation (grid_elevation_m) to the "
+    "elevation of the municipality's reference point (elevation_m, Copernicus DEM GLO-90) with a "
+    "fixed lapse rate of 6.5 degC per km: t = t_cell + 0.0065 * (grid_elevation_m - elevation_m). "
+    "Precipitation is not adjusted. The 1961-1990 to 1991-2020 temperature shift does not depend "
+    "on this adjustment."
 )
 CONTRIBUTORS = [{"title": "Weatheo (by CODELIO)", "path": "https://weatheo.com", "role": "publisher"}]
 
@@ -59,13 +73,15 @@ FIELD_DOC = {
     "grid_lat": "latitude of the reanalysis grid cell centre used",
     "grid_lon": "longitude of the reanalysis grid cell centre used",
     "grid_source": "era5-land (0.1 deg, primary) or era5 (0.25 deg, used where ERA5-Land has no cell)",
+    "elevation_m": "elevation of the municipality reference point, m (Copernicus DEM GLO-90)",
+    "grid_elevation_m": "model elevation of the grid cell used, m (reanalysis orography)",
     "month": "calendar month 1-12 (dataset B also 'annual')",
-    "tmean_c": "mean 2 m air temperature, degC",
+    "tmean_c": "mean 2 m air temperature at elevation_m, degC",
     "precip_mm": "mean monthly total precipitation, mm",
-    "tmin_c": "mean daily minimum 2 m temperature, degC",
-    "tmax_c": "mean daily maximum 2 m temperature, degC",
-    "frost_days": "mean number of days with daily minimum below 0 degC",
-    "summer_days": "mean number of days with daily maximum at or above 25 degC",
+    "tmin_c": "mean daily minimum 2 m temperature at elevation_m, degC",
+    "tmax_c": "mean daily maximum 2 m temperature at elevation_m, degC",
+    "frost_days": "mean number of days with daily minimum below 0 degC (cell elevation, not adjusted)",
+    "summer_days": "mean number of days with daily maximum at or above 25 degC (cell elevation, not adjusted)",
     "period": "reference period of the normals",
     "weatheo_url": "Weatheo forecast page of the municipality (empty when not matched)",
 }
@@ -117,7 +133,8 @@ def build_package(country, tables: dict[str, pd.DataFrame], daily: bool,
         f"Climate normals 1991-2020 and their shift since 1961-1990 for {n_places} municipalities of "
         f"{country.name} ({country.code_label}), from Copernicus ERA5-Land monthly means (0.1 deg) "
         f"with ERA5 single-level monthly means (0.25 deg) where ERA5-Land has no cell. Each "
-        f"municipality takes the nearest grid cell to its reference point. Area covered: {boxes}."
+        f"municipality takes the nearest grid cell to its reference point. " + METHOD +
+        f" Area covered: {boxes}."
     )
     if country.excluded:
         desc += " Excluded: " + country.excluded

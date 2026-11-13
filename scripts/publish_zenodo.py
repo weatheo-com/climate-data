@@ -14,7 +14,7 @@ publication_date, zenodo (dict merged into the metadata last, so its
 related_identifiers replace the defaults; default repo relation isSupplementTo).
 
 Files keep their names in the bucket, except that with several
-data/<CC>/datapackage.json each one is uploaded as <CC>_datapackage.json; any
+data/<CC>/datapackage.json each one is uploaded as <cc>_datapackage.json (lower case); any
 other duplicate file name is an error (Zenodo keeps one file per name).
 """
 from __future__ import annotations
@@ -62,13 +62,13 @@ def token_for(production: bool, env=os.environ) -> str | None:
 
 def upload_names(files: list[Path]) -> list[tuple[Path, str]]:
     """(path, bucket name) per file. Several datapackage.json -> <parent dir>_datapackage.json
-    (data/FR/datapackage.json -> FR_datapackage.json). Raises ValueError on any other duplicate."""
+    (data/FR/datapackage.json -> fr_datapackage.json). Raises ValueError on any other duplicate."""
     several = sum(f.name == "datapackage.json" for f in files) > 1
     out = []
     for f in files:
         name = f.name
         if several and name == "datapackage.json" and f.parent.name:
-            name = f"{f.parent.name}_datapackage.json"
+            name = f"{f.parent.name.lower()}_datapackage.json"
         out.append((f, name))
     counts = Counter(name for _, name in out)
     dups = sorted(n for n, c in counts.items() if c > 1)

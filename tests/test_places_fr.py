@@ -24,22 +24,22 @@ def test_fixture_loads_and_drops_empty_code(caplog):
     assert row["name"] == "Ailleville"
     assert row["admin1_code"] == "44" and row["admin1_name"] == "Grand Est"
     assert row["admin2_code"] == "10" and row["admin2_name"] == "Aube"
-    # commune centre preferred over town hall
-    assert row["latitude"] == pytest.approx(48.255)
-    assert row["longitude"] == pytest.approx(4.694)
+    # town hall preferred over commune centre
+    assert row["latitude"] == pytest.approx(48.253)
+    assert row["longitude"] == pytest.approx(4.682)
 
 
-def test_centre_falls_back_to_mairie(tmp_path):
+def test_mairie_falls_back_to_centre(tmp_path):
     lines = FIXTURE.read_text(encoding="utf-8").splitlines()
     header = lines[0].split(",")
-    i_lat, i_lon = header.index("latitude_centre"), header.index("longitude_centre")
+    i_lat, i_lon = header.index("latitude_mairie"), header.index("longitude_mairie")
     row = lines[1].split(",")  # 10002 Ailleville, no quoted fields
     row[i_lat] = row[i_lon] = ""
     p = tmp_path / "f.csv"
     p.write_text("\n".join([lines[0], ",".join(row)]) + "\n", encoding="utf-8")
     df = places_fr.load(p)
-    assert df.loc[0, "latitude"] == pytest.approx(48.253)
-    assert df.loc[0, "longitude"] == pytest.approx(4.682)
+    assert df.loc[0, "latitude"] == pytest.approx(48.255)
+    assert df.loc[0, "longitude"] == pytest.approx(4.694)
 
 
 def test_duplicate_codes_raise(tmp_path):

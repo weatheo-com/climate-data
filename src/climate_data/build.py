@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from . import countries, datapackage, fetch_cds, grid, normals, shift, urls
+from . import countries, datapackage, elevation, fetch_cds, grid, normals, shift, urls
 
 log = logging.getLogger("climate_data.build")
 
@@ -33,6 +33,7 @@ CHUNK = 10
 
 PLACE_COLS = ["country", "code", "name", "admin1_code", "admin1_name", "admin2_code", "admin2_name"]
 CELL_KEYS = ["grid_source", "grid_lat", "grid_lon"]
+ELEV_COLS = ["elevation_m", "grid_elevation_m"]
 MONTHLY_VARS = ["tmean_c", "precip_mm"]
 DAILY_VARS = ["tmin_c", "tmax_c", "frost_days", "summer_days"]
 STATS = {"tmax": "daily_maximum", "tmin": "daily_minimum"}
@@ -153,6 +154,14 @@ def box_normals(country, box, places: pd.DataFrame, cache: Path, offline: bool, 
     primary = open_grid(land[0])["t2m"]
     fallback = open_grid(era5[0])["t2m"] if era5 else None
     placed = grid.assign_cells(places, primary, fallback)
+    era5_z = None
+    if (placed["grid_source"] == "era5").any():
+        zf = get_files(ERA5_MONTHLY, elevation.ERA5_OROGRAPHY_REQUEST, box.bbox,
+                       elevation.ERA5_OROGRAPHY_YEARS, cache, 1, offline)
+        if zf is None:
+            raise FileNotFoundError(f"{country.code} {box.name}: ERA5 orography file missing from {cache}")
+        era5_z = zf[0]
+    placed["grid_elevation_m"] = elevation.cell_elevation(placed, cache, era5_z, offline)
     cells_all = grid.unique_cells(placed)
 
     old_parts, new_parts = [], []
@@ -244,9 +253,16 @@ def build(cc: str, cache: Path, out: Path, offline: bool = False, daily: bool = 
     vars_ = MONTHLY_VARS + (DAILY_VARS if daily_ok else [])
     old, new = old[CELL_KEYS + ["month"] + vars_], new[CELL_KEYS + ["month"] + vars_]
 
+    dem = elevation.place_elevation(places["latitude"], places["longitude"], Path(cache), offline)
+    places["elevation_m"], n_nodem = elevation.fill_missing(dem, places["grid_elevation_m"].to_numpy(float))
+    if n_nodem:
+        log.warning("%s: %d places without a DEM value keep their cell elevation", cc, n_nodem)
+    places["elevation_m"] = places["elevation_m"].astype(int)
+    places["grid_elevation_m"] = places["grid_elevation_m"].astype(int)
+
     places = add_urls(places, country.code, urls_path)
     places = places.sort_values("code").reset_index(drop=True)
-    base = places[PLACE_COLS + ["latitude", "longitude"] + CELL_KEYS + ["weatheo_url"]]
+    base = places[PLACE_COLS + ["latitude", "longitude"] + CELL_KEYS + ELEV_COLS + ["weatheo_url"]]
 
     a_new = base.merge(new, on=CELL_KEYS, how="left", validate="many_to_many")
     a_old = base.merge(old, on=CELL_KEYS, how="left", validate="many_to_many")
@@ -256,10 +272,11 @@ def build(cc: str, cache: Path, out: Path, offline: bool = False, daily: bool = 
         if t[MONTHLY_VARS].isna().any().any():
             raise ValueError("NaN normals for some places: the grid has gaps at assigned cells")
 
+    a_new, a_old = elevation.adjust(a_new), elevation.adjust(a_old)
     a = a_new.sort_values(["code", "month"]).reset_index(drop=True)
     a[vars_] = a[vars_].round(1)
     a["period"] = PERIOD
-    a = a[PLACE_COLS + ["latitude", "longitude", "grid_lat", "grid_lon", "grid_source", "month"] + vars_ + ["period", "weatheo_url"]]
+    a = a[PLACE_COLS + ["latitude", "longitude", "grid_lat", "grid_lon", "grid_source"] + ELEV_COLS + ["month"] + vars_ + ["period", "weatheo_url"]]
     b = shift.compute_shift(a_old, a_new)
 
     out_dir = Path(out) / country.code

@@ -1,7 +1,7 @@
 {
   "slug": "promena-klime-1961-1990-1991-2020-opstine-i-gradovi-srbije",
   "title": "Промена климе: 1961–1990 наспрам 1991–2020 по општинама и градовима Србије",
-  "description": "Промена климе у 169 општина и градова Србије: поређење просека 1961–1990 и 1991–2020 за температуру ваздуха на 2 m (разлика у °C) и падавине (промена у %), за сваки месец (1–12) и за годину у целини (`annual`).\n\n**Метод.** Подаци су месечне средње вредности из реанализе Copernicus ERA5-Land (резолуција 0,1°, око 9 km); тамо где ћелија ERA5-Land нема вредност користи се ERA5 (0,25°). Свака општина или град добија најближу ћелију мреже у односу на своју централну тачку, а затим се рачунају тридесетогодишњи просеци месечних вредности. Скрипте за израду су отворене и налазе се у репозиторијуму (https://github.com/weatheo-com/climate-data), а резултат проверава скрипта за валидацију.\n\n**Ограничења.** То су вредности ћелија реанализе, а не мерења метеоролошких станица: могу се разликовати од званичних нормала са станица (надморска висина, обала, градови).\n\n**Извор места.** Списак од 169 општина и градова (шифра РЗС) потиче из скупа „Општине и градови“ Републичког завода за статистику (data.gov.rs, лиценца СОДЛ), а координате из GeoNames (CC BY 4.0). Атрибут `weatheo_url` води на страницу прогнозе општине где она постоји (86 од 169), иначе је празан.\n\n**Лиценца и ауторство.** На овом порталу подаци се објављују под Српском лиценцом за отворене податке; исти подаци су у репозиторијуму доступни и под лиценцом CC BY 4.0. Издавач: Weatheo (by CODELIO); код: MIT. Списак општина и градова преузет је 13. 11. 2026. са https://data.gov.rs/sr/datasets/opshtine-i-gradovi/ (Републички завод за статистику) и измењен: додате су координате (GeoNames, CC BY 4.0) и климатске вредности. Уз податке наведите: Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nСтраница скупа: [Weatheo](https://weatheo.com/en/open-data).\n\n**Колоне:** `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `month` (1–12 или `annual`), `tmean_1961_1990_c`, `tmean_1991_2020_c`, `tmean_shift_c`, `precip_1961_1990_mm`, `precip_1991_2020_mm`, `precip_shift_pct`, `weatheo_url`.",
+  "description": "Промена климе у 169 општина и градова Србије: поређење просека 1961–1990 и 1991–2020 за температуру ваздуха на 2 m (разлика у °C) и падавине (промена у %), за сваки месец (1–12) и за годину у целини (`annual`).\n\n**Метод.** Подаци су месечне средње вредности из реанализе Copernicus ERA5-Land (резолуција 0,1°, око 9 km); тамо где ћелија ERA5-Land нема вредност користи се ERA5 (0,25°). Свака општина или град добија најближу ћелију мреже у односу на своју централну тачку, а затим се рачунају тридесетогодишњи просеци месечних вредности. Температуре су кориговане према надморској висини: свака вредност се са висине модела ћелије мреже (grid_elevation_m, орографија ERA5-Land, ECMWF) преноси на висину референтне тачке општине (elevation_m, из Copernicus DEM GLO-90) уз стални градијент од 6,5 °C по km: t = t_cell + 0,0065 × (grid_elevation_m − elevation_m). Падавине се не коригују. Промена температуре између два периода не зависи од ове корекције. Скрипте за израду су отворене и налазе се у репозиторијуму (https://github.com/weatheo-com/climate-data), а резултат проверава скрипта за валидацију.\n\n**Ограничења.** То су вредности ћелија реанализе, а не мерења метеоролошких станица: могу се разликовати од званичних нормала са станица, углавном у близини обале, у градовима и у стрмом терену.\n\n**Извор места.** Списак од 169 општина и градова (шифра РЗС) потиче из скупа „Општине и градови“ Републичког завода за статистику (data.gov.rs, лиценца СОДЛ), а координате из GeoNames (CC BY 4.0). Атрибут `weatheo_url` води на страницу прогнозе општине где она постоји (86 од 169), иначе је празан.\n\n**Лиценца и ауторство.** На овом порталу подаци се објављују под Српском лиценцом за отворене податке; исти подаци су у репозиторијуму доступни и под лиценцом CC BY 4.0. Издавач: Weatheo (by CODELIO); код: MIT. Списак општина и градова преузет је 13. 11. 2026. са https://data.gov.rs/sr/datasets/opshtine-i-gradovi/ (Републички завод за статистику) и измењен: додате су координате (GeoNames, CC BY 4.0) и климатске вредности. Уз податке наведите: Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Copernicus DEM GLO-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA.\n\nСтраница скупа: [Weatheo](https://weatheo.com/en/open-data).\n\n**Колоне:** `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `month` (1–12 или `annual`), `tmean_1961_1990_c`, `tmean_1991_2020_c`, `tmean_shift_c`, `precip_1961_1990_mm`, `precip_1991_2020_mm`, `precip_shift_pct`, `weatheo_url`.",
   "tags": [
     "клима",
     "климатске-нормале",
@@ -28,23 +28,23 @@
   },
   "resources": [
     {
-      "title": "RS_climate_shift_1961_1990_vs_1991_2020.csv",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/RS_climate_shift_1961_1990_vs_1991_2020.csv",
+      "title": "rs_climate_shift_1961_1990_vs_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/rs_climate_shift_1961_1990_vs_1991_2020.csv",
       "format": "csv",
       "mime": "text/csv",
       "type": "main",
       "description": "Један ред по општини/граду и месецу (1–12 и annual)."
     },
     {
-      "title": "RS_climate_shift_1961_1990_vs_1991_2020.parquet",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/RS_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "title": "rs_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/rs_climate_shift_1961_1990_vs_1991_2020.parquet",
       "format": "parquet",
       "type": "main",
       "description": "Иста табела у формату Parquet."
     },
     {
-      "title": "datapackage.json",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/datapackage.json",
+      "title": "rs_datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/rs_datapackage.json",
       "format": "json",
       "mime": "application/json",
       "type": "documentation",

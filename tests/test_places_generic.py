@@ -82,3 +82,28 @@ def test_real_files(cc, lo, hi):
     print(f"{cc}: {len(df)} places")
     _check(df, cc)
     assert lo <= len(df) <= hi
+
+
+def test_pt_seats_prefers_seat_then_same_name():
+    import pandas as pd
+
+    from climate_data.places_generic import GEONAMES_COLS, pt_seats
+
+    def row(name, code, admin2, lat, pop="0"):
+        r = dict.fromkeys(GEONAMES_COLS, "")
+        r.update(name=name, feature_class="P", feature_code=code, admin2=admin2,
+                 latitude=lat, longitude=-9.0, population=pop)
+        return r
+
+    g = pd.DataFrame([
+        row("Hill Village", "PPL", "3103", 32.70),
+        row("Funchal", "PPLA", "3103", 32.65),       # seat wins
+        row("Angra do Heroísmo", "PPL", "4301", 38.65, "100"),  # no seat: same-name place
+        row("Angra do Heroismo", "PPL", "4301", 38.70, "5"),
+        row("Elsewhere", "PPL", "9999", 40.0),
+    ])
+    out = pt_seats(g, pd.Series(["3103", "4301", "0101"]),
+                   pd.Series(["Funchal", "Angra do Heroísmo", "Águeda"])).set_index("code")
+    assert out.loc["3103", "latitude"] == 32.65
+    assert out.loc["4301", "latitude"] == 38.65
+    assert "0101" not in out.index

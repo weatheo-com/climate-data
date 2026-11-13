@@ -22,9 +22,10 @@ def _pad(s: pd.Series, width: int) -> pd.Series:
 
 
 def _coord(df: pd.DataFrame, axis: str) -> pd.Series:
-    """Commune centre if present, else town hall."""
+    """Town hall if present, else commune centre (the town hall is where people live;
+    a commune's geometric centre can sit on a mountainside)."""
     out = pd.Series(float("nan"), index=df.index)
-    for col in (f"{axis}_centre", f"{axis}_mairie"):
+    for col in (f"{axis}_mairie", f"{axis}_centre"):
         if col in df.columns:
             out = out.fillna(pd.to_numeric(df[col], errors="coerce"))
     return out

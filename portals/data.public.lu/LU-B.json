@@ -1,7 +1,7 @@
 {
   "slug": "evolution-climatique-1961-1990-1991-2020-par-commune-luxembourg-weatheo",
   "title": "Évolution du climat par commune : 1961-1990 contre 1991-2020 (Luxembourg)",
-  "description": "Écart climatique entre 1961-1990 et 1991-2020 pour 100 communes luxembourgeoises : pour chaque commune et chaque mois (1 à 12) ainsi que pour l'année, la valeur 1961-1990, la valeur 1991-2020 et l'écart, pour la température (en °C) et pour les précipitations (en %).\n\n**Méthode.** Moyennes mensuelles des réanalyses Copernicus ERA5-Land (0,1°, environ 9 km), avec repli sur ERA5 (0,25°) là où la maille ERA5-Land n'a pas de valeur. Chaque commune prend la maille la plus proche de son point central ; les valeurs sont des moyennes sur 30 ans, et l'écart compare les deux périodes. Les scripts de construction sont ouverts et un script de validation contrôle les fichiers.\n\n**Limites.** Ce sont des valeurs de mailles de réanalyse, pas des mesures de stations : elles peuvent différer des valeurs établies à partir de stations (altitude, littoral, villes). Les précipitations varient beaucoup d'une année à l'autre ; un écart en % est à lire avec prudence là où les cumuls sont faibles.\n\n**Communes.** 100 communes du Luxembourg, d'après les codes LAU du STATEC (data.public.lu), avec les coordonnées de GeoNames. Identifiant : code LAU. Les colonnes exactes (identification de la commune, période, valeurs et écarts) sont décrites dans `datapackage.json`.\n\n**Licence.** Données CC BY 4.0, code MIT. Source des communes : codes LAU du STATEC sur data.public.lu (CC0) ; coordonnées GeoNames (CC BY 4.0).\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO) : [Weatheo](https://weatheo.com/fr/open-data).",
+  "description": "Écart climatique entre 1961-1990 et 1991-2020 pour 100 communes luxembourgeoises : pour chaque commune et chaque mois (1 à 12) ainsi que pour l'année, la valeur 1961-1990, la valeur 1991-2020 et l'écart, pour la température (en °C) et pour les précipitations (en %).\n\n**Méthode.** Moyennes mensuelles des réanalyses Copernicus ERA5-Land (0,1°, environ 9 km), avec repli sur ERA5 (0,25°) là où la maille ERA5-Land n'a pas de valeur. Chaque commune prend la maille la plus proche de son point central ; les valeurs sont des moyennes sur 30 ans, et l'écart compare les deux périodes. Les températures sont corrigées de l'altitude : chaque valeur est ramenée de l'altitude du modèle de la maille (grid_elevation_m, orographie ERA5-Land d'ECMWF) à l'altitude du point de référence de la commune (elevation_m, issue du Copernicus DEM GLO-90) avec un gradient fixe de 6,5 °C par km : t = t_cell + 0,0065 × (grid_elevation_m − elevation_m). Les précipitations ne sont pas corrigées. L'écart de température entre les deux périodes ne dépend pas de cette correction. Les scripts de construction sont ouverts et un script de validation contrôle les fichiers.\n\n**Limites.** Ce sont des valeurs de mailles de réanalyse, pas des mesures de stations : elles peuvent différer des valeurs établies à partir de stations, surtout près des côtes, en ville et en relief accidenté. Les précipitations varient beaucoup d'une année à l'autre ; un écart en % est à lire avec prudence là où les cumuls sont faibles.\n\n**Communes.** 100 communes du Luxembourg, d'après les codes LAU du STATEC (data.public.lu), avec les coordonnées de GeoNames. Identifiant : code LAU. Les colonnes exactes (identification de la commune, période, valeurs et écarts) sont décrites dans `datapackage.json`.\n\n**Licence.** Données CC BY 4.0, code MIT. Source des communes : codes LAU du STATEC sur data.public.lu (CC0) ; coordonnées GeoNames (CC BY 4.0).\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Copernicus DEM GLO-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA.\n\nPublié par Weatheo (by CODELIO) : [Weatheo](https://weatheo.com/fr/open-data).",
   "tags": [
     "climat",
     "changement-climatique",
@@ -26,23 +26,23 @@
   },
   "resources": [
     {
-      "title": "LU_climate_shift_1961_1990_vs_1991_2020.csv",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/LU_climate_shift_1961_1990_vs_1991_2020.csv",
+      "title": "lu_climate_shift_1961_1990_vs_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/lu_climate_shift_1961_1990_vs_1991_2020.csv",
       "format": "csv",
       "mime": "text/csv",
       "type": "main",
       "description": "Une ligne par commune et par mois (1-12 et annuel) : valeur 1961-1990, valeur 1991-2020 et écart."
     },
     {
-      "title": "LU_climate_shift_1961_1990_vs_1991_2020.parquet",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/LU_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "title": "lu_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/lu_climate_shift_1961_1990_vs_1991_2020.parquet",
       "format": "parquet",
       "type": "main",
       "description": "Même table au format Parquet."
     },
     {
-      "title": "datapackage.json",
-      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/datapackage.json",
+      "title": "lu_datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/lu_datapackage.json",
       "format": "json",
       "mime": "application/json",
       "type": "documentation",

@@ -269,10 +269,10 @@ def test_zenodo_renames_datapackages(tmp_path):
     fr, pt = _pkg(tmp_path, "FR"), _pkg(tmp_path, "PT")
     csv = _pkg(tmp_path, "FR", "FR_x.csv")
     names = [n for _, n in zenodo.upload_names([csv, fr, pt])]
-    assert names == ["FR_x.csv", "FR_datapackage.json", "PT_datapackage.json"]
+    assert names == ["FR_x.csv", "fr_datapackage.json", "pt_datapackage.json"]
     assert [n for _, n in zenodo.upload_names([csv, fr])] == ["FR_x.csv", "datapackage.json"]
     reqs = zenodo.plan(zenodo.SANDBOX, {"title": "t"}, [fr, pt], False)
-    assert [r["url"] for r in reqs[1:3]] == ["{bucket}/FR_datapackage.json", "{bucket}/PT_datapackage.json"]
+    assert [r["url"] for r in reqs[1:3]] == ["{bucket}/fr_datapackage.json", "{bucket}/pt_datapackage.json"]
 
 
 def test_zenodo_duplicate_names_error(tmp_path, capsys):

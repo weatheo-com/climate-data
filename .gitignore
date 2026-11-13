@@ -7,3 +7,6 @@ __pycache__/
 .pytest_cache/
 places/raw/
 cache/
+
+# France CSVs are 60-70 MB: published on the GitHub release only
+data/FR/*.csv

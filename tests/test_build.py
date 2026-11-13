@@ -46,7 +46,7 @@ def test_monthly_build_rows_and_known_values(monthly_cache, tmp_path):
     assert len(a) == N_PLACES * 12 and len(b) == N_PLACES * 13
     assert list(a.columns) == [
         "country", "code", "name", "admin1_code", "admin1_name", "admin2_code", "admin2_name",
-        "latitude", "longitude", "grid_lat", "grid_lon", "grid_source", "month",
+        "latitude", "longitude", "grid_lat", "grid_lon", "grid_source", "elevation_m", "grid_elevation_m", "month",
         "tmean_c", "precip_mm", "period", "weatheo_url"]
     assert not any(c.startswith(("tmin", "tmax", "frost", "summer")) for c in list(a.columns) + list(b.columns))
     assert (a.grid_source == "era5-land").all() and (a.period == "1991-2020").all()
@@ -146,3 +146,30 @@ def test_countries_and_scope():
     assert len(parts) == 1 and parts[0][1].code.tolist() == ["75056"]
     with pytest.raises(ValueError):
         build.split_by_box(countries.get("LU"), places)
+
+
+def test_altitude_adjustment(tmp_path):
+    cache = tmp_path / "cache"
+    mk.make(cache, "LU", dem_m=1000.0, cell_m=200.0)
+    res = _run(cache, tmp_path / "out")
+    a, b = res["A"], res["B"]
+    assert (a.elevation_m == 1000).all() and (a.grid_elevation_m == 200).all()
+    # 800 m above the cell: 0.0065 * 800 = 5.2 degC colder, rain unchanged
+    for m in (1, 7):
+        assert (a[a.month == m].tmean_c == round(11.0 + m - 5.2, 1)).all()
+    assert (a[a.month == 1].precip_mm == 68.2).all()
+    ann = b[b.month.astype(str) == "annual"]
+    assert (ann.tmean_shift_c == 1.0).all()
+
+
+def test_missing_dem_tile_keeps_cell_elevation(tmp_path):
+    from climate_data import elevation
+
+    cache = tmp_path / "cache"
+    mk.make(cache, "LU", dem_m=1000.0, cell_m=200.0)
+    for f in (cache / elevation.DEM_DIR).glob("*.tif"):
+        f.unlink()
+        f.with_name(f.name + ".missing").touch()  # as after a 404 (tile over sea)
+    a = _run(cache, tmp_path / "out")["A"]
+    assert (a.elevation_m == 200).all()
+    assert (a[a.month == 1].tmean_c == 12.0).all()

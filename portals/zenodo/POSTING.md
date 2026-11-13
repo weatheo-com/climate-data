@@ -16,6 +16,6 @@ python scripts/publish_zenodo.py --meta portals/zenodo/ZEN-B.json --dry-run \
 6. Sandbox draft: same commands without `--dry-run`. Check the draft on sandbox.zenodo.org.
 7. Production draft: add `--production`. Review in the Zenodo UI. Publishing is irreversible: add `--publish` only after the owner OKs it.
 
-Notes: with several data/<CC>/datapackage.json in --files the script uploads each one as <CC>_datapackage.json (Zenodo keeps one file per name; any other duplicate file name stops the script before anything is sent). Fallback: upload one combined datapackage.json at repo root instead.
+Notes: with several data/<CC>/datapackage.json in --files the script uploads each one as <cc>_datapackage.json (fr_, pt_, lu_, rs_) (Zenodo keeps one file per name; any other duplicate file name stops the script before anything is sent). Fallback: upload one combined datapackage.json at repo root instead.
 The script sets creator "Weatheo (by CODELIO)" and license cc-by-4.0; related_identifiers come from the `zenodo` key in each JSON (it replaces the script defaults, repo is isSupplementTo).
 Also the CSV/Parquet names must differ per country (prefix <CC>_); the sources of RS data need the commercial-reuse licence check before publishing.
