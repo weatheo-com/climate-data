@@ -1,0 +1,26 @@
+city,country,latitude,longitude,days,era5_mean_temp_c,era5_2011_2025_mean_temp_c,era5_anomaly_c,era5_days_max_30c_plus,era5_days_max_35c_plus,era5_nights_min_20c_plus,era5_frost_days,era5_highest_c,era5_highest_date,era5_lowest_c,era5_lowest_date,forecast_page
+Nice,FR,43.7019,7.2683,92,26.8,24,2.8,64,3,72,0,35.3,2026-06-29,14.7,2026-06-05,https://weatheo.com/en/fr/provence-alpes-cote-dazur/nice
+Paris,FR,48.8567,2.3522,92,23.3,19.6,3.7,39,13,29,0,40.3,2026-06-24,9.7,2026-06-11,https://weatheo.com/en/fr/ile-de-france/paris
+Tours,FR,47.3928,0.6883,92,24,20.1,3.8,44,16,29,0,40.3,2026-06-23,10,2026-06-09,https://weatheo.com/en/fr/centre-val-de-loire/tours
+Grenoble,FR,45.1869,5.7264,92,25.3,22,3.2,69,29,36,0,38.2,2026-08-03,11.5,2026-06-10,https://weatheo.com/en/fr/auvergne-rhone-alpes/grenoble
+Dijon,FR,47.3231,5.0419,92,23.2,20,3.2,39,10,25,0,37.4,2026-06-27,7.3,2026-06-11,https://weatheo.com/en/fr/bourgogne-franche-comte/dijon
+Limoges,FR,45.8344,1.2617,92,23.9,19.4,4.5,47,18,27,0,40.2,2026-06-22,8.7,2026-06-11,https://weatheo.com/en/fr/nouvelle-aquitaine/limoges
+Lyon,FR,45.7675,4.835,92,25.5,21.6,3.9,59,27,49,0,38.4,2026-06-21,11.1,2026-06-10,https://weatheo.com/en/fr/auvergne-rhone-alpes/lyon
+Nantes,FR,47.2172,-1.5539,92,23.3,19.4,3.9,38,16,24,0,41.2,2026-06-23,10.1,2026-06-09,https://weatheo.com/en/fr/pays-de-la-loire/nantes
+Toulouse,FR,43.6044,1.4433,92,25.8,22.2,3.6,58,27,49,0,39.9,2026-06-23,12.5,2026-06-10,https://weatheo.com/en/fr/occitanie/toulouse
+Bordeaux,FR,44.8379,-0.5795,92,24.7,21.3,3.4,46,20,40,0,41.4,2026-06-23,11.9,2026-06-11,https://weatheo.com/en/fr/nouvelle-aquitaine/bordeaux
+Rennes,FR,48.1142,-1.6808,92,21.8,18.5,3.4,25,10,15,0,40.2,2026-06-23,8.7,2026-06-09,https://weatheo.com/en/fr/bretagne/rennes
+Avignon,FR,43.9486,4.8083,92,26.6,24.5,2.1,75,31,62,0,38.3,2026-08-13,13.2,2026-06-05,https://weatheo.com/en/fr/provence-alpes-cote-dazur/avignon
+Marseille,FR,43.2967,5.3764,92,26.3,23.4,2.9,56,8,69,0,37.4,2026-07-08,14.8,2026-06-05,https://weatheo.com/en/fr/provence-alpes-cote-dazur/marseille
+Metz,FR,49.1197,6.1769,92,22.5,19.3,3.2,39,11,21,0,39.2,2026-06-27,8.8,2026-06-11,https://weatheo.com/en/fr/grand-est/metz
+Perpignan,FR,42.6975,2.8947,92,27.4,24.4,3,68,15,81,0,41.2,2026-07-08,14.5,2026-06-06,https://weatheo.com/en/fr/occitanie/perpignan
+Clermont-Ferrand,FR,45.7797,3.0869,92,23.3,19.5,3.8,40,9,27,0,37.6,2026-06-27,9.1,2026-06-05,https://weatheo.com/en/fr/auvergne-rhone-alpes/clermont-ferrand
+Lille,FR,50.6319,3.0575,92,20.6,18.1,2.6,22,5,9,0,37,2026-08-14,9.3,2026-06-11,https://weatheo.com/en/fr/hauts-de-france/lille
+Nîmes,FR,43.8383,4.3597,92,27.1,24.3,2.7,77,31,65,0,40.5,2026-07-08,12.3,2026-06-05,https://weatheo.com/en/fr/occitanie/nimes
+Reims,FR,49.2653,4.0286,92,21.8,19,2.8,29,8,19,0,37.9,2026-06-26,8.6,2026-06-11,https://weatheo.com/en/fr/grand-est/reims
+Ajaccio,FR,41.9256,8.7364,92,26.7,24.2,2.6,73,11,66,0,38.1,2026-07-14,14.1,2026-06-04,https://weatheo.com/en/fr/corsica/ajaccio
+Brest,FR,48.39,-4.4869,92,19.6,16.6,2.9,14,1,8,0,38.3,2026-06-24,10.6,2026-06-10,https://weatheo.com/en/fr/bretagne/brest
+Strasbourg,FR,48.5733,7.7522,92,23.4,20.3,3.1,39,14,27,0,38.8,2026-06-27,10,2026-06-11,https://weatheo.com/en/fr/grand-est/strasbourg
+Le Havre,FR,49.4942,0.1081,92,20.3,17.7,2.6,13,4,12,0,38.2,2026-06-25,11.6,2026-06-09,https://weatheo.com/en/fr/normandie/le-havre
+Biarritz,FR,43.4806,-1.5572,92,23.1,20,3,21,7,42,0,40.6,2026-06-24,11.2,2026-06-12,https://weatheo.com/en/fr/nouvelle-aquitaine/biarritz
+Montpellier,FR,43.6109,3.8772,92,27.1,23.8,3.3,71,32,67,0,41.9,2026-07-08,13.5,2026-06-05,https://weatheo.com/en/fr/occitanie/montpellier
