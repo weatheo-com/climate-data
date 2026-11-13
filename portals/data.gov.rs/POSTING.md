@@ -11,5 +11,5 @@
 7. Publish: same command plus `--apply`.
 8. Afterwards, in the web form of each dataset set by hand what the script does not send (it only sends title, description, tags, license, frequency, temporal_coverage):
    - Spatial coverage: granularity "Општина" (sr:municipality), zone "Србија" (country:rs), as in RS-A.json "spatial".
-   - Licence: data.gov.rs offers only "sodl" and "notspecified". Datasets are posted as "notspecified" because the data are CC BY 4.0, not SODL; the description states CC BY 4.0 and the Copernicus text. Do not change to sodl.
+   - Licence: "sodl" (Српска лиценца за отворене податке, owner choice 2026-11-13; it allows commercial reuse with attribution). The description says the same data are CC BY 4.0 in the repository and gives the RZS source, download date and the changes, as SODL requires.
 9. Check the two dataset pages (Cyrillic text, 3 resources each, links work).
