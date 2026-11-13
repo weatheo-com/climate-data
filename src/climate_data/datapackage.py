@@ -46,6 +46,13 @@ PLACE_SOURCES = {
     "RS": [{"title": "RZS, Opštine i gradovi (data.gov.rs), downloaded 2026-11-13, Serbian Open Data Licence (SODL); modified: coordinates and climate values added",
             "path": "https://data.gov.rs/sr/datasets/opshtine-i-gradovi/"},
            GEONAMES],
+    "DE": [{"title": "(c) GeoBasis-DE / BKG (2026), Verwaltungsgebiete 1:250 000 mit Einwohnerzahlen "
+                     "(VG250-EW), licence dl-de/by-2-0 (Datenlizenz Deutschland Namensnennung 2.0); "
+                     "Daten verändert: Klimawerte hinzugefügt",
+            "path": "https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-mit-einwohnerzahlen-ebenen-stand-31-12-vg250-ew-ebenen-31-12.html"}],
+    "GB": [{"title": "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. "
+                     "Contains OS data (c) Crown copyright and database right 2022 (Built-up areas, December 2022)",
+            "path": "https://geoportal.statistics.gov.uk/"}],
 }
 LIMITS = (
     "Values are reanalysis grid-cell values adjusted for altitude, not station observations: they "

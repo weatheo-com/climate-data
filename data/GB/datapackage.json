@@ -28,6 +28,10 @@
     {
       "title": "Copernicus DEM GLO-90 (place elevations), © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA",
       "path": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"
+    },
+    {
+      "title": "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data (c) Crown copyright and database right 2022 (Built-up areas, December 2022)",
+      "path": "https://geoportal.statistics.gov.uk/"
     }
   ],
   "contributors": [
