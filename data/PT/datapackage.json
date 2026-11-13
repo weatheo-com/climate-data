@@ -1,0 +1,497 @@
+{
+  "profile": "tabular-data-package",
+  "name": "weatheo-climate-pt",
+  "title": "Portugal municipal climate normals 1991-2020 and climate shift since 1961-1990 (ERA5-Land)",
+  "description": "Climate normals 1991-2020 and their shift since 1961-1990 for 308 municipalities of Portugal (municipality DICO code), from Copernicus ERA5-Land monthly means (0.1 deg) with ERA5 single-level monthly means (0.25 deg) where ERA5-Land has no cell. Each municipality takes the nearest grid cell to its reference point. Temperatures are moved from the grid cell's model elevation (grid_elevation_m) to the elevation of the municipality's reference point (elevation_m, Copernicus DEM GLO-90) with a fixed lapse rate of 6.5 degC per km: t = t_cell + 0.0065 * (grid_elevation_m - elevation_m). Precipitation is not adjusted. The 1961-1990 to 1991-2020 temperature shift does not depend on this adjustment. Area covered: mainland Portugal (N 42.2, W -9.6, S 36.9, E -6.1); Madeira (N 33.2, W -17.4, S 32.3, E -16.2); Azores (N 40.0, W -31.4, S 36.9, E -24.9). Values are reanalysis grid-cell values adjusted for altitude, not station observations: they can differ from official station normals, mostly near coasts, in cities and in steep terrain. Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "homepage": "https://weatheo.com/en/open-data",
+  "sources": [
+    {
+      "title": "Copernicus C3S ERA5-Land monthly averaged data from 1950 to present",
+      "path": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means"
+    },
+    {
+      "title": "Copernicus C3S ERA5 monthly averaged data on single levels from 1940 to present",
+      "path": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    },
+    {
+      "title": "ERA5-Land orography (geopotential, 0.1 deg), ECMWF",
+      "path": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation"
+    },
+    {
+      "title": "Copernicus DEM GLO-90 (place elevations), © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA",
+      "path": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"
+    },
+    {
+      "title": "CAOP 2025, Direção-Geral do Território, licence CC BY",
+      "path": "https://www.dgterritorio.gov.pt/cartografia/cartografia-tematica/caop"
+    },
+    {
+      "title": "GeoNames gazetteer (municipal seat coordinates), licence CC BY 4.0",
+      "path": "https://download.geonames.org/export/dump/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Weatheo (by CODELIO)",
+      "path": "https://weatheo.com",
+      "role": "publisher"
+    }
+  ],
+  "keywords": [
+    "climate",
+    "climate normals",
+    "climate change",
+    "ERA5-Land",
+    "Copernicus",
+    "Portugal"
+  ],
+  "spatial": "PT",
+  "temporal": {
+    "start": "1961-01",
+    "end": "2020-12"
+  },
+  "resources": [
+    {
+      "name": "pt_climate_normals_1991_2020",
+      "path": "pt_climate_normals_1991_2020.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ","
+      },
+      "title": "Portugal: monthly climate normals 1991-2020 per municipality",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "official municipality code (string, leading zeros kept)"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "municipality name"
+          },
+          {
+            "name": "admin1_code",
+            "type": "string",
+            "description": "first-level administrative unit code"
+          },
+          {
+            "name": "admin1_name",
+            "type": "string",
+            "description": "first-level administrative unit name"
+          },
+          {
+            "name": "admin2_code",
+            "type": "string",
+            "description": "second-level administrative unit code (may be empty)"
+          },
+          {
+            "name": "admin2_name",
+            "type": "string",
+            "description": "second-level administrative unit name (may be empty)"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "municipality reference point latitude (WGS84)"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "municipality reference point longitude (WGS84)"
+          },
+          {
+            "name": "grid_lat",
+            "type": "number",
+            "description": "latitude of the reanalysis grid cell centre used"
+          },
+          {
+            "name": "grid_lon",
+            "type": "number",
+            "description": "longitude of the reanalysis grid cell centre used"
+          },
+          {
+            "name": "grid_source",
+            "type": "string",
+            "description": "era5-land (0.1 deg, primary) or era5 (0.25 deg, used where ERA5-Land has no cell)"
+          },
+          {
+            "name": "elevation_m",
+            "type": "integer",
+            "description": "elevation of the municipality reference point, m (Copernicus DEM GLO-90)"
+          },
+          {
+            "name": "grid_elevation_m",
+            "type": "integer",
+            "description": "model elevation of the grid cell used, m (reanalysis orography)"
+          },
+          {
+            "name": "month",
+            "type": "integer",
+            "description": "calendar month 1-12 (dataset B also 'annual')"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "mean 2 m air temperature at elevation_m, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "mean monthly total precipitation, mm"
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "reference period of the normals"
+          },
+          {
+            "name": "weatheo_url",
+            "type": "string",
+            "description": "Weatheo forecast page of the municipality (empty when not matched)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "pt_climate_normals_1991_2020_parquet",
+      "path": "pt_climate_normals_1991_2020.parquet",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "title": "Portugal: monthly climate normals 1991-2020 per municipality",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "official municipality code (string, leading zeros kept)"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "municipality name"
+          },
+          {
+            "name": "admin1_code",
+            "type": "string",
+            "description": "first-level administrative unit code"
+          },
+          {
+            "name": "admin1_name",
+            "type": "string",
+            "description": "first-level administrative unit name"
+          },
+          {
+            "name": "admin2_code",
+            "type": "string",
+            "description": "second-level administrative unit code (may be empty)"
+          },
+          {
+            "name": "admin2_name",
+            "type": "string",
+            "description": "second-level administrative unit name (may be empty)"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "municipality reference point latitude (WGS84)"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "municipality reference point longitude (WGS84)"
+          },
+          {
+            "name": "grid_lat",
+            "type": "number",
+            "description": "latitude of the reanalysis grid cell centre used"
+          },
+          {
+            "name": "grid_lon",
+            "type": "number",
+            "description": "longitude of the reanalysis grid cell centre used"
+          },
+          {
+            "name": "grid_source",
+            "type": "string",
+            "description": "era5-land (0.1 deg, primary) or era5 (0.25 deg, used where ERA5-Land has no cell)"
+          },
+          {
+            "name": "elevation_m",
+            "type": "integer",
+            "description": "elevation of the municipality reference point, m (Copernicus DEM GLO-90)"
+          },
+          {
+            "name": "grid_elevation_m",
+            "type": "integer",
+            "description": "model elevation of the grid cell used, m (reanalysis orography)"
+          },
+          {
+            "name": "month",
+            "type": "integer",
+            "description": "calendar month 1-12 (dataset B also 'annual')"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "mean 2 m air temperature at elevation_m, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "mean monthly total precipitation, mm"
+          },
+          {
+            "name": "period",
+            "type": "string",
+            "description": "reference period of the normals"
+          },
+          {
+            "name": "weatheo_url",
+            "type": "string",
+            "description": "Weatheo forecast page of the municipality (empty when not matched)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "pt_climate_shift_1961_1990_vs_1991_2020",
+      "path": "pt_climate_shift_1961_1990_vs_1991_2020.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ","
+      },
+      "title": "Portugal: climate shift 1961-1990 vs 1991-2020 per municipality",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "official municipality code (string, leading zeros kept)"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "municipality name"
+          },
+          {
+            "name": "admin1_code",
+            "type": "string",
+            "description": "first-level administrative unit code"
+          },
+          {
+            "name": "admin1_name",
+            "type": "string",
+            "description": "first-level administrative unit name"
+          },
+          {
+            "name": "admin2_code",
+            "type": "string",
+            "description": "second-level administrative unit code (may be empty)"
+          },
+          {
+            "name": "admin2_name",
+            "type": "string",
+            "description": "second-level administrative unit name (may be empty)"
+          },
+          {
+            "name": "month",
+            "type": "string",
+            "description": "calendar month 1-12 (dataset B also 'annual')"
+          },
+          {
+            "name": "tmean_1961_1990_c",
+            "type": "number",
+            "description": "1961-1990 normal: mean temperature, degC"
+          },
+          {
+            "name": "tmean_1991_2020_c",
+            "type": "number",
+            "description": "1991-2020 normal: mean temperature, degC"
+          },
+          {
+            "name": "tmean_shift_c",
+            "type": "number",
+            "description": "change 1991-2020 minus 1961-1990 of mean temperature, degC"
+          },
+          {
+            "name": "precip_1961_1990_mm",
+            "type": "number",
+            "description": "1961-1990 normal: precipitation, mm"
+          },
+          {
+            "name": "precip_1991_2020_mm",
+            "type": "number",
+            "description": "1991-2020 normal: precipitation, mm"
+          },
+          {
+            "name": "precip_shift_pct",
+            "type": "number",
+            "description": "relative change 1991-2020 vs 1961-1990 of precipitation, percent"
+          },
+          {
+            "name": "weatheo_url",
+            "type": "string",
+            "description": "Weatheo forecast page of the municipality (empty when not matched)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "pt_climate_shift_1961_1990_vs_1991_2020_parquet",
+      "path": "pt_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "title": "Portugal: climate shift 1961-1990 vs 1991-2020 per municipality",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "official municipality code (string, leading zeros kept)"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "municipality name"
+          },
+          {
+            "name": "admin1_code",
+            "type": "string",
+            "description": "first-level administrative unit code"
+          },
+          {
+            "name": "admin1_name",
+            "type": "string",
+            "description": "first-level administrative unit name"
+          },
+          {
+            "name": "admin2_code",
+            "type": "string",
+            "description": "second-level administrative unit code (may be empty)"
+          },
+          {
+            "name": "admin2_name",
+            "type": "string",
+            "description": "second-level administrative unit name (may be empty)"
+          },
+          {
+            "name": "month",
+            "type": "string",
+            "description": "calendar month 1-12 (dataset B also 'annual')"
+          },
+          {
+            "name": "tmean_1961_1990_c",
+            "type": "number",
+            "description": "1961-1990 normal: mean temperature, degC"
+          },
+          {
+            "name": "tmean_1991_2020_c",
+            "type": "number",
+            "description": "1991-2020 normal: mean temperature, degC"
+          },
+          {
+            "name": "tmean_shift_c",
+            "type": "number",
+            "description": "change 1991-2020 minus 1961-1990 of mean temperature, degC"
+          },
+          {
+            "name": "precip_1961_1990_mm",
+            "type": "number",
+            "description": "1961-1990 normal: precipitation, mm"
+          },
+          {
+            "name": "precip_1991_2020_mm",
+            "type": "number",
+            "description": "1991-2020 normal: precipitation, mm"
+          },
+          {
+            "name": "precip_shift_pct",
+            "type": "number",
+            "description": "relative change 1991-2020 vs 1961-1990 of precipitation, percent"
+          },
+          {
+            "name": "weatheo_url",
+            "type": "string",
+            "description": "Weatheo forecast page of the municipality (empty when not matched)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
