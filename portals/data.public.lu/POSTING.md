@@ -20,5 +20,5 @@ python scripts/publish_udata.py --base https://data.public.lu --meta portals/dat
 ```
 
 6. Vérifier sur le portail : licence CC BY, fréquence irrégulière, couverture temporelle 1961-2020, trois ressources par jeu.
-7. Couverture spatiale : `publish_udata.py` n'envoie pas la clé `spatial` des fichiers JSON (elle y est à titre de référence). La renseigner dans l'interface : granularité « Commune (lu:commune) », zone « Luxembourg (country:lu) ».
+7. Couverture spatiale : `publish_udata.py` envoie la clé `spatial` des fichiers JSON (granularité « Commune (lu:commune) », zone « Luxembourg (country:lu) ») ; la vérifier sur la page du jeu, à défaut la renseigner dans l'interface.
 8. Pas de réutilisation sur ce portail.

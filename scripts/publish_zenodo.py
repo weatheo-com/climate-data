@@ -10,7 +10,12 @@ Without a token (or with --dry-run) the requests and metadata are printed and
 nothing is sent.
 
 Meta keys used: title, description, tags (-> keywords), optional version,
-publication_date, zenodo (dict merged into the metadata last).
+publication_date, zenodo (dict merged into the metadata last, so its
+related_identifiers replace the defaults; default repo relation isSupplementTo).
+
+Files keep their names in the bucket, except that with several
+data/<CC>/datapackage.json each one is uploaded as <CC>_datapackage.json; any
+other duplicate file name is an error (Zenodo keeps one file per name).
 """
 from __future__ import annotations
 
@@ -18,6 +23,7 @@ import argparse
 import json
 import os
 import sys
+from collections import Counter
 from pathlib import Path
 
 SANDBOX = "https://sandbox.zenodo.org/api"
@@ -37,7 +43,7 @@ def metadata(meta: dict) -> dict:
         "access_right": "open",
         "keywords": list(meta.get("tags", [])),
         "related_identifiers": [
-            {"identifier": REPO_URL, "relation": "isCompiledBy", "scheme": "url", "resource_type": "software"},
+            {"identifier": REPO_URL, "relation": "isSupplementTo", "scheme": "url", "resource_type": "software"},
             {"identifier": OPEN_DATA_URL, "relation": "isDocumentedBy", "scheme": "url"},
         ],
     }
@@ -54,11 +60,29 @@ def token_for(production: bool, env=os.environ) -> str | None:
     return env.get("ZENODO_SANDBOX_TOKEN") or env.get("ZENODO_TOKEN")
 
 
+def upload_names(files: list[Path]) -> list[tuple[Path, str]]:
+    """(path, bucket name) per file. Several datapackage.json -> <parent dir>_datapackage.json
+    (data/FR/datapackage.json -> FR_datapackage.json). Raises ValueError on any other duplicate."""
+    several = sum(f.name == "datapackage.json" for f in files) > 1
+    out = []
+    for f in files:
+        name = f.name
+        if several and name == "datapackage.json" and f.parent.name:
+            name = f"{f.parent.name}_datapackage.json"
+        out.append((f, name))
+    counts = Counter(name for _, name in out)
+    dups = sorted(n for n, c in counts.items() if c > 1)
+    if dups:
+        detail = "; ".join(f"{n}: {', '.join(str(f) for f, m in out if m == n)}" for n in dups)
+        raise ValueError(f"duplicate upload file names (Zenodo keeps one file per name): {detail}")
+    return out
+
+
 def plan(api: str, meta: dict, files: list[Path], publish: bool) -> list[dict]:
     """Ordered requests (pure). {bucket} and {id} come from the create response."""
     reqs = [{"method": "POST", "url": f"{api}/deposit/depositions", "json": {}}]
-    for f in files:
-        reqs.append({"method": "PUT", "url": f"{{bucket}}/{f.name}", "file": str(f)})
+    for f, name in upload_names(files):
+        reqs.append({"method": "PUT", "url": f"{{bucket}}/{name}", "file": str(f)})
     reqs.append({"method": "PUT", "url": f"{api}/deposit/depositions/{{id}}", "json": {"metadata": metadata(meta)}})
     if publish:
         reqs.append({"method": "POST", "url": f"{api}/deposit/depositions/{{id}}/actions/publish", "json": None})
@@ -105,7 +129,11 @@ def main(argv: list[str] | None = None, session=None, env=os.environ) -> int:
     a = p.parse_args(argv)
     meta = json.loads(a.meta.read_text(encoding="utf-8"))
     api = PRODUCTION if a.production else SANDBOX
-    reqs = plan(api, meta, a.files, a.publish)
+    try:
+        reqs = plan(api, meta, a.files, a.publish)
+    except ValueError as e:
+        print(str(e), file=sys.stderr)
+        return 2
     token = token_for(a.production, env)
     if a.dry_run or not token:
         why = "--dry-run" if a.dry_run else "no token (ZENODO_TOKEN / ZENODO_SANDBOX_TOKEN)"

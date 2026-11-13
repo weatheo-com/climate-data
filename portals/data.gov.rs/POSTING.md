@@ -9,7 +9,7 @@
    `cd climate-data && python3 scripts/publish_udata.py --base https://data.gov.rs --org <ORG_ID> --meta portals/data.gov.rs/RS-A.json --lookup`
    (same for RS-B.json)
 7. Publish: same command plus `--apply`.
-8. Afterwards, in the web form of each dataset set by hand what the script does not send (it only sends title, description, tags, license, frequency, temporal_coverage):
-   - Spatial coverage: granularity "Општина" (sr:municipality), zone "Србија" (country:rs), as in RS-A.json "spatial".
+8. Afterwards, check in the web form of each dataset (the script sends title, description, tags, license, frequency, temporal_coverage and spatial):
+   - Spatial coverage: sent by the script from "spatial" in RS-A.json / RS-B.json (granularity "Општина" sr:municipality, zone "Србија" country:rs); set it by hand in the form only if the page does not show it.
    - Licence: "sodl" (Српска лиценца за отворене податке, owner choice 2026-11-13; it allows commercial reuse with attribution). The description says the same data are CC BY 4.0 in the repository and gives the RZS source, download date and the changes, as SODL requires.
 9. Check the two dataset pages (Cyrillic text, 3 resources each, links work).

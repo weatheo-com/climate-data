@@ -14,5 +14,5 @@
    python3 scripts/publish_udata.py --base https://dados.gov.pt --meta portals/dados.gov.pt/PT-A.json --org <ORG_ID> --apply
    python3 scripts/publish_udata.py --base https://dados.gov.pt --meta portals/dados.gov.pt/PT-B.json --org <ORG_ID> --apply
 
-7. Na interface, em cada conjunto de dados, definir a cobertura espacial (o script não envia o campo "spatial"): granularidade "Concelho" (pt:concelho), zona "Portugal" (country:pt). Verificados na API em 2026-11-13: licença `cc-by`, frequência `irregular`.
+7. Cobertura espacial: o script envia o campo "spatial" (granularidade "Concelho" (pt:concelho), zona "Portugal" (country:pt)); verificar na página de cada conjunto de dados e, se faltar, defini-la na interface. Verificados na API em 2026-11-13: licença `cc-by`, frequência `irregular`.
 8. Sem entrada em "Reutilizações".

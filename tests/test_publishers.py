@@ -118,6 +118,10 @@ def test_zenodo_metadata(meta):
     assert md["license"] == "cc-by-4.0" and md["upload_type"] == "dataset"
     ids = {r["identifier"] for r in md["related_identifiers"]}
     assert ids == {"https://github.com/weatheo-com/climate-data", "https://weatheo.com/en/open-data"}
+    repo = next(r for r in md["related_identifiers"] if "github.com" in r["identifier"])
+    assert repo["relation"] == "isSupplementTo"
+    override = dict(meta, zenodo={"related_identifiers": [{"identifier": "x", "relation": "isDerivedFrom"}]})
+    assert zenodo.metadata(override)["related_identifiers"] == [{"identifier": "x", "relation": "isDerivedFrom"}]
 
 
 def test_zenodo_token_choice():
@@ -155,3 +159,126 @@ def test_zenodo_draft_then_publish(tmp_path):
     zenodo.main(["--meta", str(META), "--files", str(f), "--production", "--publish"], session=s,
                 env={"ZENODO_TOKEN": "p"})
     assert s.calls[-1][:2] == ("POST", "https://zenodo.org/api/deposit/depositions/7/actions/publish")
+
+
+PORTALS = ROOT / "portals"
+REUSE = PORTALS / "data.gouv.fr" / "REUSE.json"
+DS_ID = "0123456789abcdef01234567"
+
+
+def test_udata_spatial_in_payload():
+    fr = json.loads((PORTALS / "data.gouv.fr" / "FR-A.json").read_text(encoding="utf-8"))
+    body = udata.plan("https://www.data.gouv.fr", fr, None, None)[0]["json"]
+    assert body["spatial"] == {"granularity": "fr:commune", "zones": ["country-subset:fr:metro"]}
+    put = udata.plan("https://www.data.gouv.fr", fr, None, {"id": "d1"})[0]
+    assert put["method"] == "PUT" and put["json"]["spatial"] == body["spatial"]
+    metas = [f for d in ("data.gouv.fr", "dados.gov.pt", "data.public.lu", "data.gov.rs")
+             for f in (PORTALS / d).glob("??-?.json")]
+    assert len(metas) == 8
+    for f in metas:
+        m = json.loads(f.read_text(encoding="utf-8"))
+        sp = udata.dataset_payload(m, None)["spatial"]
+        assert sp == {"granularity": m["spatial"]["granularity"], "zones": m["spatial"]["zones"]}, f.name
+
+
+def _reuse_meta(tmp_path, **extra):
+    m = json.loads(REUSE.read_text(encoding="utf-8"))
+    m.update(extra)
+    f = tmp_path / "REUSE.json"
+    f.write_text(json.dumps(m, ensure_ascii=False), encoding="utf-8")
+    return f, m
+
+
+def test_udata_reuse_dry_run_sends_nothing(tmp_path, capsys, monkeypatch):
+    def boom(*a, **k):
+        raise AssertionError("network used")
+
+    monkeypatch.setattr("socket.socket.connect", boom)
+    assert udata.main(["--base", "https://www.data.gouv.fr", "--reuse", str(REUSE)]) == 0
+    out = capsys.readouterr().out
+    assert "POST https://www.data.gouv.fr/api/1/reuses/" in out
+    assert '"topic": "environment_and_energy"' in out and '"type": "application"' in out
+
+    f, _ = _reuse_meta(tmp_path, datasets=["liste-des-communes-de-france", DS_ID])
+    assert udata.main(["--base", "https://www.data.gouv.fr", "--reuse", str(f)]) == 0
+    out = capsys.readouterr().out
+    assert "GET https://www.data.gouv.fr/api/1/datasets/liste-des-communes-de-france/" in out
+    assert "{slug:liste-des-communes-de-france}" in out and DS_ID in out
+
+
+def test_udata_reuse_lookup_resolves_slugs(tmp_path, capsys):
+    f, m = _reuse_meta(tmp_path, datasets=["liste-des-communes-de-france", DS_ID])
+    s = FakeSession([Resp({"id": "a" * 24, "slug": "liste-des-communes-de-france"}), Resp({"data": []})])
+    assert udata.main(["--base", "https://www.data.gouv.fr", "--reuse", str(f), "--org", "o", "--lookup"],
+                      session=s) == 0
+    assert [c[:2] for c in s.calls] == [
+        ("GET", "https://www.data.gouv.fr/api/1/datasets/liste-des-communes-de-france/"),
+        ("GET", "https://www.data.gouv.fr/api/1/organizations/o/reuses/"),
+    ]
+    reqs = udata.plan_reuse("https://www.data.gouv.fr", m, "o", None, ["a" * 24, DS_ID])
+    body = reqs[0]["json"]
+    assert reqs[0]["method"] == "POST" and reqs[0]["url"] == "https://www.data.gouv.fr/api/1/reuses/"
+    assert body["datasets"] == ["a" * 24, DS_ID] and body["organization"] == "o"
+    assert {k: body[k] for k in ("title", "url", "type", "topic", "tags")} == {
+        k: m[k] for k in ("title", "url", "type", "topic", "tags")}
+    assert "datasets_note" not in body
+    out = capsys.readouterr().out
+    assert '"aaaaaaaaaaaaaaaaaaaaaaaa"' in out and "{slug:" not in out
+
+
+def test_udata_reuse_apply_create_with_image(tmp_path, monkeypatch):
+    monkeypatch.setenv("UDATA_API_KEY", "k")
+    (tmp_path / "shot.png").write_bytes(b"png")
+    f, m = _reuse_meta(tmp_path, datasets=[DS_ID], image="shot.png")
+    s = FakeSession([Resp({"data": [{"id": "other", "title": "Other"}]}), Resp({"id": "r9", "page": "p"}), Resp({})])
+    assert udata.main(["--base", "https://www.data.gouv.fr", "--reuse", str(f), "--org", "o", "--apply"],
+                      session=s) == 0
+    assert [c[:2] for c in s.calls] == [
+        ("GET", "https://www.data.gouv.fr/api/1/organizations/o/reuses/"),
+        ("POST", "https://www.data.gouv.fr/api/1/reuses/"),
+        ("POST", "https://www.data.gouv.fr/api/1/reuses/r9/image/"),
+    ]
+    assert s.calls[1][2]["json"]["datasets"] == [DS_ID]
+    assert s.calls[2][2]["files"]["file"][0] == "shot.png"
+
+
+def test_udata_reuse_update_by_title(tmp_path, monkeypatch):
+    monkeypatch.setenv("UDATA_API_KEY", "k")
+    f, m = _reuse_meta(tmp_path, datasets=[DS_ID])
+    s = FakeSession([Resp([{"id": "r1", "title": m["title"]}]), Resp({"id": "r1"})])
+    assert udata.main(["--base", "https://www.data.gouv.fr", "--reuse", str(f), "--apply"], session=s) == 0
+    assert s.calls[0][:2] == ("GET", "https://www.data.gouv.fr/api/1/me/reuses/")
+    assert s.calls[1][:2] == ("PUT", "https://www.data.gouv.fr/api/1/reuses/r1/")
+    assert len(s.calls) == 2
+
+
+def test_udata_reuse_needs_required_fields(tmp_path):
+    f, _ = _reuse_meta(tmp_path, topic="")
+    assert udata.main(["--base", "https://www.data.gouv.fr", "--reuse", str(f)]) == 2
+
+
+def _pkg(tmp_path, cc, name="datapackage.json"):
+    d = tmp_path / "data" / cc
+    d.mkdir(parents=True, exist_ok=True)
+    f = d / name
+    f.write_text("{}")
+    return f
+
+
+def test_zenodo_renames_datapackages(tmp_path):
+    fr, pt = _pkg(tmp_path, "FR"), _pkg(tmp_path, "PT")
+    csv = _pkg(tmp_path, "FR", "FR_x.csv")
+    names = [n for _, n in zenodo.upload_names([csv, fr, pt])]
+    assert names == ["FR_x.csv", "FR_datapackage.json", "PT_datapackage.json"]
+    assert [n for _, n in zenodo.upload_names([csv, fr])] == ["FR_x.csv", "datapackage.json"]
+    reqs = zenodo.plan(zenodo.SANDBOX, {"title": "t"}, [fr, pt], False)
+    assert [r["url"] for r in reqs[1:3]] == ["{bucket}/FR_datapackage.json", "{bucket}/PT_datapackage.json"]
+
+
+def test_zenodo_duplicate_names_error(tmp_path, capsys):
+    a, b = _pkg(tmp_path, "FR", "x.csv"), _pkg(tmp_path, "PT", "x.csv")
+    with pytest.raises(ValueError, match="x.csv"):
+        zenodo.upload_names([a, b])
+    s = FakeSession()
+    assert zenodo.main(["--meta", str(META), "--files", str(a), str(b)], session=s, env={"ZENODO_TOKEN": "t"}) == 2
+    assert s.calls == [] and "duplicate" in capsys.readouterr().err
