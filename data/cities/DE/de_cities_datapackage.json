@@ -1,0 +1,842 @@
+{
+  "profile": "tabular-data-package",
+  "name": "weatheo-city-climate-de",
+  "title": "Germany city daily weather 1950-2025 and climate indicators (ERA5-Land)",
+  "description": "Daily weather 1950-2025, monthly climate, climate normals 1991-2020 and annual climate indicators 1951-2025 for the 100 largest cities of Germany, from the Copernicus ERA5-Land hourly time series. Cities: in France and Germany the most populous municipalities by official population (INSEE, BKG), one point per municipality (city districts are not counted separately); elsewhere the most populous GeoNames places, skipping a place in the same 0.1 deg cell and district as a larger one. Each city takes the ERA5-Land time series (0.1 deg) of the grid cell at its GeoNames point, or of a neighbouring land cell when that cell is sea. Hourly values are grouped into local civil days (the city's IANA time zone); only complete days are kept. Temperatures are adjusted from the cell elevation to the city elevation with 6.5 degC per km. Wind is the mean of hourly 10 m wind speeds, not gusts. Monthly and annual values use complete months and years only. The daily series start on 2 January 1950 (3 January in time zones ahead of UTC) and the monthly series in February 1950: the hourly series are downloaded from 00:00 UTC on 2 January 1950 and only complete local days are kept. Values are reanalysis grid-cell values adjusted for altitude, not station observations: they can differ from official station normals, mostly near coasts, in cities and in steep terrain. Daily extremes are smoothed: on record heat days the daily maximum is often 2 to 7 degC below the station record (London, 19 July 2022: 36.4 degC here, 40.2 degC measured at Coningsby). Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.",
+  "version": "1.1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "homepage": "https://weatheo.com/en/open-data",
+  "sources": [
+    {
+      "title": "Copernicus C3S ERA5-Land hourly time series from 1950 to present (reanalysis-era5-land-timeseries)",
+      "path": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-timeseries"
+    },
+    {
+      "title": "ERA5-Land orography (geopotential, 0.1 deg), ECMWF",
+      "path": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation"
+    },
+    {
+      "title": "Copernicus DEM GLO-90 (place elevations), © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA",
+      "path": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"
+    },
+    {
+      "title": "GeoNames gazetteer cities5000 (city list, coordinates, population, time zone), licence CC BY 4.0",
+      "path": "https://download.geonames.org/export/dump/"
+    },
+    {
+      "title": "(c) GeoBasis-DE / BKG (2026), Verwaltungsgebiete 1:250 000 mit Einwohnerzahlen (VG250-EW), licence dl-de/by-2-0 (Datenlizenz Deutschland Namensnennung 2.0); Daten verändert: Klimawerte hinzugefügt",
+      "path": "https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-mit-einwohnerzahlen-ebenen-stand-31-12-vg250-ew-ebenen-31-12.html"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Weatheo (by CODELIO)",
+      "path": "https://weatheo.com",
+      "role": "publisher"
+    }
+  ],
+  "keywords": [
+    "climate",
+    "weather history",
+    "degree days",
+    "climate normals",
+    "ERA5-Land",
+    "Copernicus",
+    "Germany"
+  ],
+  "spatial": "DE",
+  "temporal": {
+    "start": "1950-01-03",
+    "end": "2025-12-31"
+  },
+  "resources": [
+    {
+      "name": "de_city_cities",
+      "path": "de_cities.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ","
+      },
+      "title": "Germany: cities with grid cell, elevation and climate summary",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "city_id",
+            "type": "string",
+            "description": "GeoNames id of the city"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere"
+          },
+          {
+            "name": "ascii_name",
+            "type": "string",
+            "description": "city name in ASCII (GeoNames)"
+          },
+          {
+            "name": "admin1_code",
+            "type": "string",
+            "description": "GeoNames first-level administrative division code"
+          },
+          {
+            "name": "admin1_name",
+            "type": "string",
+            "description": "first-level administrative division name"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "city latitude, decimal degrees (WGS84, GeoNames)"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "city longitude, decimal degrees (WGS84, GeoNames)"
+          },
+          {
+            "name": "population",
+            "type": "integer",
+            "description": "population: official municipal population in France (INSEE) and Germany (BKG VG250-EW), GeoNames elsewhere"
+          },
+          {
+            "name": "timezone",
+            "type": "string",
+            "description": "IANA time zone used for local days"
+          },
+          {
+            "name": "rank",
+            "type": "integer",
+            "description": "rank by population within the country (1 = largest)"
+          },
+          {
+            "name": "grid_lat",
+            "type": "number",
+            "description": "latitude of the ERA5-Land cell centre, decimal degrees"
+          },
+          {
+            "name": "grid_lon",
+            "type": "number",
+            "description": "longitude of the ERA5-Land cell centre, decimal degrees"
+          },
+          {
+            "name": "elevation_m",
+            "type": "number",
+            "description": "city elevation, m (Copernicus DEM GLO-90)"
+          },
+          {
+            "name": "grid_elevation_m",
+            "type": "number",
+            "description": "ERA5-Land model elevation of the cell, m"
+          },
+          {
+            "name": "weatheo_url",
+            "type": "string",
+            "description": "Weatheo forecast page of the city (empty when not matched)"
+          },
+          {
+            "name": "tmean_annual_c",
+            "type": "number",
+            "description": "mean annual temperature 1991-2020, degC"
+          },
+          {
+            "name": "precip_annual_mm",
+            "type": "number",
+            "description": "mean annual precipitation 1991-2020, mm"
+          },
+          {
+            "name": "trend_c_per_decade_1951_2025",
+            "type": "number",
+            "description": "linear trend of annual mean temperature 1951-2025, degC per decade"
+          },
+          {
+            "name": "trend_c_per_decade_1981_2025",
+            "type": "number",
+            "description": "linear trend of annual mean temperature 1981-2025, degC per decade"
+          },
+          {
+            "name": "warmest_year",
+            "type": "integer",
+            "description": "warmest year 1951-2025 (annual mean temperature)"
+          },
+          {
+            "name": "coldest_year",
+            "type": "integer",
+            "description": "coldest year 1951-2025 (annual mean temperature)"
+          },
+          {
+            "name": "wettest_year",
+            "type": "integer",
+            "description": "wettest year 1951-2025 (annual precipitation)"
+          },
+          {
+            "name": "driest_year",
+            "type": "integer",
+            "description": "driest year 1951-2025 (annual precipitation)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "de_city_daily",
+      "path": "de_city_daily_weather_1950_2025.parquet",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "title": "Germany: daily weather 1950-2025 per city",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "city_id",
+            "type": "string",
+            "description": "GeoNames id of the city"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "local calendar date"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "daily mean temperature, degC"
+          },
+          {
+            "name": "tmin_c",
+            "type": "number",
+            "description": "daily minimum temperature, degC"
+          },
+          {
+            "name": "tmax_c",
+            "type": "number",
+            "description": "daily maximum temperature, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "daily precipitation, mm"
+          },
+          {
+            "name": "wind_mean_kmh",
+            "type": "number",
+            "description": "daily mean 10 m wind speed, km/h"
+          },
+          {
+            "name": "wind_max_kmh",
+            "type": "number",
+            "description": "daily highest hourly 10 m wind speed (not gusts), km/h"
+          },
+          {
+            "name": "solar_kwh_m2",
+            "type": "number",
+            "description": "daily surface solar radiation downwards, kWh/m2"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "de_city_daily_csv",
+      "path": "de_city_daily_weather_1950_2025_csv.zip",
+      "format": "zip",
+      "mediatype": "application/zip",
+      "title": "Germany: daily weather 1950-2025, one CSV per city (<cc>_<city>_<city_id>_daily.csv)",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "description": "local calendar date"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "daily mean temperature, degC"
+          },
+          {
+            "name": "tmin_c",
+            "type": "number",
+            "description": "daily minimum temperature, degC"
+          },
+          {
+            "name": "tmax_c",
+            "type": "number",
+            "description": "daily maximum temperature, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "daily precipitation, mm"
+          },
+          {
+            "name": "wind_mean_kmh",
+            "type": "number",
+            "description": "daily mean 10 m wind speed, km/h"
+          },
+          {
+            "name": "wind_max_kmh",
+            "type": "number",
+            "description": "daily highest hourly 10 m wind speed (not gusts), km/h"
+          },
+          {
+            "name": "solar_kwh_m2",
+            "type": "number",
+            "description": "daily surface solar radiation downwards, kWh/m2"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "de_city_monthly",
+      "path": "de_city_monthly_climate_1950_2025.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ","
+      },
+      "title": "Germany: monthly climate 1950-2025 per city",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "city_id",
+            "type": "string",
+            "description": "GeoNames id of the city"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "calendar year"
+          },
+          {
+            "name": "month",
+            "type": "integer",
+            "description": "month (1-12)"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "mean temperature, degC"
+          },
+          {
+            "name": "tmin_mean_c",
+            "type": "number",
+            "description": "mean daily minimum temperature, degC"
+          },
+          {
+            "name": "tmax_mean_c",
+            "type": "number",
+            "description": "mean daily maximum temperature, degC"
+          },
+          {
+            "name": "tmin_abs_c",
+            "type": "number",
+            "description": "lowest daily minimum temperature, degC"
+          },
+          {
+            "name": "tmax_abs_c",
+            "type": "number",
+            "description": "highest daily maximum temperature, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "precipitation, mm"
+          },
+          {
+            "name": "wet_days",
+            "type": "integer",
+            "description": "days with precipitation >= 1 mm"
+          },
+          {
+            "name": "frost_days",
+            "type": "integer",
+            "description": "days with tmin < 0 degC"
+          },
+          {
+            "name": "hdd_15_5",
+            "type": "number",
+            "description": "heating degree days, base 15.5 degC, degC day"
+          },
+          {
+            "name": "hdd_18",
+            "type": "number",
+            "description": "heating degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_18",
+            "type": "number",
+            "description": "cooling degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_22",
+            "type": "number",
+            "description": "cooling degree days, base 22 degC, degC day"
+          },
+          {
+            "name": "gtz_20_15",
+            "type": "number",
+            "description": "Gradtagzahl 20/15 (VDI 3807), degC day"
+          },
+          {
+            "name": "solar_kwh_m2",
+            "type": "number",
+            "description": "surface solar radiation downwards, kWh/m2"
+          },
+          {
+            "name": "wind_mean_kmh",
+            "type": "number",
+            "description": "mean 10 m wind speed, km/h"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "de_city_monthly_parquet",
+      "path": "de_city_monthly_climate_1950_2025.parquet",
+      "format": "parquet",
+      "mediatype": "application/vnd.apache.parquet",
+      "title": "Germany: monthly climate 1950-2025 per city",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "city_id",
+            "type": "string",
+            "description": "GeoNames id of the city"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "calendar year"
+          },
+          {
+            "name": "month",
+            "type": "integer",
+            "description": "month (1-12)"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "mean temperature, degC"
+          },
+          {
+            "name": "tmin_mean_c",
+            "type": "number",
+            "description": "mean daily minimum temperature, degC"
+          },
+          {
+            "name": "tmax_mean_c",
+            "type": "number",
+            "description": "mean daily maximum temperature, degC"
+          },
+          {
+            "name": "tmin_abs_c",
+            "type": "number",
+            "description": "lowest daily minimum temperature, degC"
+          },
+          {
+            "name": "tmax_abs_c",
+            "type": "number",
+            "description": "highest daily maximum temperature, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "precipitation, mm"
+          },
+          {
+            "name": "wet_days",
+            "type": "integer",
+            "description": "days with precipitation >= 1 mm"
+          },
+          {
+            "name": "frost_days",
+            "type": "integer",
+            "description": "days with tmin < 0 degC"
+          },
+          {
+            "name": "hdd_15_5",
+            "type": "number",
+            "description": "heating degree days, base 15.5 degC, degC day"
+          },
+          {
+            "name": "hdd_18",
+            "type": "number",
+            "description": "heating degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_18",
+            "type": "number",
+            "description": "cooling degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_22",
+            "type": "number",
+            "description": "cooling degree days, base 22 degC, degC day"
+          },
+          {
+            "name": "gtz_20_15",
+            "type": "number",
+            "description": "Gradtagzahl 20/15 (VDI 3807), degC day"
+          },
+          {
+            "name": "solar_kwh_m2",
+            "type": "number",
+            "description": "surface solar radiation downwards, kWh/m2"
+          },
+          {
+            "name": "wind_mean_kmh",
+            "type": "number",
+            "description": "mean 10 m wind speed, km/h"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "de_city_normals",
+      "path": "de_city_climate_normals_1991_2020.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ","
+      },
+      "title": "Germany: monthly climate normals 1991-2020 per city",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "city_id",
+            "type": "string",
+            "description": "GeoNames id of the city"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere"
+          },
+          {
+            "name": "month",
+            "type": "integer",
+            "description": "month (1-12)"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "mean temperature, degC"
+          },
+          {
+            "name": "tmin_c",
+            "type": "number",
+            "description": "minimum temperature, degC"
+          },
+          {
+            "name": "tmax_c",
+            "type": "number",
+            "description": "maximum temperature, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "precipitation, mm"
+          },
+          {
+            "name": "wet_days",
+            "type": "number",
+            "description": "days with precipitation >= 1 mm"
+          },
+          {
+            "name": "frost_days",
+            "type": "number",
+            "description": "days with tmin < 0 degC"
+          },
+          {
+            "name": "summer_days",
+            "type": "number",
+            "description": "days with tmax >= 25 degC"
+          },
+          {
+            "name": "hot_days",
+            "type": "number",
+            "description": "days with tmax >= 30 degC"
+          },
+          {
+            "name": "solar_kwh_m2_day",
+            "type": "number",
+            "description": "surface solar radiation downwards per day, kWh/m2"
+          },
+          {
+            "name": "wind_mean_kmh",
+            "type": "number",
+            "description": "mean 10 m wind speed, km/h"
+          },
+          {
+            "name": "hdd_15_5",
+            "type": "number",
+            "description": "heating degree days, base 15.5 degC, degC day"
+          },
+          {
+            "name": "hdd_18",
+            "type": "number",
+            "description": "heating degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_18",
+            "type": "number",
+            "description": "cooling degree days, base 18 degC, degC day"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "de_city_annual",
+      "path": "de_city_annual_climate_indicators_1951_2025.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": ","
+      },
+      "title": "Germany: annual climate indicators 1951-2025 per city",
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "title": "Creative Commons Attribution 4.0"
+        }
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code"
+          },
+          {
+            "name": "city_id",
+            "type": "string",
+            "description": "GeoNames id of the city"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere"
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "calendar year"
+          },
+          {
+            "name": "tmean_c",
+            "type": "number",
+            "description": "mean temperature, degC"
+          },
+          {
+            "name": "tmean_anomaly_c",
+            "type": "number",
+            "description": "mean temperature minus the 1991-2020 mean, degC"
+          },
+          {
+            "name": "precip_mm",
+            "type": "number",
+            "description": "precipitation, mm"
+          },
+          {
+            "name": "precip_anomaly_pct",
+            "type": "number",
+            "description": "precipitation relative to the 1991-2020 mean, percent"
+          },
+          {
+            "name": "wet_days",
+            "type": "integer",
+            "description": "days with precipitation >= 1 mm"
+          },
+          {
+            "name": "heavy_rain_days",
+            "type": "integer",
+            "description": "days with precipitation >= 20 mm"
+          },
+          {
+            "name": "max_1day_precip_mm",
+            "type": "number",
+            "description": "highest daily precipitation, mm"
+          },
+          {
+            "name": "frost_days",
+            "type": "integer",
+            "description": "days with tmin < 0 degC"
+          },
+          {
+            "name": "ice_days",
+            "type": "integer",
+            "description": "days with tmax < 0 degC"
+          },
+          {
+            "name": "summer_days",
+            "type": "integer",
+            "description": "days with tmax >= 25 degC"
+          },
+          {
+            "name": "hot_days",
+            "type": "integer",
+            "description": "days with tmax >= 30 degC"
+          },
+          {
+            "name": "tropical_nights",
+            "type": "integer",
+            "description": "days with tmin >= 20 degC"
+          },
+          {
+            "name": "tmax_abs_c",
+            "type": "number",
+            "description": "highest daily maximum temperature, degC"
+          },
+          {
+            "name": "tmin_abs_c",
+            "type": "number",
+            "description": "lowest daily minimum temperature, degC"
+          },
+          {
+            "name": "hdd_15_5",
+            "type": "number",
+            "description": "heating degree days, base 15.5 degC, degC day"
+          },
+          {
+            "name": "hdd_18",
+            "type": "number",
+            "description": "heating degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_18",
+            "type": "number",
+            "description": "cooling degree days, base 18 degC, degC day"
+          },
+          {
+            "name": "cdd_22",
+            "type": "number",
+            "description": "cooling degree days, base 22 degC, degC day"
+          },
+          {
+            "name": "rank_warmest",
+            "type": "integer",
+            "description": "rank of the year by annual mean temperature (1 = warmest)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

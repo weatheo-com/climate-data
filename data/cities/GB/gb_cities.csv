@@ -1,0 +1,101 @@
+country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank,grid_lat,grid_lon,elevation_m,grid_elevation_m,weatheo_url,tmean_annual_c,precip_annual_mm,trend_c_per_decade_1951_2025,trend_c_per_decade_1981_2025,warmest_year,coldest_year,wettest_year,driest_year
+GB,2643743,London,London,ENG,England,51.50853,-0.12574,8961989,Europe/London,1,51.5,-0.1,15.0,23.0,https://weatheo.com/en/gb/london-city-of/london,10.8,694.4,0.24,0.33,2022,1963,2000,1961
+GB,2655603,Birmingham,Birmingham,ENG,England,52.48142,-1.89983,1157603,Europe/London,2,52.5,-1.9,151.0,144.0,https://weatheo.com/en/gb/birmingham/birmingham,9.6,781.1,0.23,0.31,2025,1963,2012,1961
+GB,2648579,Glasgow,Glasgow,SCT,Scotland,55.86515,-4.25763,626410,Europe/London,3,55.9,-4.3,37.0,106.0,https://weatheo.com/en/gb/glasgow-city/glasgow,8.6,1292.8,0.17,0.24,2023,1963,2015,1955
+GB,2643123,Manchester,Manchester,ENG,England,53.48095,-2.23743,568996,Europe/London,4,53.5,-2.2,45.0,75.0,https://weatheo.com/en/gb/manchester/manchester,9.5,1054.6,0.21,0.29,2022,1963,2012,1955
+GB,2638077,Sheffield,Sheffield,ENG,England,53.38297,-1.4659,556500,Europe/London,5,53.4,-1.5,75.0,180.0,https://weatheo.com/en/gb/sheffield/sheffield,9.9,888.1,0.22,0.3,2022,1963,2012,1955
+GB,2644688,Leeds,Leeds,ENG,England,53.79648,-1.54785,536280,Europe/London,6,53.8,-1.5,36.0,81.0,https://weatheo.com/en/gb/leeds/leeds,9.7,817.6,0.22,0.3,2022,1963,2012,1955
+GB,2650225,Edinburgh,Edinburgh,SCT,Scotland,55.95206,-3.19648,514990,Europe/London,7,56.1,-3.2,66.0,34.0,https://weatheo.com/en/gb/edinburgh-city-of/edinburgh,8.7,903.1,0.17,0.26,2025,1963,2012,1955
+GB,2644210,Liverpool,Liverpool,ENG,England,53.41058,-2.97794,496770,Europe/London,8,53.4,-3.0,28.0,21.0,https://weatheo.com/en/gb/liverpool/liverpool,10.1,1079.6,0.19,0.27,2023,1963,2012,1955
+GB,2654675,Bristol,Bristol,ENG,England,51.45523,-2.59665,479024,Europe/London,9,51.5,-2.6,15.0,45.0,https://weatheo.com/en/gb/bristol-city-of/bristol,10.6,845.9,0.21,0.28,2025,1963,2012,1961
+GB,2653822,Cardiff,Cardiff,WLS,Wales,51.48,-3.18,372089,Europe/London,10,51.5,-3.2,16.0,45.0,https://weatheo.com/en/gb/cardiff/caerdydd,10.5,1080.5,0.2,0.27,2022,1963,2012,1956
+GB,2644668,Leicester,Leicester,ENG,England,52.6386,-1.13169,368600,Europe/London,11,52.6,-1.1,59.0,105.0,https://weatheo.com/en/gb/leicester/leicester,10.2,744.3,0.24,0.32,2022,1963,2012,1961
+GB,2654993,Bradford,Bradford,ENG,England,53.79391,-1.75206,366187,Europe/London,12,53.8,-1.8,110.0,191.0,https://weatheo.com/en/gb/bradford/bradford,9.2,970.1,0.21,0.29,2022,1963,2012,1955
+GB,2655984,Belfast,Belfast,NIR,Northern Ireland,54.59682,-5.92541,348005,Europe/London,13,54.6,-5.9,7.0,85.0,https://weatheo.com/en/gb/belfast/belfast,10.0,1025.4,0.13,0.22,2023,1986,2002,1955
+GB,2652221,Coventry,Coventry,ENG,England,52.40656,-1.51217,345324,Europe/London,14,52.4,-1.5,86.0,93.0,https://weatheo.com/en/gb/coventry/coventry,10.0,768.1,0.23,0.32,2025,1963,2012,1961
+GB,2655613,Birkenhead,Birkenhead,ENG,England,53.39337,-3.01479,325264,Europe/London,15,53.4,-3.0,18.0,21.0,https://weatheo.com/en/gb/wirral/birkenhead,10.2,1079.6,0.19,0.28,2025,1963,2012,1955
+GB,2641170,Nottingham,Nottingham,ENG,England,52.9536,-1.15047,323632,Europe/London,16,53.0,-1.2,39.0,75.0,https://weatheo.com/en/gb/nottingham/nottingham,10.0,719.1,0.23,0.32,2022,1963,2012,1961
+GB,2639577,Reading,Reading,ENG,England,51.45625,-0.97113,318014,Europe/London,17,51.5,-1.0,51.0,80.0,https://weatheo.com/en/gb/reading/reading,10.5,725.1,0.24,0.33,2022,1963,2012,1961
+GB,2645425,Kingston upon Hull,Kingston upon Hull,ENG,England,53.7446,-0.33525,314018,Europe/London,18,53.7,-0.3,7.0,15.0,https://weatheo.com/en/gb/kingston-upon-hull-city-of/kingston-upon-hull,10.0,776.6,0.22,0.31,2022,1963,2012,1959
+GB,2639912,Preston,Preston,ENG,England,53.76282,-2.70452,313332,Europe/London,19,53.8,-2.7,30.0,51.0,https://weatheo.com/en/gb/lancashire/preston,9.7,1300.5,0.2,0.28,2022,1963,2012,1955
+GB,2636432,Swansea,Swansea,WLS,Wales,51.62079,-3.94323,300352,Europe/London,20,51.7,-3.9,19.0,115.0,https://weatheo.com/en/gb/swansea/abertawe,10.7,1398.7,0.19,0.27,2022,1963,2000,1955
+GB,2641673,Newcastle upon Tyne,Newcastle upon Tyne,ENG,England,54.97328,-1.61396,300125,Europe/London,21,55.0,-1.6,55.0,38.0,https://weatheo.com/en/gb/newcastle-upon-tyne/newcastle,9.2,792.4,0.19,0.29,2022,1963,2012,1955
+GB,2637433,Southend-on-Sea,Southend-on-Sea,ENG,England,51.53782,0.71433,295310,Europe/London,22,51.5,0.7,30.0,0.0,https://weatheo.com/en/gb/southend-on-sea/southend,11.0,762.1,0.24,0.34,2022,1963,2012,1953
+GB,2654710,Brighton,Brighton,ENG,England,50.82838,-0.13947,283870,Europe/London,23,50.9,-0.1,33.0,55.0,https://weatheo.com/en/gb/brighton-and-hove/brighton,11.0,839.4,0.23,0.33,2022,1963,2000,1962
+GB,2651347,Derby,Derby,ENG,England,52.92277,-1.47663,270468,Europe/London,24,52.9,-1.5,56.0,71.0,https://weatheo.com/en/gb/derby/derby,9.8,764.5,0.23,0.31,2022,1963,2012,1961
+GB,2637487,Southampton,Southampton,ENG,England,50.90395,-1.40428,269781,Europe/London,25,50.9,-1.4,19.0,25.0,https://weatheo.com/en/gb/southampton/southampton,11.1,827.1,0.22,0.3,2022,1963,2000,1961
+GB,2633691,Wolverhampton,Wolverhampton,ENG,England,52.58547,-2.12296,263700,Europe/London,26,52.6,-2.1,156.0,133.0,https://weatheo.com/en/gb/wolverhampton/wolverhampton,9.5,800.4,0.23,0.31,2025,1963,2012,1961
+GB,2640194,Plymouth,Plymouth,ENG,England,50.37153,-4.14305,260203,Europe/London,27,50.4,-4.1,15.0,76.0,https://weatheo.com/en/gb/plymouth/plymouth,11.3,972.3,0.18,0.26,2022,1963,2012,1961
+GB,2636841,Stoke-on-Trent,Stoke-on-Trent,ENG,England,53.00415,-2.18538,258366,Europe/London,28,53.0,-2.2,113.0,146.0,https://weatheo.com/en/gb/stoke-on-trent/stoke-on-trent,9.5,843.0,0.22,0.3,2025,1963,2012,1955
+GB,2642465,Milton Keynes,Milton Keynes,ENG,England,52.04172,-0.75583,256385,Europe/London,29,52.0,-0.8,113.0,95.0,https://weatheo.com/en/gb/milton-keynes/milton-keynes,10.0,725.6,0.24,0.34,2022,1963,2012,1961
+GB,2641430,Northampton,Northampton,ENG,England,52.25,-0.88333,245899,Europe/London,30,52.2,-0.9,92.0,98.0,https://weatheo.com/en/gb/northamptonshire/northampton,10.1,719.4,0.25,0.34,2022,1963,2012,1961
+GB,2641022,Oldham,Oldham,ENG,England,53.54051,-2.1183,237110,Europe/London,31,53.5,-2.1,199.0,159.0,https://weatheo.com/en/gb/oldham/oldham,8.7,1043.3,0.21,0.29,2022,1963,2012,1955
+GB,2643339,Luton,Luton,ENG,England,51.87967,-0.41748,225262,Europe/London,32,51.9,-0.4,116.0,127.0,https://weatheo.com/en/gb/luton/luton,10.1,726.1,0.25,0.34,2022,1963,2012,1961
+GB,2656333,Barking,Barking,ENG,England,51.53333,0.08333,218534,Europe/London,33,51.5,0.1,5.0,22.0,https://weatheo.com/en/gb/barking-and-dagenham/barking,10.9,686.1,0.24,0.34,2022,1963,2012,1961
+GB,2639996,Portsmouth,Portsmouth,ENG,England,50.79899,-1.09125,208100,Europe/London,34,50.9,-1.1,7.0,50.0,https://weatheo.com/en/gb/portsmouth/portsmouth,11.2,809.1,0.22,0.3,2022,1963,2000,1961
+GB,2636389,Swindon,Swindon,ENG,England,51.55797,-1.78116,201669,Europe/London,35,51.6,-1.8,111.0,94.0,https://weatheo.com/en/gb/swindon/swindon,10.0,784.7,0.23,0.31,2022,1963,2012,1961
+GB,2650839,Dudley,Dudley,ENG,England,52.5,-2.08333,199059,Europe/London,36,52.5,-2.1,162.0,130.0,https://weatheo.com/en/gb/dudley/dudley,9.5,788.8,0.22,0.31,2025,1963,2012,1961
+GB,2657832,Aberdeen,Aberdeen,SCT,Scotland,57.14369,-2.09814,198590,Europe/London,37,57.1,-2.1,10.0,35.0,https://weatheo.com/en/gb/aberdeen-city/aberdeen,8.9,876.1,0.16,0.26,2025,1979,2002,2003
+GB,2636503,Sutton,Sutton,ENG,England,51.35,-0.2,187600,Europe/London,38,51.3,-0.2,84.0,105.0,https://weatheo.com/en/gb/sutton/sutton,10.5,742.8,0.24,0.32,2022,1963,2000,1961
+GB,2638785,St Helens,St Helens,ENG,England,53.45,-2.73333,183200,Europe/London,39,53.4,-2.7,29.0,29.0,https://weatheo.com/en/gb/st-helens/saint-helens,9.8,996.4,0.21,0.29,2025,1963,2012,1955
+GB,2646057,Ipswich,Ipswich,ENG,England,52.05917,1.15545,178835,Europe/London,40,52.1,1.2,17.0,35.0,https://weatheo.com/en/gb/suffolk/ipswich,10.7,690.6,0.25,0.35,2022,1963,2012,1959
+GB,2633948,Wigan,Wigan,ENG,England,53.54296,-2.63706,175405,Europe/London,41,53.5,-2.6,30.0,69.0,https://weatheo.com/en/gb/wigan/wigan,9.8,1041.8,0.21,0.28,2025,1963,2012,1955
+GB,2651817,Croydon,Croydon,ENG,England,51.38333,-0.1,173314,Europe/London,42,51.4,-0.1,54.0,67.0,https://weatheo.com/en/gb/croydon/croydon,10.6,721.7,0.24,0.34,2022,1963,2000,1961
+GB,2634739,Warrington,Warrington,ENG,England,53.39254,-2.58024,172330,Europe/London,43,53.4,-2.6,10.0,33.0,https://weatheo.com/en/gb/warrington/warrington,9.8,999.6,0.21,0.3,2025,1963,2012,1955
+GB,2634853,Walsall,Walsall,ENG,England,52.58528,-1.98396,172141,Europe/London,44,52.6,-2.0,127.0,142.0,https://weatheo.com/en/gb/walsall/walsall,9.7,796.1,0.23,0.31,2025,1963,2012,1961
+GB,2643097,Mansfield,Mansfield,ENG,England,53.13333,-1.2,171958,Europe/London,45,53.1,-1.2,122.0,117.0,https://weatheo.com/en/gb/nottinghamshire/mansfield,9.5,734.5,0.23,0.31,2022,1963,2012,1961
+GB,2636531,Sunderland,Sunderland,ENG,England,54.90465,-1.38222,170134,Europe/London,46,54.9,-1.4,36.0,39.0,https://weatheo.com/en/gb/sunderland/sunderland,9.5,719.4,0.2,0.28,2022,1963,2012,1959
+GB,2646277,Ilford,Ilford,ENG,England,51.55765,0.07278,168168,Europe/London,47,51.6,0.1,16.0,29.0,https://weatheo.com/en/gb/redbridge/ilford,10.9,669.1,0.24,0.33,2022,1963,2012,1961
+GB,2637627,Slough,Slough,ENG,England,51.50949,-0.59541,164793,Europe/London,48,51.5,-0.6,36.0,35.0,https://weatheo.com/en/gb/slough/slough,10.6,709.1,0.24,0.34,2022,1963,2000,1961
+GB,2655095,Bournemouth,Bournemouth,ENG,England,50.72048,-1.8795,163600,Europe/London,49,50.7,-1.9,12.0,12.0,https://weatheo.com/en/gb/bournemouth-christchurch-and-poole/bournemouth,11.4,865.0,0.21,0.29,2022,1963,2012,1961
+GB,2640354,Peterborough,Peterborough,ENG,England,52.57364,-0.24777,163379,Europe/London,50,52.6,-0.2,10.0,8.0,https://weatheo.com/en/gb/peterborough/peterborough,10.5,700.7,0.25,0.35,2022,1963,2012,1961
+GB,2640729,Oxford,Oxford,ENG,England,51.75222,-1.25596,162100,Europe/London,51,51.8,-1.3,71.0,73.0,https://weatheo.com/en/gb/oxfordshire/oxford,10.3,734.1,0.24,0.33,2022,1963,2012,1961
+GB,2641598,Newport,Newport,WLS,Wales,51.58774,-2.99835,161506,Europe/London,52,51.6,-3.0,15.0,68.0,https://weatheo.com/en/gb/newport/newport,10.6,931.2,0.21,0.27,2022,1963,2012,1961
+GB,2649997,Enfield Town,Enfield Town,ENG,England,51.65147,-0.08497,156858,Europe/London,53,51.7,-0.1,34.0,67.0,https://weatheo.com/en/gb/enfield/enfield,10.7,694.0,0.25,0.34,2022,1963,2012,1961
+GB,2633352,York,York,ENG,England,53.95763,-1.08271,156135,Europe/London,54,54.0,-1.1,18.0,24.0,https://weatheo.com/en/gb/york/york,9.5,752.6,0.22,0.29,2022,1963,2012,1955
+GB,3345439,Telford,Telford,ENG,England,52.67659,-2.44926,155570,Europe/London,55,52.7,-2.4,167.0,84.0,https://weatheo.com/en/gb/telford-and-wrekin/telford,9.2,794.9,0.22,0.3,2025,1963,2012,1961
+GB,2640101,Poole,Poole,ENG,England,50.71429,-1.98458,151500,Europe/London,56,50.7,-2.0,4.0,20.0,https://weatheo.com/en/gb/bournemouth-christchurch-and-poole/poole,11.5,817.8,0.21,0.29,2022,1963,2012,1961
+GB,2654264,Burnley,Burnley,ENG,England,53.8,-2.23333,149422,Europe/London,57,53.8,-2.2,139.0,267.0,https://weatheo.com/en/gb/lancashire/burnley,8.9,1245.1,0.21,0.29,2022,1963,2012,1955
+GB,2647425,Harrow,Harrow,ENG,England,51.57835,-0.33208,149246,Europe/London,58,51.6,-0.3,69.0,61.0,https://weatheo.com/en/gb/harrow/harrow,10.5,690.3,0.25,0.33,2022,1963,2000,1961
+GB,2646458,Huddersfield,Huddersfield,ENG,England,53.64904,-1.78416,149017,Europe/London,59,53.6,-1.8,90.0,262.0,https://weatheo.com/en/gb/kirklees/huddersfield,9.5,986.4,0.21,0.29,2022,1963,2012,1955
+GB,2650752,Dundee,Dundee,SCT,Scotland,56.46913,-2.97489,148210,Europe/London,60,56.5,-3.0,75.0,116.0,https://weatheo.com/en/gb/dundee-city/dundee,8.3,914.3,0.18,0.26,2025,1963,2002,1955
+GB,2655524,Blackburn,Blackburn,ENG,England,53.75,-2.48333,146521,Europe/London,61,53.7,-2.5,120.0,168.0,https://weatheo.com/en/gb/blackburn-with-darwen/blackburn,9.2,1198.1,0.21,0.28,2023,1963,2012,1955
+GB,2653941,Cambridge,Cambridge,ENG,England,52.2,0.11667,145674,Europe/London,62,52.2,0.1,10.0,24.0,https://weatheo.com/en/gb/cambridgeshire/cambridge,10.6,693.0,0.25,0.35,2022,1963,2012,1961
+GB,2655459,Blackpool,Blackpool,ENG,England,53.81667,-3.05,145007,Europe/London,63,53.8,-3.0,19.0,-3.0,https://weatheo.com/en/gb/blackpool/blackpool,10.1,1380.2,0.19,0.28,2022,1963,2000,1955
+GB,2656194,Basildon,Basildon,ENG,England,51.56844,0.45782,144859,Europe/London,64,51.6,0.5,32.0,29.0,https://weatheo.com/en/gb/essex/basildon,10.9,686.8,0.24,0.33,2022,1963,2012,1953
+GB,2641181,Norwich,Norwich,ENG,England,52.62783,1.29834,143135,Europe/London,65,52.6,1.3,18.0,28.0,https://weatheo.com/en/gb/norfolk/norwich,10.5,707.8,0.24,0.34,2022,1963,2012,1959
+GB,2642607,Middlesbrough,Middlesbrough,ENG,England,54.57623,-1.23483,142707,Europe/London,66,54.6,-1.2,13.0,22.0,https://weatheo.com/en/gb/redcar-and-cleveland/middlesbrough,9.7,778.4,0.21,0.3,2022,1963,2012,1959
+GB,2655237,Bolton,Bolton,ENG,England,53.58333,-2.43333,141331,Europe/London,67,53.6,-2.4,104.0,166.0,https://weatheo.com/en/gb/bolton/bolton,9.2,1115.5,0.21,0.28,2025,1963,2012,1955
+GB,2636882,Stockport,Stockport,ENG,England,53.40979,-2.15761,139052,Europe/London,68,53.4,-2.2,58.0,62.0,https://weatheo.com/en/gb/stockport/stockport,9.5,1041.9,0.21,0.29,2022,1963,2012,1955
+GB,2646914,High Wycombe,High Wycombe,ENG,England,51.62907,-0.74934,133204,Europe/London,69,51.6,-0.7,77.0,103.0,https://weatheo.com/en/gb/buckinghamshire/high-wycombe,10.5,710.5,0.24,0.32,2022,1963,2000,1961
+GB,2648404,Gloucester,Gloucester,ENG,England,51.86568,-2.2431,132416,Europe/London,70,51.9,-2.2,19.0,63.0,https://weatheo.com/en/gb/gloucestershire/gloucester,10.5,784.2,0.23,0.3,2022,1963,2012,1961
+GB,2649808,Exeter,Exeter,ENG,England,50.7236,-3.52751,130709,Europe/London,71,50.7,-3.5,49.0,59.0,https://weatheo.com/en/gb/devon/exeter,10.7,840.6,0.2,0.27,2022,1963,2012,1961
+GB,2652618,Colchester,Colchester,ENG,England,51.88921,0.90421,130245,Europe/London,72,51.9,0.9,29.0,34.0,https://weatheo.com/en/gb/essex/colchester,10.8,673.2,0.24,0.33,2022,1963,2012,1959
+GB,2635608,Tottenham,Tottenham,ENG,England,51.60373,-0.06794,130000,Europe/London,73,51.6,-0.1,14.0,41.0,https://weatheo.com/en/gb/haringey/tottenham,10.9,680.6,0.24,0.33,2022,1963,2012,1961
+GB,2638671,Salford,Salford,ENG,England,53.48771,-2.29042,129794,Europe/London,74,53.5,-2.3,44.0,47.0,https://weatheo.com/en/gb/salford/salford,9.4,1054.8,0.21,0.29,2025,1963,2012,1955
+GB,2641674,Newcastle under Lyme,Newcastle under Lyme,ENG,England,53.0,-2.23333,127727,Europe/London,75,53.0,-2.2,0.0,146.0,https://weatheo.com/en/gb/staffordshire/newcastle-under-lyme,10.3,843.0,0.22,0.3,2025,1963,2012,1955
+GB,2637546,Solihull,Solihull,ENG,England,52.41426,-1.78094,126577,Europe/London,76,52.4,-1.8,132.0,142.0,https://weatheo.com/en/gb/solihull/solihull,9.8,769.5,0.23,0.31,2025,1963,2012,1961
+GB,2634677,Watford,Watford,ENG,England,51.65531,-0.39602,125707,Europe/London,77,51.7,-0.4,76.0,109.0,https://weatheo.com/en/gb/hertfordshire/watford,10.5,710.2,0.25,0.34,2022,1963,2000,1961
+GB,2638703,Saint Peters,Saint Peters,ENG,England,51.36667,1.41667,125370,Europe/London,78,51.3,1.3,42.0,27.0,,11.1,709.3,0.25,0.35,2022,1963,2012,1973
+GB,2652053,Crawley,Crawley,ENG,England,51.11303,-0.18312,124008,Europe/London,79,51.1,-0.2,75.0,76.0,https://weatheo.com/en/gb/west-sussex/crawley,10.6,751.5,0.24,0.33,2022,1963,2000,1961
+GB,2654200,Burton upon Trent,Burton upon Trent,ENG,England,52.80728,-1.64263,122199,Europe/London,80,52.8,-1.6,47.0,80.0,https://weatheo.com/en/gb/staffordshire/burton-upon-trent,9.9,778.0,0.22,0.31,2022,1963,2012,1961
+GB,2653261,Cheltenham,Cheltenham,ENG,England,51.90006,-2.07972,118836,Europe/London,81,51.9,-2.1,58.0,118.0,https://weatheo.com/en/gb/gloucestershire/cheltenham,10.3,793.5,0.23,0.3,2025,1963,2012,1961
+GB,2639093,Rotherham,Rotherham,ENG,England,53.43012,-1.35678,117618,Europe/London,82,53.4,-1.4,42.0,117.0,https://weatheo.com/en/gb/rotherham/rotherham,10.0,837.0,0.22,0.31,2022,1963,2012,1959
+GB,2633521,Worthing,Worthing,ENG,England,50.81795,-0.37538,113866,Europe/London,83,50.9,-0.4,8.0,38.0,https://weatheo.com/en/gb/west-sussex/worthing,11.2,812.1,0.23,0.32,2022,1963,2000,1955
+GB,2651123,Doncaster,Doncaster,ENG,England,53.52285,-1.13116,113566,Europe/London,84,53.5,-1.1,17.0,27.0,https://weatheo.com/en/gb/doncaster/doncaster,9.9,749.4,0.23,0.31,2022,1963,2012,1959
+GB,2653225,Chesterfield,Chesterfield,ENG,England,53.25,-1.41667,113057,Europe/London,85,53.2,-1.4,89.0,160.0,,9.7,815.4,0.23,0.32,2022,1963,2012,1961
+GB,2653266,Chelmsford,Chelmsford,ENG,England,51.73575,0.46958,111511,Europe/London,86,51.7,0.5,34.0,55.0,https://weatheo.com/en/gb/essex/chelmsford,10.7,684.6,0.24,0.33,2022,1963,2012,1961
+GB,2636486,Sutton Coldfield,Sutton Coldfield,ENG,England,52.56667,-1.81667,109899,Europe/London,87,52.6,-1.8,121.0,105.0,https://weatheo.com/en/gb/birmingham/sutton-coldfield,9.7,784.6,0.23,0.32,2025,1963,2012,1961
+GB,2634910,Wakefield,Wakefield,ENG,England,53.68331,-1.49768,109766,Europe/London,88,53.7,-1.5,48.0,57.0,https://weatheo.com/en/gb/wakefield/wakefield,9.6,840.3,0.22,0.31,2022,1963,2012,1955
+GB,2634838,Walthamstow,Walthamstow,ENG,England,51.59067,-0.02077,109424,Europe/London,89,51.6,0.0,17.0,28.0,https://weatheo.com/en/gb/waltham-forest/walthamstow,10.8,676.2,0.25,0.33,2022,1963,2012,1961
+GB,2651621,Dagenham,Dagenham,ENG,England,51.55,0.16667,108368,Europe/London,90,51.5,0.2,13.0,23.0,https://weatheo.com/en/gb/barking-and-dagenham/dagenham,10.9,679.9,0.24,0.34,2022,1963,2012,1961
+GB,2656192,Basingstoke,Basingstoke,ENG,England,51.26249,-1.08708,107642,Europe/London,91,51.3,-1.1,97.0,102.0,https://weatheo.com/en/gb/hampshire/basingstoke,10.3,754.5,0.23,0.32,2022,1963,2000,1961
+GB,2643179,Maidstone,Maidstone,ENG,England,51.26667,0.51667,107627,Europe/London,92,51.3,0.5,10.0,74.0,https://weatheo.com/en/gb/kent/maidstone,11.0,736.2,0.24,0.32,2022,1963,2000,1953
+GB,2656046,Bedford,Bedford,ENG,England,52.13459,-0.46632,106940,Europe/London,93,52.1,-0.5,28.0,57.0,https://weatheo.com/en/gb/bedford/bedford,10.5,693.8,0.25,0.35,2022,1963,2012,1961
+GB,2633709,Woking,Woking,ENG,England,51.31903,-0.55893,103900,Europe/London,94,51.3,-0.6,39.0,74.0,https://weatheo.com/en/gb/surrey/woking,10.7,736.4,0.24,0.33,2022,1963,2000,1961
+GB,2644487,Lincoln,Lincoln,ENG,England,53.22683,-0.53792,103813,Europe/London,95,53.2,-0.5,6.0,22.0,https://weatheo.com/en/gb/lincolnshire/lincoln,10.2,738.5,0.23,0.31,2022,1963,2012,2011
+GB,2634491,West Bromwich,West Bromwich,ENG,England,52.51868,-1.9945,103112,Europe/London,96,52.5,-2.0,162.0,154.0,https://weatheo.com/en/gb/sandwell/west-bromwich,9.6,785.1,0.23,0.31,2025,1963,2012,1961
+GB,2650497,Eastbourne,Eastbourne,ENG,England,50.76871,0.28453,101689,Europe/London,97,50.8,0.3,8.0,8.0,https://weatheo.com/en/gb/east-sussex/eastbourne,11.4,902.8,0.24,0.34,2022,1963,2000,1962
+GB,2633563,Worcester,Worcester,ENG,England,52.18935,-2.22001,101659,Europe/London,98,52.2,-2.2,30.0,46.0,https://weatheo.com/en/gb/worcestershire/worcester,10.3,747.4,0.23,0.31,2025,1963,2012,1961
+GB,2656173,Bath,Bath,ENG,England,51.3751,-2.36172,101557,Europe/London,99,51.4,-2.4,100.0,105.0,https://weatheo.com/en/gb/bath-and-north-east-somerset/bath,10.2,858.5,0.22,0.28,2025,1963,2012,1961
+GB,2648657,Gillingham,Gillingham,ENG,England,51.38914,0.54863,101187,Europe/London,100,51.4,0.5,31.0,49.0,https://weatheo.com/en/gb/medway/gillingham,10.9,716.6,0.24,0.33,2022,1963,2012,1953

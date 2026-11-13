@@ -1,0 +1,101 @@
+country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank,grid_lat,grid_lon,elevation_m,grid_elevation_m,weatheo_url,tmean_annual_c,precip_annual_mm,trend_c_per_decade_1951_2025,trend_c_per_decade_1981_2025,warmest_year,coldest_year,wettest_year,driest_year
+FR,2988507,Paris,Paris,11,Île-de-France,48.85341,2.3488,2103778,Europe/Paris,1,48.9,2.3,38.0,59.0,https://weatheo.com/fr/fr/ile-de-france/paris,11.7,732.8,0.3,0.44,2020,1956,2024,1953
+FR,2995469,Marseille,Marseille,93,Provence-Alpes-Côte d'Azur,43.29695,5.38107,886040,Europe/Paris,2,43.3,5.4,27.0,117.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/marseille,15.5,644.4,0.28,0.43,2022,1956,1972,2017
+FR,2996944,Lyon,Lyon,84,Auvergne-Rhône-Alpes,45.74906,4.84789,519127,Europe/Paris,3,45.7,4.8,176.0,253.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/lyon,12.5,1035.3,0.34,0.5,2022,1956,1987,1953
+FR,2972315,Toulouse,Toulouse,76,Occitanie,43.60426,1.44367,514819,Europe/Paris,4,43.6,1.4,145.0,148.0,https://weatheo.com/fr/fr/occitanie/toulouse,13.8,816.0,0.29,0.41,2022,1956,1965,1953
+FR,2990440,Nice,Nice,93,Provence-Alpes-Côte d'Azur,43.70313,7.26608,357737,Europe/Paris,5,43.8,7.3,17.0,403.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/nice,15.3,934.3,0.28,0.43,2022,1956,1972,2007
+FR,2990969,Nantes,Nantes,52,Pays de la Loire,47.21725,-1.55336,327734,Europe/Paris,6,47.2,-1.6,22.0,20.0,https://weatheo.com/fr/fr/pays-de-la-loire/nantes,12.5,761.2,0.24,0.34,2022,1963,1994,1953
+FR,2992166,Montpellier,Montpellier,76,Occitanie,43.61093,3.87635,310240,Europe/Paris,7,43.6,3.9,54.0,35.0,https://weatheo.com/fr/fr/occitanie/montpellier,14.8,860.3,0.28,0.42,2022,1956,1972,2023
+FR,2973783,Strasbourg,Strasbourg,44,Grand Est,48.58392,7.74553,293771,Europe/Paris,8,48.6,7.7,152.0,148.0,https://weatheo.com/fr/fr/grand-est/strasbourg,10.9,950.6,0.32,0.48,2018,1956,1965,1953
+FR,3031582,Bordeaux,Bordeaux,75,New Aquitaine,44.84124,-0.58046,267991,Europe/Paris,9,44.8,-0.6,19.0,37.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/bordeaux,13.8,825.1,0.27,0.35,2022,1956,2024,1953
+FR,2998324,Lille,Lille,32,Hauts-de-France,50.63391,3.05512,238246,Europe/Paris,10,50.6,3.1,28.0,32.0,https://weatheo.com/fr/fr/hauts-de-france/lille,10.9,768.5,0.28,0.39,2020,1963,2024,1976
+FR,2983990,Rennes,Rennes,53,Brittany,48.11109,-1.67431,230890,Europe/Paris,11,48.1,-1.7,30.0,46.0,https://weatheo.com/fr/fr/bretagne/rennes,12.0,763.2,0.23,0.33,2022,1963,2000,1953
+FR,2972328,Toulon,Toulon,93,Provence-Alpes-Côte d'Azur,43.12442,5.92836,179116,Europe/Paris,12,43.1,5.9,7.0,73.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/toulon,15.8,678.3,0.26,0.41,2022,1956,1972,2017
+FR,2984114,Reims,Reims,44,Grand Est,49.26526,4.02853,177674,Europe/Paris,13,49.3,4.0,90.0,105.0,https://weatheo.com/fr/fr/grand-est/reims,11.1,792.4,0.3,0.46,2020,1956,2024,1953
+FR,2980291,Saint-Étienne,Saint-Etienne,84,Auvergne-Rhône-Alpes,45.43389,4.39,173136,Europe/Paris,14,45.4,4.4,529.0,770.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/saint-etienne,11.0,1032.0,0.33,0.45,2022,1956,2024,1989
+FR,3003796,Le Havre,Le Havre,28,Normandy,49.49346,0.10785,166687,Europe/Paris,15,49.6,0.1,5.0,38.0,https://weatheo.com/fr/fr/normandie/le-havre,11.7,1062.1,0.24,0.34,2022,1963,2000,1953
+FR,2968254,Villeurbanne,Villeurbanne,84,Auvergne-Rhône-Alpes,45.76601,4.8795,163684,Europe/Paris,16,45.8,4.9,173.0,233.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/villeurbanne,12.3,1066.2,0.34,0.51,2022,1956,1987,1953
+FR,3021372,Dijon,Dijon,27,Bourgogne-Franche-Comté,47.31344,5.01391,161830,Europe/Paris,17,47.3,5.0,245.0,313.0,https://weatheo.com/fr/fr/bourgogne-franche-comte/dijon,11.4,952.1,0.3,0.48,2018,1956,1965,1953
+FR,3037656,Angers,Angers,52,Pays de la Loire,47.47156,-0.55202,159022,Europe/Paris,18,47.5,-0.6,43.0,39.0,https://weatheo.com/fr/fr/pays-de-la-loire/angers,12.3,713.8,0.27,0.39,2022,1963,1994,1953
+FR,3014728,Grenoble,Grenoble,84,Auvergne-Rhône-Alpes,45.17869,5.71479,156140,Europe/Paris,19,45.2,5.7,223.0,630.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/grenoble,12.3,1552.1,0.36,0.51,2022,1956,1981,1953
+FR,2990363,Nîmes,Nimes,76,Occitanie,43.83665,4.35788,151839,Europe/Paris,20,43.8,4.4,57.0,73.0,https://weatheo.com/fr/fr/occitanie/nimes,14.9,770.9,0.32,0.46,2022,1956,1972,2023
+FR,3038354,Aix-en-Provence,Aix-en-Provence,93,Provence-Alpes-Côte d'Azur,43.5283,5.44973,149695,Europe/Paris,21,43.5,5.4,204.0,245.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/aix-en-provence,14.2,672.8,0.31,0.46,2022,1956,1972,2017
+FR,2980916,Saint-Denis,Saint-Denis,11,Île-de-France,48.93564,2.35387,149077,Europe/Paris,22,48.9,2.4,34.0,56.0,https://weatheo.com/fr/fr/ile-de-france/saint-denis,11.7,733.7,0.29,0.44,2020,1956,2024,1953
+FR,3024635,Clermont-Ferrand,Clermont-Ferrand,84,Auvergne-Rhône-Alpes,45.77969,3.08682,146351,Europe/Paris,23,45.8,3.1,410.0,535.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/clermont-ferrand,10.9,935.4,0.31,0.44,2022,1956,1965,1953
+FR,3003603,Le Mans,Le Mans,52,Pays de la Loire,48.0021,0.20251,146249,Europe/Paris,24,48.0,0.2,62.0,69.0,https://weatheo.com/fr/fr/pays-de-la-loire/le-mans,11.9,749.5,0.27,0.4,2022,1963,1994,1953
+FR,3030300,Brest,Brest,53,Brittany,48.39029,-4.48628,142346,Europe/Paris,25,48.4,-4.5,48.0,58.0,https://weatheo.com/fr/fr/bretagne/brest,12.2,1019.8,0.17,0.23,2022,1963,2000,1953
+FR,2972191,Tours,Tours,24,Centre-Val de Loire,47.39484,0.70398,139259,Europe/Paris,26,47.4,0.7,53.0,76.0,https://weatheo.com/fr/fr/centre-val-de-loire/tours,12.4,740.3,0.29,0.43,2022,1963,2024,1953
+FR,3037854,Amiens,Amiens,32,Hauts-de-France,49.9,2.3,136449,Europe/Paris,27,49.9,2.3,27.0,64.0,https://weatheo.com/fr/fr/hauts-de-france/amiens,11.1,764.9,0.28,0.4,2020,1963,2001,1976
+FR,3037543,Annecy,Annecy,84,Auvergne-Rhône-Alpes,45.90878,6.12565,132117,Europe/Paris,28,45.9,6.1,454.0,640.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/annecy,10.6,1645.6,0.42,0.56,2022,1956,1965,1953
+FR,2998286,Limoges,Limoges,75,New Aquitaine,45.83362,1.24759,129937,Europe/Paris,29,45.8,1.2,310.0,293.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/limoges,11.5,1090.0,0.27,0.39,2022,1956,1966,1953
+FR,2994160,Metz,Metz,44,Grand Est,49.11911,6.17269,122572,Europe/Paris,30,49.1,6.2,186.0,225.0,https://weatheo.com/fr/fr/grand-est/metz,10.7,846.0,0.31,0.48,2020,1956,1965,1953
+FR,2987914,Perpignan,Perpignan,76,Occitanie,42.69764,2.89541,121616,Europe/Paris,31,42.7,2.9,42.0,3.0,https://weatheo.com/fr/fr/occitanie/perpignan,15.1,685.5,0.29,0.46,2022,1956,1969,1952
+FR,3031137,Boulogne-Billancourt,Boulogne-Billancourt,11,Île-de-France,48.83545,2.24128,119019,Europe/Paris,32,48.8,2.2,37.0,106.0,https://weatheo.com/fr/fr/ile-de-france/boulogne-billancourt,11.9,733.9,0.29,0.42,2020,1956,2024,1953
+FR,3033123,Besançon,Besancon,27,Bourgogne-Franche-Comté,47.24878,6.01815,118489,Europe/Paris,33,47.2,6.0,301.0,348.0,https://weatheo.com/fr/fr/bourgogne-franche-comte/besancon,11.2,1274.7,0.34,0.49,2022,1956,1981,1964
+FR,2982652,Rouen,Rouen,28,Normandy,49.44313,1.09932,117662,Europe/Paris,34,49.4,1.1,16.0,71.0,https://weatheo.com/fr/fr/normandie/rouen,11.4,780.5,0.27,0.38,2020,1963,2024,1976
+FR,2989317,Orléans,Orleans,24,Centre-Val de Loire,47.90248,1.90407,116357,Europe/Paris,35,47.9,1.9,114.0,106.0,https://weatheo.com/fr/fr/centre-val-de-loire/orleans,11.8,743.0,0.3,0.44,2022,1956,1981,1953
+FR,2992090,Montreuil,Montreuil,11,Île-de-France,48.86415,2.44322,111934,Europe/Paris,36,48.9,2.4,78.0,56.0,https://weatheo.com/fr/fr/ile-de-france/montreuil,11.4,733.7,0.29,0.44,2020,1956,2024,1953
+FR,3029241,Caen,Caen,28,Normandy,49.18585,-0.35912,109400,Europe/Paris,37,49.2,-0.4,20.0,43.0,https://weatheo.com/fr/fr/normandie/caen,11.7,793.0,0.25,0.34,2022,1963,2000,1953
+FR,3037044,Argenteuil,Argenteuil,11,Île-de-France,48.94788,2.24744,106130,Europe/Paris,38,48.9,2.2,39.0,72.0,https://weatheo.com/fr/fr/ile-de-france/argenteuil,11.7,734.2,0.29,0.43,2020,1956,2024,1953
+FR,2991214,Mulhouse,Mulhouse,44,Grand Est,47.75205,7.32866,104978,Europe/Paris,39,47.8,7.3,241.0,229.0,https://weatheo.com/fr/fr/grand-est/mulhouse,10.4,1004.9,0.32,0.43,2018,1956,1999,1953
+FR,2990999,Nancy,Nancy,44,Grand Est,48.68439,6.18496,103671,Europe/Paris,40,48.7,6.2,213.0,269.0,https://weatheo.com/fr/fr/grand-est/nancy,10.9,908.1,0.31,0.48,2018,1956,1965,1953
+FR,2972284,Tourcoing,Tourcoing,32,Hauts-de-France,50.72391,3.16117,98772,Europe/Paris,41,50.7,3.2,37.0,29.0,https://weatheo.com/fr/fr/hauts-de-france/tourcoing,10.9,788.2,0.28,0.4,2020,1963,2024,1976
+FR,2982681,Roubaix,Roubaix,32,Hauts-de-France,50.69421,3.17456,98286,Europe/Paris,42,50.7,3.2,35.0,29.0,https://weatheo.com/fr/fr/hauts-de-france/roubaix,10.9,788.2,0.28,0.4,2020,1963,2024,1976
+FR,2990970,Nanterre,Nanterre,11,Île-de-France,48.89198,2.20675,97783,Europe/Paris,43,48.9,2.2,53.0,72.0,https://weatheo.com/fr/fr/ile-de-france/nanterre,11.6,734.2,0.29,0.43,2020,1956,2024,1953
+FR,2967849,Vitry-sur-Seine,Vitry-sur-Seine,11,Île-de-France,48.78716,2.40332,93963,Europe/Paris,44,48.8,2.4,34.0,66.0,https://weatheo.com/fr/fr/ile-de-france/vitry-sur-seine,11.8,732.8,0.3,0.44,2020,1956,2024,1953
+FR,3036572,Asnières-sur-Seine,Asnieres-sur-Seine,11,Île-de-France,48.91667,2.28333,93941,Europe/Paris,45,48.9,2.3,34.0,59.0,,11.7,732.8,0.29,0.43,2020,1956,2024,1953
+FR,3022530,Créteil,Creteil,11,Île-de-France,48.79266,2.46569,93397,Europe/Paris,46,48.8,2.5,53.0,69.0,https://weatheo.com/fr/fr/ile-de-france/creteil,11.7,740.1,0.3,0.45,2020,1956,2024,1953
+FR,3035681,Avignon,Avignon,93,Provence-Alpes-Côte d'Azur,43.94834,4.80892,92188,Europe/Paris,47,43.9,4.8,30.0,52.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/avignon,14.9,721.2,0.34,0.49,2022,1956,1977,2017
+FR,3024266,Colombes,Colombes,11,Île-de-France,48.91882,2.25404,91053,Europe/Paris,48,48.9,2.3,43.0,59.0,https://weatheo.com/fr/fr/ile-de-france/colombes,11.7,732.8,0.29,0.43,2020,1956,2024,1953
+FR,2986495,Poitiers,Poitiers,75,New Aquitaine,46.58261,0.34348,89916,Europe/Paris,49,46.6,0.3,118.0,116.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/poitiers,12.4,756.9,0.28,0.42,2022,1963,1999,1953
+FR,3036386,Aubervilliers,Aubervilliers,11,Île-de-France,48.91667,2.38333,88365,Europe/Paris,50,48.9,2.4,37.0,56.0,https://weatheo.com/fr/fr/ile-de-france/aubervilliers,11.7,733.7,0.3,0.43,2020,1956,2024,1953
+FR,3036145,Aulnay-sous-Bois,Aulnay-sous-Bois,11,Île-de-France,48.93814,2.49402,87599,Europe/Paris,51,48.9,2.5,48.0,63.0,https://weatheo.com/fr/fr/ile-de-france/aulnay-sous-bois,11.7,739.5,0.29,0.44,2020,1956,2024,1953
+FR,3020686,Dunkerque,Dunkerque,32,Hauts-de-France,51.0344,2.37681,86263,Europe/Paris,52,51.0,2.4,9.0,3.0,https://weatheo.com/fr/fr/hauts-de-france/dunkerque,11.1,751.1,0.26,0.38,2022,1963,2012,1953
+FR,2969679,Versailles,Versailles,11,Île-de-France,48.80359,2.13424,84095,Europe/Paris,53,48.8,2.1,141.0,131.0,https://weatheo.com/fr/fr/ile-de-france/versailles,11.2,736.2,0.28,0.43,2020,1956,2024,1953
+FR,3023141,Courbevoie,Courbevoie,11,Île-de-France,48.89672,2.25666,82902,Europe/Paris,54,48.9,2.3,45.0,59.0,,11.6,732.8,0.29,0.43,2020,1956,2024,1953
+FR,2982235,Rueil-Malmaison,Rueil-Malmaison,11,Île-de-France,48.8765,2.18967,82874,Europe/Paris,55,48.9,2.2,64.0,72.0,https://weatheo.com/fr/fr/ile-de-france/rueil-malmaison,11.6,734.2,0.29,0.43,2020,1956,2024,1953
+FR,3032833,Béziers,Beziers,76,Occitanie,43.34122,3.21402,81545,Europe/Paris,56,43.3,3.2,66.0,19.0,https://weatheo.com/fr/fr/occitanie/beziers,14.4,777.5,0.24,0.35,2022,1956,1996,1998
+FR,2988358,Pau,Pau,75,New Aquitaine,43.31117,-0.35583,80441,Europe/Paris,57,43.3,-0.4,216.0,196.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/pau,12.3,1365.5,0.26,0.32,2022,1956,1972,1953
+FR,3006787,La Rochelle,La Rochelle,75,New Aquitaine,46.16308,-1.15222,79851,Europe/Paris,58,46.2,-1.2,15.0,7.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/la-rochelle,13.2,784.1,0.24,0.33,2022,1956,1999,2005
+FR,3025466,Cherbourg-en-Cotentin,Cherbourg-en-Cotentin,28,Normandy,49.63984,-1.61636,78258,Europe/Paris,59,49.6,-1.6,7.0,89.0,,12.0,883.2,0.21,0.3,2022,1963,2000,1953
+FR,2994393,Mérignac,Merignac,75,New Aquitaine,44.84247,-0.64512,78090,Europe/Paris,60,44.8,-0.6,38.0,37.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/merignac,13.7,825.1,0.27,0.35,2022,1956,2024,1953
+FR,3027105,Champigny-sur-Marne,Champigny-sur-Marne,11,Île-de-France,48.81642,2.49366,78072,Europe/Paris,61,48.8,2.5,43.0,69.0,https://weatheo.com/fr/fr/ile-de-france/champigny-sur-marne,11.8,740.1,0.29,0.44,2020,1956,2024,1953
+FR,3037456,Antibes,Antibes,93,Provence-Alpes-Côte d'Azur,43.58127,7.12487,77637,Europe/Paris,62,43.6,7.1,11.0,42.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/antibes,15.2,893.2,0.31,0.49,2022,1956,1972,2007
+FR,2978179,Saint-Maur-des-Fossés,Saint-Maur-des-Fosses,11,Île-de-France,48.79395,2.49323,76572,Europe/Paris,63,48.8,2.5,38.0,69.0,https://weatheo.com/fr/fr/ile-de-france/saint-maur-des-fosses,11.8,740.1,0.3,0.45,2020,1956,2024,1953
+FR,3038334,Ajaccio,Ajaccio,94,Corsica,41.91886,8.73812,76320,Europe/Paris,64,41.8,8.7,12.0,67.0,https://weatheo.com/fr/fr/corsica/ajaccio,16.5,785.2,0.24,0.37,2022,1956,1963,1988
+FR,2977921,Saint-Nazaire,Saint-Nazaire,52,Pays de la Loire,47.27506,-2.2179,74568,Europe/Paris,65,47.3,-2.2,12.0,8.0,https://weatheo.com/fr/fr/pays-de-la-loire/saint-nazaire,12.8,769.2,0.22,0.3,2022,1963,1994,1953
+FR,3028808,Cannes,Cannes,93,Provence-Alpes-Côte d'Azur,43.55135,7.01275,74350,Europe/Paris,66,43.6,7.0,11.0,126.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/cannes,15.2,941.9,0.3,0.48,2022,1956,1972,2007
+FR,2990189,Noisy-le-Grand,Noisy-le-Grand,11,Île-de-France,48.84979,2.56266,72978,Europe/Paris,67,48.8,2.6,80.0,84.0,https://weatheo.com/fr/fr/ile-de-france/noisy-le-grand,11.6,750.8,0.29,0.44,2020,1956,2024,1953
+FR,3020839,Drancy,Drancy,11,Île-de-France,48.92578,2.44533,72390,Europe/Paris,68,48.9,2.4,50.0,56.0,https://weatheo.com/fr/fr/ile-de-france/drancy,11.6,733.7,0.29,0.44,2020,1956,2024,1953
+FR,3027883,Cergy,Cergy,11,Île-de-France,49.03645,2.07613,70906,Europe/Paris,69,49.0,2.1,52.0,66.0,https://weatheo.com/fr/fr/ile-de-france/cergy,11.6,733.7,0.29,0.42,2020,1956,2024,1953
+FR,2998975,Levallois-Perret,Levallois-Perret,11,Île-de-France,48.89389,2.28864,68092,Europe/Paris,70,48.9,2.3,39.0,59.0,https://weatheo.com/fr/fr/ile-de-france/levallois-perret,11.7,732.8,0.29,0.43,2020,1956,2024,1953
+FR,3012649,Issy-les-Moulineaux,Issy-les-Moulineaux,11,Île-de-France,48.82104,2.27718,67669,Europe/Paris,71,48.8,2.3,71.0,79.0,https://weatheo.com/fr/fr/ile-de-france/issy-les-moulineaux,11.6,732.0,0.29,0.44,2020,1956,2024,1953
+FR,3029162,Calais,Calais,32,Hauts-de-France,50.95194,1.85635,67571,Europe/Paris,72,50.9,1.9,6.0,33.0,https://weatheo.com/fr/fr/hauts-de-france/calais,11.2,835.6,0.26,0.38,2022,1963,2001,1953
+FR,2987805,Pessac,Pessac,75,New Aquitaine,44.80565,-0.6324,67339,Europe/Paris,73,44.8,-0.6,38.0,37.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/pessac,13.7,825.1,0.27,0.35,2022,1956,2024,1953
+FR,3024297,Colmar,Colmar,44,Grand Est,48.08078,7.35584,66970,Europe/Paris,74,48.1,7.4,197.0,229.0,https://weatheo.com/fr/fr/grand-est/colmar,10.9,1003.3,0.33,0.47,2022,1956,1965,1953
+FR,3019256,Évry-Courcouronnes,Evry-Courcouronnes,11,Île-de-France,48.6328,2.44049,66919,Europe/Paris,75,48.6,2.4,84.0,76.0,,11.6,721.5,0.29,0.44,2020,1956,2024,1959
+FR,2970072,Vénissieux,Venissieux,84,Auvergne-Rhône-Alpes,45.69706,4.88593,65502,Europe/Paris,76,45.7,4.9,189.0,223.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/venissieux,12.2,1047.4,0.34,0.51,2022,1956,1987,1953
+FR,3012621,Ivry-sur-Seine,Ivry-sur-Seine,11,Île-de-France,48.81568,2.38487,65064,Europe/Paris,77,48.8,2.4,40.0,66.0,https://weatheo.com/fr/fr/ile-de-france/ivry-sur-seine,11.8,732.8,0.29,0.44,2020,1956,2024,1953
+FR,2971053,Valence,Valence,84,Auvergne-Rhône-Alpes,44.9256,4.90956,64458,Europe/Paris,78,44.9,4.9,126.0,205.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/valence,13.1,874.8,0.37,0.54,2022,1956,1960,2017
+FR,3024597,Clichy,Clichy,11,Île-de-France,48.90018,2.30952,64410,Europe/Paris,79,48.9,2.3,28.0,59.0,https://weatheo.com/fr/fr/ile-de-france/clichy,11.8,732.8,0.29,0.44,2020,1956,2024,1953
+FR,2984701,Quimper,Quimper,53,Brittany,47.99597,-4.09795,64385,Europe/Paris,80,48.0,-4.1,10.0,83.0,https://weatheo.com/fr/fr/bretagne/quimper,12.5,961.7,0.18,0.25,2022,1963,1951,1953
+FR,3037423,Antony,Antony,11,Île-de-France,48.75329,2.29668,64263,Europe/Paris,81,48.8,2.3,65.0,79.0,https://weatheo.com/fr/fr/ile-de-france/antony,11.6,732.0,0.29,0.43,2020,1956,2024,1953
+FR,3031005,Bourges,Bourges,24,Centre-Val de Loire,47.08333,2.4,64186,Europe/Paris,82,47.1,2.4,148.0,146.0,https://weatheo.com/fr/fr/centre-val-de-loire/bourges,12.0,811.8,0.29,0.45,2020,1956,1981,1953
+FR,3006414,La Seyne-sur-Mer,La Seyne-sur-Mer,93,Provence-Alpes-Côte d'Azur,43.10322,5.87816,63732,Europe/Paris,83,43.1,5.9,5.0,73.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/la-seyne-sur-mer,15.8,678.3,0.26,0.41,2022,1956,1972,2017
+FR,2993002,Montauban,Montauban,76,Occitanie,44.01759,1.3542,62945,Europe/Paris,84,44.0,1.4,113.0,114.0,https://weatheo.com/fr/fr/occitanie/montauban,13.7,782.6,0.29,0.42,2022,1956,1965,1953
+FR,6543862,Villeneuve-d'Ascq,Villeneuve-d'Ascq,32,Hauts-de-France,50.61669,3.16664,62868,Europe/Paris,85,50.6,3.2,33.0,35.0,,10.9,776.1,0.28,0.4,2020,1963,2024,1976
+FR,3005269,Le Blanc-Mesnil,Le Blanc-Mesnil,11,Île-de-France,48.93872,2.46138,62376,Europe/Paris,86,48.9,2.5,48.0,63.0,https://weatheo.com/fr/fr/ile-de-france/le-blanc-mesnil,11.7,739.5,0.29,0.44,2020,1956,2024,1953
+FR,2971549,Troyes,Troyes,44,Grand Est,48.30073,4.08524,62088,Europe/Paris,87,48.3,4.1,111.0,138.0,https://weatheo.com/fr/fr/grand-est/troyes,11.6,837.9,0.3,0.45,2018,1956,1958,1953
+FR,2988621,Pantin,Pantin,11,Île-de-France,48.89437,2.40935,61929,Europe/Paris,88,48.9,2.4,55.0,56.0,https://weatheo.com/fr/fr/ile-de-france/pantin,11.6,733.7,0.29,0.44,2020,1956,2024,1953
+FR,2968705,Villejuif,Villejuif,11,Île-de-France,48.7939,2.35992,60183,Europe/Paris,89,48.8,2.4,112.0,66.0,https://weatheo.com/fr/fr/ile-de-france/villejuif,11.3,732.8,0.3,0.44,2020,1956,2024,1953
+FR,3027422,Chambéry,Chambery,84,Auvergne-Rhône-Alpes,45.56628,5.92079,59964,Europe/Paris,90,45.6,5.9,277.0,610.0,https://weatheo.com/fr/fr/auvergne-rhone-alpes/chambery,12.0,1519.3,0.41,0.58,2022,1956,1981,1953
+FR,2990355,Niort,Niort,75,New Aquitaine,46.32313,-0.45877,59854,Europe/Paris,91,46.3,-0.5,22.0,28.0,https://weatheo.com/fr/fr/nouvelle-aquitaine/niort,12.9,837.2,0.26,0.38,2022,1956,1999,1953
+FR,3017253,Fréjus,Frejus,93,Provence-Alpes-Côte d'Azur,43.43325,6.73555,59719,Europe/Paris,92,43.4,6.7,31.0,74.0,https://weatheo.com/fr/fr/provence-alpes-cote-dazur/frejus,15.7,710.2,0.27,0.44,2022,1956,1972,2007
+FR,2990611,Neuilly-sur-Seine,Neuilly-sur-Seine,11,Île-de-France,48.8846,2.26965,59538,Europe/Paris,93,48.9,2.3,38.0,59.0,https://weatheo.com/fr/fr/ile-de-france/neuilly-sur-seine,11.7,732.8,0.3,0.44,2020,1956,2024,1953
+FR,2976043,Sarcelles,Sarcelles,11,Île-de-France,48.99739,2.37821,59173,Europe/Paris,94,49.0,2.4,62.0,73.0,https://weatheo.com/fr/fr/ile-de-france/sarcelles,11.5,734.2,0.29,0.43,2020,1956,2024,1953
+FR,3024783,Clamart,Clamart,11,Île-de-France,48.80299,2.26692,58576,Europe/Paris,95,48.8,2.3,102.0,79.0,https://weatheo.com/fr/fr/ile-de-france/clamart,11.4,732.0,0.29,0.44,2020,1956,2024,1953
+FR,2997577,Lorient,Lorient,53,Brittany,47.74817,-3.37177,58329,Europe/Paris,96,47.8,-3.4,12.0,35.0,https://weatheo.com/fr/fr/bretagne/lorient,12.5,880.3,0.2,0.28,2022,1963,1951,1953
+FR,2990919,Narbonne,Narbonne,76,Occitanie,43.18396,3.00141,57587,Europe/Paris,97,43.2,3.0,8.0,40.0,https://weatheo.com/fr/fr/occitanie/narbonne,15.0,713.4,0.27,0.4,2022,1956,1969,1998
+FR,3032179,Bobigny,Bobigny,11,Île-de-France,48.90982,2.45012,56927,Europe/Paris,98,48.9,2.5,54.0,63.0,https://weatheo.com/fr/fr/ile-de-france/bobigny,11.6,739.5,0.3,0.44,2020,1956,2024,1953
+FR,2994798,Meaux,Meaux,11,Île-de-France,48.96014,2.87885,56905,Europe/Paris,99,49.0,2.9,62.0,96.0,https://weatheo.com/fr/fr/ile-de-france/meaux,11.5,784.9,0.29,0.44,2020,1956,2024,1953
+FR,2996568,Maisons-Alfort,Maisons-Alfort,11,Île-de-France,48.81171,2.43945,56799,Europe/Paris,100,48.8,2.4,40.0,66.0,https://weatheo.com/fr/fr/ile-de-france/maisons-alfort,11.8,732.8,0.29,0.44,2020,1956,2024,1953

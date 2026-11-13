@@ -1,0 +1,21 @@
+country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank,grid_lat,grid_lon,elevation_m,grid_elevation_m,weatheo_url,tmean_annual_c,precip_annual_mm,trend_c_per_decade_1951_2025,trend_c_per_decade_1981_2025,warmest_year,coldest_year,wettest_year,driest_year
+PT,2267057,Lisbon,Lisbon,14,Lisbon,38.72509,-9.1498,517802,Europe/Lisbon,1,38.7,-9.1,54.0,11.0,https://weatheo.com/pt/pt/lisboa/lisbon,16.5,562.4,0.15,0.2,2023,1972,1963,2023
+PT,2735943,Porto,Porto,17,Porto,41.1485,-8.61097,252687,Europe/Lisbon,2,41.1,-8.6,71.0,75.0,https://weatheo.com/pt/pt/porto/porto,15.1,1147.7,0.18,0.21,2022,1978,1960,1953
+PT,2742032,Braga,Braga,04,Braga,41.5514,-8.42311,193324,Europe/Lisbon,3,41.6,-8.4,194.0,186.0,https://weatheo.com/pt/pt/braga/braga,13.8,1796.0,0.2,0.25,2022,1978,1960,1953
+PT,2271772,Amadora,Amadora,14,Lisbon,38.75382,-9.23083,178858,Europe/Lisbon,4,38.8,-9.2,131.0,132.0,https://weatheo.com/pt/pt/lisboa/amadora,16.0,605.0,0.14,0.17,2023,1972,1963,2023
+PT,2740637,Coimbra,Coimbra,07,Coimbra,40.20686,-8.41996,140796,Europe/Lisbon,5,40.2,-8.4,86.0,125.0,https://weatheo.com/pt/pt/coimbra/coimbra,15.2,991.3,0.19,0.24,2022,1978,1960,1953
+PT,2267095,Leiria,Leiria,13,Leiria,39.74362,-8.80705,128640,Europe/Lisbon,6,39.7,-8.8,32.0,190.0,https://weatheo.com/pt/pt/leiria/leiria,15.9,778.8,0.16,0.19,2022,1978,1960,2007
+PT,2262963,Setúbal,Setubal,19,Setúbal,38.5244,-8.8882,118166,Europe/Lisbon,7,38.6,-8.9,13.0,49.0,https://weatheo.com/pt/pt/setubal/setubal,16.9,536.5,0.17,0.25,2023,1972,1963,2023
+PT,2267827,Funchal,Funchal,10,Madeira,32.66568,-16.92547,105795,Atlantic/Madeira,8,32.7,-16.9,267.0,548.0,https://weatheo.com/pt/pt/madeira/funchal,18.5,547.1,0.13,0.23,2023,1972,2010,2019
+PT,2732265,Viseu,Viseu,22,Viseu,40.66165,-7.90905,103502,Europe/Lisbon,9,40.7,-7.9,450.0,465.0,https://weatheo.com/pt/pt/viseu/viseu,13.6,1102.4,0.22,0.28,2022,1978,1960,1953
+PT,2264268,Queluz,Queluz,14,Lisbon,38.75657,-9.25451,103399,Europe/Lisbon,10,38.8,-9.3,122.0,162.0,https://weatheo.com/pt/pt/lisboa/queluz,16.0,623.9,0.13,0.14,2023,1972,1963,2023
+PT,2742611,Aveiro,Aveiro,02,Aveiro,40.64575,-8.64643,80880,Europe/Lisbon,11,40.6,-8.6,14.0,14.0,https://weatheo.com/pt/pt/aveiro/aveiro,15.6,1078.1,0.17,0.21,2022,1956,1960,1953
+PT,2732544,Vila Nova de Gaia,Vila Nova de Gaia,17,Porto,41.12401,-8.61241,70811,Europe/Lisbon,12,41.1,-8.6,121.0,75.0,https://weatheo.com/pt/pt/porto/vila-nova-de-gaia,14.8,1147.7,0.17,0.21,1995,1978,1960,1953
+PT,2268339,Faro,Faro,09,Faro,37.01869,-7.92716,70347,Europe/Lisbon,13,37.0,-7.9,21.0,4.0,https://weatheo.com/pt/pt/faro/faro,17.9,495.6,0.15,0.23,2023,1972,1989,2019
+PT,2266977,Loures,Loures,14,Lisbon,38.83091,-9.16845,66231,Europe/Lisbon,14,38.8,-9.2,20.0,132.0,https://weatheo.com/pt/pt/lisboa/loures,16.8,605.0,0.14,0.18,2023,1972,1963,2023
+PT,2739693,Felgueiras,Felgueiras,17,Porto,41.36806,-8.19396,58065,Europe/Lisbon,15,41.4,-8.2,348.0,343.0,https://weatheo.com/pt/pt/porto/felgueiras,13.2,1584.2,0.21,0.26,2022,1978,1966,1953
+PT,2265467,Odivelas,Odivelas,14,Lisbon,38.79269,-9.1838,54624,Europe/Lisbon,16,38.8,-9.2,49.0,132.0,https://weatheo.com/pt/pt/lisboa/odivelas,16.6,605.0,0.14,0.17,2023,1972,1963,2023
+PT,2268406,Évora,Evora,08,Évora,38.56587,-7.90405,53591,Europe/Lisbon,17,38.6,-7.9,263.0,266.0,https://weatheo.com/pt/pt/evora/evora,16.5,576.5,0.2,0.29,2022,1972,1960,2017
+PT,2271680,Amora,Amora,19,Setúbal,38.62961,-9.11557,52577,Europe/Lisbon,18,38.6,-9.1,14.0,43.0,https://weatheo.com/pt/pt/setubal/amora,16.8,551.7,0.15,0.19,2023,1972,1963,2023
+PT,2269041,Corroios,Corroios,19,Setúbal,38.64004,-9.1508,52520,Europe/Lisbon,19,38.6,-9.2,7.0,22.0,https://weatheo.com/pt/pt/setubal/corroios,16.7,560.7,0.14,0.19,2023,1972,1963,2023
+PT,2271071,Barreiro,Barreiro,19,Setúbal,38.66314,-9.0724,51280,Europe/Lisbon,20,38.7,-9.1,4.0,11.0,https://weatheo.com/pt/pt/setubal/barreiro,16.8,562.4,0.15,0.19,2023,1972,1963,2023

@@ -196,6 +196,10 @@ TIMESERIES_SOURCES = [
     {"title": "GeoNames gazetteer cities5000 (city list, coordinates, population, time zone), licence CC BY 4.0",
      "path": "https://download.geonames.org/export/dump/"},
 ]
+CITY_EXTREMES = (
+    "Daily extremes are smoothed: on record heat days the daily maximum is often 2 to 7 degC below the "
+    "station record (London, 19 July 2022: 36.4 degC here, 40.2 degC measured at Coningsby)."
+)
 CITY_METHOD = (
     "Cities: in France and Germany the most populous municipalities by official population (INSEE, BKG), "
     "one point per municipality (city districts are not counted separately); elsewhere the most populous "
@@ -290,7 +294,7 @@ def build_city_package(cc: str, country_name: str, tables: dict[str, pd.DataFram
     desc = (
         f"Daily weather 1950-2025, monthly climate, climate normals 1991-2020 and annual climate indicators "
         f"1951-2025 for the {n_cities} largest cities of {country_name}, from the Copernicus ERA5-Land "
-        f"hourly time series. " + CITY_METHOD + " " + LIMITS + " " + ATTRIBUTION
+        f"hourly time series. " + CITY_METHOD + " " + LIMITS + " " + CITY_EXTREMES + " " + ATTRIBUTION
     )
     csv = {"format": "csv", "mediatype": "text/csv", "encoding": "utf-8", "profile": "tabular-data-resource",
            "dialect": {"delimiter": ","}}
