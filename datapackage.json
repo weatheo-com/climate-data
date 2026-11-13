@@ -1,0 +1,671 @@
+{
+  "profile": "data-package",
+  "name": "weatheo-climate-data",
+  "title": "Weatheo climate data: city-level ERA5 temperature tables",
+  "description": "City-level temperature tables behind the Weatheo climate reports (means, anomalies against the 2011-2025 baseline, hot days, tropical nights, frost days, extremes), derived from ERA5 reanalysis via Open-Meteo. No OpenWeather-derived data.",
+  "homepage": "https://weatheo.com/en/blog/methodology",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Weatheo",
+      "path": "https://weatheo.com",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ERA5 hourly data on single levels (Copernicus Climate Change Service)",
+      "path": "https://cds.climate.copernicus.eu/"
+    },
+    {
+      "title": "Open-Meteo Historical Weather API",
+      "path": "https://open-meteo.com/"
+    }
+  ],
+  "resources": [
+    {
+      "name": "june-2026-heatwave",
+      "title": "June 2026 heatwave in Europe (15 June to 5 July 2026)",
+      "path": "data/june-2026-heatwave/june-2026-heatwave.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "description": "City name as shown on weatheo.com."
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country code, upper case.",
+            "unit": "ISO 3166-1 alpha-2"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "City-centre latitude used to query the ERA5 grid.",
+            "unit": "degrees north"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "City-centre longitude used to query the ERA5 grid.",
+            "unit": "degrees east"
+          },
+          {
+            "name": "days",
+            "type": "integer",
+            "description": "Number of days in the period covered for this city.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_mean_temp_c",
+            "type": "number",
+            "description": "Mean of the daily mean 2 m air temperature over the period, rounded to 0.1.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_2011_2025_mean_temp_c",
+            "type": "number",
+            "description": "Baseline: for each calendar day of the period, the mean of that day's daily mean temperature over the years 2011-2025, then averaged over the period. The 2011-2025 window is a 15-year recent baseline, warmer than a 1961-1990 reference.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_c",
+            "type": "number",
+            "description": "era5_mean_temp_c minus era5_2011_2025_mean_temp_c (positive = warmer than the 2011-2025 baseline).",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_days_max_30c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 30 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_days_max_35c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 35 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_nights_min_20c_plus",
+            "type": "integer",
+            "description": "Tropical nights: days whose daily minimum temperature is >= 20 °C.",
+            "unit": "nights"
+          },
+          {
+            "name": "era5_frost_days",
+            "type": "integer",
+            "description": "Frost days: days whose daily minimum temperature is below 0 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_highest_c",
+            "type": "number",
+            "description": "Highest daily maximum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_highest_date",
+            "type": "date",
+            "description": "Date of that highest daily maximum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "era5_lowest_c",
+            "type": "number",
+            "description": "Lowest daily minimum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_lowest_date",
+            "type": "date",
+            "description": "Date of that lowest daily minimum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "forecast_page",
+            "type": "string",
+            "format": "uri",
+            "description": "Absolute link to the city's forecast page on weatheo.com."
+          }
+        ]
+      }
+    },
+    {
+      "name": "past-12-months",
+      "title": "Past 12 months in 87 cities (12 September 2025 to August 2026)",
+      "path": "data/past-12-months/past-12-months.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "description": "City name as shown on weatheo.com."
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country code, upper case.",
+            "unit": "ISO 3166-1 alpha-2"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "City-centre latitude used to query the ERA5 grid.",
+            "unit": "degrees north"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "City-centre longitude used to query the ERA5 grid.",
+            "unit": "degrees east"
+          },
+          {
+            "name": "days",
+            "type": "integer",
+            "description": "Number of days in the period covered for this city.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_mean_temp_c",
+            "type": "number",
+            "description": "Mean of the daily mean 2 m air temperature over the period, rounded to 0.1.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_2011_2025_mean_temp_c",
+            "type": "number",
+            "description": "Baseline: for each calendar day of the period, the mean of that day's daily mean temperature over the years 2011-2025, then averaged over the period. The 2011-2025 window is a 15-year recent baseline, warmer than a 1961-1990 reference.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_c",
+            "type": "number",
+            "description": "era5_mean_temp_c minus era5_2011_2025_mean_temp_c (positive = warmer than the 2011-2025 baseline).",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_days_max_30c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 30 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_days_max_35c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 35 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_nights_min_20c_plus",
+            "type": "integer",
+            "description": "Tropical nights: days whose daily minimum temperature is >= 20 °C.",
+            "unit": "nights"
+          },
+          {
+            "name": "era5_frost_days",
+            "type": "integer",
+            "description": "Frost days: days whose daily minimum temperature is below 0 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_highest_c",
+            "type": "number",
+            "description": "Highest daily maximum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_highest_date",
+            "type": "date",
+            "description": "Date of that highest daily maximum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "era5_lowest_c",
+            "type": "number",
+            "description": "Lowest daily minimum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_lowest_date",
+            "type": "date",
+            "description": "Date of that lowest daily minimum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "era5_days_warmer_than_normal",
+            "type": "integer",
+            "description": "Days whose daily mean temperature is above the 2011-2025 baseline for that calendar day.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_anomaly_2025-10_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2025-11_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2025-12_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-01_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-02_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-03_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-04_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-05_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-06_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-07_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_2026-08_c",
+            "type": "number",
+            "description": "Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city.",
+            "unit": "°C"
+          },
+          {
+            "name": "forecast_page",
+            "type": "string",
+            "format": "uri",
+            "description": "Absolute link to the city's forecast page on weatheo.com."
+          }
+        ]
+      }
+    },
+    {
+      "name": "summer-2026-europe",
+      "title": "Summer 2026 in European cities (1 June to 31 August 2026)",
+      "path": "data/summer-2026-europe/summer-2026-europe.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "description": "City name as shown on weatheo.com."
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country code, upper case.",
+            "unit": "ISO 3166-1 alpha-2"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "City-centre latitude used to query the ERA5 grid.",
+            "unit": "degrees north"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "City-centre longitude used to query the ERA5 grid.",
+            "unit": "degrees east"
+          },
+          {
+            "name": "days",
+            "type": "integer",
+            "description": "Number of days in the period covered for this city.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_mean_temp_c",
+            "type": "number",
+            "description": "Mean of the daily mean 2 m air temperature over the period, rounded to 0.1.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_2011_2025_mean_temp_c",
+            "type": "number",
+            "description": "Baseline: for each calendar day of the period, the mean of that day's daily mean temperature over the years 2011-2025, then averaged over the period. The 2011-2025 window is a 15-year recent baseline, warmer than a 1961-1990 reference.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_c",
+            "type": "number",
+            "description": "era5_mean_temp_c minus era5_2011_2025_mean_temp_c (positive = warmer than the 2011-2025 baseline).",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_days_max_30c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 30 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_days_max_35c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 35 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_nights_min_20c_plus",
+            "type": "integer",
+            "description": "Tropical nights: days whose daily minimum temperature is >= 20 °C.",
+            "unit": "nights"
+          },
+          {
+            "name": "era5_frost_days",
+            "type": "integer",
+            "description": "Frost days: days whose daily minimum temperature is below 0 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_highest_c",
+            "type": "number",
+            "description": "Highest daily maximum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_highest_date",
+            "type": "date",
+            "description": "Date of that highest daily maximum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "era5_lowest_c",
+            "type": "number",
+            "description": "Lowest daily minimum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_lowest_date",
+            "type": "date",
+            "description": "Date of that lowest daily minimum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "forecast_page",
+            "type": "string",
+            "format": "uri",
+            "description": "Absolute link to the city's forecast page on weatheo.com."
+          }
+        ]
+      }
+    },
+    {
+      "name": "summer-2026-france",
+      "title": "Summer 2026 in 25 French cities (1 June to 31 August 2026)",
+      "path": "data/summer-2026-france/summer-2026-france.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "description": "City name as shown on weatheo.com."
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country code, upper case.",
+            "unit": "ISO 3166-1 alpha-2"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "City-centre latitude used to query the ERA5 grid.",
+            "unit": "degrees north"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "City-centre longitude used to query the ERA5 grid.",
+            "unit": "degrees east"
+          },
+          {
+            "name": "days",
+            "type": "integer",
+            "description": "Number of days in the period covered for this city.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_mean_temp_c",
+            "type": "number",
+            "description": "Mean of the daily mean 2 m air temperature over the period, rounded to 0.1.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_2011_2025_mean_temp_c",
+            "type": "number",
+            "description": "Baseline: for each calendar day of the period, the mean of that day's daily mean temperature over the years 2011-2025, then averaged over the period. The 2011-2025 window is a 15-year recent baseline, warmer than a 1961-1990 reference.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_c",
+            "type": "number",
+            "description": "era5_mean_temp_c minus era5_2011_2025_mean_temp_c (positive = warmer than the 2011-2025 baseline).",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_days_max_30c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 30 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_days_max_35c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 35 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_nights_min_20c_plus",
+            "type": "integer",
+            "description": "Tropical nights: days whose daily minimum temperature is >= 20 °C.",
+            "unit": "nights"
+          },
+          {
+            "name": "era5_frost_days",
+            "type": "integer",
+            "description": "Frost days: days whose daily minimum temperature is below 0 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_highest_c",
+            "type": "number",
+            "description": "Highest daily maximum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_highest_date",
+            "type": "date",
+            "description": "Date of that highest daily maximum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "era5_lowest_c",
+            "type": "number",
+            "description": "Lowest daily minimum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_lowest_date",
+            "type": "date",
+            "description": "Date of that lowest daily minimum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "forecast_page",
+            "type": "string",
+            "format": "uri",
+            "description": "Absolute link to the city's forecast page on weatheo.com."
+          }
+        ]
+      }
+    },
+    {
+      "name": "winter-2025-26",
+      "title": "Winter 2025-26 in 72 cities (1 December 2025 to 28 February 2026)",
+      "path": "data/winter-2025-26/winter-2025-26.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "city",
+            "type": "string",
+            "description": "City name as shown on weatheo.com."
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "Country code, upper case.",
+            "unit": "ISO 3166-1 alpha-2"
+          },
+          {
+            "name": "latitude",
+            "type": "number",
+            "description": "City-centre latitude used to query the ERA5 grid.",
+            "unit": "degrees north"
+          },
+          {
+            "name": "longitude",
+            "type": "number",
+            "description": "City-centre longitude used to query the ERA5 grid.",
+            "unit": "degrees east"
+          },
+          {
+            "name": "days",
+            "type": "integer",
+            "description": "Number of days in the period covered for this city.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_mean_temp_c",
+            "type": "number",
+            "description": "Mean of the daily mean 2 m air temperature over the period, rounded to 0.1.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_2011_2025_mean_temp_c",
+            "type": "number",
+            "description": "Baseline: for each calendar day of the period, the mean of that day's daily mean temperature over the years 2011-2025, then averaged over the period. The 2011-2025 window is a 15-year recent baseline, warmer than a 1961-1990 reference.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_anomaly_c",
+            "type": "number",
+            "description": "era5_mean_temp_c minus era5_2011_2025_mean_temp_c (positive = warmer than the 2011-2025 baseline).",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_days_max_30c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 30 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_days_max_35c_plus",
+            "type": "integer",
+            "description": "Days whose daily maximum temperature is >= 35 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_nights_min_20c_plus",
+            "type": "integer",
+            "description": "Tropical nights: days whose daily minimum temperature is >= 20 °C.",
+            "unit": "nights"
+          },
+          {
+            "name": "era5_frost_days",
+            "type": "integer",
+            "description": "Frost days: days whose daily minimum temperature is below 0 °C.",
+            "unit": "days"
+          },
+          {
+            "name": "era5_highest_c",
+            "type": "number",
+            "description": "Highest daily maximum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_highest_date",
+            "type": "date",
+            "description": "Date of that highest daily maximum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "era5_lowest_c",
+            "type": "number",
+            "description": "Lowest daily minimum temperature in the period.",
+            "unit": "°C"
+          },
+          {
+            "name": "era5_lowest_date",
+            "type": "date",
+            "description": "Date of that lowest daily minimum.",
+            "unit": "YYYY-MM-DD"
+          },
+          {
+            "name": "forecast_page",
+            "type": "string",
+            "format": "uri",
+            "description": "Absolute link to the city's forecast page on weatheo.com."
+          }
+        ]
+      }
+    }
+  ]
+}

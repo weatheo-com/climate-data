@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Weatheo climate data: city-level ERA5 temperature tables"
+abstract: "City-level temperature tables (means, anomalies against 2011-2025, hot days, tropical nights, frost days, extremes) behind the Weatheo climate reports, derived from ERA5 via Open-Meteo."
+authors:
+  - name: "Weatheo"
+url: "https://weatheo.com/en/blog/methodology"
+repository-code: "https://github.com/weatheo-com/climate-data"
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-11-13
+references:
+  - type: data
+    authors:
+      - family-names: Hersbach
+        given-names: H.
+    title: "ERA5 hourly data on single levels from 1940 to present"
+    year: 2023
+    publisher:
+      name: "Copernicus Climate Change Service (C3S) Climate Data Store (CDS)"
+    doi: 10.24381/cds.adbb2d47

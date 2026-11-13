@@ -1,0 +1,36 @@
+Weatheo climate data (the files under data/)
+
+(c) 2026 CODELIO (Weatheo), https://weatheo.com
+
+The data in this repository is licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0).
+Summary: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt the data for any purpose, including commercially,
+as long as you give appropriate credit, link to the licence and indicate if
+changes were made. Suggested credit:
+
+  Weatheo (weatheo.com), based on ERA5 data from the Copernicus Climate
+  Change Service via Open-Meteo
+
+The code under scripts/ is licensed separately under the MIT licence, see
+LICENSE-CODE.
+
+Source attribution
+------------------
+
+The data is derived from the following upstream sources, whose required
+credits must be kept when you redistribute it:
+
+1. Contains modified Copernicus Climate Change Service information 2026.
+   Neither the European Commission nor ECMWF is responsible for any use that
+   may be made of the Copernicus information or data it contains.
+   Source dataset: Hersbach, H. et al. (2023), ERA5 hourly data on single
+   levels from 1940 to present, Copernicus Climate Change Service (C3S)
+   Climate Data Store (CDS), DOI 10.24381/cds.adbb2d47.
+   Licence to use Copernicus Products:
+   https://cds.climate.copernicus.eu/licences/licence-to-use-copernicus-products
+
+2. Weather data by Open-Meteo.com (CC BY 4.0), https://open-meteo.com/
+   Historical Weather API, licence: https://open-meteo.com/en/licence
