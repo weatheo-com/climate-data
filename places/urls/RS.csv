@@ -1,0 +1,99 @@
+country,code,name,admin1_name,latitude,longitude,path
+RS,,Aranđelovac,Å umadijski,44.3042,20.5561,/rs/a-umadijski/arandelovac
+RS,,Kragujevac,Å umadijski,44.0101,20.9172,/rs/a-umadijski/kragujevac
+RS,,Topola,Å umadijski,44.2525,20.6761,/rs/a-umadijski/topola
+RS,,Batajnica,Beograd,44.9022,20.2814,/rs/beograd/batajnica
+RS,,Belgrade,Beograd,44.8178,20.4569,/rs/beograd/belgrade
+RS,,Borča,Beograd,44.8667,20.4667,/rs/beograd/borca
+RS,,Kaluđerica,Beograd,44.75,20.55,/rs/beograd/kaluderica
+RS,,Lazarevac,Beograd,44.3828,20.2583,/rs/beograd/lazarevac
+RS,,Mladenovac,Beograd,44.445,20.6981,/rs/beograd/mladenovac
+RS,,Sremčica,Beograd,44.6767,20.391,/rs/beograd/sremcica
+RS,,Surčin,Beograd,44.7942,20.283,/rs/beograd/surcin
+RS,,Zemun,Beograd,44.85,20.4,/rs/beograd/zemun
+RS,,Bor,Borski,44.1303,22.1036,/rs/borski/bor
+RS,,Kladovo,Borski,44.6039,22.6072,/rs/borski/kladovo
+RS,,Majdanpek,Borski,44.4167,21.9333,/rs/borski/majdanpek
+RS,,Negotin,Borski,44.2167,22.5167,/rs/borski/negotin
+RS,,Kučevo,Branicevski,44.4833,21.6667,/rs/branicevski/kucevo
+RS,,Petrovac na Mlavi,Branicevski,44.3783,21.4194,/rs/branicevski/petrovac-na-mlavi
+RS,,Požarevac,Branicevski,44.62,21.1897,/rs/branicevski/pozarevac
+RS,,Veliko Gradište,Branicevski,44.75,21.5167,/rs/branicevski/veliko-gradiste
+RS,,Lebane,Jablanicki,42.9167,21.7333,/rs/jablanicki/lebane
+RS,,Leskovac,Jablanicki,42.9981,21.9461,/rs/jablanicki/leskovac
+RS,,Vlasotince,Jablanicki,42.9667,22.1333,/rs/jablanicki/vlasotince
+RS,,Bačka Palanka,JuÅ¾no-Backi,45.2506,19.3886,/rs/jua-3-4no-backi/backa-palanka
+RS,,Bečej,JuÅ¾no-Backi,45.6167,20.0333,/rs/jua-3-4no-backi/becej
+RS,,Futog,JuÅ¾no-Backi,45.2333,19.7167,/rs/jua-3-4no-backi/futog
+RS,,Novi Sad,JuÅ¾no-Backi,45.2644,19.8317,/rs/jua-3-4no-backi/novi-sad
+RS,,Petrovaradin,JuÅ¾no-Backi,45.25,19.8667,/rs/jua-3-4no-backi/petrovaradin
+RS,,Srbobran,JuÅ¾no-Backi,45.5522,19.8017,/rs/jua-3-4no-backi/srbobran
+RS,,Temerin,JuÅ¾no-Backi,45.4053,19.8869,/rs/jua-3-4no-backi/temerin
+RS,,Titel,JuÅ¾no-Backi,45.2,20.3,/rs/jua-3-4no-backi/titel
+RS,,Veternik,JuÅ¾no-Backi,45.2533,19.7608,/rs/jua-3-4no-backi/veternik
+RS,,Vrbas,JuÅ¾no-Backi,45.5697,19.6378,/rs/jua-3-4no-backi/vrbas
+RS,,Kovin,JuÅ¾no-Banatski,44.7475,20.9761,/rs/jua-3-4no-banatski/kovin
+RS,,Pančevo,JuÅ¾no-Banatski,44.8739,20.6519,/rs/jua-3-4no-banatski/pancevo
+RS,,Vršac,JuÅ¾no-Banatski,45.1206,21.2986,/rs/jua-3-4no-banatski/vrsac
+RS,,Lajkovac,Kolubarski,44.3667,20.1667,/rs/kolubarski/lajkovac
+RS,,Mionica,Kolubarski,44.25,20.0833,/rs/kolubarski/mionica
+RS,,Valjevo,Kolubarski,44.2708,19.8866,/rs/kolubarski/valjevo
+RS,,Krupanj,Macvanski,44.3667,19.3667,/rs/macvanski/krupanj
+RS,,Loznica,Macvanski,44.5333,19.2258,/rs/macvanski/loznica
+RS,,Šabac,Macvanski,44.7558,19.6939,/rs/macvanski/sabac
+RS,,Vladimirci,Macvanski,44.6167,19.7833,/rs/macvanski/vladimirci
+RS,,Čačak,Moravicki,43.8914,20.3497,/rs/moravicki/cacak
+RS,,Gornji Milanovac,Moravicki,44.0212,20.456,/rs/moravicki/gornji-milanovac
+RS,,Ivanjica,Moravicki,43.5811,20.2297,/rs/moravicki/ivanjica
+RS,,Lučani,Moravicki,43.8667,20.1333,/rs/moravicki/lucani
+RS,,Aleksinac,NiÅ¡avski,43.5383,21.7047,/rs/nia-avski/aleksinac
+RS,,Niš,NiÅ¡avski,43.3192,21.8961,/rs/nia-avski/nis
+RS,,Svrljig,NiÅ¡avski,43.4167,22.1167,/rs/nia-avski/svrljig
+RS,,Bujanovac,Pcinjski,42.4667,21.7667,/rs/pcinjski/bujanovac
+RS,,,,,,/rs/pcinjski/presevo
+RS,,Surdulica,Pcinjski,42.695,22.1672,/rs/pcinjski/surdulica
+RS,,Vladičin Han,Pcinjski,42.7078,22.0592,/rs/pcinjski/vladicin-han
+RS,,Vranje,Pcinjski,42.5542,21.8972,/rs/pcinjski/vranje
+RS,,Pirot,Pirotski,43.1519,22.585,/rs/pirotski/pirot
+RS,,Smederevo,Podunavski,44.6633,20.9289,/rs/podunavski/smederevo
+RS,,Smederevska Palanka,Podunavski,44.3655,20.9587,/rs/podunavski/smederevska-palanka
+RS,,Velika Plana,Podunavski,44.3333,21.0833,/rs/podunavski/velika-plana
+RS,,Aleksandrovac,Pomoravski,43.4553,21.0514,/rs/pomoravski/aleksandrovac
+RS,,Brus,Pomoravski,43.3836,21.0336,/rs/pomoravski/brus
+RS,,Ćuprija,Pomoravski,43.9231,21.3686,/rs/pomoravski/cuprija
+RS,,Despotovac,Pomoravski,44.0833,21.4333,/rs/pomoravski/despotovac
+RS,,Jagodina,Pomoravski,43.975,21.2564,/rs/pomoravski/jagodina
+RS,,Kruševac,Pomoravski,43.5833,21.3267,/rs/pomoravski/krusevac
+RS,,Paraćin,Pomoravski,43.8667,21.4167,/rs/pomoravski/paracin
+RS,,Svilajnac,Pomoravski,44.2333,21.1947,/rs/pomoravski/svilajnac
+RS,,Trstenik,Pomoravski,43.6186,20.9972,/rs/pomoravski/trstenik
+RS,,Varvarin,Pomoravski,43.7167,21.3667,/rs/pomoravski/varvarin
+RS,,Kraljevo,RaÅ¡ki,43.7234,20.687,/rs/raa-ki/kraljevo
+RS,,Novi Pazar,RaÅ¡ki,43.15,20.5167,/rs/raa-ki/novi-pazar
+RS,,Raška,RaÅ¡ki,43.2856,20.6092,/rs/raa-ki/raska
+RS,,Tutin,RaÅ¡ki,42.9875,20.3256,/rs/raa-ki/tutin
+RS,,Subotica,Severno-Backi,46.1002,19.6653,/rs/severno-backi/subotica
+RS,,Kikinda,Severno-Banatski,45.8244,20.4592,/rs/severno-banatski/kikinda
+RS,,Senta,Severno-Banatski,45.9314,20.09,/rs/severno-banatski/senta
+RS,,Novi Bečej,Srednje-Banatski,45.6,20.1167,/rs/srednje-banatski/novi-becej
+RS,,Zrenjanin,Srednje-Banatski,45.3778,20.3861,/rs/srednje-banatski/zrenjanin
+RS,,Inđija,Sremski,45.0492,20.0792,/rs/sremski/indija
+RS,,Nova Pazova,Sremski,44.95,20.2167,/rs/sremski/nova-pazova
+RS,,Pećinci,Sremski,44.9089,19.9664,/rs/sremski/pecinci
+RS,,Ruma,Sremski,45.0031,19.8289,/rs/sremski/ruma
+RS,,Šid,Sremski,45.1283,19.2264,/rs/sremski/sid
+RS,,Sremska Mitrovica,Sremski,44.9661,19.6106,/rs/sremski/sremska-mitrovica
+RS,,Stara Pazova,Sremski,44.9833,20.1667,/rs/sremski/stara-pazova
+RS,,Kuršumlija,Toplicki,43.1408,21.2678,/rs/toplicki/kursumlija
+RS,,Prokuplje,Toplicki,43.2339,21.5861,/rs/toplicki/prokuplje
+RS,,Žitorađa,Toplicki,43.1833,21.7167,/rs/toplicki/zitorada
+RS,,Knjaževac,Zajecarski,43.5,22.4333,/rs/zajecarski/knjazevac
+RS,,Zaječar,Zajecarski,43.9042,22.2847,/rs/zajecarski/zajecar
+RS,,Apatin,Zapadno-Backi,45.6667,18.9833,/rs/zapadno-backi/apatin
+RS,,Kula,Zapadno-Backi,45.6,19.5333,/rs/zapadno-backi/kula
+RS,,Sombor,Zapadno-Backi,45.78,19.12,/rs/zapadno-backi/sombor
+RS,,Arilje,Zlatiborski,43.7531,20.0956,/rs/zlatiborski/arilje
+RS,,Bajina Bašta,Zlatiborski,43.9731,19.5597,/rs/zlatiborski/bajina-basta
+RS,,Čajetina,Zlatiborski,43.75,19.7167,/rs/zlatiborski/cajetina
+RS,,Prijepolje,Zlatiborski,43.5439,19.6514,/rs/zlatiborski/prijepolje
+RS,,Užice,Zlatiborski,43.85,19.85,/rs/zlatiborski/uzice

@@ -1,0 +1,196 @@
+country,code,name,admin1_name,latitude,longitude,path
+PT,,Albergaria-a-Velha,Aveiro,40.6936,-8.4806,/pt/aveiro/albergaria-a-velha
+PT,,Anadia,Aveiro,40.4333,-8.4333,/pt/aveiro/anadia
+PT,,Anta,Aveiro,41.0073,-8.625,/pt/aveiro/anta
+PT,,Arouca,Aveiro,40.9289,-8.2436,/pt/aveiro/arouca
+PT,,Aveiro,Aveiro,40.6389,-8.6553,/pt/aveiro/aveiro
+PT,,Espinho,Aveiro,41.01,-8.64,/pt/aveiro/espinho
+PT,,Estarreja,Aveiro,40.75,-8.5667,/pt/aveiro/estarreja
+PT,,Gafanha da Nazaré,Aveiro,40.6333,-8.7167,/pt/aveiro/gafanha-da-nazare
+PT,,Ílhavo,Aveiro,40.6,-8.6667,/pt/aveiro/ilhavo
+PT,,Oliveira de Azemeis,Aveiro,40.84,-8.4764,/pt/aveiro/oliveira-de-azemeis
+PT,,Oliveira do Bairro,Aveiro,40.5167,-8.5,/pt/aveiro/oliveira-do-bairro
+PT,,Ovar,Aveiro,40.8597,-8.6253,/pt/aveiro/ovar
+PT,,São João da Madeira,Aveiro,40.9,-8.5,/pt/aveiro/sao-joao-da-madeira
+PT,,Ul,Aveiro,40.8192,-8.499,/pt/aveiro/ul
+PT,,Vale de Cambra,Aveiro,40.85,-8.4,/pt/aveiro/vale-de-cambra
+PT,,Angra do Heroísmo,Azores,38.6558,-27.2153,/pt/azores/angra-do-heroismo
+PT,,Horta,Azores,38.5333,-28.6333,/pt/azores/horta
+PT,,Lagoa,Azores,37.75,-25.5833,/pt/azores/lagoa
+PT,,Ponta Delgada,Azores,37.74,-25.67,/pt/azores/ponta-delgada
+PT,,Praia da Vitória,Azores,38.7333,-27.0667,/pt/azores/praia-da-vitoria
+PT,,Ribeira Grande,Azores,37.8167,-25.5167,/pt/azores/ribeira-grande
+PT,,Beja,Beja,38.015,-7.8633,/pt/beja/beja
+PT,,Moura,Beja,38.1397,-7.4505,/pt/beja/moura
+PT,,Odemira,Beja,37.5833,-8.6333,/pt/beja/odemira
+PT,,Serpa,Beja,37.9333,-7.5833,/pt/beja/serpa
+PT,,Amares,Braga,41.6333,-8.35,/pt/braga/amares
+PT,,,,,,/pt/braga/aves
+PT,,Barcelos,Braga,41.5333,-8.6167,/pt/braga/barcelos
+PT,,Braga,Braga,41.5503,-8.42,/pt/braga/braga
+PT,,Cabeceiras de Basto,Braga,41.5167,-8,/pt/braga/cabeceiras-de-basto
+PT,,Celorico de Basto,Braga,41.3869,-8.0022,/pt/braga/celorico-de-basto
+PT,,Esposende,Braga,41.5333,-8.7833,/pt/braga/esposende
+PT,,Fafe,Braga,41.45,-8.1667,/pt/braga/fafe
+PT,,Famalicão,Braga,41.4144,-8.5222,/pt/braga/famalicao
+PT,,Guimarães,Braga,41.445,-8.2908,/pt/braga/guimaraes
+PT,,Póvoa de Lanhoso,Braga,41.5667,-8.2667,/pt/braga/povoa-de-lanhoso
+PT,,Vila Verde,Braga,41.6484,-8.4367,/pt/braga/vila-verde
+PT,,Bragança,Bragança,41.8,-6.75,/pt/braganca/braganca
+PT,,Macedo de Cavaleiros,Bragança,41.5333,-6.95,/pt/braganca/macedo-de-cavaleiros
+PT,,Meixedo,Bragança,41.8522,-6.7706,/pt/braganca/meixedo
+PT,,Mirandela,Bragança,41.4833,-7.1833,/pt/braganca/mirandela
+PT,,Castelo Branco,Castelo Branco,39.8228,-7.4931,/pt/castelo-branco/castelo-branco
+PT,,Covilhã,Castelo Branco,40.2833,-7.5,/pt/castelo-branco/covilha
+PT,,Fundão,Castelo Branco,40.1333,-7.5,/pt/castelo-branco/fundao
+PT,,Sertã,Castelo Branco,39.8008,-8.1003,/pt/castelo-branco/serta
+PT,,Coimbra,Coimbra,40.2111,-8.4289,/pt/coimbra/coimbra
+PT,,Condeixa-a-Nova,Coimbra,40.1167,-8.5,/pt/coimbra/condeixa-a-nova
+PT,,Figueira da Foz,Coimbra,40.1508,-8.8618,/pt/coimbra/figueira-da-foz
+PT,,Lousã,Coimbra,40.1125,-8.2469,/pt/coimbra/lousa
+PT,,Montemor-o-Velho,Coimbra,40.1725,-8.6847,/pt/coimbra/montemor-o-velho
+PT,,Oliveira do Hospital,Coimbra,40.3667,-7.8667,/pt/coimbra/oliveira-do-hospital
+PT,,Penacova,Coimbra,40.2706,-8.2833,/pt/coimbra/penacova
+PT,,Soure,Coimbra,40.05,-8.6333,/pt/coimbra/soure
+PT,,Estremoz,Évora,38.8422,-7.5881,/pt/evora/estremoz
+PT,,Évora,Évora,38.5667,-7.9,/pt/evora/evora
+PT,,Montemor-o-Novo,Évora,38.65,-8.2167,/pt/evora/montemor-o-novo
+PT,,Albufeira,Faro,37.0889,-8.2511,/pt/faro/albufeira
+PT,,Faro,Faro,37.0161,-7.935,/pt/faro/faro
+PT,,Lagoa,Faro,37.1347,-8.4528,/pt/faro/lagoa
+PT,,Lagos,Faro,37.1,-8.6667,/pt/faro/lagos
+PT,,Loulé,Faro,37.144,-8.0235,/pt/faro/loule
+PT,,Olhão,Faro,37.0278,-7.8389,/pt/faro/olhao
+PT,,Portimão,Faro,37.1333,-8.5333,/pt/faro/portimao
+PT,,Quarteira,Faro,37.0695,-8.1006,/pt/faro/quarteira
+PT,,Silves,Faro,37.1833,-8.4333,/pt/faro/silves
+PT,,Tavira,Faro,37.1309,-7.6506,/pt/faro/tavira
+PT,,Vila Real de Santo António,Faro,37.2,-7.4167,/pt/faro/vila-real-de-santo-antonio
+PT,,Guarda,Guarda,40.5364,-7.2683,/pt/guarda/guarda
+PT,,Paranhos,Guarda,40.4774,-7.7823,/pt/guarda/paranhos
+PT,,Alcobaça,Leiria,39.5522,-8.9775,/pt/leiria/alcobaca
+PT,,Ansião,Leiria,39.9167,-8.4333,/pt/leiria/ansiao
+PT,,Batalha,Leiria,39.6603,-8.8247,/pt/leiria/batalha
+PT,,Caldas da Rainha,Leiria,39.4069,-9.1363,/pt/leiria/caldas-da-rainha
+PT,,Leiria,Leiria,39.7431,-8.8069,/pt/leiria/leiria
+PT,,Marinha Grande,Leiria,39.7478,-8.9322,/pt/leiria/marinha-grande
+PT,,Nazaré,Leiria,39.6,-9.0667,/pt/leiria/nazare
+PT,,Peniche,Leiria,39.3575,-9.3804,/pt/leiria/peniche
+PT,,Pombal,Leiria,39.9161,-8.6281,/pt/leiria/pombal
+PT,,Porto de Mós,Leiria,39.6017,-8.8175,/pt/leiria/porto-de-mos
+PT,,Agualva,Lisboa,38.774,-9.2936,/pt/lisboa/agualva
+PT,,Alenquer,Lisboa,39.0531,-9.0092,/pt/lisboa/alenquer
+PT,,Amadora,Lisboa,38.75,-9.2333,/pt/lisboa/amadora
+PT,,Azambuja,Lisboa,39.0667,-8.8667,/pt/lisboa/azambuja
+PT,,Belas,Lisboa,38.7772,-9.2608,/pt/lisboa/belas
+PT,,Cacém,Lisboa,38.7704,-9.3081,/pt/lisboa/cacem
+PT,,Cadaval,Lisboa,39.25,-9.1,/pt/lisboa/cadaval
+PT,,Camarate,Lisboa,38.8062,-9.1412,/pt/lisboa/camarate
+PT,,Cascais,Lisboa,38.6972,-9.4217,/pt/lisboa/cascais
+PT,,Estoril,Lisboa,38.7057,-9.3977,/pt/lisboa/estoril
+PT,,Falagueira,Lisboa,38.7589,-9.2261,/pt/lisboa/falagueira
+PT,,Lisbon,Lisboa,38.7122,-9.134,/pt/lisboa/lisbon
+PT,,Loures,Lisboa,38.8309,-9.1684,/pt/lisboa/loures
+PT,,Mafra,Lisboa,38.9333,-9.3333,/pt/lisboa/mafra
+PT,,Massamá,Lisboa,38.7544,-9.2813,/pt/lisboa/massama
+PT,,Odivelas,Lisboa,38.8,-9.1833,/pt/lisboa/odivelas
+PT,,Oeiras,Lisboa,38.697,-9.3017,/pt/lisboa/oeiras
+PT,,Parede,Lisboa,38.6933,-9.3569,/pt/lisboa/parede
+PT,,Pontinha,Lisboa,38.7678,-9.1994,/pt/lisboa/pontinha
+PT,,Póvoa de Santa Iria,Lisboa,38.8562,-9.0685,/pt/lisboa/povoa-de-santa-iria
+PT,,Queluz,Lisboa,38.7566,-9.2545,/pt/lisboa/queluz
+PT,,Ramada,Lisboa,38.8036,-9.1911,/pt/lisboa/ramada
+PT,,Rio de Mouro,Lisboa,38.7689,-9.3327,/pt/lisboa/rio-de-mouro
+PT,,Sacavém,Lisboa,38.7944,-9.1053,/pt/lisboa/sacavem
+PT,,Santa Iria da Azóia,Lisboa,38.8464,-9.0881,/pt/lisboa/santa-iria-da-azoia
+PT,,,,,,/pt/lisboa/sao-joao-da-talha
+PT,,,,,,/pt/lisboa/sintra
+PT,,Torres Vedras,Lisboa,39.0833,-9.2667,/pt/lisboa/torres-vedras
+PT,,Vialonga,Lisboa,38.874,-9.0834,/pt/lisboa/vialonga
+PT,,Vila Franca de Xira,Lisboa,38.95,-8.9833,/pt/lisboa/vila-franca-de-xira
+PT,,Câmara de Lobos,Madeira,32.65,-16.9667,/pt/madeira/camara-de-lobos
+PT,,Caniço,Madeira,32.6412,-16.8504,/pt/madeira/canico
+PT,,Funchal,Madeira,32.65,-16.9167,/pt/madeira/funchal
+PT,,Machico,Madeira,32.7,-16.7667,/pt/madeira/machico
+PT,,Santa Cruz,Madeira,32.675,-16.8309,/pt/madeira/santa-cruz
+PT,,Elvas,Portalegre,38.88,-7.1628,/pt/portalegre/elvas
+PT,,Portalegre,Portalegre,39.3167,-7.4167,/pt/portalegre/portalegre
+PT,,Águas Santas,Porto,41.2102,-8.5743,/pt/porto/aguas-santas
+PT,,Alfena,Porto,41.2381,-8.5253,/pt/porto/alfena
+PT,,Alto da Maia,Porto,41.25,-8.6167,/pt/porto/alto-da-maia
+PT,,Amarante,Porto,41.2728,-8.0825,/pt/porto/amarante
+PT,,Baião,Porto,41.1667,-8.0333,/pt/porto/baiao
+PT,,Bougado,Porto,41.3306,-8.5371,/pt/porto/bougado
+PT,,Ermezinde,Porto,41.2133,-8.5472,/pt/porto/ermezinde
+PT,,Fânzeres,Porto,41.1667,-8.5333,/pt/porto/fanzeres
+PT,,Felgueiras,Porto,41.3667,-8.2,/pt/porto/felgueiras
+PT,,Gondomar,Porto,41.15,-8.5333,/pt/porto/gondomar
+PT,,Lordelo do Ouro,Porto,41.1532,-8.6509,/pt/porto/lordelo-do-ouro
+PT,,Lousada,Porto,41.2833,-8.2833,/pt/porto/lousada
+PT,,Mafamude,Porto,41.1152,-8.6036,/pt/porto/mafamude
+PT,,Maia,Porto,41.2333,-8.6167,/pt/porto/maia
+PT,,Marco de Canavezes,Porto,41.1833,-8.15,/pt/porto/marco-de-canavezes
+PT,,Matosinhos,Porto,41.1867,-8.6844,/pt/porto/matosinhos
+PT,,Paços de Ferreira,Porto,41.2833,-8.3833,/pt/porto/pacos-de-ferreira
+PT,,Paredes,Porto,41.2,-8.3333,/pt/porto/paredes
+PT,,Pedroso,Porto,41.0644,-8.5564,/pt/porto/pedroso
+PT,,Penafiel,Porto,41.2,-8.2833,/pt/porto/penafiel
+PT,,Porto,Porto,41.15,-8.6108,/pt/porto/porto
+PT,,Póvoa de Varzim,Porto,41.3828,-8.7628,/pt/porto/povoa-de-varzim
+PT,,Rio Tinto,Porto,41.1833,-8.5667,/pt/porto/rio-tinto
+PT,,Santo Tirso,Porto,41.3425,-8.4775,/pt/porto/santo-tirso
+PT,,São Mamede de Infesta,Porto,41.1934,-8.6143,/pt/porto/sao-mamede-de-infesta
+PT,,São Tiago de Custoias,Porto,41.2069,-8.6485,/pt/porto/sao-tiago-de-custoias
+PT,,Senhora da Hora,Porto,41.1856,-8.6508,/pt/porto/senhora-da-hora
+PT,,Trofa,Porto,41.3374,-8.5596,/pt/porto/trofa
+PT,,Valbom,Porto,41.1333,-8.5667,/pt/porto/valbom
+PT,,Valongo,Porto,41.1833,-8.5,/pt/porto/valongo
+PT,,Vila do Conde,Porto,41.35,-8.75,/pt/porto/vila-do-conde
+PT,,Vila Nova de Gaia,Porto,41.1333,-8.6167,/pt/porto/vila-nova-de-gaia
+PT,,Vizela,Porto,41.3833,-8.3,/pt/porto/vizela
+PT,,Abrantes,Santarém,39.4667,-8.2,/pt/santarem/abrantes
+PT,,Almeirim,Santarém,39.209,-8.6164,/pt/santarem/almeirim
+PT,,Benavente,Santarém,38.9833,-8.8167,/pt/santarem/benavente
+PT,,Cartaxo,Santarém,39.1619,-8.7864,/pt/santarem/cartaxo
+PT,,Entroncamento,Santarém,39.4667,-8.4667,/pt/santarem/entroncamento
+PT,,Ourém,Santarém,39.65,-8.5833,/pt/santarem/ourem
+PT,,Rio Maior,Santarém,39.3333,-8.9333,/pt/santarem/rio-maior
+PT,,Samora Correia,Santarém,38.9261,-8.8708,/pt/santarem/samora-correia
+PT,,Santarém,Santarém,39.2333,-8.6833,/pt/santarem/santarem
+PT,,Tomar,Santarém,39.6,-8.4167,/pt/santarem/tomar
+PT,,Torres Novas,Santarém,39.4833,-8.5333,/pt/santarem/torres-novas
+PT,,Alcochete,Setúbal,38.7553,-8.9608,/pt/setubal/alcochete
+PT,,Almada,Setúbal,38.6803,-9.1583,/pt/setubal/almada
+PT,,Amora,Setúbal,38.6265,-9.1189,/pt/setubal/amora
+PT,,Arrentela,Setúbal,38.6267,-9.1036,/pt/setubal/arrentela
+PT,,Barreiro,Setúbal,38.6631,-9.0725,/pt/setubal/barreiro
+PT,,Caparica,Setúbal,38.6683,-9.19,/pt/setubal/caparica
+PT,,Charneca,Setúbal,38.6167,-9.1833,/pt/setubal/charneca
+PT,,Corroios,Setúbal,38.65,-9.15,/pt/setubal/corroios
+PT,,Costas de Cão,Setúbal,38.664,-9.2,/pt/setubal/costas-de-cao
+PT,,Grândola,Setúbal,38.1768,-8.5689,/pt/setubal/grandola
+PT,,Laranjeira,Setúbal,38.6567,-9.1497,/pt/setubal/laranjeira
+PT,,Moita,Setúbal,38.65,-8.9833,/pt/setubal/moita
+PT,,Montijo,Setúbal,38.7049,-8.9757,/pt/setubal/montijo
+PT,,Palmela,Setúbal,38.5675,-8.8991,/pt/setubal/palmela
+PT,,Piedade,Setúbal,38.6703,-9.1595,/pt/setubal/piedade
+PT,,Pinhal Novo,Setúbal,38.6297,-8.9136,/pt/setubal/pinhal-novo
+PT,,Quinta do Anjo,Setúbal,38.5611,-9.0472,/pt/setubal/quinta-do-anjo
+PT,,Santiago do Cacém,Setúbal,38.0167,-8.7,/pt/setubal/santiago-do-cacem
+PT,,Sesimbra,Setúbal,38.4437,-9.0996,/pt/setubal/sesimbra
+PT,,Setúbal,Setúbal,38.5243,-8.8926,/pt/setubal/setubal
+PT,,Sobreda,Setúbal,38.6496,-9.1898,/pt/setubal/sobreda
+PT,,Vale de Cavalos,Setúbal,38.65,-9.15,/pt/setubal/vale-de-cavalos
+PT,,Arcos de Valdevez,Viana do Castelo,41.85,-8.4167,/pt/viana-do-castelo/arcos-de-valdevez
+PT,,Monção,Viana do Castelo,42.0733,-8.48,/pt/viana-do-castelo/moncao
+PT,,Ponte de Lima,Viana do Castelo,41.7667,-8.5833,/pt/viana-do-castelo/ponte-de-lima
+PT,,Viana do Castelo,Viana do Castelo,41.7,-8.8333,/pt/viana-do-castelo/viana-do-castelo
+PT,,Chaves,Vila Real,41.7399,-7.4707,/pt/vila-real/chaves
+PT,,Peso da Régua,Vila Real,41.1632,-7.789,/pt/vila-real/peso-da-regua
+PT,,Vila Real,Vila Real,41.2953,-7.7461,/pt/vila-real/vila-real
+PT,,Castro Daire,Viseu,40.9,-7.9333,/pt/viseu/castro-daire
+PT,,Cinfães,Viseu,41.0667,-8.0833,/pt/viseu/cinfaes
+PT,,Lamego,Viseu,41.0975,-7.81,/pt/viseu/lamego
+PT,,São Pedro do Sul,Viseu,40.75,-8.0667,/pt/viseu/sao-pedro-do-sul
+PT,,Tondela,Viseu,40.5164,-8.0808,/pt/viseu/tondela
+PT,,Viseu,Viseu,40.6575,-7.9139,/pt/viseu/viseu

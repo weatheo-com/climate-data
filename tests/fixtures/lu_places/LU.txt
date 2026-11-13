@@ -1,0 +1,15 @@
+2959975	Wiltz	Wiltz	Canton de Wiltz,Kanton Wiltz,Kanton Wolz,Vil'c,Vilts,Wiltz,Wolz,u'iltaja,uirutsu,vilataza,wiልtiዝ,wyltz,Вильц,ویلتز,উইল্টজ,ਵਿਲਟਜ਼,ዊልትዝ,ウィルツ	49.94698	5.907	A	ADM1	LU		WI				19530		452	Europe/Luxembourg	2026-04-16
+2959978	Wiltz	Wiltz	Canto de Wiltz,Canton de Wiltz,Cantone di Wiltz,Cantó de Wiltz,Cantón de Wiltz,Commune de Wiltz,Gemeinde Wiltz,Gemeng Wolz,Kanton Wiltz,Kanton Wolz,Kantono Wiltz,Vil'c,Vilco kantonas,Ville de Wiltz,Wiltz,Wiltz kantonu,Wolz,Wooltz,bilcheu ju,wltz,wyltz,Вільц,ولتز,ویلتز,빌츠 주	49.97888	5.9398	A	ADM2	LU		WI	11			7939		355	Europe/Luxembourg	2025-01-27
+2960020	Vianden	Vianden	Canton de Vianden,Kanton Veianen,Kanton Vianden,Veianen,Viaden,Vianden,bhiyandena,vi'andena,viyanideni,vuianden,wyandn,Виаден,ویاندن,ভিয়ান্ডেন,ਵਿਆਂਦੇਨ,ቪያንደን,ヴィアンデン	49.93256	6.16618	A	ADM1	LU		VD				5680		372	Europe/Luxembourg	2026-10-14
+2960317	Ville de Luxembourg	Ville de Luxembourg	Letzebuerg,Luxembourg,Luxemburg,Lëtzebuerg,Stad Letzebuerg,Stad Lëtzebuerg,Stadt Luxemburg,Ville de Luxembourg	49.6093	6.13204	A	ADM2	LU		LU	2960317			136208		303	Europe/Luxembourg	2025-01-27
+2960631	Echternach	Echternach	Eechternoach,Iechternach	49.81307	6.42185	A	ADM2	LU		EC	05			5870		168	Europe/Luxembourg	2025-01-26
+2960683	Clervaux	Clervaux	Canton de Clervaux,Clerf,Clervaux,Kanton Clerf,Kanton Klierf,Klervaux,Klervo,Klervо,Klierf,kaleravo,kilerivo,klerabhaksa,klrww,kurerubo,Клерво,کلروو,ক্লেরভক্স,ਕਲੇਰਵੋ,ክሌርቮ,クレルボー	50.07852	6.02236	A	ADM1	LU		CL				21214		398	Europe/Luxembourg	2026-10-14
+6693260	Dippach	Dippach	Dippakh,Dippech,Dzipakh,Gemeng Dippech,di pa,dypakh,Дзіпах,Диппах,Діппах,دیپاخ,迪帕	49.58833	5.98333	A	ADM2	LU		CA	03			4635		368	Europe/Luxembourg	2025-01-27
+6693261	Garnich	Garnich		49.61667	5.9525	A	ADM2	LU		CA	04			2289		339	Europe/Luxembourg	2025-01-26
+6693262	Hobscheid	Hobscheid	Habscht	49.68861	5.91472	A	ADM2	LU		CA	05			1979		278	Europe/Luxembourg	2025-01-26
+6693267	Septfontaines	Septfontaines	Simmer,Simmern	49.70111	5.96722	A	ADM2	LU		CA	10			378		267	Europe/Luxembourg	2025-01-26
+6693297	Clervaux	Clervaux	Canto de Clervaux,Canton de Clervaux,Cantone di Clervaux,Cantó de Clervaux,Cantón de Clervaux,Clervaux kantonu,Kanton Clerf,Kanton Clervaux,Kanton Klierf,Kantono Clervaux / Clerf,Klervo,Klervo kantonas,ke lai wo xian,keulleleubo ju,Клерво,克莱沃县,클레르보 주	50.05472	6.03139	A	ADM2	LU		CL	03			6021		364	Europe/Luxembourg	2025-01-27
+6693322	Boulaide	Boulaide	Bauschelt,Bauschleiden	49.88778	5.81639	A	ADM2	LU		WI	01			1499		462	Europe/Luxembourg	2025-01-26
+6693333	Vianden	Vianden		49.935	6.20889	A	ADM2	LU		VD	03			0		228	Europe/Luxembourg	2017-01-14
+6693338	Mompach	Mompach	Mompech	49.74611	6.465	A	ADM2	LU		EC	06			1303		302	Europe/Luxembourg	2022-03-14
+6693339	Rosport	Rosport	Gemeng Rouspert,Rospor,Rosport,Rosportas,Rouspert,rwspwrt,Роспор,Роспорт,روسپورت	49.79778	6.50417	A	ADM2	LU		EC	07			0		177	Europe/Luxembourg	2017-01-14

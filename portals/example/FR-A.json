@@ -1,0 +1,34 @@
+{
+  "slug": "normales-climatiques-1991-2020-par-commune-france",
+  "title": "Normales climatiques 1991-2020 par commune (France)",
+  "description": "Normales climatiques mensuelles 1991-2020 (température moyenne, précipitations) pour chaque commune française (code INSEE), calculées à partir des réanalyses Copernicus ERA5-Land (0,1°) avec repli ERA5 (0,25°). Publié par Weatheo (by CODELIO), https://weatheo.com/en/open-data.\n\nContains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.",
+  "tags": ["climat", "normales-climatiques", "temperature", "precipitations", "copernicus", "era5", "communes"],
+  "license": "cc-by",
+  "frequency": "irregular",
+  "temporal_coverage": {"start": "1991-01-01", "end": "2020-12-31"},
+  "resources": [
+    {
+      "title": "FR_climate_normals_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/FR_climate_normals_1991_2020.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Une ligne par commune et par mois (1-12)."
+    },
+    {
+      "title": "FR_climate_normals_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/FR_climate_normals_1991_2020.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Même table au format Parquet."
+    },
+    {
+      "title": "datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/datapackage.json",
+      "format": "json",
+      "mime": "application/json",
+      "type": "documentation",
+      "description": "Métadonnées Frictionless (schéma des colonnes, sources, licence)."
+    }
+  ]
+}

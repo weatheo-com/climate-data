@@ -1,0 +1,8 @@
+783763	Opština Beograd-Zvezdara	Opstina Beograd-Zvezdara	Opstina Zvezdara,Opština Zvezdara	44.77404	20.53396	A	ADM3	RS		SE	0	70149		0		231	Europe/Belgrade	2012-04-14
+786034	Opština Sečanj	Opstina Secanj	Opstina Secanj,Opština Sečanj	45.36749	20.7739	A	ADM3	RS		VO	2	80373		10544		76	Europe/Belgrade	2025-06-05
+787252	Opština Beograd-Palilula	Opstina Beograd-Palilula	Opstina Palilula,Opština Palilula	44.81156	20.51559	A	ADM3	RS		SE	0	70203		0		120	Europe/Belgrade	2012-04-14
+793137	Opština Aleksinac	Opstina Aleksinac	Opstina Aleksinac,Opština Aleksinac	43.5431	21.70285	A	ADM3	RS		SE	20	70025		43258		213	Europe/Belgrade	2025-06-04
+793140	Opština Aleksandrovac	Opstina Aleksandrovac	Opstina Aleksandrovac,Opština Aleksandrovac	43.45878	21.04852	A	ADM3	RS		SE	19	70017		22069		358	Europe/Belgrade	2025-06-04
+3190947	Sevojno	Sevojno	Sevojno	43.8496	19.91075	P	PPL	RS		SE	16			0		531	Europe/Belgrade	2017-11-17
+8260100	Opština Niš-Pantelej	Opstina Nis-Pantelej		43.33367	21.92356	A	ADM3	RS		SE	20	71307		53486		219	Europe/Belgrade	2025-06-05
+8260101	Opština Niš-Palilula	Opstina Nis-Palilula		43.30163	21.90236	A	ADM3	RS		SE	20	71323		73801		298	Europe/Belgrade	2025-06-05
