@@ -201,7 +201,9 @@ CITY_METHOD = (
     "neighbouring land cell when that cell is sea. Hourly values are grouped into local civil days (the "
     "city's IANA time zone); only complete days are kept. Temperatures are adjusted from the cell "
     "elevation to the city elevation with 6.5 degC per km. Wind is the mean of hourly 10 m wind speeds, "
-    "not gusts. Monthly and annual values use complete months and years only."
+    "not gusts. Monthly and annual values use complete months and years only. The daily series start on "
+    "2 January 1950 and the monthly series in February 1950, as the ERA5-Land time series starts at "
+    "01:00 UTC on 1 January 1950."
 )
 CITY_FIELD_DOC = {
     "country": "ISO 3166-1 alpha-2 country code",
@@ -317,7 +319,7 @@ def build_city_package(cc: str, country_name: str, tables: dict[str, pd.DataFram
         "keywords": ["climate", "weather history", "degree days", "climate normals", "ERA5-Land",
                      "Copernicus", country_name],
         "spatial": cc,
-        "temporal": {"start": "1950-01-01", "end": "2025-12-31"},
+        "temporal": {"start": "1950-01-02", "end": "2025-12-31"},
         "resources": resources,
     }
 

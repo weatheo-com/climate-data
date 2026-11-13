@@ -1,7 +1,7 @@
 {
   "slug": "donnees-meteo-historiques-par-ville-1950-2025-france",
   "title": "Données météo historiques par ville 1950-2025 : valeurs quotidiennes (ERA5-Land)",
-  "description": "Valeurs météo quotidiennes (température moyenne, minimale et maximale, précipitations, vent, rayonnement solaire) de 1950 à 2025 pour les plus grandes villes, issues de la réanalyse ERA5-Land.\n\n**Colonnes.** `country`, `city_id`, `name`, `date`, `tmean_c` (°C), `tmin_c` (°C), `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh` (km/h), `wind_max_kmh` (km/h), `solar_kwh_m2` (kWh/m²).\n\n**Méthode.** Réanalyse horaire Copernicus ERA5-Land, grille de 0,1°, maille la plus proche du point de la ville, jours civils locaux (fuseau IANA, jours complets seulement). Les températures sont corrigées de l'altitude à 6,5 °C par km ; les précipitations ne sont pas corrigées.\n\n**Limites.** Valeurs de réanalyse par maille, pas des mesures de stations. Les jours de chaleur sont sous-estimés dans les centres-villes. Les degrés-jours diffèrent des chiffres publiés par les services nationaux.\n\n**Lieux.** Villes de GeoNames (cities5000), CC BY 4.0, classées par population ; l'identifiant `city_id` est celui de GeoNames.\n\n**Licence.** Données CC BY 4.0, code MIT.\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO). Page du jeu de données: https://weatheo.com/fr/open-data/daily-weather-history-cities. Code et scripts: https://github.com/weatheo-com/climate-data.",
+  "description": "Valeurs météo quotidiennes (température moyenne, minimale et maximale, précipitations, vent, rayonnement solaire) du 2 janvier 1950 au 31 décembre 2025 pour les plus grandes villes, issues de la réanalyse ERA5-Land.\n\n**Colonnes.** `country`, `city_id`, `name`, `date`, `tmean_c` (°C), `tmin_c` (°C), `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh` (km/h), `wind_max_kmh` (km/h), `solar_kwh_m2` (kWh/m²).\n\n**Méthode.** Réanalyse horaire Copernicus ERA5-Land, grille de 0,1°, maille la plus proche du point de la ville, jours civils locaux (fuseau IANA, jours complets seulement). Les températures sont corrigées de l'altitude à 6,5 °C par km ; les précipitations ne sont pas corrigées.\n\n**Limites.** Valeurs de réanalyse par maille, pas des mesures de stations. Les jours de chaleur sont sous-estimés dans les centres-villes. Les degrés-jours diffèrent des chiffres publiés par les services nationaux.\n\n**Lieux.** Villes de GeoNames (cities5000), CC BY 4.0, classées par population ; l'identifiant `city_id` est celui de GeoNames.\n\n**Licence.** Données CC BY 4.0, code MIT.\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO). Page du jeu de données: https://weatheo.com/fr/open-data/daily-weather-history-cities. Code et scripts: https://github.com/weatheo-com/climate-data.",
   "tags": [
     "meteo",
     "climat",
@@ -15,7 +15,7 @@
   "license": "cc-by",
   "frequency": "irregular",
   "temporal_coverage": {
-    "start": "1950-01-01",
+    "start": "1950-01-02",
     "end": "2025-12-31"
   },
   "spatial": {

@@ -90,17 +90,17 @@ La construction télécharge ERA5-Land et ERA5 depuis le Copernicus Climate Data
 
 ## Climat par ville : quotidien, mensuel et annuel (GB, DE, FR, PT, LU, RS)
 
-Historique météo quotidien, climat mensuel et indicateurs annuels pour les plus grandes villes de six pays, 1950-2025, publiés par Weatheo (by CODELIO). Les villes viennent de GeoNames (cities5000), classées par population : 100 chacun pour GB, DE et FR, 20 chacun pour PT et RS, 5 pour LU. Les fichiers sont joints à la release GitHub v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<fichier>`). Pages : [quotidien](https://weatheo.com/fr/open-data/daily-weather-history-cities), [mensuel](https://weatheo.com/fr/open-data/monthly-climate-degree-days-cities), [annuel](https://weatheo.com/fr/open-data/annual-climate-indicators-cities).
+Historique météo quotidien, climat mensuel et indicateurs annuels pour les plus grandes villes de six pays (345 villes), 1950-2025, publiés par Weatheo (by CODELIO). Les villes viennent de GeoNames (cities5000), classées par population : 100 chacun pour GB, DE et FR, 20 chacun pour PT et RS, 5 pour LU. Les fichiers sont joints à la release GitHub v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<fichier>`). Pages : [quotidien](https://weatheo.com/fr/open-data/daily-weather-history-cities), [mensuel](https://weatheo.com/fr/open-data/monthly-climate-degree-days-cities), [annuel](https://weatheo.com/fr/open-data/annual-climate-indicators-cities).
 
 | Jeu de données | Fichiers par pays (`<cc>` = gb, de, fr, pt, lu, rs) |
 |---|---|
-| Quotidien, 1950-2025 | `<cc>_city_daily_weather_1950_2025.parquet`, `<cc>_city_daily_weather_1950_2025_csv.zip` (un CSV par ville), `<cc>_cities.csv`, `<cc>_cities_datapackage.json` |
-| Mensuel, 1950-2025 | `<cc>_city_monthly_climate_1950_2025.csv` et `.parquet`, `<cc>_city_climate_normals_1991_2020.csv` |
+| Quotidien, du 2 janvier 1950 au 31 décembre 2025 | `<cc>_city_daily_weather_1950_2025.parquet`, `<cc>_city_daily_weather_1950_2025_csv.zip` (un CSV par ville), `<cc>_cities.csv`, `<cc>_cities_datapackage.json` |
+| Mensuel, février 1950 à décembre 2025 | `<cc>_city_monthly_climate_1950_2025.csv` et `.parquet`, `<cc>_city_climate_normals_1991_2020.csv` |
 | Annuel, 1951-2025 | `<cc>_city_annual_climate_indicators_1951_2025.csv`, colonnes de tendance dans `<cc>_cities.csv` |
 
 Colonnes :
 
-- **Quotidien** : `country`, `city_id` (identifiant GeoNames), `name`, `date`, `tmean_c`, `tmin_c`, `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh`, `wind_max_kmh` (km/h, moyennes horaires, pas des rafales), `solar_kwh_m2` (kWh/m²). 27 759 lignes par ville.
+- **Quotidien** : `country`, `city_id` (identifiant GeoNames), `name`, `date`, `tmean_c`, `tmin_c`, `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh`, `wind_max_kmh` (km/h, moyennes horaires, pas des rafales), `solar_kwh_m2` (kWh/m²). 27 758 lignes par ville (du 2 janvier 1950 au 31 décembre 2025 ; le 1er janvier 1950 est écarté car la série ERA5-Land commence à 01:00 UTC, ce jour est donc incomplet).
 - **Mensuel** : une ligne par ville, année et mois (mois complets) : `tmean_c`, `tmin_mean_c`, `tmax_mean_c`, `tmin_abs_c`, `tmax_abs_c` (°C), `precip_mm`, `wet_days` (>= 1 mm), `frost_days`, `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `gtz_20_15` (degrés-jours), `solar_kwh_m2`, `wind_mean_kmh`. Le fichier des normales a 12 lignes par ville : `tmean_c`, `tmin_c`, `tmax_c`, `precip_mm`, `wet_days`, `frost_days`, `summer_days`, `hot_days`, `solar_kwh_m2_day`, `wind_mean_kmh`, `hdd_15_5`, `hdd_18`, `cdd_18`.
 - **Annuel** (années complètes seulement) : `year`, `tmean_c`, `tmean_anomaly_c` (par rapport à 1991-2020), `precip_mm`, `precip_anomaly_pct`, `wet_days`, `heavy_rain_days` (>= 20 mm), `max_1day_precip_mm`, `frost_days` (tmin < 0), `ice_days` (tmax < 0), `summer_days` (tmax >= 25), `hot_days` (tmax >= 30), `tropical_nights` (tmin >= 20), `tmax_abs_c`, `tmin_abs_c`, `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `rank_warmest`. Colonnes de tendance dans `<cc>_cities.csv` : `tmean_annual_c`, `precip_annual_mm`, `trend_c_per_decade_1951_2025`, `trend_c_per_decade_1981_2025`, `warmest_year`, `coldest_year`, `wettest_year`, `driest_year`.
 
