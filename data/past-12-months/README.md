@@ -27,7 +27,7 @@ Open data behind the Weatheo article: <https://weatheo.com/en/blog/past-12-month
 | `era5_lowest_c` | number | °C | Lowest daily minimum temperature in the period. |
 | `era5_lowest_date` | date | YYYY-MM-DD | Date of that lowest daily minimum. |
 | `era5_days_warmer_than_normal` | integer | days | Days whose daily mean temperature is above the 2011-2025 baseline for that calendar day. |
-| `era5_anomaly_YYYY-MM_c` | number | °C | Twelve columns, 2025-10 to 2026-08 (era5_anomaly_2025-10_c ... era5_anomaly_2026-08_c; 11 months present): monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city. |
+| `era5_anomaly_YYYY-MM_c` | number | °C | Eleven columns, one per month from 2025-10 to 2026-08: monthly mean anomaly against the 2011-2025 baseline. Empty when the month has no data for that city. |
 | `forecast_page` | URL | - | Absolute link to the city's forecast page on weatheo.com. |
 
 Empty cells mean no value. Temperatures are rounded to 0.1 °C. Day counts use the daily maximum or minimum of the ERA5 hourly series for the city's local calendar day.
