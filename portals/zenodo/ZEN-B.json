@@ -32,17 +32,17 @@
         "scheme": "url"
       },
       {
-        "identifier": "https://www.data.gouv.fr/datasets/liste-des-communes-de-france",
+        "identifier": "https://www.data.gouv.fr/datasets/liste-des-communes-de-france-code-insee-codes-postaux-epci-population-superficie-62-indicateurs",
         "relation": "isDerivedFrom",
         "scheme": "url"
       },
       {
-        "identifier": "https://www.dgterritorio.gov.pt/cartografia/caop",
+        "identifier": "https://www.dgterritorio.gov.pt/cartografia/cartografia-tematica/caop",
         "relation": "isDerivedFrom",
         "scheme": "url"
       },
       {
-        "identifier": "https://data.public.lu/",
+        "identifier": "https://data.public.lu/fr/datasets/codes-lau-des-communes-du-grand-duche-de-luxembourg/",
         "relation": "isDerivedFrom",
         "scheme": "url"
       },
@@ -52,7 +52,7 @@
         "scheme": "url"
       },
       {
-        "identifier": "https://data.gov.rs/",
+        "identifier": "https://data.gov.rs/sr/datasets/opshtine-i-gradovi/",
         "relation": "isDerivedFrom",
         "scheme": "url"
       },
@@ -63,6 +63,16 @@
       },
       {
         "identifier": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://confluence.ecmwf.int/display/CKB/ERA5-Land%3A+data+documentation",
         "relation": "isDerivedFrom",
         "scheme": "url"
       }
