@@ -18,6 +18,27 @@ import pandas as pd
 BASE = "https://weatheo.com"
 LANG = {"FR": "fr", "LU": "fr", "PT": "pt", "RS": "en", "DE": "de", "GB": "en"}
 MAX_KM = 10.0
+# Weatheo names DE/GB pages in English or Welsh (Munich, Cologne, Caerdydd): a page left
+# unmatched by name goes to the nearest unlinked place within NEAREST_KM, one to one.
+NEAREST_FALLBACK = {"DE", "GB"}
+NEAREST_KM = 5.0
+# Exonyms Weatheo uses for a few large places whose names share no prefix.
+EXONYMS = {"koln": "cologne", "cardiff": "caerdydd", "swansea": "abertawe", "carmarthen": "caerfyrddin"}
+_SKIP = {"bad", "st", "sankt", "saint", "sainte"}
+
+
+def _head(name: str) -> str:
+    """First meaningful word of a normalised name (St./Sankt/Saint and Bad skipped)."""
+    words = [w for w in norm_name(name).split() if w not in _SKIP] or norm_name(name).split()
+    return words[0] if words else ""
+
+
+def similar_names(place: str, page: str) -> bool:
+    """Same first word, the same first 3 letters (München/Munich), or a listed exonym."""
+    a, b = _head(place), _head(page)
+    if not a or not b:
+        return False
+    return a == b or EXONYMS.get(a) == b or (len(a) >= 4 and len(b) >= 4 and a[:3] == b[:3])
 URLS_DIR = Path(__file__).resolve().parents[2] / "places" / "urls"
 
 
@@ -104,12 +125,36 @@ def join_urls(places: pd.DataFrame, urls: pd.DataFrame, country: str,
         if len(cl) != 1:  # one page claimed by several places: ambiguous
             continue
         out.at[cl[0][0], "weatheo_url"] = _url(lang, u.at[i, "path"])
+        used.add(i)
         n_name += 1
 
+    # 3) nearest unlinked place within NEAREST_KM (DE, GB), closest pairs first
+    n_near = 0
+    if country in NEAREST_FALLBACK:
+        rest = u[~u.index.isin(used) & u["_lat"].notna() & u["_lon"].notna()]
+        free = out[out["weatheo_url"] == ""]
+        plat = free["latitude"].to_numpy(float)
+        plon = free["longitude"].to_numpy(float)
+        pairs = []
+        for i, row in rest.iterrows():
+            d = _haversine_km(float(row["_lat"]), float(row["_lon"]), plat, plon)
+            for j in np.flatnonzero(d < NEAREST_KM):
+                if similar_names(free.iloc[j]["name"], row["name"]):
+                    pairs.append((float(d[j]), i, free.index[j]))
+        taken: set = set()
+        taken_pages: set = set()
+        for _, i, idx in sorted(pairs):
+            if idx in taken or i in taken_pages:
+                continue
+            taken_pages.add(i)
+            out.at[idx, "weatheo_url"] = _url(lang, u.at[i, "path"])
+            taken.add(idx)
+            n_near += 1
+
     if verbose:
-        print(f"[urls] {country}: matched {n_code + n_name}/{len(out)} "
-              f"(code {n_code}, name {n_name}); url rows {len(u)}")
-    out.attrs["url_matches"] = {"code": n_code, "name": n_name, "total": len(out)}
+        print(f"[urls] {country}: matched {n_code + n_name + n_near}/{len(out)} "
+              f"(code {n_code}, name {n_name}, nearest {n_near}); url rows {len(u)}")
+    out.attrs["url_matches"] = {"code": n_code, "name": n_name, "nearest": n_near, "total": len(out)}
     return out
 
 

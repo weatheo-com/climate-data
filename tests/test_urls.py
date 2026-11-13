@@ -66,3 +66,14 @@ def test_one_page_claimed_by_two_places_no_match():
     p = _places([("1", "Vila", 41.0, -8.0), ("2", "Vila", 41.02, -8.0)], "PT")
     u = _urls([("", "Vila", 41.01, -8.0, "/pt/x/vila")], "PT")
     assert list(join_urls(p, u, "PT")["weatheo_url"]) == ["", ""]
+
+
+def test_similar_names_for_nearest_fallback():
+    from climate_data.urls import similar_names
+
+    assert similar_names("Köln", "Cologne")
+    assert similar_names("München", "Munich")
+    assert similar_names("St. Wendel", "Sankt Wendel")
+    assert similar_names("Bad Neustadt a.d.Saale", "Bad Neustadt")
+    assert not similar_names("Mühlheim am Main", "Steinheim am Main")
+    assert not similar_names("Lambeth", "Streatham")
