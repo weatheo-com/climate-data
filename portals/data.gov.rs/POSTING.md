@@ -15,3 +15,10 @@
 9. Check the two dataset pages (Cyrillic text, 3 resources each, links work).
 
 Firewall notes (2026-11-13): data.gov.rs answers 403 (HTML page) to descriptions with markdown links `[text](url)` (write `text: url`) and to the capitalised Cyrillic "То су"; and to a third resource on these datasets whatever its title, URL or format. RS-A and RS-B are published with the CSV and Parquet resources only; the datapackage is linked from the description (GitHub repository).
+
+## Firewall note (2026-11-13, city dataset)
+
+Besides markdown links and "То су", the data.gov.rs firewall answers 403 to a description with a closing
+backtick followed by a full stop and a capitalised word (for example "`cdd_18`.\n\nMonthly" or
+"`rank_warmest`. Trend"). The city text therefore has no backticks. Each paragraph can pass alone while
+the whole text fails: test the full description with a private probe dataset (deleted after) first.

@@ -14,6 +14,9 @@
   "datasets": [
     "liste-des-communes-de-france-code-insee-codes-postaux-epci-population-superficie-62-indicateurs",
     "normales-climatiques-mensuelles-1991-2020-par-commune-france",
-    "evolution-du-climat-par-commune-1961-1990-contre-1991-2020-france"
+    "evolution-du-climat-par-commune-1961-1990-contre-1991-2020-france",
+    "donnees-meteo-historiques-par-ville-1950-2025-valeurs-quotidiennes-era5-land",
+    "climat-mensuel-par-ville-1950-2025-normales-1991-2020-et-degres-jours",
+    "indicateurs-climatiques-annuels-par-ville-1951-2025-jours-de-gel-jours-de-chaleur-tendance"
   ]
 }
