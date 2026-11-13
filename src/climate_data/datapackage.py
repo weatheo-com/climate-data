@@ -197,24 +197,27 @@ TIMESERIES_SOURCES = [
      "path": "https://download.geonames.org/export/dump/"},
 ]
 CITY_METHOD = (
+    "Cities: in France and Germany the most populous municipalities by official population (INSEE, BKG), "
+    "one point per municipality (city districts are not counted separately); elsewhere the most populous "
+    "GeoNames places, skipping a place in the same 0.1 deg cell and district as a larger one. "
     "Each city takes the ERA5-Land time series (0.1 deg) of the grid cell at its GeoNames point, or of a "
     "neighbouring land cell when that cell is sea. Hourly values are grouped into local civil days (the "
     "city's IANA time zone); only complete days are kept. Temperatures are adjusted from the cell "
     "elevation to the city elevation with 6.5 degC per km. Wind is the mean of hourly 10 m wind speeds, "
     "not gusts. Monthly and annual values use complete months and years only. The daily series start on "
-    "2 January 1950 and the monthly series in February 1950, as the ERA5-Land time series starts at "
-    "01:00 UTC on 1 January 1950."
+    "2 January 1950 (3 January in time zones ahead of UTC) and the monthly series in February 1950: the "
+    "hourly series are downloaded from 00:00 UTC on 2 January 1950 and only complete local days are kept."
 )
 CITY_FIELD_DOC = {
     "country": "ISO 3166-1 alpha-2 country code",
     "city_id": "GeoNames id of the city",
-    "name": "city name (GeoNames)",
+    "name": "city name: official municipality name in France (INSEE) and Germany (BKG), GeoNames name elsewhere",
     "ascii_name": "city name in ASCII (GeoNames)",
     "admin1_code": "GeoNames first-level administrative division code",
     "admin1_name": "first-level administrative division name",
     "latitude": "city latitude, decimal degrees (WGS84, GeoNames)",
     "longitude": "city longitude, decimal degrees (WGS84, GeoNames)",
-    "population": "population (GeoNames)",
+    "population": "population: official municipal population in France (INSEE) and Germany (BKG VG250-EW), GeoNames elsewhere",
     "timezone": "IANA time zone used for local days",
     "rank": "rank by population within the country (1 = largest)",
     "grid_lat": "latitude of the ERA5-Land cell centre, decimal degrees",
@@ -314,12 +317,12 @@ def build_city_package(cc: str, country_name: str, tables: dict[str, pd.DataFram
         "version": "1.1.0",
         "licenses": [LICENSE],
         "homepage": HOMEPAGE,
-        "sources": TIMESERIES_SOURCES,
+        "sources": TIMESERIES_SOURCES + (PLACE_SOURCES.get(cc.upper(), [])[:1] if cc.upper() in ("FR", "DE") else []),
         "contributors": CONTRIBUTORS,
         "keywords": ["climate", "weather history", "degree days", "climate normals", "ERA5-Land",
                      "Copernicus", country_name],
         "spatial": cc,
-        "temporal": {"start": "1950-01-02", "end": "2025-12-31"},
+        "temporal": {"start": str(min(tables["daily"]["date"])), "end": str(max(tables["daily"]["date"]))},
         "resources": resources,
     }
 

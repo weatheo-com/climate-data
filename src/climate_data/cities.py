@@ -5,6 +5,13 @@ Usage: python -m climate_data.cities --country GB --top 100 [--raw places/raw/ge
 Downloads https://download.geonames.org/export/dump/cities5000.zip and admin1CodesASCII.txt once into
 --raw, keeps populated places (PPLC, PPLA, PPLA2, PPLA3, PPLA4, PPL; not PPLX) of the country, sorts by
 population descending and writes <out>/<cc>.csv. GeoNames data is CC BY 4.0.
+
+France and Germany: GeoNames splits some cities into districts (Paris 15 Vaugirard, Gare) and lists
+agglomerations that are not municipalities (Marne La Vallee). There each entry is mapped to its
+municipality by admin4_code (INSEE code, AGS) and only one entry per municipality is kept; the name and
+population come from the official table (INSEE communes, BKG VG250-EW), the point and time zone from
+GeoNames (the entry named like the municipality, else the most populous one). Elsewhere an entry is
+dropped when a more populous kept entry of the same admin2 lies in the same 0.1 deg cell (Westminster).
 """
 from __future__ import annotations
 
@@ -23,6 +30,17 @@ CITIES_TXT = "cities5000.txt"
 ADMIN1_TXT = "admin1CodesASCII.txt"
 
 ALLOWED_COUNTRIES = ("GB", "DE", "FR", "PT", "LU", "RS")
+
+# Names that are wrong in the official files used (communes-france-2026 names 93066 after the
+# absorbed commune; the merged commune of 2025 is Saint-Denis).
+NAME_FIXES = {"FR": {"93066": "Saint-Denis"}}
+
+# Official municipality tables, joined to GeoNames admin4_code.
+OFFICIAL = {
+    "FR": {"path": Path("places/raw/fr/communes-france-2026.csv"), "code": "code_insee",
+           "name": "nom_standard", "pop": "population", "filter": ("typecom", "COM")},
+    "DE": {"path": Path("places/raw/de/de_gemeinden_vg250ew.csv"), "code": "ags", "name": "name", "pop": "pop"},
+}
 FEATURE_CODES = ("PPLC", "PPLA", "PPLA2", "PPLA3", "PPLA4", "PPL")
 
 # Column layout of the GeoNames dump files (tab separated, no header).
@@ -39,8 +57,75 @@ OUTPUT_COLUMNS = [
 ]
 
 
+def _norm(name: str) -> str:
+    import unicodedata
+
+    n = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode().lower()
+    return "".join(ch for ch in n if ch.isalnum())
+
+
+def read_official(country: str, path: Path | None = None) -> pd.DataFrame | None:
+    """Official municipality table (code, name, population) of FR or DE; None for other countries
+    or when the file is missing."""
+    spec = OFFICIAL.get(country.upper())
+    if spec is None:
+        return None
+    path = Path(path or spec["path"])
+    if not path.exists():
+        return None
+    t = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8")
+    if "filter" in spec:
+        col, val = spec["filter"]
+        t = t[t[col] == val]
+    out = pd.DataFrame({"code": t[spec["code"]].str.strip(), "name": t[spec["name"]],
+                        "population": pd.to_numeric(t[spec["pop"]], errors="coerce").fillna(0).astype("int64")})
+    for code, name in NAME_FIXES.get(country.upper(), {}).items():
+        out.loc[out["code"] == code, "name"] = name
+    return out[out["code"] != ""].drop_duplicates("code")
+
+
+def one_per_municipality(sub: pd.DataFrame, official: pd.DataFrame) -> pd.DataFrame:
+    """One GeoNames entry per municipality (admin4_code), with the official name and population.
+    Entries without a known municipality code are dropped."""
+    off = official.set_index("code")
+    sub = sub[sub["admin4_code"].isin(off.index)].copy()
+    if sub.empty:
+        return sub
+    sub["_match"] = [(_norm(n) == _norm(off.at[c, "name"])) or (_norm(a) == _norm(off.at[c, "name"]))
+                     for n, a, c in zip(sub["name"], sub["asciiname"], sub["admin4_code"])]
+    sub = sub.sort_values(["admin4_code", "_match", "population", "geonameid"],
+                          ascending=[True, False, False, True], kind="mergesort")
+    sub = sub.drop_duplicates("admin4_code", keep="first").drop(columns="_match")
+    sub["name"] = [off.at[c, "name"] for c in sub["admin4_code"]]
+    sub["asciiname"] = [_ascii(n) for n in sub["name"]]
+    sub["population"] = [int(off.at[c, "population"]) for c in sub["admin4_code"]]
+    return sub
+
+
+def _ascii(name: str) -> str:
+    import unicodedata
+
+    return unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode()
+
+
+def drop_same_cell(sub: pd.DataFrame) -> pd.DataFrame:
+    """Drop an entry when a more populous kept entry has the same non-empty admin2_code and the same
+    0.1 deg cell. `sub` must be sorted by population descending."""
+    seen: set[tuple] = set()
+    keep = []
+    for a2, la, lo in zip(sub["admin2_code"], sub["latitude"].astype(float), sub["longitude"].astype(float)):
+        key = (a2, round(la * 10), round(lo * 10))
+        if a2 and key in seen:
+            keep.append(False)
+            continue
+        seen.add(key)
+        keep.append(True)
+    return sub[keep]
+
+
 def select_cities(df: pd.DataFrame, country: str, top: int,
-                  admin1: dict[str, str] | None = None) -> pd.DataFrame:
+                  admin1: dict[str, str] | None = None,
+                  official: pd.DataFrame | None = None) -> pd.DataFrame:
     """Top `top` populated places of `country` from a GeoNames-format frame (GEONAMES_COLUMNS).
 
     `admin1` maps "CC.code" -> admin1 name (from admin1CodesASCII.txt); missing names stay empty.
@@ -57,7 +142,12 @@ def select_cities(df: pd.DataFrame, country: str, top: int,
     sub = df[(df["country_code"] == cc) & (df["feature_code"].isin(FEATURE_CODES))].copy()
     sub["population"] = pd.to_numeric(sub["population"], errors="coerce").fillna(0).astype("int64")
     sub["geonameid"] = sub["geonameid"].astype("int64")
-    sub = sub.sort_values(["population", "geonameid"], ascending=[False, True], kind="mergesort").head(top)
+    if official is not None:
+        sub = one_per_municipality(sub, official)
+    sub = sub.sort_values(["population", "geonameid"], ascending=[False, True], kind="mergesort")
+    if official is None:
+        sub = drop_same_cell(sub)
+    sub = sub.head(top)
 
     a1 = sub["admin1_code"].fillna("").astype(str)
     out = pd.DataFrame({
@@ -113,7 +203,7 @@ def read_admin1(path: Path) -> dict[str, str]:
 
 def build(country: str, top: int, raw: Path, out: Path) -> Path:
     txt, a1 = fetch_geonames(raw)
-    cities = select_cities(read_geonames(txt), country, top, read_admin1(a1))
+    cities = select_cities(read_geonames(txt), country, top, read_admin1(a1), read_official(country))
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
     dest = out / f"{country.lower()}.csv"

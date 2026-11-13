@@ -90,17 +90,17 @@ The build downloads ERA5-Land and ERA5 from the Copernicus Climate Data Store (n
 
 ## City climate: daily, monthly and annual (GB, DE, FR, PT, LU, RS)
 
-Daily weather history, monthly climate and annual indicators for the largest cities of six countries (345 cities), 1950-2025, published by Weatheo (by CODELIO). Cities are taken from GeoNames (cities5000) and ranked by population: 100 each for GB, DE and FR, 20 each for PT and RS, 5 for LU. Files are attached to the GitHub release v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<file>`). Pages: [daily](https://weatheo.com/en/open-data/daily-weather-history-cities), [monthly](https://weatheo.com/en/open-data/monthly-climate-degree-days-cities), [annual](https://weatheo.com/en/open-data/annual-climate-indicators-cities).
+Daily weather history, monthly climate and annual indicators for the largest cities of six countries (345 cities), 1950-2025, published by Weatheo (by CODELIO). France and Germany: the 100 most populous municipalities by official population (France: INSEE population from the "Liste des communes de France" file on data.gouv.fr, Licence Ouverte 2.0; Germany: BKG VG250-EW, © GeoBasis-DE / BKG (2026), dl-de/by-2-0, data changed (climate values added)). One point per municipality (city districts such as the Paris arrondissements are not separate cities); names are the official municipality names (Saint-Denis, Dunkerque, München, Köln); the point and time zone come from GeoNames. Great Britain (100), Portugal (20), Serbia (20) and Luxembourg (5): the most populous GeoNames (cities5000, CC BY 4.0) places, skipping a place that lies in the same 0.1° grid cell and district as a larger one. The `population` column is the official municipal population in France and Germany and the GeoNames population elsewhere; `name` is the official name in FR and DE, the GeoNames name elsewhere. Files are attached to the GitHub release v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<file>`). Pages: [daily](https://weatheo.com/en/open-data/daily-weather-history-cities), [monthly](https://weatheo.com/en/open-data/monthly-climate-degree-days-cities), [annual](https://weatheo.com/en/open-data/annual-climate-indicators-cities).
 
 | Dataset | Files per country (`<cc>` = gb, de, fr, pt, lu, rs) |
 |---|---|
-| Daily, 2 January 1950 to 31 December 2025 | `<cc>_city_daily_weather_1950_2025.parquet`, `<cc>_city_daily_weather_1950_2025_csv.zip` (one CSV per city), `<cc>_cities.csv`, `<cc>_cities_datapackage.json` |
+| Daily, 2 or 3 January 1950 to 31 December 2025 | `<cc>_city_daily_weather_1950_2025.parquet`, `<cc>_city_daily_weather_1950_2025_csv.zip` (one CSV per city), `<cc>_cities.csv`, `<cc>_cities_datapackage.json` |
 | Monthly, February 1950 to December 2025 | `<cc>_city_monthly_climate_1950_2025.csv` and `.parquet`, `<cc>_city_climate_normals_1991_2020.csv` |
 | Annual, 1951-2025 | `<cc>_city_annual_climate_indicators_1951_2025.csv`, trend columns in `<cc>_cities.csv` |
 
 Columns:
 
-- **Daily**: `country`, `city_id` (GeoNames id), `name`, `date`, `tmean_c`, `tmin_c`, `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh`, `wind_max_kmh` (km/h, hourly means, not gusts), `solar_kwh_m2` (kWh/m²). 27,758 rows per city (2 January 1950 to 31 December 2025; 1 January 1950 is dropped because the ERA5-Land time series starts at 01:00 UTC, so that day is incomplete).
+- **Daily**: `country`, `city_id` (GeoNames id), `name`, `date`, `tmean_c`, `tmin_c`, `tmax_c` (°C), `precip_mm` (mm), `wind_mean_kmh`, `wind_max_kmh` (km/h, hourly means, not gusts), `solar_kwh_m2` (kWh/m²). 27,758 rows per city in GB and PT (2 January 1950 to 31 December 2025) and 27,757 in FR, DE, LU and RS (from 3 January 1950): the hourly series are downloaded from 00:00 UTC on 2 January 1950 and only complete local days are kept.
 - **Monthly**: one row per city, year and month (complete months): `tmean_c`, `tmin_mean_c`, `tmax_mean_c`, `tmin_abs_c`, `tmax_abs_c` (°C), `precip_mm`, `wet_days` (>= 1 mm), `frost_days`, `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `gtz_20_15` (degree days), `solar_kwh_m2`, `wind_mean_kmh`. The normals file has 12 rows per city: `tmean_c`, `tmin_c`, `tmax_c`, `precip_mm`, `wet_days`, `frost_days`, `summer_days`, `hot_days`, `solar_kwh_m2_day`, `wind_mean_kmh`, `hdd_15_5`, `hdd_18`, `cdd_18`.
 - **Annual** (full years only): `year`, `tmean_c`, `tmean_anomaly_c` (vs 1991-2020), `precip_mm`, `precip_anomaly_pct`, `wet_days`, `heavy_rain_days` (>= 20 mm), `max_1day_precip_mm`, `frost_days` (tmin < 0), `ice_days` (tmax < 0), `summer_days` (tmax >= 25), `hot_days` (tmax >= 30), `tropical_nights` (tmin >= 20), `tmax_abs_c`, `tmin_abs_c`, `hdd_15_5`, `hdd_18`, `cdd_18`, `cdd_22`, `rank_warmest`. Trend columns in `<cc>_cities.csv`: `tmean_annual_c`, `precip_annual_mm`, `trend_c_per_decade_1951_2025`, `trend_c_per_decade_1981_2025`, `warmest_year`, `coldest_year`, `wettest_year`, `driest_year`.
 
@@ -114,7 +114,11 @@ Values are grid-cell reanalysis values, not station measurements. Hot days in ci
 
 ### Place source
 
-GeoNames cities5000, CC BY 4.0. Data licence CC BY 4.0, code MIT. Notice to carry:
+- Points and time zones: GeoNames cities5000, CC BY 4.0.
+- French names and populations: INSEE communes list ("Liste des communes de France", data.gouv.fr), Licence Ouverte 2.0.
+- German names and populations: BKG VG250-EW, © GeoBasis-DE / BKG (2026), dl-de/by-2-0, data changed (climate values added).
+
+Data licence CC BY 4.0, code MIT. Notice to carry:
 
 > Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
 

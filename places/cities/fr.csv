@@ -1,101 +1,101 @@
 country,city_id,name,ascii_name,admin1_code,admin1_name,latitude,longitude,population,timezone,rank
-FR,2988507,Paris,Paris,11,Île-de-France,48.85341,2.3488,2138551,Europe/Paris,1
-FR,2995469,Marseille,Marseille,93,Provence-Alpes-Côte d'Azur,43.29695,5.38107,877215,Europe/Paris,2
-FR,2996944,Lyon,Lyon,84,Auvergne-Rhône-Alpes,45.74906,4.84789,520774,Europe/Paris,3
-FR,2972315,Toulouse,Toulouse,76,Occitanie,43.60426,1.44367,511684,Europe/Paris,4
-FR,2990440,Nice,Nice,93,Provence-Alpes-Côte d'Azur,43.70313,7.26608,342669,Europe/Paris,5
-FR,2990969,Nantes,Nantes,52,Pays de la Loire,47.21725,-1.55336,325070,Europe/Paris,6
-FR,12278193,Marne La Vallée,Marne La Vallee,11,Île-de-France,48.83584,2.64241,318325,Europe/Paris,7
-FR,2973783,Strasbourg,Strasbourg,44,Grand Est,48.58392,7.74553,274845,Europe/Paris,8
-FR,3031582,Bordeaux,Bordeaux,75,New Aquitaine,44.84124,-0.58046,265328,Europe/Paris,9
-FR,2992166,Montpellier,Montpellier,76,Occitanie,43.61093,3.87635,248252,Europe/Paris,10
-FR,2998324,Lille,Lille,32,Hauts-de-France,50.63391,3.05512,238695,Europe/Paris,11
-FR,2970479,Paris 15 Vaugirard,Paris 15 Vaugirard,11,Île-de-France,48.8412,2.3003,229713,Europe/Paris,12
-FR,2983990,Rennes,Rennes,53,Brittany,48.11109,-1.67431,227830,Europe/Paris,13
-FR,2984114,Reims,Reims,44,Grand Est,49.26526,4.02853,196565,Europe/Paris,14
-FR,3003796,Le Havre,Le Havre,28,Normandy,49.49346,0.10785,185972,Europe/Paris,15
-FR,2994540,Paris 20 Ménilmontant,Paris 20 Menilmontant,11,Île-de-France,48.8646,2.3984,185140,Europe/Paris,16
-FR,3029374,Paris 18 Buttes-Montmartre,Paris 18 Buttes-Montmartre,11,Île-de-France,48.8925,2.3444,183127,Europe/Paris,17
-FR,3015772,Paris 13 Gobelins,Paris 13 Gobelins,11,Île-de-France,48.8322,2.3561,181271,Europe/Paris,18
-FR,3029372,Paris 19 Buttes-Chaumont,Paris 19 Buttes-Chaumont,11,Île-de-France,48.8817,2.3822,178691,Europe/Paris,19
-FR,2980291,Saint-Étienne,Saint-Etienne,84,Auvergne-Rhône-Alpes,45.43389,4.39,176280,Europe/Paris,20
-FR,2972328,Toulon,Toulon,93,Provence-Alpes-Côte d'Azur,43.12442,5.92836,168701,Europe/Paris,21
-FR,3037656,Angers,Angers,52,Pays de la Loire,47.47156,-0.55202,168279,Europe/Paris,22
-FR,3021372,Dijon,Dijon,27,Bourgogne-Franche-Comté,47.31344,5.01391,159941,Europe/Paris,23
-FR,2988394,Paris 16 Passy,Paris 16 Passy,11,Île-de-France,48.8637,2.2769,159386,Europe/Paris,24
-FR,3034610,Paris 17 Batignolles-Monceau,Paris 17 Batignolles-Monceau,11,Île-de-France,48.8835,2.3219,159212,Europe/Paris,25
-FR,3014728,Grenoble,Grenoble,84,Auvergne-Rhône-Alpes,45.17869,5.71479,158552,Europe/Paris,26
-FR,2990363,Nîmes,Nimes,76,Occitanie,43.83665,4.35788,148236,Europe/Paris,27
-FR,3024635,Clermont-Ferrand,Clermont-Ferrand,84,Auvergne-Rhône-Alpes,45.77969,3.08682,147865,Europe/Paris,28
-FR,3038354,Aix-en-Provence,Aix-en-Provence,93,Provence-Alpes-Côte d'Azur,43.5283,5.44973,146821,Europe/Paris,29
-FR,8533870,Saint-Quentin-en-Yvelines,Saint-Quentin-en-Yvelines,11,Île-de-France,48.77186,2.01891,146598,Europe/Paris,30
-FR,3030300,Brest,Brest,53,Brittany,48.39029,-4.48628,144899,Europe/Paris,31
-FR,3003603,Le Mans,Le Mans,52,Pays de la Loire,48.0021,0.20251,144515,Europe/Paris,32
-FR,3037854,Amiens,Amiens,32,Hauts-de-France,49.9,2.3,143086,Europe/Paris,33
-FR,2972191,Tours,Tours,24,Centre-Val de Loire,47.39484,0.70398,141621,Europe/Paris,34
-FR,2998286,Limoges,Limoges,75,New Aquitaine,45.83362,1.24759,141176,Europe/Paris,35
-FR,2986082,Paris 11 Popincourt,Paris 11 Popincourt,11,Île-de-France,48.8574,2.3795,138170,Europe/Paris,36
-FR,2983854,Paris 12 Reuilly,Paris 12 Reuilly,11,Île-de-France,48.8412,2.3876,138024,Europe/Paris,37
-FR,2989781,Paris 14 Observatoire,Paris 14 Observatoire,11,Île-de-France,48.8331,2.3264,136455,Europe/Paris,38
-FR,2968254,Villeurbanne,Villeurbanne,84,Auvergne-Rhône-Alpes,45.76601,4.8795,131445,Europe/Paris,39
-FR,3033123,Besançon,Besancon,27,Bourgogne-Franche-Comté,47.24878,6.01815,128426,Europe/Paris,40
-FR,2994160,Metz,Metz,44,Grand Est,49.11911,6.17269,123914,Europe/Paris,41
-FR,2989317,Orléans,Orleans,24,Centre-Val de Loire,47.90248,1.90407,116344,Europe/Paris,42
-FR,2982652,Rouen,Rouen,28,Normandy,49.44313,1.09932,116331,Europe/Paris,43
-FR,2991214,Mulhouse,Mulhouse,44,Grand Est,47.75205,7.32866,111430,Europe/Paris,44
-FR,2992090,Montreuil,Montreuil,11,Île-de-France,48.86415,2.44322,111240,Europe/Paris,45
-FR,2987914,Perpignan,Perpignan,76,Occitanie,42.69764,2.89541,110706,Europe/Paris,46
-FR,3029241,Caen,Caen,28,Normandy,49.18585,-0.35912,110624,Europe/Paris,47
-FR,3031137,Boulogne-Billancourt,Boulogne-Billancourt,11,Île-de-France,48.83545,2.24128,108782,Europe/Paris,48
-FR,2990999,Nancy,Nancy,44,Grand Est,48.68439,6.18496,105058,Europe/Paris,49
-FR,3037044,Argenteuil,Argenteuil,11,Île-de-France,48.94788,2.24744,101475,Europe/Paris,50
-FR,2982681,Roubaix,Roubaix,32,Hauts-de-France,50.69421,3.17456,99507,Europe/Paris,51
-FR,2972284,Tourcoing,Tourcoing,32,Hauts-de-France,50.72391,3.16117,99160,Europe/Paris,52
-FR,2980916,Saint-Denis,Saint-Denis,11,Île-de-France,48.93564,2.35387,96128,Europe/Paris,53
-FR,3035681,Avignon,Avignon,93,Provence-Alpes-Côte d'Azur,43.94834,4.80892,89769,Europe/Paris,54
-FR,3036572,Asnières-sur-Seine,Asnieres-sur-Seine,11,Île-de-France,48.91667,2.28333,86742,Europe/Paris,55
-FR,2990970,Nanterre,Nanterre,11,Île-de-France,48.89198,2.20675,86719,Europe/Paris,56
-FR,3020686,Dunkirk,Dunkirk,32,Hauts-de-France,51.0344,2.37681,86263,Europe/Paris,57
-FR,2986495,Poitiers,Poitiers,75,New Aquitaine,46.58261,0.34348,85960,Europe/Paris,58
-FR,2969679,Versailles,Versailles,11,Île-de-France,48.80359,2.13424,85416,Europe/Paris,59
-FR,3023141,Courbevoie,Courbevoie,11,Île-de-France,48.89672,2.25666,85158,Europe/Paris,60
-FR,3022530,Créteil,Creteil,11,Île-de-France,48.79266,2.46569,84833,Europe/Paris,61
-FR,3020216,Paris 10 Entrepôt,Paris 10 Entrepot,11,Île-de-France,48.8709,2.3561,83873,Europe/Paris,62
-FR,2988358,Pau,Pau,75,New Aquitaine,43.31117,-0.35583,82697,Europe/Paris,63
-FR,3024266,Colombes,Colombes,11,Île-de-France,48.91882,2.25404,82300,Europe/Paris,64
-FR,2967849,Vitry-sur-Seine,Vitry-sur-Seine,11,Île-de-France,48.78716,2.40332,81001,Europe/Paris,65
-FR,3036145,Aulnay-sous-Bois,Aulnay-sous-Bois,11,Île-de-France,48.93814,2.49402,80615,Europe/Paris,66
-FR,3006787,La Rochelle,La Rochelle,75,New Aquitaine,46.16308,-1.15222,76810,Europe/Paris,67
-FR,3027105,Champigny-sur-Marne,Champigny-sur-Marne,11,Île-de-France,48.81642,2.49366,76726,Europe/Paris,68
-FR,2982235,Rueil-Malmaison,Rueil-Malmaison,11,Île-de-France,48.8765,2.18967,76616,Europe/Paris,69
-FR,3037456,Antibes,Antibes,93,Provence-Alpes-Côte d'Azur,43.58127,7.12487,76393,Europe/Paris,70
-FR,12808675,Gare,Gare,11,Île-de-France,48.83337,2.37513,75580,Europe/Paris,71
-FR,2978179,Saint-Maur-des-Fossés,Saint-Maur-des-Fosses,11,Île-de-France,48.79395,2.49323,75402,Europe/Paris,72
-FR,3028808,Cannes,Cannes,93,Provence-Alpes-Côte d'Azur,43.55135,7.01275,74545,Europe/Paris,73
-FR,3029162,Calais,Calais,32,Hauts-de-France,50.95194,1.85635,74433,Europe/Paris,74
-FR,3032833,Béziers,Beziers,76,Occitanie,43.34122,3.21402,74081,Europe/Paris,75
-FR,3036386,Aubervilliers,Aubervilliers,11,Île-de-France,48.91667,2.38333,70914,Europe/Paris,76
-FR,2994393,Mérignac,Merignac,75,New Aquitaine,44.84247,-0.64512,69791,Europe/Paris,77
-FR,3031005,Bourges,Bourges,24,Centre-Val de Loire,47.08333,2.4,67987,Europe/Paris,78
-FR,2977921,Saint-Nazaire,Saint-Nazaire,52,Pays de la Loire,47.27506,-2.2179,67054,Europe/Paris,79
-FR,3024297,Colmar,Colmar,44,Grand Est,48.08078,7.35584,65405,Europe/Paris,80
-FR,12808676,Maison Blanche,Maison Blanche,11,Île-de-France,48.82586,2.3508,64302,Europe/Paris,81
-FR,2971053,Valence,Valence,84,Auvergne-Rhône-Alpes,44.9256,4.90956,63864,Europe/Paris,82
-FR,2984701,Quimper,Quimper,53,Brittany,47.99597,-4.09795,63849,Europe/Paris,83
-FR,3020839,Drancy,Drancy,11,Île-de-France,48.92578,2.44533,62488,Europe/Paris,84
-FR,2990189,Noisy-le-Grand,Noisy-le-Grand,11,Île-de-France,48.84979,2.56266,62420,Europe/Paris,85
-FR,6543862,Villeneuve-d'Ascq,Villeneuve-d'Ascq,32,Hauts-de-France,50.61669,3.16664,62400,Europe/Paris,86
-FR,3006414,La Seyne-sur-Mer,La Seyne-sur-Mer,93,Provence-Alpes-Côte d'Azur,43.10322,5.87816,62330,Europe/Paris,87
-FR,2998975,Levallois-Perret,Levallois-Perret,11,Île-de-France,48.89389,2.28864,62178,Europe/Paris,88
-FR,3027422,Chambéry,Chambery,84,Auvergne-Rhône-Alpes,45.56628,5.92079,61640,Europe/Paris,89
-FR,3012649,Issy-les-Moulineaux,Issy-les-Moulineaux,11,Île-de-France,48.82104,2.27718,61447,Europe/Paris,90
-FR,2990611,Neuilly-sur-Seine,Neuilly-sur-Seine,11,Île-de-France,48.8846,2.26965,61300,Europe/Paris,91
-FR,2971549,Troyes,Troyes,44,Grand Est,48.30073,4.08524,60785,Europe/Paris,92
-FR,3012142,Juan-les-Pins,Juan-les-Pins,93,Provence-Alpes-Côte d'Azur,43.56945,7.11309,60000,Europe/Paris,93
-FR,3037423,Antony,Antony,11,Île-de-France,48.75329,2.29668,59845,Europe/Paris,94
-FR,3006767,La Roche-sur-Yon,La Roche-sur-Yon,52,Pays de la Loire,46.66974,-1.42757,59410,Europe/Paris,95
-FR,2997577,Lorient,Lorient,53,Brittany,47.74817,-3.37177,58112,Europe/Paris,96
-FR,2976043,Sarcelles,Sarcelles,11,Île-de-France,48.99739,2.37821,57979,Europe/Paris,97
-FR,2987805,Pessac,Pessac,75,New Aquitaine,44.80565,-0.6324,57944,Europe/Paris,98
-FR,3012621,Ivry-sur-Seine,Ivry-sur-Seine,11,Île-de-France,48.81568,2.38487,57897,Europe/Paris,99
-FR,3019265,Évreux,Evreux,28,Normandy,49.02414,1.15082,57795,Europe/Paris,100
+FR,2988507,Paris,Paris,11,Île-de-France,48.85341,2.3488,2103778,Europe/Paris,1
+FR,2995469,Marseille,Marseille,93,Provence-Alpes-Côte d'Azur,43.29695,5.38107,886040,Europe/Paris,2
+FR,2996944,Lyon,Lyon,84,Auvergne-Rhône-Alpes,45.74906,4.84789,519127,Europe/Paris,3
+FR,2972315,Toulouse,Toulouse,76,Occitanie,43.60426,1.44367,514819,Europe/Paris,4
+FR,2990440,Nice,Nice,93,Provence-Alpes-Côte d'Azur,43.70313,7.26608,357737,Europe/Paris,5
+FR,2990969,Nantes,Nantes,52,Pays de la Loire,47.21725,-1.55336,327734,Europe/Paris,6
+FR,2992166,Montpellier,Montpellier,76,Occitanie,43.61093,3.87635,310240,Europe/Paris,7
+FR,2973783,Strasbourg,Strasbourg,44,Grand Est,48.58392,7.74553,293771,Europe/Paris,8
+FR,3031582,Bordeaux,Bordeaux,75,New Aquitaine,44.84124,-0.58046,267991,Europe/Paris,9
+FR,2998324,Lille,Lille,32,Hauts-de-France,50.63391,3.05512,238246,Europe/Paris,10
+FR,2983990,Rennes,Rennes,53,Brittany,48.11109,-1.67431,230890,Europe/Paris,11
+FR,2972328,Toulon,Toulon,93,Provence-Alpes-Côte d'Azur,43.12442,5.92836,179116,Europe/Paris,12
+FR,2984114,Reims,Reims,44,Grand Est,49.26526,4.02853,177674,Europe/Paris,13
+FR,2980291,Saint-Étienne,Saint-Etienne,84,Auvergne-Rhône-Alpes,45.43389,4.39,173136,Europe/Paris,14
+FR,3003796,Le Havre,Le Havre,28,Normandy,49.49346,0.10785,166687,Europe/Paris,15
+FR,2968254,Villeurbanne,Villeurbanne,84,Auvergne-Rhône-Alpes,45.76601,4.8795,163684,Europe/Paris,16
+FR,3021372,Dijon,Dijon,27,Bourgogne-Franche-Comté,47.31344,5.01391,161830,Europe/Paris,17
+FR,3037656,Angers,Angers,52,Pays de la Loire,47.47156,-0.55202,159022,Europe/Paris,18
+FR,3014728,Grenoble,Grenoble,84,Auvergne-Rhône-Alpes,45.17869,5.71479,156140,Europe/Paris,19
+FR,2990363,Nîmes,Nimes,76,Occitanie,43.83665,4.35788,151839,Europe/Paris,20
+FR,3038354,Aix-en-Provence,Aix-en-Provence,93,Provence-Alpes-Côte d'Azur,43.5283,5.44973,149695,Europe/Paris,21
+FR,2980916,Saint-Denis,Saint-Denis,11,Île-de-France,48.93564,2.35387,149077,Europe/Paris,22
+FR,3024635,Clermont-Ferrand,Clermont-Ferrand,84,Auvergne-Rhône-Alpes,45.77969,3.08682,146351,Europe/Paris,23
+FR,3003603,Le Mans,Le Mans,52,Pays de la Loire,48.0021,0.20251,146249,Europe/Paris,24
+FR,3030300,Brest,Brest,53,Brittany,48.39029,-4.48628,142346,Europe/Paris,25
+FR,2972191,Tours,Tours,24,Centre-Val de Loire,47.39484,0.70398,139259,Europe/Paris,26
+FR,3037854,Amiens,Amiens,32,Hauts-de-France,49.9,2.3,136449,Europe/Paris,27
+FR,3037543,Annecy,Annecy,84,Auvergne-Rhône-Alpes,45.90878,6.12565,132117,Europe/Paris,28
+FR,2998286,Limoges,Limoges,75,New Aquitaine,45.83362,1.24759,129937,Europe/Paris,29
+FR,2994160,Metz,Metz,44,Grand Est,49.11911,6.17269,122572,Europe/Paris,30
+FR,2987914,Perpignan,Perpignan,76,Occitanie,42.69764,2.89541,121616,Europe/Paris,31
+FR,3031137,Boulogne-Billancourt,Boulogne-Billancourt,11,Île-de-France,48.83545,2.24128,119019,Europe/Paris,32
+FR,3033123,Besançon,Besancon,27,Bourgogne-Franche-Comté,47.24878,6.01815,118489,Europe/Paris,33
+FR,2982652,Rouen,Rouen,28,Normandy,49.44313,1.09932,117662,Europe/Paris,34
+FR,2989317,Orléans,Orleans,24,Centre-Val de Loire,47.90248,1.90407,116357,Europe/Paris,35
+FR,2992090,Montreuil,Montreuil,11,Île-de-France,48.86415,2.44322,111934,Europe/Paris,36
+FR,3029241,Caen,Caen,28,Normandy,49.18585,-0.35912,109400,Europe/Paris,37
+FR,3037044,Argenteuil,Argenteuil,11,Île-de-France,48.94788,2.24744,106130,Europe/Paris,38
+FR,2991214,Mulhouse,Mulhouse,44,Grand Est,47.75205,7.32866,104978,Europe/Paris,39
+FR,2990999,Nancy,Nancy,44,Grand Est,48.68439,6.18496,103671,Europe/Paris,40
+FR,2972284,Tourcoing,Tourcoing,32,Hauts-de-France,50.72391,3.16117,98772,Europe/Paris,41
+FR,2982681,Roubaix,Roubaix,32,Hauts-de-France,50.69421,3.17456,98286,Europe/Paris,42
+FR,2990970,Nanterre,Nanterre,11,Île-de-France,48.89198,2.20675,97783,Europe/Paris,43
+FR,2967849,Vitry-sur-Seine,Vitry-sur-Seine,11,Île-de-France,48.78716,2.40332,93963,Europe/Paris,44
+FR,3036572,Asnières-sur-Seine,Asnieres-sur-Seine,11,Île-de-France,48.91667,2.28333,93941,Europe/Paris,45
+FR,3022530,Créteil,Creteil,11,Île-de-France,48.79266,2.46569,93397,Europe/Paris,46
+FR,3035681,Avignon,Avignon,93,Provence-Alpes-Côte d'Azur,43.94834,4.80892,92188,Europe/Paris,47
+FR,3024266,Colombes,Colombes,11,Île-de-France,48.91882,2.25404,91053,Europe/Paris,48
+FR,2986495,Poitiers,Poitiers,75,New Aquitaine,46.58261,0.34348,89916,Europe/Paris,49
+FR,3036386,Aubervilliers,Aubervilliers,11,Île-de-France,48.91667,2.38333,88365,Europe/Paris,50
+FR,3036145,Aulnay-sous-Bois,Aulnay-sous-Bois,11,Île-de-France,48.93814,2.49402,87599,Europe/Paris,51
+FR,3020686,Dunkerque,Dunkerque,32,Hauts-de-France,51.0344,2.37681,86263,Europe/Paris,52
+FR,2969679,Versailles,Versailles,11,Île-de-France,48.80359,2.13424,84095,Europe/Paris,53
+FR,3023141,Courbevoie,Courbevoie,11,Île-de-France,48.89672,2.25666,82902,Europe/Paris,54
+FR,2982235,Rueil-Malmaison,Rueil-Malmaison,11,Île-de-France,48.8765,2.18967,82874,Europe/Paris,55
+FR,3032833,Béziers,Beziers,76,Occitanie,43.34122,3.21402,81545,Europe/Paris,56
+FR,2988358,Pau,Pau,75,New Aquitaine,43.31117,-0.35583,80441,Europe/Paris,57
+FR,3006787,La Rochelle,La Rochelle,75,New Aquitaine,46.16308,-1.15222,79851,Europe/Paris,58
+FR,3025466,Cherbourg-en-Cotentin,Cherbourg-en-Cotentin,28,Normandy,49.63984,-1.61636,78258,Europe/Paris,59
+FR,2994393,Mérignac,Merignac,75,New Aquitaine,44.84247,-0.64512,78090,Europe/Paris,60
+FR,3027105,Champigny-sur-Marne,Champigny-sur-Marne,11,Île-de-France,48.81642,2.49366,78072,Europe/Paris,61
+FR,3037456,Antibes,Antibes,93,Provence-Alpes-Côte d'Azur,43.58127,7.12487,77637,Europe/Paris,62
+FR,2978179,Saint-Maur-des-Fossés,Saint-Maur-des-Fosses,11,Île-de-France,48.79395,2.49323,76572,Europe/Paris,63
+FR,3038334,Ajaccio,Ajaccio,94,Corsica,41.91886,8.73812,76320,Europe/Paris,64
+FR,2977921,Saint-Nazaire,Saint-Nazaire,52,Pays de la Loire,47.27506,-2.2179,74568,Europe/Paris,65
+FR,3028808,Cannes,Cannes,93,Provence-Alpes-Côte d'Azur,43.55135,7.01275,74350,Europe/Paris,66
+FR,2990189,Noisy-le-Grand,Noisy-le-Grand,11,Île-de-France,48.84979,2.56266,72978,Europe/Paris,67
+FR,3020839,Drancy,Drancy,11,Île-de-France,48.92578,2.44533,72390,Europe/Paris,68
+FR,3027883,Cergy,Cergy,11,Île-de-France,49.03645,2.07613,70906,Europe/Paris,69
+FR,2998975,Levallois-Perret,Levallois-Perret,11,Île-de-France,48.89389,2.28864,68092,Europe/Paris,70
+FR,3012649,Issy-les-Moulineaux,Issy-les-Moulineaux,11,Île-de-France,48.82104,2.27718,67669,Europe/Paris,71
+FR,3029162,Calais,Calais,32,Hauts-de-France,50.95194,1.85635,67571,Europe/Paris,72
+FR,2987805,Pessac,Pessac,75,New Aquitaine,44.80565,-0.6324,67339,Europe/Paris,73
+FR,3024297,Colmar,Colmar,44,Grand Est,48.08078,7.35584,66970,Europe/Paris,74
+FR,3019256,Évry-Courcouronnes,Evry-Courcouronnes,11,Île-de-France,48.6328,2.44049,66919,Europe/Paris,75
+FR,2970072,Vénissieux,Venissieux,84,Auvergne-Rhône-Alpes,45.69706,4.88593,65502,Europe/Paris,76
+FR,3012621,Ivry-sur-Seine,Ivry-sur-Seine,11,Île-de-France,48.81568,2.38487,65064,Europe/Paris,77
+FR,2971053,Valence,Valence,84,Auvergne-Rhône-Alpes,44.9256,4.90956,64458,Europe/Paris,78
+FR,3024597,Clichy,Clichy,11,Île-de-France,48.90018,2.30952,64410,Europe/Paris,79
+FR,2984701,Quimper,Quimper,53,Brittany,47.99597,-4.09795,64385,Europe/Paris,80
+FR,3037423,Antony,Antony,11,Île-de-France,48.75329,2.29668,64263,Europe/Paris,81
+FR,3031005,Bourges,Bourges,24,Centre-Val de Loire,47.08333,2.4,64186,Europe/Paris,82
+FR,3006414,La Seyne-sur-Mer,La Seyne-sur-Mer,93,Provence-Alpes-Côte d'Azur,43.10322,5.87816,63732,Europe/Paris,83
+FR,2993002,Montauban,Montauban,76,Occitanie,44.01759,1.3542,62945,Europe/Paris,84
+FR,6543862,Villeneuve-d'Ascq,Villeneuve-d'Ascq,32,Hauts-de-France,50.61669,3.16664,62868,Europe/Paris,85
+FR,3005269,Le Blanc-Mesnil,Le Blanc-Mesnil,11,Île-de-France,48.93872,2.46138,62376,Europe/Paris,86
+FR,2971549,Troyes,Troyes,44,Grand Est,48.30073,4.08524,62088,Europe/Paris,87
+FR,2988621,Pantin,Pantin,11,Île-de-France,48.89437,2.40935,61929,Europe/Paris,88
+FR,2968705,Villejuif,Villejuif,11,Île-de-France,48.7939,2.35992,60183,Europe/Paris,89
+FR,3027422,Chambéry,Chambery,84,Auvergne-Rhône-Alpes,45.56628,5.92079,59964,Europe/Paris,90
+FR,2990355,Niort,Niort,75,New Aquitaine,46.32313,-0.45877,59854,Europe/Paris,91
+FR,3017253,Fréjus,Frejus,93,Provence-Alpes-Côte d'Azur,43.43325,6.73555,59719,Europe/Paris,92
+FR,2990611,Neuilly-sur-Seine,Neuilly-sur-Seine,11,Île-de-France,48.8846,2.26965,59538,Europe/Paris,93
+FR,2976043,Sarcelles,Sarcelles,11,Île-de-France,48.99739,2.37821,59173,Europe/Paris,94
+FR,3024783,Clamart,Clamart,11,Île-de-France,48.80299,2.26692,58576,Europe/Paris,95
+FR,2997577,Lorient,Lorient,53,Brittany,47.74817,-3.37177,58329,Europe/Paris,96
+FR,2990919,Narbonne,Narbonne,76,Occitanie,43.18396,3.00141,57587,Europe/Paris,97
+FR,3032179,Bobigny,Bobigny,11,Île-de-France,48.90982,2.45012,56927,Europe/Paris,98
+FR,2994798,Meaux,Meaux,11,Île-de-France,48.96014,2.87885,56905,Europe/Paris,99
+FR,2996568,Maisons-Alfort,Maisons-Alfort,11,Île-de-France,48.81171,2.43945,56799,Europe/Paris,100
