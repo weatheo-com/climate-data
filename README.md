@@ -61,7 +61,7 @@ Values are reanalysis grid-cell values, not station observations: they can diffe
 | FR | "Liste des communes de France", data.gouv.fr | Licence Ouverte 2.0 |
 | PT | CAOP 2025, Direção-Geral do Território; municipal seat points from GeoNames | CC BY; CC BY 4.0 |
 | LU | STATEC LAU codes, data.public.lu; coordinates from GeoNames | CC0; GeoNames CC BY 4.0 |
-| RS | RZS "Opštine i gradovi", data.gov.rs; coordinates from GeoNames | "sodl" (commercial reuse to be verified); GeoNames CC BY 4.0 |
+| RS | RZS "Opštine i gradovi", data.gov.rs; coordinates from GeoNames | SODL (commercial reuse allowed with source, download date 2026-11-13, address and changes stated); GeoNames CC BY 4.0 |
 
 URLs, files and retrieval dates: [docs/places-sources.md](docs/places-sources.md).
 

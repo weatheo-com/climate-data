@@ -33,7 +33,7 @@ The municipal climate datasets (FR, PT, LU, RS) take their list of municipalitie
 
 - Source: Republički zavod za statistiku (RZS), "Opštine i gradovi" (SIFOPS) on data.gov.rs
 - URL: <https://data.gov.rs/sr/datasets/opshtine-i-gradovi/>
-- Licence: "sodl" as listed on data.gov.rs; commercial reuse to be verified
+- Licence: Serbian Open Data Licence (SODL), https://data.gov.rs/sr/terms/: reuse for commercial and non-commercial purposes, free of charge, if each reuse names the publishing body (RZS), the download date (2026-11-13), the address and the changes made (here: coordinates from GeoNames and climate values added)
 - Files used: `opshtine_sifops.csv` (<https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/SIFOPS/1/csv>)
 - Coordinates: GeoNames, <https://download.geonames.org/export/dump/>, licence CC BY 4.0; file `RS.zip` (`RS.txt`, ADM3 features)
 - Retrieved: 2026-11-13

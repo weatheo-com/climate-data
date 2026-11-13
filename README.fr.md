@@ -61,7 +61,7 @@ Ce sont des valeurs de mailles de réanalyse, pas des observations de stations :
 | FR | « Liste des communes de France », data.gouv.fr | Licence Ouverte 2.0 |
 | PT | CAOP 2025, Direção-Geral do Território ; points des sièges municipaux GeoNames | CC BY ; CC BY 4.0 |
 | LU | Codes LAU du STATEC, data.public.lu ; coordonnées GeoNames | CC0 ; GeoNames CC BY 4.0 |
-| RS | RZS « Opštine i gradovi », data.gov.rs ; coordonnées GeoNames | « sodl » (réutilisation commerciale à vérifier) ; GeoNames CC BY 4.0 |
+| RS | RZS « Opštine i gradovi », data.gov.rs ; coordonnées GeoNames | SODL (réutilisation commerciale permise en citant la source, la date de téléchargement 13/11/2026, l'adresse et les modifications) ; GeoNames CC BY 4.0 |
 
 URL, fichiers et dates de récupération : [docs/places-sources.md](docs/places-sources.md).
 

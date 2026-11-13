@@ -43,7 +43,7 @@ PLACE_SOURCES = {
     "LU": [{"title": "STATEC, Codes LAU des communes du Grand-Duché de Luxembourg (data.public.lu), licence CC0",
             "path": "https://data.public.lu/fr/datasets/codes-lau-des-communes-du-grand-duche-de-luxembourg/"},
            GEONAMES],
-    "RS": [{"title": "RZS, Opštine i gradovi (data.gov.rs), licence sodl (commercial reuse to be verified)",
+    "RS": [{"title": "RZS, Opštine i gradovi (data.gov.rs), downloaded 2026-11-13, Serbian Open Data Licence (SODL); modified: coordinates and climate values added",
             "path": "https://data.gov.rs/sr/datasets/opshtine-i-gradovi/"},
            GEONAMES],
 }
