@@ -28,9 +28,9 @@ Les CSV de weatheo.com contiennent aussi des colonnes issues d'OpenWeather (`owm
 
 Les mailles de la réanalyse ne sont pas des observations de stations : les valeurs peuvent différer des records officiels nationaux, de plusieurs degrés certains jours en centre-ville dense, sur la côte ou en montagne.
 
-## Normales climatiques par commune (FR, PT, LU, RS)
+## Normales climatiques par commune (FR, DE, GB, PT, LU, RS)
 
-Normales climatiques pour chaque commune de quatre pays, publiées par Weatheo (by CODELIO). Page de présentation : [Weatheo](https://weatheo.com/fr/open-data). Chaque pays a ses fichiers dans `data/<CC>/` en CSV, parquet et `datapackage.json` ; ils sont aussi joints à la release GitHub v1.0.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/<fichier>`). Les deux CSV de la France (60 à 70 Mo chacun) ne sont que sur la release, trop lourds pour git ; les fichiers parquet de la France sont dans le dépôt.
+Normales climatiques pour chaque commune de six pays, publiées par Weatheo (by CODELIO). Page de présentation : [Weatheo](https://weatheo.com/fr/open-data). Chaque pays a ses fichiers dans `data/<CC>/` en CSV, parquet et `datapackage.json` ; ils sont aussi joints à la release GitHub v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<fichier>`; les fichiers v1.0.0 de FR, PT, LU et RS restent valables). Les deux CSV de la France (60 à 70 Mo chacun) ne sont que sur la release, trop lourds pour git ; les fichiers parquet de la France sont dans le dépôt.
 
 | Pays | Communes | Code |
 |---|---|---|
@@ -46,11 +46,11 @@ Deux jeux de données par pays :
 - **`<cc>_climate_normals_1991_2020`** : normales mensuelles 1991-2020 par commune. Colonnes : `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `elevation_m` (m), `grid_elevation_m` (m), `month` (1-12), `tmean_c` (température moyenne de l'air à 2 m, °C), `precip_mm` (précipitations mensuelles moyennes, mm), `period`, `weatheo_url`.
 - **`<cc>_climate_shift_1961_1990_vs_1991_2020`** : par commune et par mois (1-12 et année), la valeur 1961-1990, la valeur 1991-2020 et l'écart, pour la température (°C) et les précipitations (%).
 
-`weatheo_url` renvoie vers la page de prévisions Weatheo de la commune quand elle existe (FR 30 631 sur 34 734 ; PT 139 sur 308 ; LU 4 sur 100 ; RS 86 sur 169), sinon elle est vide.
+`weatheo_url` renvoie vers la page de prévisions Weatheo de la commune quand elle existe (FR 30 631 sur 34 734 ; PT 139 sur 308 ; LU 4 sur 100 ; RS 86 sur 169 ; DE 990 sur 10 949 ; GB 708 sur 8 545), sinon elle est vide.
 
 ### Méthode
 
-Moyennes mensuelles Copernicus ERA5-Land (0,1°, environ 9 km), avec les moyennes mensuelles ERA5 (0,25°) en secours là où la maille ERA5-Land n'a pas de valeur (côtes). Chaque commune prend la maille la plus proche de son point de référence (la mairie pour la France, le siège municipal pour le Portugal) (`grid_lat`, `grid_lon`, `grid_source`). Les températures sont corrigées de l'altitude : chaque valeur est ramenée de l'altitude du modèle de la maille (`grid_elevation_m`, orographie ERA5-Land d'ECMWF) à l'altitude du point de référence de la commune (`elevation_m`, issue du Copernicus DEM GLO-90) avec un gradient fixe de 6,5 °C par km : `t = t_cell + 0,0065 × (grid_elevation_m − elevation_m)`. Les précipitations ne sont pas corrigées. L'écart de température entre les deux périodes ne dépend pas de cette correction. Les normales sont des moyennes sur 30 ans des valeurs mensuelles. Les fichiers sont produits par les scripts ouverts de `src/climate_data/` et contrôlés par un script de validation. Ni OpenWeather, ni les données de stations Météo-France, ni Open-Meteo ne sont utilisés pour ces jeux de données.
+Moyennes mensuelles Copernicus ERA5-Land (0,1°, environ 9 km), avec les moyennes mensuelles ERA5 (0,25°) en secours là où la maille ERA5-Land n'a pas de valeur (côtes). Chaque commune prend la maille la plus proche de son point de référence (la mairie pour la France, le siège municipal pour le Portugal, point municipal du BKG pour l'Allemagne, centroïde de la zone bâtie ONS pour la Grande-Bretagne) (`grid_lat`, `grid_lon`, `grid_source`). Les températures sont corrigées de l'altitude : chaque valeur est ramenée de l'altitude du modèle de la maille (`grid_elevation_m`, orographie ERA5-Land d'ECMWF) à l'altitude du point de référence de la commune (`elevation_m`, issue du Copernicus DEM GLO-90) avec un gradient fixe de 6,5 °C par km : `t = t_cell + 0,0065 × (grid_elevation_m − elevation_m)`. Les précipitations ne sont pas corrigées. L'écart de température entre les deux périodes ne dépend pas de cette correction. Les normales sont des moyennes sur 30 ans des valeurs mensuelles. Les fichiers sont produits par les scripts ouverts de `src/climate_data/` et contrôlés par un script de validation. Ni OpenWeather, ni les données de stations Météo-France, ni Open-Meteo ne sont utilisés pour ces jeux de données.
 
 ### Limites
 
@@ -64,6 +64,8 @@ Ce sont des valeurs de mailles de réanalyse, pas des observations de stations :
 | PT | CAOP 2025, Direção-Geral do Território ; points des sièges municipaux GeoNames | CC BY ; CC BY 4.0 |
 | LU | Codes LAU du STATEC, data.public.lu ; coordonnées GeoNames | CC0 ; GeoNames CC BY 4.0 |
 | RS | RZS « Opštine i gradovi », data.gov.rs ; coordonnées GeoNames | SODL (réutilisation commerciale permise en citant la source, la date de téléchargement 13/11/2026, l'adresse et les modifications) ; GeoNames CC BY 4.0 |
+| DE | VG250-EW, BKG (https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-mit-einwohnerzahlen-ebenen-stand-31-12-vg250-ew-ebenen-31-12.html) ; point municipal du BKG | dl-de/by-2-0 (Datenlizenz Deutschland Namensnennung 2.0). © GeoBasis-DE / BKG (2026), data changed (climate values added) |
+| GB | ONS Built-up areas (décembre 2022), https://geoportal.statistics.gov.uk/ ; centroïde de la zone bâtie | OGL v3.0. Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2022 |
 
 URL, fichiers et dates de récupération : [docs/places-sources.md](docs/places-sources.md).
 

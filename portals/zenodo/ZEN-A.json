@@ -1,5 +1,5 @@
 {
-  "title": "Monthly climate normals 1991-2020 for 34,734 French and 577 other European municipalities (FR, PT, LU, RS)",
+  "title": "Monthly climate normals 1991-2020 for 54,805 municipalities in France, Germany, Great Britain, Portugal, Luxembourg and Serbia",
   "tags": [
     "climate normals",
     "1991-2020",
@@ -12,10 +12,14 @@
     "France",
     "Portugal",
     "Luxembourg",
-    "Serbia"
+    "Serbia",
+    "Germany",
+    "Great Britain",
+    "United Kingdom",
+    "Gemeinden"
   ],
-  "description": "<p>Monthly climate normals for 1991-2020 (mean 2 m air temperature and mean monthly precipitation) for every municipality of France, Portugal, Luxembourg and Serbia, one CSV and one Parquet file per country plus a Frictionless datapackage.json.</p><p>Columns: country, code, name, admin1_code, admin1_name, admin2_code, admin2_name, latitude, longitude, grid_lat, grid_lon, grid_source, elevation_m (m), grid_elevation_m (m), month (1-12), tmean_c (mean 2 m air temperature, degC), precip_mm (mean monthly precipitation, mm), period, weatheo_url (link to the Weatheo forecast page of the municipality when one exists, else empty).</p><p>Method: Copernicus ERA5-Land monthly means (0.1 degree, about 9 km), with ERA5 monthly means (0.25 degree) as fallback where the ERA5-Land cell has no value (coasts). Each municipality takes the nearest grid cell to its reference point (town hall for France, municipal seat for Portugal); values are 30-year means of the monthly values. These are reanalysis grid-cell values, not station observations: they can differ from official station normals, mostly near coasts, in cities and in steep terrain. Temperatures are adjusted for altitude: each value is moved from the grid cell's model elevation (grid_elevation_m, ERA5-Land orography, ECMWF) to the elevation of the municipality's reference point (elevation_m, from the Copernicus DEM GLO-90) with a fixed lapse rate of 6.5 °C per km: t = t_cell + 0.0065 × (grid_elevation_m − elevation_m). Precipitation is not adjusted. Built by open scripts in the repository and checked by a validator script.</p><p>Places and licences: France, 34,734 communes of metropolitan France and Corsica (INSEE code; overseas departments not included), from the list of communes on data.gouv.fr (Licence Ouverte 2.0); Portugal, 308 municipios (mainland, Madeira, Azores; DICO code), CAOP 2025 of the Direcao-Geral do Territorio (CC BY) with municipal seat coordinates from GeoNames (CC BY 4.0); Luxembourg, 100 communes (LAU code), STATEC LAU codes on data.public.lu (CC0) with GeoNames coordinates (CC BY 4.0); Serbia, 169 municipalities and cities (RZS code), RZS (Statistical Office of the Republic of Serbia) list “Opštine i gradovi”, downloaded 2026-11-13 from https://data.gov.rs/sr/datasets/opshtine-i-gradovi/ under the Serbian Open Data Licence (SODL, commercial reuse allowed with this attribution); modified: coordinates and climate values added with GeoNames coordinates (CC BY 4.0).</p><p>Attribution: Weatheo (by CODELIO), CC BY 4.0. Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Copernicus DEM GLO-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA.</p><p>Published by <a href=\"https://weatheo.com/en/open-data\">Weatheo</a>. Code (MIT) and build scripts: <a href=\"https://github.com/weatheo-com/climate-data\">GitHub repository</a>.</p>",
-  "version": "1.0.0",
+  "description": "<p>Monthly climate normals for 1991-2020 (mean 2 m air temperature and mean monthly precipitation) for every municipality of France, Germany, Great Britain, Portugal, Luxembourg and Serbia, one CSV and one Parquet file per country plus a Frictionless datapackage.json.</p><p>Columns: country, code, name, admin1_code, admin1_name, admin2_code, admin2_name, latitude, longitude, grid_lat, grid_lon, grid_source, elevation_m (m), grid_elevation_m (m), month (1-12), tmean_c (mean 2 m air temperature, degC), precip_mm (mean monthly precipitation, mm), period, weatheo_url (link to the Weatheo forecast page of the municipality when one exists, else empty).</p><p>Method: Copernicus ERA5-Land monthly means (0.1 degree, about 9 km), with ERA5 monthly means (0.25 degree) as fallback where the ERA5-Land cell has no value (coasts). Each municipality takes the nearest grid cell to its reference point (town hall for France, municipal seat for Portugal, BKG municipal point for Germany, ONS built-up area centroid for Great Britain); values are 30-year means of the monthly values. These are reanalysis grid-cell values, not station observations: they can differ from official station normals, mostly near coasts, in cities and in steep terrain. Temperatures are adjusted for altitude: each value is moved from the grid cell's model elevation (grid_elevation_m, ERA5-Land orography, ECMWF) to the elevation of the municipality's reference point (elevation_m, from the Copernicus DEM GLO-90) with a fixed lapse rate of 6.5 °C per km: t = t_cell + 0.0065 × (grid_elevation_m − elevation_m). Precipitation is not adjusted. Built by open scripts in the repository and checked by a validator script.</p><p>Places and licences: France, 34,734 communes of metropolitan France and Corsica (INSEE code; overseas departments not included), from the list of communes on data.gouv.fr (Licence Ouverte 2.0); Portugal, 308 municipios (mainland, Madeira, Azores; DICO code), CAOP 2025 of the Direcao-Geral do Territorio (CC BY) with municipal seat coordinates from GeoNames (CC BY 4.0); Luxembourg, 100 communes (LAU code), STATEC LAU codes on data.public.lu (CC0) with GeoNames coordinates (CC BY 4.0); Serbia, 169 municipalities and cities (RZS code), RZS (Statistical Office of the Republic of Serbia) list “Opštine i gradovi”, downloaded 2026-11-13 from https://data.gov.rs/sr/datasets/opshtine-i-gradovi/ under the Serbian Open Data Licence (SODL, commercial reuse allowed with this attribution); modified: coordinates and climate values added with GeoNames coordinates (CC BY 4.0); Germany, 10,949 Gemeinden (8-digit AGS), © GeoBasis-DE / BKG (2026), VG250-EW, licence dl-de/by-2-0 (Datenlizenz Deutschland Namensnennung 2.0, https://www.govdata.de/dl-de/by-2-0), data changed (climate values added); source https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-mit-einwohnerzahlen-ebenen-stand-31-12-vg250-ew-ebenen-31-12.html; reference point: BKG municipal point; Great Britain, 8,545 built-up areas (ONS code BUA22CD; England, Wales and Scotland, Northern Ireland not included), Built-up areas, December 2022. Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2022 (https://geoportal.statistics.gov.uk/); reference point: ONS built-up area centroid.</p><p>Version 1.1.0 (2026-11-13): adds Germany and Great Britain; files for the other four countries are unchanged.</p><p>Attribution: Weatheo (by CODELIO), CC BY 4.0. Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Copernicus DEM GLO-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA.</p><p>Published by <a href=\"https://weatheo.com/en/open-data\">Weatheo</a>. Code (MIT) and build scripts: <a href=\"https://github.com/weatheo-com/climate-data\">GitHub repository</a>.</p>",
+  "version": "1.1.0",
   "zenodo": {
     "related_identifiers": [
       {
@@ -51,6 +55,16 @@
       },
       {
         "identifier": "https://data.gov.rs/sr/datasets/opshtine-i-gradovi/",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-mit-einwohnerzahlen-ebenen-stand-31-12-vg250-ew-ebenen-31-12.html",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://geoportal.statistics.gov.uk/",
         "relation": "isDerivedFrom",
         "scheme": "url"
       },

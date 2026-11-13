@@ -28,9 +28,9 @@ The CSVs on weatheo.com also carry OpenWeather-derived columns (`owm_*`: means, 
 
 Reanalysis grid cells are not station observations: values can differ from official national records, by several degrees on individual days in dense city centres, coastal or mountain locations.
 
-## Municipal climate normals (FR, PT, LU, RS)
+## Municipal climate normals (FR, DE, GB, PT, LU, RS)
 
-Climate normals for every municipality of four countries, published by Weatheo (by CODELIO). Landing page: [Weatheo](https://weatheo.com/en/open-data). Each country has its files in `data/<CC>/` as CSV, parquet and a `datapackage.json`; they are also attached to the GitHub release v1.0.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/<file>`). The release names the files in lower case, with each country's datapackage as `<cc>_datapackage.json`. The two France CSVs (60-70 MB each) are only on the release, as they are too large for git; the France parquet files are in the repository.
+Climate normals for every municipality of six countries, published by Weatheo (by CODELIO). Landing page: [Weatheo](https://weatheo.com/en/open-data). Each country has its files in `data/<CC>/` as CSV, parquet and a `datapackage.json`; they are also attached to the GitHub release v1.1.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.1.0/<file>`; the v1.0.0 files for FR, PT, LU and RS stay valid). The release names the files in lower case, with each country's datapackage as `<cc>_datapackage.json`. The two France CSVs (60-70 MB each) are only on the release, as they are too large for git; the France parquet files are in the repository.
 
 | Country | Municipalities | Code |
 |---|---|---|
@@ -46,11 +46,11 @@ Two datasets per country:
 - **`<cc>_climate_normals_1991_2020`**: monthly climate normals 1991-2020 per municipality. Columns: `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `elevation_m` (m), `grid_elevation_m` (m), `month` (1-12), `tmean_c` (mean 2 m air temperature, °C), `precip_mm` (mean monthly precipitation, mm), `period`, `weatheo_url`.
 - **`<cc>_climate_shift_1961_1990_vs_1991_2020`**: per municipality and month (1-12 and annual), the 1961-1990 value, the 1991-2020 value and the shift, for temperature (°C) and precipitation (%).
 
-`weatheo_url` links to the Weatheo forecast page of the municipality when one exists (FR 30,631 of 34,734; PT 139 of 308; LU 4 of 100; RS 86 of 169), else it is empty.
+`weatheo_url` links to the Weatheo forecast page of the municipality when one exists (FR 30,631 of 34,734; PT 139 of 308; LU 4 of 100; RS 86 of 169; DE 990 of 10,949; GB 708 of 8,545), else it is empty.
 
 ### Method
 
-Copernicus ERA5-Land monthly means (0.1°, about 9 km), with ERA5 monthly means (0.25°) as fallback where the ERA5-Land cell has no value (coasts). Each municipality takes the nearest grid cell to its reference point (town hall for France, municipal seat for Portugal) (`grid_lat`, `grid_lon`, `grid_source`). Temperatures are adjusted for altitude: each value is moved from the grid cell's model elevation (`grid_elevation_m`, ERA5-Land orography, ECMWF) to the elevation of the municipality's reference point (`elevation_m`, from the Copernicus DEM GLO-90) with a fixed lapse rate of 6.5 °C per km: `t = t_cell + 0.0065 × (grid_elevation_m − elevation_m)`. Precipitation is not adjusted. The temperature shift between the two periods does not depend on this adjustment. The normals are 30-year means of the monthly values. The files are built by the open scripts in `src/climate_data/` and checked by a validator script. OpenWeather, Météo-France station data and Open-Meteo are not used for these datasets.
+Copernicus ERA5-Land monthly means (0.1°, about 9 km), with ERA5 monthly means (0.25°) as fallback where the ERA5-Land cell has no value (coasts). Each municipality takes the nearest grid cell to its reference point (town hall for France, municipal seat for Portugal, BKG municipal point for Germany, ONS built-up area centroid for Great Britain) (`grid_lat`, `grid_lon`, `grid_source`). Temperatures are adjusted for altitude: each value is moved from the grid cell's model elevation (`grid_elevation_m`, ERA5-Land orography, ECMWF) to the elevation of the municipality's reference point (`elevation_m`, from the Copernicus DEM GLO-90) with a fixed lapse rate of 6.5 °C per km: `t = t_cell + 0.0065 × (grid_elevation_m − elevation_m)`. Precipitation is not adjusted. The temperature shift between the two periods does not depend on this adjustment. The normals are 30-year means of the monthly values. The files are built by the open scripts in `src/climate_data/` and checked by a validator script. OpenWeather, Météo-France station data and Open-Meteo are not used for these datasets.
 
 ### Limits
 
@@ -64,6 +64,8 @@ Values are reanalysis grid-cell values, not station observations: they can diffe
 | PT | CAOP 2025, Direção-Geral do Território; municipal seat points from GeoNames | CC BY; CC BY 4.0 |
 | LU | STATEC LAU codes, data.public.lu; coordinates from GeoNames | CC0; GeoNames CC BY 4.0 |
 | RS | RZS "Opštine i gradovi", data.gov.rs; coordinates from GeoNames | SODL (commercial reuse allowed with source, download date 2026-11-13, address and changes stated); GeoNames CC BY 4.0 |
+| DE | VG250-EW, BKG (https://gdz.bkg.bund.de/index.php/default/verwaltungsgebiete-1-250-000-mit-einwohnerzahlen-ebenen-stand-31-12-vg250-ew-ebenen-31-12.html); municipal point from BKG | dl-de/by-2-0 (Datenlizenz Deutschland Namensnennung 2.0). © GeoBasis-DE / BKG (2026), data changed (climate values added) |
+| GB | ONS Built-up areas (December 2022), https://geoportal.statistics.gov.uk/; centroid of the built-up area | OGL v3.0. Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2022 |
 
 URLs, files and retrieval dates: [docs/places-sources.md](docs/places-sources.md).
 
