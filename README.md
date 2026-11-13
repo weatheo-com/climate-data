@@ -1,4 +1,4 @@
-[English](README.md) | [Francais](README.fr.md)
+[English](README.md) | [Français](README.fr.md)
 
 # Weatheo climate data
 
