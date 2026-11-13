@@ -1,0 +1,15 @@
+{
+  "title": "Weatheo : prévisions météo pour les communes de France",
+  "url": "https://weatheo.com/fr",
+  "type": "application",
+  "topic": "environment_and_energy",
+  "tags": [
+    "meteo",
+    "previsions",
+    "climat",
+    "communes",
+    "copernicus"
+  ],
+  "description": "Weatheo (by CODELIO) est un site de prévisions météo avec des pages de prévisions pour plus de 30 000 communes de France. Les pages de prévisions s'appuient sur le jeu de données « Liste des communes de France » (data.gouv.fr, Licence Ouverte 2.0) pour les communes et leurs codes INSEE.\n\nWeatheo publie aussi en données ouvertes, sous licence CC BY 4.0, les normales climatiques mensuelles 1991-2020 et l'écart 1961-1990 / 1991-2020 par commune, calculés à partir des réanalyses Copernicus ERA5-Land : voir les jeux « Normales climatiques mensuelles 1991-2020 par commune (France) » et « Évolution du climat par commune : 1961-1990 contre 1991-2020 (France) » sur data.gouv.fr, et la page https://weatheo.com/fr/open-data.",
+  "datasets_note": "Après création, rattacher à la réutilisation : le jeu « Liste des communes de France » (Licence Ouverte), FR-A et FR-B (le script publish_udata.py ne gère pas les réutilisations ; à faire dans l'interface, ou par POST /api/1/reuses/ avec ces jeux dans 'datasets')."
+}

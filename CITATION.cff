@@ -1,11 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
-title: "Weatheo climate data: city-level ERA5 temperature tables"
-abstract: "City-level temperature tables (means, anomalies against 2011-2025, hot days, tropical nights, frost days, extremes) behind the Weatheo climate reports, derived from ERA5 via Open-Meteo."
+title: "Weatheo climate data: ERA5 city temperature tables and municipal climate normals"
+abstract: "City-level temperature tables (means, anomalies against 2011-2025, hot days, tropical nights, frost days, extremes) behind the Weatheo climate reports, derived from ERA5 via Open-Meteo; and municipal climate datasets for France (34,863 communes), Portugal (308 municipios), Luxembourg (100 communes) and Serbia (169 municipalities and cities): monthly climate normals 1991-2020 (mean temperature, precipitation) and the climate shift between 1961-1990 and 1991-2020, from Copernicus ERA5-Land monthly means (ERA5 where ERA5-Land has no value), nearest grid cell per municipality. Contains modified Copernicus Climate Change Service information 2026."
+keywords:
+  - climate
+  - climate normals
+  - climate change
+  - temperature
+  - precipitation
+  - ERA5
+  - ERA5-Land
+  - Copernicus
+  - municipalities
+  - France
+  - Portugal
+  - Luxembourg
+  - Serbia
 authors:
-  - name: "Weatheo"
-url: "https://weatheo.com/en/blog/methodology"
+  - name: "Weatheo (by CODELIO)"
+url: "https://weatheo.com/en/open-data"
 repository-code: "https://github.com/weatheo-com/climate-data"
 license: CC-BY-4.0
 version: 1.0.0
@@ -20,3 +34,11 @@ references:
     publisher:
       name: "Copernicus Climate Change Service (C3S) Climate Data Store (CDS)"
     doi: 10.24381/cds.adbb2d47
+  - type: data
+    authors:
+      - name: "Copernicus Climate Change Service (C3S)"
+    title: "ERA5-Land monthly averaged data from 1950 to present"
+    year: 2019
+    publisher:
+      name: "Copernicus Climate Change Service (C3S) Climate Data Store (CDS)"
+    doi: 10.24381/cds.68d2bb30

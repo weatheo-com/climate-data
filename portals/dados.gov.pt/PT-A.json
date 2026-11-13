@@ -1,0 +1,52 @@
+{
+  "slug": "normais-climatologicas-1991-2020-por-municipio-portugal",
+  "title": "Normais climatológicas 1991-2020 por município (Portugal)",
+  "description": "Normais climatológicas mensais de 1991 a 2020 (temperatura média do ar a 2 m, em °C, e precipitação média mensal, em mm) para os 308 municípios de Portugal: continente, Madeira e Açores. Uma linha por município e por mês (1-12).\n\n**Método.** Médias mensais Copernicus ERA5-Land (0,1°, cerca de 9 km), com médias mensais ERA5 (0,25°) como recurso onde a célula ERA5-Land não tem valor (zonas costeiras). Cada município usa a célula da grelha mais próxima do seu centro. Os valores são médias de 30 anos dos valores mensais. Os scripts de construção são abertos e há um script de validação no repositório.\n\n**Colunas.** country, code, name, admin1_code, admin1_name, admin2_code, admin2_name, latitude, longitude, grid_lat, grid_lon, grid_source, month (1-12), tmean_c (°C), precip_mm (mm), period, weatheo_url (página de previsão do município no Weatheo, quando existe: 129 de 308; vazio nos restantes).\n\n**Limites.** São valores de grelha de reanálise, não observações de estações meteorológicas: podem diferir dos valores medidos em estações meteorológicas (altitude, litoral, cidades).\n\n**Fonte dos lugares.** CAOP 2025, Direção-Geral do Território (CC BY). Código = código DICO do município.\n\n**Licença.** Dados em CC BY 4.0; código MIT. Atribuição obrigatória: Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublicado por [Weatheo](https://weatheo.com/pt/open-data). Código e validador: https://github.com/weatheo-com/climate-data",
+  "tags": [
+    "clima",
+    "normais-climatologicas",
+    "temperatura",
+    "precipitacao",
+    "copernicus",
+    "era5",
+    "municipios",
+    "portugal"
+  ],
+  "license": "cc-by",
+  "frequency": "irregular",
+  "temporal_coverage": {
+    "start": "1991-01-01",
+    "end": "2020-12-31"
+  },
+  "spatial": {
+    "granularity": "pt:concelho",
+    "zones": [
+      "country:pt"
+    ]
+  },
+  "resources": [
+    {
+      "title": "PT_climate_normals_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/PT_climate_normals_1991_2020.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Uma linha por município e por mês (1-12)."
+    },
+    {
+      "title": "PT_climate_normals_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/PT_climate_normals_1991_2020.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Mesma tabela em formato Parquet."
+    },
+    {
+      "title": "datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/datapackage.json",
+      "format": "json",
+      "mime": "application/json",
+      "type": "documentation",
+      "description": "Metadados Frictionless (esquema das colunas, fontes, licença)."
+    }
+  ]
+}

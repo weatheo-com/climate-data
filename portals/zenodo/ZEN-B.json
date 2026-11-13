@@ -1,0 +1,73 @@
+{
+  "title": "Climate shift 1961-1990 vs 1991-2020 by month for municipalities of France, Portugal, Luxembourg, Serbia",
+  "tags": [
+    "climate change",
+    "climate shift",
+    "1961-1990",
+    "1991-2020",
+    "temperature",
+    "precipitation",
+    "municipality",
+    "ERA5-Land",
+    "ERA5",
+    "Copernicus",
+    "France",
+    "Portugal",
+    "Luxembourg",
+    "Serbia"
+  ],
+  "description": "<p>Change in climate between 1961-1990 and 1991-2020 for every municipality of France, Portugal, Luxembourg and Serbia: for each month (1-12) and the annual value, the 1961-1990 value, the 1991-2020 value and the shift, for temperature (degC) and precipitation (percent). One CSV and one Parquet file per country plus a Frictionless datapackage.json.</p><p>Method: Copernicus ERA5-Land monthly means (0.1 degree, about 9 km), with ERA5 monthly means (0.25 degree) as fallback where the ERA5-Land cell has no value (coasts). Each municipality takes the nearest grid cell to its centre point; values are 30-year means of the monthly values for each of the two periods. These are reanalysis grid-cell values, not station observations: they can differ from official station normals (altitude, coast, cities). Built by open scripts in the repository and checked by a validator script.</p><p>Places and licences: France, 34,863 communes of metropolitan France and Corsica (INSEE code; overseas departments not included), from the list of communes on data.gouv.fr (Licence Ouverte 2.0); Portugal, 308 municipios (mainland, Madeira, Azores; DICO code), CAOP 2025 of the Direcao-Geral do Territorio (CC BY); Luxembourg, 100 communes (LAU code), STATEC LAU codes on data.public.lu (CC0) with GeoNames coordinates (CC BY 4.0); Serbia, 169 municipalities and cities (RZS code), RZS list on data.gov.rs (licence 'sodl', commercial reuse to be verified) with GeoNames coordinates (CC BY 4.0).</p><p>Attribution: Weatheo (by CODELIO), CC BY 4.0. Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.</p><p>Published by <a href=\"https://weatheo.com/en/open-data\">Weatheo</a>. Code (MIT) and build scripts: <a href=\"https://github.com/weatheo-com/climate-data\">GitHub repository</a>.</p>",
+  "version": "1.0.0",
+  "zenodo": {
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/weatheo-com/climate-data",
+        "relation": "isSupplementTo",
+        "scheme": "url",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "https://weatheo.com/en/open-data",
+        "relation": "isDocumentedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.data.gouv.fr/datasets/liste-des-communes-de-france",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.dgterritorio.gov.pt/cartografia/caop",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://data.public.lu/",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://www.geonames.org/",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://data.gov.rs/",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means",
+        "relation": "isDerivedFrom",
+        "scheme": "url"
+      }
+    ],
+    "language": "eng",
+    "communities": []
+  }
+}

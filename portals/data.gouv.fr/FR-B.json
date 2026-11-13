@@ -1,0 +1,52 @@
+{
+  "slug": "evolution-climatique-1961-1990-1991-2020-par-commune-france-weatheo",
+  "title": "Évolution du climat par commune : 1961-1990 contre 1991-2020 (France)",
+  "description": "Écart climatique entre 1961-1990 et 1991-2020 pour 34 863 communes françaises : pour chaque commune et chaque mois (1 à 12) ainsi que pour l'année, la valeur 1961-1990, la valeur 1991-2020 et l'écart, pour la température (en °C) et pour les précipitations (en %).\n\n**Méthode.** Moyennes mensuelles des réanalyses Copernicus ERA5-Land (0,1°, environ 9 km), avec repli sur ERA5 (0,25°) là où la maille ERA5-Land n'a pas de valeur (côtes). Chaque commune prend la maille la plus proche de son point central ; les valeurs sont des moyennes sur 30 ans, et l'écart compare les deux périodes. Les scripts de construction sont ouverts et un script de validation contrôle les fichiers.\n\n**Limites.** Ce sont des valeurs de mailles de réanalyse, pas des mesures de stations : elles peuvent différer des valeurs établies à partir de stations (altitude, littoral, villes). Les précipitations varient beaucoup d'une année à l'autre ; un écart en % est à lire avec prudence là où les cumuls sont faibles.\n\n**Communes.** 34 863 communes de France métropolitaine et de Corse (départements d'outre-mer non inclus), d'après la « Liste des communes de France » sur data.gouv.fr. Identifiant : code INSEE. Les colonnes exactes (identification de la commune, période, valeurs et écarts) sont décrites dans `datapackage.json`.\n\n**Licence.** Données CC BY 4.0, code MIT. Source des communes : « Liste des communes de France » (data.gouv.fr), Licence Ouverte 2.0.\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO) : [Weatheo](https://weatheo.com/fr/open-data).",
+  "tags": [
+    "climat",
+    "changement-climatique",
+    "temperature",
+    "precipitations",
+    "copernicus",
+    "era5",
+    "communes",
+    "reanalyse"
+  ],
+  "license": "cc-by",
+  "frequency": "irregular",
+  "temporal_coverage": {
+    "start": "1961-01-01",
+    "end": "2020-12-31"
+  },
+  "spatial": {
+    "granularity": "fr:commune",
+    "zones": [
+      "country-subset:fr:metro"
+    ]
+  },
+  "resources": [
+    {
+      "title": "FR_climate_shift_1961_1990_vs_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/FR_climate_shift_1961_1990_vs_1991_2020.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Une ligne par commune et par mois (1-12 et annuel) : valeur 1961-1990, valeur 1991-2020 et écart."
+    },
+    {
+      "title": "FR_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/FR_climate_shift_1961_1990_vs_1991_2020.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Même table au format Parquet."
+    },
+    {
+      "title": "datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/datapackage.json",
+      "format": "json",
+      "mime": "application/json",
+      "type": "documentation",
+      "description": "Métadonnées Frictionless (schéma des colonnes, sources, licence)."
+    }
+  ]
+}

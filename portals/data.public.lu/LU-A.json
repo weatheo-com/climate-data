@@ -1,0 +1,52 @@
+{
+  "slug": "normales-climatiques-1991-2020-par-commune-luxembourg-weatheo",
+  "title": "Normales climatiques mensuelles 1991-2020 par commune (Luxembourg)",
+  "description": "Normales climatiques mensuelles 1991-2020 (température moyenne de l'air à 2 m et précipitations) pour 100 communes luxembourgeoises.\n\n**Méthode.** Moyennes mensuelles des réanalyses Copernicus ERA5-Land (0,1°, environ 9 km), avec repli sur ERA5 (0,25°) là où la maille ERA5-Land n'a pas de valeur. Chaque commune prend la maille la plus proche de son point central ; la normale est la moyenne sur 30 ans (1991-2020) des valeurs mensuelles. Les scripts de construction sont ouverts et un script de validation contrôle les fichiers.\n\n**Limites.** Ce sont des valeurs de mailles de réanalyse, pas des mesures de stations : elles peuvent différer des normales établies à partir de stations (altitude, littoral, villes).\n\n**Communes.** 100 communes du Luxembourg, d'après les codes LAU du STATEC (data.public.lu), avec les coordonnées de GeoNames. Identifiant : code LAU. `weatheo_url` renvoie vers la page de prévisions Weatheo de la commune quand elle existe (4 communes sur 100), sinon vide.\n\n**Colonnes.** `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `month` (1 à 12), `tmean_c` (température moyenne de l'air à 2 m, °C), `precip_mm` (précipitations mensuelles moyennes, mm), `period` et `weatheo_url`.\n\n**Licence.** Données CC BY 4.0, code MIT. Source des communes : codes LAU du STATEC sur data.public.lu (CC0) ; coordonnées GeoNames (CC BY 4.0).\n\n**Attribution obligatoire.** Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n\nPublié par Weatheo (by CODELIO) : [Weatheo](https://weatheo.com/fr/open-data).",
+  "tags": [
+    "climat",
+    "normales-climatiques",
+    "temperature",
+    "precipitations",
+    "copernicus",
+    "era5",
+    "communes",
+    "reanalyse"
+  ],
+  "license": "cc-by",
+  "frequency": "irregular",
+  "temporal_coverage": {
+    "start": "1991-01-01",
+    "end": "2020-12-31"
+  },
+  "spatial": {
+    "granularity": "lu:commune",
+    "zones": [
+      "country:lu"
+    ]
+  },
+  "resources": [
+    {
+      "title": "LU_climate_normals_1991_2020.csv",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/LU_climate_normals_1991_2020.csv",
+      "format": "csv",
+      "mime": "text/csv",
+      "type": "main",
+      "description": "Une ligne par commune et par mois (1-12)."
+    },
+    {
+      "title": "LU_climate_normals_1991_2020.parquet",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/LU_climate_normals_1991_2020.parquet",
+      "format": "parquet",
+      "type": "main",
+      "description": "Même table au format Parquet."
+    },
+    {
+      "title": "datapackage.json",
+      "url": "https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/datapackage.json",
+      "format": "json",
+      "mime": "application/json",
+      "type": "documentation",
+      "description": "Métadonnées Frictionless (schéma des colonnes, sources, licence)."
+    }
+  ]
+}

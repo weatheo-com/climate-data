@@ -22,11 +22,65 @@ Réanalyse ERA5 (Copernicus Climate Change Service), récupérée via l'API Open
 
 ## Ce qui n'est pas ici
 
-Les CSV de weatheo.com contiennent aussi des colonnes issues d'OpenWeather (`owm_*` : moyennes, normales, anomalies, nombres de jours, records haut et bas). Elles sont exclues de ce dépôt à cause de problèmes de qualité connus sur les records, la pluie et l'ensoleillement d'OpenWeather, et parce que leur licence n'autorise pas la redistribution libre. Aucune donnée de précipitations ou d'ensoleillement n'est publiée. Aucune donnée Météo-France n'est utilisée.
+Les CSV de weatheo.com contiennent aussi des colonnes issues d'OpenWeather (`owm_*` : moyennes, normales, anomalies, nombres de jours, records haut et bas). Elles sont exclues de ce dépôt à cause de problèmes de qualité connus sur les records, la pluie et l'ensoleillement d'OpenWeather, et parce que leur licence n'autorise pas la redistribution libre. Les tableaux de températures des articles ci-dessus ne publient aucune donnée de précipitations ou d'ensoleillement (les normales par commune ci-dessous incluent les précipitations ERA5-Land). Aucune donnée Météo-France n'est utilisée.
 
 ## Limites
 
 Les mailles de la réanalyse ne sont pas des observations de stations : les valeurs peuvent différer des records officiels nationaux, de plusieurs degrés certains jours en centre-ville dense, sur la côte ou en montagne.
+
+## Normales climatiques par commune (FR, PT, LU, RS)
+
+Normales climatiques pour chaque commune de quatre pays, publiées par Weatheo (by CODELIO). Page de présentation : [Weatheo](https://weatheo.com/fr/open-data). Chaque pays a ses fichiers dans `data/<CC>/` en CSV, parquet et `datapackage.json` ; ils sont aussi joints à la release GitHub v1.0.0 (`https://github.com/weatheo-com/climate-data/releases/download/v1.0.0/<fichier>`).
+
+| Pays | Communes | Code |
+|---|---|---|
+| France (FR) | 34 863 communes (France métropolitaine et Corse ; départements d'outre-mer non inclus) | INSEE |
+| Portugal (PT) | 308 municípios (continent, Madère, Açores) | DICO |
+| Luxembourg (LU) | 100 communes | LAU |
+| Serbie (RS) | 169 municipalités et villes (opštine i gradovi) | RZS |
+
+Deux jeux de données par pays :
+
+- **`<cc>_climate_normals_1991_2020`** : normales mensuelles 1991-2020 par commune. Colonnes : `country`, `code`, `name`, `admin1_code`, `admin1_name`, `admin2_code`, `admin2_name`, `latitude`, `longitude`, `grid_lat`, `grid_lon`, `grid_source`, `month` (1-12), `tmean_c` (température moyenne de l'air à 2 m, °C), `precip_mm` (précipitations mensuelles moyennes, mm), `period`, `weatheo_url`.
+- **`<cc>_climate_shift_1961_1990_vs_1991_2020`** : par commune et par mois (1-12 et année), la valeur 1961-1990, la valeur 1991-2020 et l'écart, pour la température (°C) et les précipitations (%).
+
+`weatheo_url` renvoie vers la page de prévisions Weatheo de la commune quand elle existe (FR 30 631 sur 34 863 ; PT 129 sur 308 ; LU 4 sur 100 ; RS 86 sur 169), sinon elle est vide.
+
+### Méthode
+
+Moyennes mensuelles Copernicus ERA5-Land (0,1°, environ 9 km), avec les moyennes mensuelles ERA5 (0,25°) en secours là où la maille ERA5-Land n'a pas de valeur (côtes). Chaque commune prend la maille la plus proche de son point central (`grid_lat`, `grid_lon`, `grid_source`). Les normales sont des moyennes sur 30 ans des valeurs mensuelles. Les fichiers sont produits par les scripts ouverts de `src/climate_data/` et contrôlés par un script de validation. Ni OpenWeather, ni les données de stations Météo-France, ni Open-Meteo ne sont utilisés pour ces jeux de données.
+
+### Limites
+
+Ce sont des valeurs de mailles de réanalyse, pas des observations de stations : elles peuvent différer des normales officielles des stations, en particulier en altitude, sur les côtes et en ville.
+
+### Sources des communes
+
+| Pays | Source | Licence |
+|---|---|---|
+| FR | « Liste des communes de France », data.gouv.fr | Licence Ouverte 2.0 |
+| PT | CAOP 2025, Direção-Geral do Território | CC BY |
+| LU | Codes LAU du STATEC, data.public.lu ; coordonnées GeoNames | CC0 ; GeoNames CC BY 4.0 |
+| RS | RZS « Opštine i gradovi », data.gov.rs ; coordonnées GeoNames | « sodl » (réutilisation commerciale à vérifier) ; GeoNames CC BY 4.0 |
+
+URL, fichiers et dates de récupération : [docs/places-sources.md](docs/places-sources.md).
+
+### Attribution
+
+Licence des données CC BY 4.0 ; code MIT. Toute utilisation de ces données doit reprendre cette mention :
+
+> Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
+
+### Reconstruire
+
+```sh
+pip install -e .
+scripts/fetch_places.sh            # fichiers bruts des communes dans places/raw/<cc>/
+python -m climate_data.build --country FR    # ou PT, LU, RS
+python -m climate_data.validate data/FR/datapackage.json
+```
+
+La construction télécharge ERA5-Land et ERA5 depuis le Copernicus Climate Data Store (compte CDS et clé `cdsapi` nécessaires) et les met en cache dans `cache/`.
 
 ## Licence et citation
 

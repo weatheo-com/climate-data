@@ -26,6 +26,24 @@ DAILY_SOURCES = [
     {"title": "Copernicus C3S ERA5 post-processed daily statistics on single levels from 1940 to present",
      "path": "https://cds.climate.copernicus.eu/datasets/derived-era5-single-levels-daily-statistics"},
 ]
+GEONAMES = {"title": "GeoNames gazetteer (coordinates), licence CC BY 4.0",
+            "path": "https://download.geonames.org/export/dump/"}
+PLACE_SOURCES = {
+    "FR": [{"title": "Liste des communes de France (data.gouv.fr), licence Licence Ouverte 2.0",
+            "path": "https://www.data.gouv.fr/datasets/liste-des-communes-de-france-code-insee-codes-postaux-epci-population-superficie-62-indicateurs"}],
+    "PT": [{"title": "CAOP 2025, Direção-Geral do Território, licence CC BY",
+            "path": "https://www.dgterritorio.gov.pt/cartografia/cartografia-tematica/caop"}],
+    "LU": [{"title": "STATEC, Codes LAU des communes du Grand-Duché de Luxembourg (data.public.lu), licence CC0",
+            "path": "https://data.public.lu/fr/datasets/codes-lau-des-communes-du-grand-duche-de-luxembourg/"},
+           GEONAMES],
+    "RS": [{"title": "RZS, Opštine i gradovi (data.gov.rs), licence sodl (commercial reuse to be verified)",
+            "path": "https://data.gov.rs/sr/datasets/opshtine-i-gradovi/"},
+           GEONAMES],
+}
+LIMITS = (
+    "Values are reanalysis grid-cell values, not station observations: they can differ from "
+    "official station normals, mostly because of altitude, coasts and cities."
+)
 CONTRIBUTORS = [{"title": "Weatheo (by CODELIO)", "path": "https://weatheo.com", "role": "publisher"}]
 
 FIELD_DOC = {
@@ -107,7 +125,7 @@ def build_package(country, tables: dict[str, pd.DataFrame], daily: bool,
         desc += f" {n_loaded - n_places} loaded places fell outside the covered area and are not included."
     if daily:
         desc += " Daily statistics (tmin, tmax, frost and summer days) come from the C3S post-processed daily statistics (UTC days)."
-    desc += " " + ATTRIBUTION
+    desc += " " + LIMITS + " " + ATTRIBUTION
 
     resources = []
     for name, df in tables.items():
@@ -129,7 +147,7 @@ def build_package(country, tables: dict[str, pd.DataFrame], daily: bool,
         "version": "1.0.0",
         "licenses": [LICENSE],
         "homepage": HOMEPAGE,
-        "sources": SOURCES + (DAILY_SOURCES if daily else []),
+        "sources": SOURCES + (DAILY_SOURCES if daily else []) + PLACE_SOURCES.get(cc, []),
         "contributors": CONTRIBUTORS,
         "keywords": ["climate", "climate normals", "climate change", "ERA5-Land", "Copernicus", country.name],
         "spatial": country.code,
